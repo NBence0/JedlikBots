@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JedlikBots - Robotikai Csapat</title>
+  <link rel="shortcut icon" type="image/png"
+    href="https://gyor-jedlik.cms.intezmeny.edir.hu/uploads/thumbnail_Jedlik_logo_2020_200_3c5beeccf8.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    :root {
+      --dark-blue: #0d1b2a;
+      --medium-blue: #1b263b;
+      --light-blue: #415a77;
+      --accent-blue: #778da9;
+      --turquoise: #4ac6d2;
+      --light-text: #e0e1dd;
+      --highlight: #ff7b25;
+    }
+
+    body {
+      background-color: var(--dark-blue);
+      color: var(--light-text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Header styles */
+    #cim-div {
+      font-size: 5rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 350px;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(13, 27, 42, 0.7), rgba(27, 38, 59, 0.9)),
+        url(robotics-banner.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    #cim-div .subtitle {
+      font-size: 1.8rem;
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Navigation styles */
+    .navbar {
+      background-color: var(--medium-blue) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      padding: 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-link {
+      color: var(--light-text) !important;
+      font-size: 1.2rem !important;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem !important;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+    }
+
+    .nav-link:hover {
+      background-color: var(--light-blue);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Content box styles */
+    .content-box {
+      background-color: var(--medium-blue);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .content-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .content-box h2 {
+      color: var(--turquoise);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .content-box p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Team member cards */
+    .team-member {
+      background-color: var(--light-blue);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .team-member:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .team-member-img {
+      width: 100%;
+      height: 250px;
+      background-color: #344966;
+      overflow: hidden;
+    }
+
+    .team-member-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .team-member-info {
+      padding: 1.5rem;
+      flex-grow: 1;
+    }
+
+
+    /* Button styles */
+    .btn-custom {
+      background-color: var(--turquoise);
+      color: var(--dark-blue);
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 0.5rem 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-custom:hover {
+      background-color: var(--highlight);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--turquoise);
+      border: 2px solid var(--turquoise);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--turquoise);
+      color: var(--dark-blue);
+    }
+
+    /* Project showcase */
+    .project-showcase {
+      position: relative;
+      margin: 3rem 0;
+      padding: 2rem 0;
+    }
+
+    .project-video {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      margin: 2rem auto;
+    }
+
+    .project-video .placeholder {
+      height: 400px;
+      background-color: var(--light-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 3rem 0;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background-color: var(--accent-blue);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-content {
+      background-color: var(--light-blue);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-date {
+      display: inline-block;
+      background-color: var(--turquoise);
+      color: var(--dark-blue);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Satellite project */
+    .satellite-project {
+      background-color: var(--medium-blue);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 3rem 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .satellite-img-placeholder {
+      height: 300px;
+      background-color: var(--light-blue);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    /* Support section */
+    .support-section {
+      background-color: var(--light-blue);
+      padding: 3rem 0;
+      margin: 3rem 0 0;
+      border-radius: 12px;
+      box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .support-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .support-header h2 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .support-option {
+      background-color: var(--medium-blue);
+      border-radius: 12px;
+      padding: 1.5rem;
+      height: 100%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .support-option:hover {
+      transform: translateY(-5px);
+    }
+
+    .support-option h3 {
+      color: var(--turquoise);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: var(--medium-blue);
+      padding: 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-link {
+      color: var(--turquoise);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    .custom-link:hover {
+      color: #5de6f2;
+      border-bottom: 1px solid #5de6f2;
+    }
+
+    .highlight-text {
+      color: var(--turquoise);
+      font-weight: 600;
+    }
+
+    /* Progress bar */
+    .progress {
+      height: 25px;
+      background-color: var(--dark-blue);
+      border-radius: 10px;
+      margin: 1rem 0 2rem;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background-color: var(--turquoise);
+      color: var(--dark-blue);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      #cim-div {
+        font-size: 3.5rem;
+        height: 250px;
+      }
+
+      #cim-div .subtitle {
+        font-size: 1.2rem;
+        bottom: 20px;
+      }
+
+      .content-box {
+        padding: 1rem;
+      }
+
+      .timeline:before {
+        left: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Banner -->
+  <div id="cim-div">
+    <p>JEDLIKBOTS</p>
+    <div class="subtitle">Jedlik Ányos Technikum Robotika Csapata</div>
+  </div>
+  <img src="https://log.nbence.hu/tracker.php?token=waNLDbhGj3tkVlhd" alt="log">
+
+  <!-- Main Content -->
+  <div class="container py-4" id="home">
+    <!-- Introduction Section -->
+    <div class="row justify-content-center g-4">
+      <div class="col-md-12">
+        <div class="content-box">
+          <h2>Innovatív robotika a Jedlikből</h2>
+          <p>Üdvözlünk a JedlikBots oldalán! Mi vagyunk a Győri Jedlik Ányos Technikum lelkes szoftverfejlesztő
+            diákcsapata, akik a robotika világában alkotnak. Csapatunk szenvedélyesen dolgozik innovatív robotikai
+            megoldásokon, és büszkén mutatjuk be az elmúlt évek során elért eredményeinket.</p>
+          <p>Célunk, hogy ne csak megvalósítsuk elképzeléseinket, hanem folyamatosan fejlesszük készségeinket és
+            tudásunkat, miközben gyakorlati tapasztalatot szerzünk a szoftverfejlesztés, a mechanikai tervezés és az
+            elektronika területén.</p>
+          <p>Jelenleg egy professzionális versenyzésre és komplex technológiai demonstrációkra is alkalmas új robot
+            fejlesztésén dolgozunk, és keressük azokat a támogatókat, akik hisznek a fiatal technológiai tehetségekben
+            és segítenének álmaink megvalósításában!</p>
+          <div class="text-center mt-4">
+            <a href="#support" class="btn btn-custom">Támogass minket!</a>
+            <a href="#projects" class="btn btn-custom btn-outline ms-2">Projektek megtekintése</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Members Section -->
+    <div class="row mt-5" id="about">
+      <div class="col-12 mb-4">
+        <h2 class="text-center" style="color: var(--turquoise); font-size: 2.5rem;">Csapattagok</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <!-- Team Member 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-member">
+          <div class="team-member-img">
+            <!-- Optimized image container -->
+            <img src="nagybence.jpg" alt="Nagy Bence" style="width: 100%;  object-position: center;">
+          </div>
+          <div class="team-member-info">
+            <h3>Nagy Bence</h3>
+            <p>Szoftverfejlesztő</p>
+            <p>Szakterület: szenzoradatok feldolgozása, robotvizualizáció</p>
+            <p>Bence feladata a robotok érzékelőinek adatgyűjtése és valós idejű feldolgozása. Kiváló 3D-modellező,
+              robotjaink vizuális megjelenítésén és szimulációs környezetének fejlesztésén dolgozik.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-member">
+          <div class="team-member-img">
+            <!-- Optimized image container -->
+            <img src="szitaslaszlo.jpg" alt="Nagy Bence" style="width: 100%;  object-position: center;">
+          </div>
+          <div class="team-member-info">
+            <h3>Szitás László</h3>
+            <p>Szoftverfejlesztő</p>
+            <p>Szakterület: felhasználói felületek, projektmenedzsment</p>
+            <p>László fejleszti a robotjaink vezérlő felületeit és webes alkalmazásait. Innovatív megoldásaival
+              biztosítja, hogy bárki könnyen kommunikálhasson és vezérelhesse robotjainkat. Emellett ő tartja kézben a
+              projektek ütemezését és koordinálását.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-member">
+          <div class="team-member-img">
+            <!-- Optimized image container -->
+            <img src="schmidtnandor.jpg" alt="Nagy Bence" style="width: 100%;  object-position: center;">
+          </div>
+          <div class="team-member-info">
+            <h3>Schmidt Nándor</h3>
+            <p>Szoftverfejlesztő</p>
+            <p>Szakterület: beágyazott rendszerek, elektronikai tervezés</p>
+            <p>Nándor a robotok "agya" mögött álló beágyazott rendszerek szakértője. Az alacsony szintű programozás és
+              firmware fejlesztés mestere, aki biztosítja, hogy robotjaink gyorsan és hatékonyan reagáljanak.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="team-member">
+          <div class="team-member-img">
+            <!-- Optimized image container -->
+            <img src="budabalint.png" alt="Buda Bálint" style="width: 100%;  object-position: center;">
+          </div>
+          <div class="team-member-info">
+            <h3>Buda Bálint</h3>
+            <p>Szoftverfejlesztő</p>
+            <p>Szakterület: robotvezérlés, Gépi látás</p>
+            <p>Bálint felelős a robotok vezetékes és vezeték nélküli kommunikációjáért, valamint a gépi tanulási
+              algoritmusok implementálásáért, amelyek segítenek robotjainknak alkalmazkodni a változó környezeti
+              feltételekhez.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="project-showcase mt-5 pt-3" id="projects">
+      <h2 class="text-center mb-4" style="color: var(--turquoise); font-size: 2.5rem;">Projektjeink</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-12">
+          <div class="content-box">
+            <h2>WRO 2025 regionális döntő Budapest</h2>
+            <p>Üdvözlünk a JedlikBots oldalán! Mi vagyunk a Győri Jedlik Ányos Technikum lelkes szoftverfejlesztő
+              diákcsapata, akik a robotika világában alkotnak. Csapatunk szenvedélyesen dolgozik innovatív robotikai
+              megoldásokon, hogy versenyeken érhessünk el sikereket.</p>
+            <p>A Budapesti WRO (World Robot Olympiad) regionális döntőjéig jutottunk el EV3-as Mindstorms robotunkkal,
+              ahol sikeresen 2. helyezést értünk el, ezzel kvalifikálva magunkat a nemzeti döntőre. Jelenleg erre a
+              kihívásra készülünk, de már a jövő évi céljainkat is kitűztük.</p>
+            <p>Jövőre ugyanezen a versenyen szeretnénk elérni a világdöntőre való kijutást, hogy képviselhessük
+              Magyarországot a nemzetközi mezőnyben. A lenti videón látható jelenlegi robotunk és a használt technológia
+              sajnos nem elegendő ahhoz, hogy reális esélyünk legyen a világdöntőn való eredményes szereplésre, ezért
+              szeretnénk egy fejlettebb robotot építeni a következő évi megmérettetésre.</p>
+            <p>Jelenleg támogatókat keresünk, akik hisznek a fiatal technológiai tehetségekben és segítenének álmaink
+              megvalósításában. A jelenlegi robotunk bemutatóját az alábbi videón tekintheted meg!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Video Section -->
+      <div class="project-showcase mt-5 pt-3" id="projects">
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-8 col-md-10 col-sm-12">
+            <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+              <iframe src="https://www.youtube.com/embed/QTDwxr4dkFA?si=z9si6-9FOfsNkPtV" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Photo Gallery Section
+        <div class="project-gallery content-box" style="margin-top: 30px;">
+          <h2>Projekt képgaléria</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="gallery-item team-member">
+                <div class="team-member-img placeholder">
+                  1. kép helye
+                </div>
+                <div class="team-member-info">
+                  <h3>Kép címe</h3>
+                  <p>Rövid leírás az első képről</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="gallery-item team-member">
+                <div class="team-member-img placeholder">
+                  2. kép helye
+                </div>
+                <div class="team-member-info">
+                  <h3>Kép címe</h3>
+                  <p>Rövid leírás a második képről</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="gallery-item team-member">
+                <div class="team-member-img placeholder">
+                  3. kép helye
+                </div>
+                <div class="team-member-info">
+                  <h3>Kép címe</h3>
+                  <p>Rövid leírás a harmadik képről</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="gallery-item team-member">
+                <div class="team-member-img placeholder">
+                  4. kép helye
+                </div>
+                <div class="team-member-info">
+                  <h3>Kép címe</h3>
+                  <p>Rövid leírás a negyedik képről</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         -->
+        <!-- Current Project -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-10">
+            <div class="content-box">
+              <h2>Jelenlegi projektünk: ProBot X1</h2>
+              <p>A ProBot X1 egy multifunkcionális, moduláris robot platformunk, amellyel nemzetközi versenyeken
+                szeretnénk részt venni. A robot jelenlegi fejlesztési szakaszában vagyunk, és olyan támogatókat
+                keresünk,
+                akik a fejlesztéshez szükséges alkatrészekkel, eszközökkel tudnák segíteni a munkánkat.</p>
+
+              <h4 class="mt-4 mb-3">Fejlesztési előrehaladás:</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0"
+                  aria-valuemax="100">10%</div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <h4>Műszaki tervek:</h4>
+                  <ul>
+                    <li>Beépített mélységérzékelő kamerák a térbeli tájékozódáshoz</li>
+                    <li>Fejlett gépi tanulási algoritmusok az objektumfelismeréshez</li>
+                    <li>Moduláris kialakítás, könnyen cserélhető alkatrészekkel</li>
+                    <li>Akkumulátor üzemidő: 2+ óra aktív használat mellett</li>
+                    <li>Több irányba fordítható kamera, gépi látással feldolgozva adatait</li>
+                    <li>Professzionális robot, bármilyen feladatra</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4>Eszközigény – támogatással segíthető alkatrészek:</h4>
+                  <ul>
+                    <li>Raspberry Pi bármely változata (akár Compute Module is)</li>
+                    <li>Léptetőmotorok, motorvezérlők, kisebb villanymotorok</li>
+                    <li>Szenzorok: színérzékelő, gyorsulásmérő, giroszkóp, kameramodulok</li>
+                    <li>Próbapanelek, jumperkábelek, USB–TTL konverterek</li>
+                    <li>STM-alapú mikrokontroller panelek</li>
+                    <li>3D nyomtató filament (1.75 mm)</li>
+                    <li>Érintőkijelzők (akár hibás, ha javítható)</li>
+                    <li>Logikai analizátor a hibakereséshez</li>
+                    <li>RGB LED-ek állapotjelzéshez</li>
+                  </ul>
+
+                </div>
+                <p class="mt-3">Bármilyen támogatás – akár egyetlen eszközzel – nagy segítséget jelent számunkra a
+                  projekt
+                  sikeres befejezéséhez és a versenyeken való részvételhez.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Timeline -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-10">
+            <h3 class="text-center mb-4" style="color: var(--turquoise);">Eddigi eredményeink</h3>
+
+            <div class="timeline">
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <span class="timeline-date">2022. március</span>
+                  <h4>Robotprogramozó Országos Csapatverseny - 2. helyezés</h4>
+                  <p>Az Országos Robotprogramozó csapatversenyen a csapatunk 2. helyezést ért el. Ez volt az első
+                    országos
+                    versenyünk, amely bebizonyította, hogy csapatunk képes versenyképes robotokat építeni.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <span class="timeline-date">2023. március</span>
+                  <h4>Robotprogramozó Országos Csapatverseny - 1. helyezés</h4>
+                  <p>Ismét részt vettünk az Országos Robotprogramozó csapatversenyen, ahol ebben az évben a csapatunk
+                    már
+                    1.
+                    helyezést ért el. Bebizonyítottuk, hogy képesek vagyunk az országos csúcsra törni.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3 -->
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <span class="timeline-date">2025. május</span>
+                  <h4>WRO 2025 Regionális Döntő Budapest - 2. helyezés</h4>
+                  <p>Az első WRO versenyünk, ahol a budapesti regionális döntőben 2. helyezést értünk el. Így
+                    bejutottunk
+                    a
+                    WRO országos döntőjébe. Jövőre ugyanezen a versenyen az új professzionális robottal a világdöntő a
+                    cél.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Satellite Project Section -->
+        <!-- Support Section -->
+        <div class="support-section mt-5" id="support">
+          <div class="container">
+            <div class="support-header">
+              <h2>Támogasd a jövő mérnökeit!</h2>
+              <p class="lead text-light">Segítsd csapatunkat, hogy megvalósíthassuk álmainkat és innovatív
+                projektjeinket!
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="support-option">
+                  <h3>Anyagi támogatás</h3>
+                  <p>Projektjeink megvalósításához folyamatosan eszközökre, alkatrészekre és anyagokra van szükségünk.
+                    Az
+                    anyagi támogatással közelebb kerülünk céljainkhoz.</p>
+                  <p><span class="highlight-text">Mire költjük:</span> Elektronikai komponensek, mikrokontrollerek,
+                    mechanikai alkatrészek, szerszámok</p>
+                  <div class="text-center mt-3">
+                    <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#supportModal">Támogatás
+                      részletei</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="support-option">
+                  <h3>Eszköz adományozás</h3>
+                  <p>Ha rendelkezel olyan használaton kívüli eszközökkel, amelyek segíthetik a munkánkat – például
+                    mikrokontrollerek, szenzorok, motorok –, hálásan fogadjuk!</p>
+                  <div class="text-center mt-3">
+                    <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#supportModal2">Támogatás
+                      részletei</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="support-option">
+                  <h3>Szakmai támogatás</h3>
+                  <p>Mentorálással, tanácsadással, vagy akár csak ötletekkel is sokat segíthetsz nekünk. Szívesen
+                    együttműködünk tapasztalt szakemberekkel, fejlesztőkkel.</p>
+                  <div class="text-center mt-3">
+                    <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#supportModal3">Támogatás
+                      részletei</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">Támogatás részletei</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Email: </strong><a
+                    href="mailto:nagy.bence1@students.jedlik.eu">nagy.bence1@students.jedlik.eu</a></p>
+                <p><strong>Telefonszám:</strong> +36 30 368 8136</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Modal ablak -->
+        <div class="modal fade" id="supportModal2" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">Támogatás részletei</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Email: </strong><a
+                    href="mailto:nagy.bence1@students.jedlik.eu">nagy.bence1@students.jedlik.eu</a></p>
+                <p><strong>Telefonszám:</strong> +36 30 368 8136</p>
+                <ul>
+                  <li>Raspberry Pi bármely változata (akár Compute Module is)</li>
+                  <li>Léptetőmotorok, motorvezérlők, kisebb villanymotorok</li>
+                  <li>Szenzorok: színérzékelő, gyorsulásmérő, giroszkóp, kameramodulok</li>
+                  <li>Próbapanelek, jumperkábelek, USB–TTL konverterek</li>
+                  <li>STM-alapú mikrokontroller panelek</li>
+                  <li>3D nyomtató filament (1.75 mm)</li>
+                  <li>Érintőkijelzők (akár hibás, ha javítható)</li>
+                  <li>Logikai analizátor a hibakereséshez</li>
+                  <li>RGB LED-ek állapotjelzéshez</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="supportModal3" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">Támogatás részletei</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+              </div>
+              <div class="modal-body">
+                <p>Ötletedet vagy szakmai tanácsodat jelezd nekünk az alábbi elérhetőségeken!</p>
+                <p><strong>Email: </strong><a
+                    href="mailto:nagy.bence1@students.jedlik.eu">nagy.bence1@students.jedlik.eu</a></p>
+                <p><strong>Telefonszám:</strong> +36 30 368 8136</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+              </div>
+            </div>
+          </div>
+        </div>
