@@ -1,13 +1,9 @@
 #include <Arduino.h>
 
-const int trigPin1 = 11;
-const int echoPin1 = 12;
-const int trigPin2 = 8;
-const int echoPin2 = 9;
-
-void led(int r, int g, int b);
-
-int i = 0;
+const int trigPin1 = 5;
+const int echoPin1 = 18;
+const int trigPin2 = 22;
+const int echoPin2 = 23;
 
 float duration1, distance1;
 float duration2, distance2;
@@ -17,7 +13,7 @@ void setup() {
   pinMode(echoPin1, INPUT);
   pinMode(trigPin2, OUTPUT);
   pinMode(echoPin2, INPUT);
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {
@@ -47,4 +43,5 @@ void loop() {
     Serial.print("Szenzor 2 távolság: ");
     Serial.print(distance2);
     Serial.println(" cm");
+    delay(100); // Várakozás 1 másodperc
 }
