@@ -15,7 +15,17 @@ AccelStepper motor2(AccelStepper::DRIVER, STEP_PIN2, DIR_PIN2);
 
 int cycleCount = 0;
 float distance = 0;
+long echoDuration = 0;
+long startTime = 0;
 
+void IRAM_ATTR echoChange() {
+  if (digitalRead(echoPin) == HIGH) {
+    startTime = micros();
+  } else {
+    echoDuration = micros() - startTime;
+    startTime = 0;
+  }
+}
 
 void setup() {
   Serial.begin(115200);
@@ -33,6 +43,8 @@ void setup() {
   motor2.setMaxSpeed(600 * microstepp);
   motor2.setAcceleration(30 * microstepp);
   motor2.setSpeed(0);
+
+  attachInterrupt(digitalPinToInterrupt(echoPin), echoChange, CHANGE);
 }
 
 void loop() {
@@ -44,12 +56,12 @@ void loop() {
     digitalWrite(trigPin, HIGH);
     delayMicroseconds(10);
     digitalWrite(trigPin, LOW);
-    long duration = pulseIn(echoPin, HIGH, 30000);
+    unsigned long duration = echoDuration;
     distance = duration * 0.0343 / 2;
     cycleCount = 0;
   }
 
-  float speed = distance * 50;
+  float speed = distance * 100;
 
   motor1.setSpeed(speed);
   motor2.setSpeed(speed);
