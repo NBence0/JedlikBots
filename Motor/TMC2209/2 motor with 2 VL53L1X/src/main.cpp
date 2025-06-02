@@ -47,7 +47,7 @@ void setup() {
   // Motor 1 init
   TMCdriver1.begin();
   TMCdriver1.toff(5);
-  TMCdriver1.rms_current(1200);
+  TMCdriver1.rms_current(1000);
   TMCdriver1.microsteps(256);
   TMCdriver1.en_spreadCycle(false);
   TMCdriver1.pwm_autoscale(true);
@@ -55,7 +55,7 @@ void setup() {
   // Motor 2 init
   TMCdriver2.begin();
   TMCdriver2.toff(5);
-  TMCdriver2.rms_current(1200);
+  TMCdriver2.rms_current(800);
   TMCdriver2.microsteps(256);
   TMCdriver2.en_spreadCycle(false);
   TMCdriver2.pwm_autoscale(true);
