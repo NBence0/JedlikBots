@@ -47,16 +47,16 @@ void setup() {
   // Motor 1 init
   TMCdriver1.begin();
   TMCdriver1.toff(5);
-  TMCdriver1.rms_current(1000);
-  TMCdriver1.microsteps(256);
+  TMCdriver1.microsteps(16);
+  TMCdriver2.rms_current(10);
   TMCdriver1.en_spreadCycle(false);
   TMCdriver1.pwm_autoscale(true);
 
   // Motor 2 init
   TMCdriver2.begin();
   TMCdriver2.toff(5);
-  TMCdriver2.rms_current(800);
-  TMCdriver2.microsteps(256);
+  TMCdriver2.microsteps(16);
+  TMCdriver2.rms_current(10);  // kb. 1.1 A PEAK, 0.8 A RMS
   TMCdriver2.en_spreadCycle(false);
   TMCdriver2.pwm_autoscale(true);
 }
@@ -74,6 +74,7 @@ void loop() {
     TMCdriver1.VACTUAL(i);
     TMCdriver2.VACTUAL(i);
     delay(speedChangeDelay);
+    //Serial.println(TMCdriver2.cs2rms(TMCdriver2.cs_actual()));
   }
 
 
