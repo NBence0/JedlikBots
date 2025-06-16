@@ -1,18 +1,23 @@
 #include <Arduino.h>
+#include "ColorSensor.h"
+#include "LED.h"
 
-// put function declarations here:
-int myFunction(int, int);
+ColorSensor sensor;
+LED led(38, 8);  // pin: 38, LED-ek száma: 8
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+    Serial.begin(115200);
+    sensor.begin();
+    led.begin();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+    RGB color = sensor.readColor();
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+    Serial.print("R: "); Serial.println(color.r);
+    Serial.print("G: "); Serial.println(color.g);
+    Serial.print("B: "); Serial.println(color.b);
+
+    led.colorplay(color.r, color.g, color.b);
+    delay(500);
 }
