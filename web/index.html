@@ -298,6 +298,49 @@
       text-align: center;
     }
 
+    /* Sponsors Section */
+    .sponsor-logo-wrapper {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative; /* Needed for overlay links */
+    }
+
+    .sponsor-logo-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(74, 198, 210, 0.2);
+    }
+
+    .sponsor-logo {
+      max-width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+    
+    .sponsor-overlay-link {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 50%;
+    }
+
+    .sponsor-overlay-link.left-link {
+        left: 0;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .sponsor-overlay-link.right-link {
+        right: 0;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
     /* Footer styles */
     .footer {
       background-color: var(--medium-blue);
@@ -497,7 +540,7 @@
         </div>
       </div>
       <!-- Video Section -->
-      <div class="project-showcase mt-5 pt-3" id="projects">
+      <div class="project-showcase mt-5 pt-3">
         <div class="row justify-content-center g-4">
           <div class="col-lg-8 col-md-10 col-sm-12">
             <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
@@ -783,3 +826,47 @@
             </div>
           </div>
         </div>
+    
+    <!-- Sponsors Section -->
+    <div class="content-box mt-5" id="sponsors">
+        <h2 class="text-center" style="color: var(--turquoise); font-size: 2.5rem;">Támogatóink</h2>
+        <div class="row align-items-stretch justify-content-center text-center g-4 mt-3">
+            <!-- Main Sponsor -->
+            <div class="col-md-6">
+                <h3 class="mb-3" style="color: var(--light-text);">Fő Támogató</h3>
+                <div class="sponsor-logo-wrapper">
+                    <img src="sponsors/malnapc-pi-shop.svg" alt="Málna PC és Raspberry Pi bolt logó" class="sponsor-logo">
+                    <!-- Overlay link for the left half -->
+                    <a href="https://malnapc.hu/" target="_blank" rel="noopener noreferrer" class="sponsor-overlay-link left-link" aria-label="Látogass el a Málna PC oldalára" title="Málna PC"></a>
+                    <!-- Overlay link for the right half -->
+                    <a href="https://pi-shop.hu/" target="_blank" rel="noopener noreferrer" class="sponsor-overlay-link right-link" aria-label="Látogass el az PI-Shop oldalára" title="PI-Shop"></a>
+                </div>
+            </div>
+            <!-- Other Sponsor -->
+            <div class="col-md-6">
+                <h3 class="mb-3" style="color: var(--light-text);">További Támogató</h3>
+                <a href="https://master3d.hu/" target="_blank" rel="noopener noreferrer" title="Master3D">
+                    <div class="sponsor-logo-wrapper">
+                        <img src="sponsors/master3d.svg" alt="Master3D logó" class="sponsor-logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  </div> <!-- Closing main container -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 JedlikBots. Minden jog fenntartva.</p>
+      <p>Győri Jedlik Ányos Technikum Robotika Csapata</p>
+      <p>
+        <a href="mailto:nagy.bence1@students.jedlik.eu" class="custom-link">Kapcsolatfelvétel</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
