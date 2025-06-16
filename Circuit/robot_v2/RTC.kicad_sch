@@ -801,7 +801,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 125.73) (xy 144.78 125.73)
+			(xy 104.14 125.73) (xy 144.78 125.73)
 		)
 		(stroke
 			(width 0)
@@ -811,7 +811,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 140.97) (xy 102.87 140.97)
+			(xy 106.68 140.97) (xy 104.14 140.97)
 		)
 		(stroke
 			(width 0)
@@ -931,6 +931,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 125.73) (xy 104.14 140.97)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "9d604e88-ac88-40dc-84a0-041558e22073")
+	)
+	(wire
+		(pts
 			(xy 138.43 143.51) (xy 179.07 143.51)
 		)
 		(stroke
@@ -981,7 +991,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 135.89) (xy 102.87 135.89)
+			(xy 119.38 135.89) (xy 116.84 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1001,7 +1011,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 138.43) (xy 102.87 138.43)
+			(xy 119.38 138.43) (xy 116.84 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1073,28 +1083,6 @@
 		)
 		(uuid "927b1eb6-e6f4-412f-9a58-8dc81a4889a0")
 	)
-	(label "SCL"
-		(at 106.68 138.43 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0588e431-d56d-4df4-9ffd-6cd4bba412cb")
-	)
-	(label "SDA"
-		(at 106.68 135.89 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8019bb27-2172-4d60-932e-7bd55a890b6c")
-	)
 	(label "+3.3v"
 		(at 105.41 125.73 0)
 		(fields_autoplaced yes)
@@ -1106,20 +1094,21 @@
 		)
 		(uuid "b14aea3f-7e9b-4416-ac0e-1c7beb3cd27c")
 	)
-	(label "+3.3v"
-		(at 106.68 140.97 0)
+	(hierarchical_label "fan_sda"
+		(shape input)
+		(at 116.84 135.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
-		(uuid "f1128c56-7c01-4d79-834b-ceab4dc35180")
+		(uuid "2dacd459-1224-4af0-8ed0-962f0fff3e44")
 	)
 	(hierarchical_label "+3.3v"
 		(shape input)
-		(at 102.87 125.73 180)
+		(at 104.14 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1129,7 +1118,19 @@
 		)
 		(uuid "57121f1d-c971-4830-b974-00f7d706f0c9")
 	)
-	(hierarchical_label "+12v"
+	(hierarchical_label "fan_scl"
+		(shape input)
+		(at 116.84 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9590c31b-97db-45f2-925c-b4b9a0aac257")
+	)
+	(hierarchical_label "fan power"
 		(shape input)
 		(at 160.02 119.38 180)
 		(fields_autoplaced yes)

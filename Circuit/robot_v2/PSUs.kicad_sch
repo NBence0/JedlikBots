@@ -6096,6 +6096,139 @@
 		)
 	)
 	(symbol
+		(lib_id "CM4IO:AP64351")
+		(at 215.9 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ded4d3d-89fd-45cb-b788-507617a6d1c3")
+		(property "Reference" "U48"
+			(at 216.535 126.6444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP64501SP-13"
+			(at 216.535 128.9558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP64501.pdf"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" "Digikey"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "31-AP64501SP-13CT-ND"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" "AP64501SP-13"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field7" "Diodes"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" "Buck Switching Regulator IC Positive Adjustable 0.8V 1 Output 5A 8-SOIC (0.154\", 3.90mm Width) Exposed Pad"
+			(at 215.9 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8594bb6c-3321-433a-bbac-177a68ed3922")
+		)
+		(pin "2"
+			(uuid "658b9630-1977-4ed4-ad15-dfabf11eafad")
+		)
+		(pin "3"
+			(uuid "f1d0a8df-aaa4-418f-8dc1-53681486080f")
+		)
+		(pin "4"
+			(uuid "036790f0-0ed8-4d54-ba11-a21ada9edfd9")
+		)
+		(pin "5"
+			(uuid "5e744131-e6d1-45fa-a0a6-68b309d42a40")
+		)
+		(pin "6"
+			(uuid "bf9414e9-b94c-4839-b3b3-1c356dcc1655")
+		)
+		(pin "7"
+			(uuid "e8f0f9bf-f8a1-4cc0-b1f3-8a94420479ae")
+		)
+		(pin "8"
+			(uuid "fa7d4ffe-8d68-4a99-81c7-c8ad792c8ac7")
+		)
+		(pin "9"
+			(uuid "5e6eb892-787c-4d5d-b2f1-d9d9ea244739")
+		)
+		(instances
+			(project "CM4IOv5"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
+					(reference "U48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 105.664 147.574 0)
 		(unit 1)
