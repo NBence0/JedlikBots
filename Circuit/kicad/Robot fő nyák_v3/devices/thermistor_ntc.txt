@@ -1,0 +1,11 @@
+PACKAGE 'thermistor_ntc'
+CLASS IC
+PINCOUNT 2
+PINORDER MAIN ,
+	?__1,
+	?__2
+FUNCTION MAIN MAIN ,
+	1,
+	2
+PACKAGEPROP VALUE Thermistor_NTC
+END
