@@ -1,0 +1,23 @@
+PACKAGE 'msop-8_3x3mm_p0_65mm'
+CLASS IC
+PINCOUNT 8
+PINORDER MAIN ,
+	SDA__1,
+	SCL__2,
+	VDD__3,
+	GND__4,
+	PWM__5,
+	TACH__6,
+	CLK__7,
+	nALERT__8
+FUNCTION MAIN MAIN ,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8
+PACKAGEPROP VALUE 'EMC2301-1-ACZL-TR'
+END

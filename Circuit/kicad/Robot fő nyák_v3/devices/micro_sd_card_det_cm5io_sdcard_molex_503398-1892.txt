@@ -1,0 +1,29 @@
+PACKAGE 'sdcard_molex_503398-1892'
+CLASS IC
+PINCOUNT 11
+PINORDER MAIN ,
+	DAT2__1,
+	DAT3/CD__2,
+	CMD__3,
+	VDD__4,
+	CLK__5,
+	VSS__6,
+	DAT0__7,
+	DAT1__8,
+	DET_B__9,
+	DET_A__10,
+	SHIELD__11
+FUNCTION MAIN MAIN ,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	9,
+	10,
+	11
+PACKAGEPROP VALUE Micro_SD_Card_Det
+END

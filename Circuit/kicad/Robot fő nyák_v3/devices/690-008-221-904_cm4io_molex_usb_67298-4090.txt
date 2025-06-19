@@ -1,0 +1,31 @@
+PACKAGE 'molex_usb_67298-4090'
+CLASS IC
+PINCOUNT 12
+PINORDER MAIN ,
+	VBUS?__1,
+	D-?__2,
+	D+?__3,
+	GND?__4,
+	VBUS__5,
+	D-__6,
+	D+__7,
+	GND__8,
+	MT1__MT1,
+	MT2__MT2,
+	MT3__MT3,
+	MT4__MT4
+FUNCTION MAIN MAIN ,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	MT1,
+	MT2,
+	MT3,
+	MT4
+PACKAGEPROP VALUE '690-008-221-904'
+END
