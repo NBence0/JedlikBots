@@ -1,0 +1,27 @@
+PACKAGE 'msop-10_3x3mm_p0_5mm'
+CLASS IC
+PINCOUNT 10
+PINORDER MAIN ,
+	VCC__1,
+	SEL__2,
+	D_P__3,
+	D_N__4,
+	GND__5,
+	HSD0_M__6,
+	HSD0_P__7,
+	HSD1_M__8,
+	HSD1_P__9,
+	nOE__10
+FUNCTION MAIN MAIN ,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	9,
+	10
+PACKAGEPROP VALUE FSUSB42MUX
+END
