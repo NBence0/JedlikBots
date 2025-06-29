@@ -1,0 +1,43 @@
+PACKAGE 'module_tmc2209_silentstepstick'
+CLASS IC
+PINCOUNT 18
+PINORDER MAIN ,
+	GND__1,
+	VIO/VDD__2,
+	M1B__3,
+	M2B__4,
+	M2A__5,
+	M1A__6,
+	GND__7,
+	VMOT__8,
+	DIR__9,
+	STEP__10,
+	MISO__11,
+	CLK__12,
+	Chip_select__13,
+	Spi_clk__14,
+	MOSI__15,
+	Enable__16,
+	DIAG__17,
+	AIN__18
+FUNCTION MAIN MAIN ,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	9,
+	10,
+	11,
+	12,
+	13,
+	14,
+	15,
+	16,
+	17,
+	18
+PACKAGEPROP VALUE TMC2240_SILENTSTEPSTICK
+END
