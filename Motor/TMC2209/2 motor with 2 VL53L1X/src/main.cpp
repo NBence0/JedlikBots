@@ -12,6 +12,9 @@
 #define STEP_PIN2 9
 #define TX_PIN2   16
 
+
+
+
 #define DRIVER_ADDRESS 0b00  // Ha külön címen vannak, ezt módosítani kell!
 #define R_SENSE 0.11f
 
@@ -30,6 +33,8 @@ bool dir = false;
 
 void setup() {
   Serial.begin(115200);
+  while (!Serial) delay(10);  // Vár a soros kapcsolat létrejöttére
+  Serial.println(">> Program elindult!");
 
   // UART init
   TMCSerial1.begin(115200, SERIAL_8N1, -1, TX_PIN1);
@@ -48,7 +53,7 @@ void setup() {
   TMCdriver1.begin();
   TMCdriver1.toff(5);
   TMCdriver1.microsteps(16);
-  TMCdriver2.rms_current(10);
+  TMCdriver1.rms_current(800);
   TMCdriver1.en_spreadCycle(false);
   TMCdriver1.pwm_autoscale(true);
 
@@ -56,13 +61,11 @@ void setup() {
   TMCdriver2.begin();
   TMCdriver2.toff(5);
   TMCdriver2.microsteps(16);
-  TMCdriver2.rms_current(10);  // kb. 1.1 A PEAK, 0.8 A RMS
+  TMCdriver2.rms_current(800);  // kb. 1.1 A PEAK, 0.8 A RMS
   TMCdriver2.en_spreadCycle(false);
   TMCdriver2.pwm_autoscale(true);
 }
-
-void loop() {
-
+/*
   for (long i = 0; i <= maxSpeed; i += accel) {
     TMCdriver1.VACTUAL(i);
     TMCdriver2.VACTUAL(i);
@@ -81,4 +84,27 @@ void loop() {
   dir = !dir;
   TMCdriver1.shaft(dir);
   TMCdriver2.shaft(dir);
+  */
+void loop() {
+  TMCdriver1.VACTUAL(5000);
+  TMCdriver2.VACTUAL(5000);
+  delay(4000);
+
+
+  TMCdriver1.VACTUAL(-5000);
+  TMCdriver2.VACTUAL(-5000);
+  delay(4000);
+
+
+  TMCdriver1.VACTUAL(5000);
+  TMCdriver2.VACTUAL(-5000);
+  delay(2000);  // jobbra forgás
+
+  TMCdriver1.VACTUAL(-5000);
+  TMCdriver2.VACTUAL(5000);
+  delay(2000);
+
+  TMCdriver1.VACTUAL(0);
+  TMCdriver2.VACTUAL(0);
+  delay(1000);  // pihenés
 }
