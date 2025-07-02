@@ -13,15 +13,15 @@ while True:
     center_x = int(width / 2)
     center_y = int(height / 2)
 
-    #pixel_center = hsv_frame[center_y, center_x]
-    # h = pixel_center[0]
-    region = hsv_frame[center_y-2:center_y+3, center_x-2:center_x+3]
-    h_values = region[:, :, 0].flatten()
-    
+    pixel_center = hsv_frame[center_y, center_x]
+    mode_h = pixel_center[0]
+    #region = hsv_frame[center_y-2:center_y+3, center_x-2:center_x+3]
+    #h_values = region[:, :, 0].flatten()
+    print(pixel_center)
     
 
-    unique, counts = np.unique(h_values, return_counts=True)
-    mode_h = unique[np.argmax(counts)]
+    #unique, counts = np.unique(h_values, return_counts=True)
+    #mode_h = unique[np.argmax(counts)]
 
     color = "Unknown"
     if mode_h < 5 or mode_h > 165:
