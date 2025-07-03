@@ -1,7 +1,7 @@
 #include <Adafruit_NeoPixel.h>
 #include <Arduino.h>
 
-#define LED_PIN     38
+#define LED_PIN     3
 #define LED_COUNT   8      // LED-ek száma
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
