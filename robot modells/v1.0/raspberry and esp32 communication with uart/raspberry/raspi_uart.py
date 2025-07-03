@@ -1,16 +1,13 @@
 import serial
 import time
 
-# Nyisd meg a serial portot – az alap UART eszköz: /dev/serial0
-ser = serial.Serial('/dev/serial0', 115200, timeout=1)
-time.sleep(2)  # ESP32 feléledési idő
+ser = serial.Serial("/dev/serial0", 115200, timeout=1)
+print("Kérés-válasz üzemmód")
 
-# Küldj egy parancsot az ESP32-nek
-ser.write(b'GET\n')
+while True:
+    ser.write(b"GET\n")  # Kérés küldése
+    time.sleep(0.01)      # Várjuk a választ
 
-# Várj és olvass választ
-response = ser.readline().decode().strip()
-
-print(f"Kapott szám az ESP32-től: {response}")
-
-ser.close()
+    response = ser.readline().decode().strip()
+    if response:
+        print(f"Válasz az ESP32-től: {response}")
