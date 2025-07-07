@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "4c053b6c-4df0-4b59-ae34-535bf2ba3b79")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -162,11 +164,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -234,10 +241,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -258,7 +277,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -270,22 +289,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -331,9 +338,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -452,10 +462,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Motor:Stepper_Motor_unipolar_6pin"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -537,70 +550,10 @@
 				)
 			)
 			(symbol "Stepper_Motor_unipolar_6pin_0_1"
-				(arc
-					(start -4.445 -2.54)
-					(mid -3.8127 -1.905)
-					(end -4.445 -1.27)
-					(stroke
-						(width 0)
-						(type default)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -4.445 2.54)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -4.445 -1.27)
-					(mid -3.8127 -0.635)
-					(end -4.445 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -4.445 0)
-					(mid -3.8127 0.635)
-					(end -4.445 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -4.445 1.27)
-					(mid -3.8127 1.905)
-					(end -4.445 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 4.445)
-					(mid -1.905 3.8127)
-					(end -1.27 4.445)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.27 4.445)
-					(mid -0.635 3.8127)
-					(end 0 4.445)
 					(stroke
 						(width 0)
 						(type default)
@@ -621,10 +574,46 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -4.445 2.54)
+				(arc
+					(start -4.445 2.54)
+					(mid -3.8127 1.905)
+					(end -4.445 1.27)
+					(stroke
+						(width 0)
+						(type default)
 					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -4.445 1.27)
+					(mid -3.8127 0.635)
+					(end -4.445 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -4.445 0)
+					(mid -3.8127 -0.635)
+					(end -4.445 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -4.445 -1.27)
+					(mid -3.8127 -1.905)
+					(end -4.445 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -657,10 +646,22 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 4.445) (xy 0 5.08)
+				(arc
+					(start -1.27 4.445)
+					(mid -1.905 3.8127)
+					(end -2.54 4.445)
+					(stroke
+						(width 0)
+						(type default)
 					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 4.445)
+					(mid -0.635 3.8127)
+					(end -1.27 4.445)
 					(stroke
 						(width 0)
 						(type default)
@@ -671,7 +672,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 4.445) (xy 2.54 5.08)
+						(xy 0 4.445) (xy 0 5.08)
 					)
 					(stroke
 						(width 0)
@@ -693,9 +694,9 @@
 					)
 				)
 				(arc
-					(start 0 4.445)
+					(start 1.27 4.445)
 					(mid 0.635 3.8127)
-					(end 1.27 4.445)
+					(end 0 4.445)
 					(stroke
 						(width 0)
 						(type default)
@@ -705,9 +706,21 @@
 					)
 				)
 				(arc
-					(start 1.27 4.445)
+					(start 2.54 4.445)
 					(mid 1.905 3.8127)
-					(end 2.54 4.445)
+					(end 1.27 4.445)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 4.445) (xy 2.54 5.08)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -718,60 +731,6 @@
 				)
 			)
 			(symbol "Stepper_Motor_unipolar_6pin_1_1"
-				(pin passive line
-					(at -2.54 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 7.62 270)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -826,7 +785,62 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tmc5060:TMC2209_SILENTSTEPSTICK"
 			(pin_names
@@ -1011,24 +1025,6 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -17.78 5.08 0)
 					(length 5.08)
@@ -1040,24 +1036,6 @@
 						)
 					)
 					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -17.78 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1083,8 +1061,80 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
 			(symbol "TMC2209_SILENTSTEPSTICK_1_0"
+				(pin input line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "Enable"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -17.78 -5.08 0)
 					(length 5.08)
@@ -1096,42 +1146,6 @@
 						)
 					)
 					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -10.16 0)
-					(length 5.08)
-					(name "Chip_select"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "13"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1158,16 +1172,16 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -2.54 0)
+					(at -17.78 -10.16 0)
 					(length 5.08)
-					(name "MOSI"
+					(name "Chip_select"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "15"
+					(number "13"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1175,17 +1189,53 @@
 						)
 					)
 				)
-				(pin input line
-					(at -17.78 10.16 0)
+				(pin bidirectional line
+					(at -17.78 -12.7 0)
 					(length 5.08)
-					(name "Enable"
+					(name "CLK"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "16"
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 17.78 180)
+					(length 5.08)
+					(name "VMOT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 15.24 180)
+					(length 5.08)
+					(name "VIO/VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1222,24 +1272,6 @@
 						)
 					)
 					(number "18"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 15.24 180)
-					(length 5.08)
-					(name "VIO/VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1319,26 +1351,97 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 17.78 17.78 180)
-					(length 5.08)
-					(name "VMOT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 19.05 16.51)
+		(end 143.51 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 56d976d5-50d9-46b7-8b84-2d857e74dce6)
+	)
+	(rectangle
+		(start 152.4 90.17)
+		(end 276.86 162.56)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7da71b8d-33e4-4a80-93e9-27d84d56c2c4)
+	)
+	(rectangle
+		(start 152.4 16.51)
+		(end 276.86 85.09)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid acf1c253-4221-4188-a637-7e3dd02af580)
+	)
+	(rectangle
+		(start 19.05 96.52)
+		(end 143.51 168.91)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid cf125b3b-db57-430f-bede-a0aa9a5f7b7b)
+	)
+	(text "M2_control with TMC2240/TMC5160"
+		(exclude_from_sim no)
+		(at 214.884 21.082 0)
+		(effects
+			(font
+				(size 2.54 2.54)
 			)
 		)
+		(uuid "9242ce84-e904-43b2-b680-70b6d8b7e7de")
+	)
+	(text "M1_control with TMC2240/TMC5160"
+		(exclude_from_sim no)
+		(at 81.534 21.082 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "a0b169ef-9b3c-46af-80ba-e2cedb8345fc")
+	)
+	(text "M4_control with TMC2240/TMC5160"
+		(exclude_from_sim no)
+		(at 214.884 94.742 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "dd10a527-5027-460c-a78e-8285bc841b18")
+	)
+	(text "M3_control with TMC2240/TMC5160"
+		(exclude_from_sim no)
+		(at 81.534 101.092 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f4d2ebe6-4315-4ad1-9eb0-1a426224347b")
 	)
 	(junction
 		(at 110.49 33.02)
@@ -2700,98 +2803,9 @@
 		)
 		(uuid "fe790500-9e78-420c-86e7-34a91e3d520c")
 	)
-	(rectangle
-		(start 19.05 16.51)
-		(end 143.51 88.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 56d976d5-50d9-46b7-8b84-2d857e74dce6)
-	)
-	(rectangle
-		(start 152.4 90.17)
-		(end 276.86 162.56)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7da71b8d-33e4-4a80-93e9-27d84d56c2c4)
-	)
-	(rectangle
-		(start 152.4 16.51)
-		(end 276.86 85.09)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid acf1c253-4221-4188-a637-7e3dd02af580)
-	)
-	(rectangle
-		(start 19.05 96.52)
-		(end 143.51 168.91)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid cf125b3b-db57-430f-bede-a0aa9a5f7b7b)
-	)
-	(text "M2_control with TMC2240/TMC5160"
-		(exclude_from_sim no)
-		(at 214.884 21.082 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "9242ce84-e904-43b2-b680-70b6d8b7e7de")
-	)
-	(text "M1_control with TMC2240/TMC5160"
-		(exclude_from_sim no)
-		(at 81.534 21.082 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "a0b169ef-9b3c-46af-80ba-e2cedb8345fc")
-	)
-	(text "M4_control with TMC2240/TMC5160"
-		(exclude_from_sim no)
-		(at 214.884 94.742 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "dd10a527-5027-460c-a78e-8285bc841b18")
-	)
-	(text "M3_control with TMC2240/TMC5160"
-		(exclude_from_sim no)
-		(at 81.534 101.092 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "f4d2ebe6-4315-4ad1-9eb0-1a426224347b")
-	)
 	(hierarchical_label "M4_DIR"
 		(shape input)
 		(at 172.72 133.35 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2803,7 +2817,6 @@
 	(hierarchical_label "tmc2240_vio"
 		(shape input)
 		(at 92.71 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2815,7 +2828,6 @@
 	(hierarchical_label "M4_CS"
 		(shape input)
 		(at 172.72 146.05 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2827,7 +2839,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 34.29 118.11 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2839,7 +2850,6 @@
 	(hierarchical_label "TMC_SPI_CLK"
 		(shape input)
 		(at 172.72 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2851,7 +2861,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 35.56 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2863,7 +2872,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 74.93 158.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2875,7 +2883,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 208.28 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2887,7 +2894,6 @@
 	(hierarchical_label "TMC_MISO"
 		(shape input)
 		(at 39.37 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2899,7 +2905,6 @@
 	(hierarchical_label "TMC_MISO"
 		(shape input)
 		(at 39.37 147.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2911,7 +2916,6 @@
 	(hierarchical_label "M3_EN"
 		(shape input)
 		(at 29.21 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2923,7 +2927,6 @@
 	(hierarchical_label "tmc2240_vio"
 		(shape input)
 		(at 92.71 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2935,7 +2938,6 @@
 	(hierarchical_label "M3_vmot"
 		(shape input)
 		(at 77.47 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2947,7 +2949,6 @@
 	(hierarchical_label "M2_STEP"
 		(shape input)
 		(at 172.72 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2959,7 +2960,6 @@
 	(hierarchical_label "M4_STEP"
 		(shape input)
 		(at 172.72 130.81 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2971,7 +2971,6 @@
 	(hierarchical_label "M1_STEP"
 		(shape input)
 		(at 39.37 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2983,7 +2982,6 @@
 	(hierarchical_label "M2_DIR"
 		(shape input)
 		(at 172.72 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2995,7 +2993,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 74.93 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3007,7 +3004,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 167.64 111.76 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3019,7 +3015,6 @@
 	(hierarchical_label "TMC_MOSI"
 		(shape input)
 		(at 172.72 138.43 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3031,7 +3026,6 @@
 	(hierarchical_label "TMC_MOSI"
 		(shape input)
 		(at 39.37 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3043,7 +3037,6 @@
 	(hierarchical_label "M2_vmot"
 		(shape input)
 		(at 210.82 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3055,7 +3048,6 @@
 	(hierarchical_label "M2_CS"
 		(shape input)
 		(at 172.72 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3067,7 +3059,6 @@
 	(hierarchical_label "tmc2240_vio"
 		(shape input)
 		(at 226.06 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3079,7 +3070,6 @@
 	(hierarchical_label "M3_DIR"
 		(shape input)
 		(at 39.37 139.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3091,7 +3081,6 @@
 	(hierarchical_label "TMC_SPI_CLK"
 		(shape input)
 		(at 39.37 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3103,7 +3092,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 74.93 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3115,7 +3103,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 208.28 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3127,7 +3114,6 @@
 	(hierarchical_label "M1_DIR"
 		(shape input)
 		(at 39.37 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3139,7 +3125,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 167.64 38.1 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3151,7 +3136,6 @@
 	(hierarchical_label "TMC_SPI_CLK"
 		(shape input)
 		(at 172.72 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3163,7 +3147,6 @@
 	(hierarchical_label "TMC_MISO"
 		(shape input)
 		(at 172.72 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3175,7 +3158,6 @@
 	(hierarchical_label "M1_CS"
 		(shape input)
 		(at 39.37 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3187,7 +3169,6 @@
 	(hierarchical_label "TMC_MISO"
 		(shape input)
 		(at 172.72 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3199,7 +3180,6 @@
 	(hierarchical_label "M1_EN"
 		(shape input)
 		(at 29.21 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3211,7 +3191,6 @@
 	(hierarchical_label "M4_vmot"
 		(shape input)
 		(at 210.82 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3223,7 +3202,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 208.28 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3235,7 +3213,6 @@
 	(hierarchical_label "M4_EN"
 		(shape input)
 		(at 162.56 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3247,7 +3224,6 @@
 	(hierarchical_label "M3_CS"
 		(shape input)
 		(at 39.37 152.4 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3259,7 +3235,6 @@
 	(hierarchical_label "TMC_MOSI"
 		(shape input)
 		(at 39.37 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3271,7 +3246,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 74.93 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3283,7 +3257,6 @@
 	(hierarchical_label "TMC_GND"
 		(shape input)
 		(at 208.28 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3295,7 +3268,6 @@
 	(hierarchical_label "TMC_SPI_CLK"
 		(shape input)
 		(at 39.37 149.86 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3307,7 +3279,6 @@
 	(hierarchical_label "M3_STEP"
 		(shape input)
 		(at 39.37 137.16 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3319,7 +3290,6 @@
 	(hierarchical_label "M2_EN"
 		(shape input)
 		(at 162.56 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3331,7 +3301,6 @@
 	(hierarchical_label "tmc2240_vio"
 		(shape input)
 		(at 226.06 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3343,7 +3312,6 @@
 	(hierarchical_label "TMC_MOSI"
 		(shape input)
 		(at 172.72 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3355,7 +3323,6 @@
 	(hierarchical_label "M1_vmot"
 		(shape input)
 		(at 77.47 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
