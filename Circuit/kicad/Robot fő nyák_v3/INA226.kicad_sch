@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "dc5cc641-7a5f-4588-a4ad-47f329473fe4")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -125,6 +127,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Sensor_Energy:INA226"
 			(exclude_from_sim no)
@@ -206,16 +209,16 @@
 			)
 			(symbol "INA226_1_1"
 				(pin input line
-					(at 10.16 7.62 180)
+					(at -10.16 7.62 0)
 					(length 2.54)
-					(name "A1"
+					(name "Vbus"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -242,70 +245,16 @@
 					)
 				)
 				(pin input line
-					(at 10.16 5.08 180)
+					(at -10.16 -5.08 0)
 					(length 2.54)
-					(name "A0"
+					(name "Vin-"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 -7.62 180)
-					(length 2.54)
-					(name "~{Alert}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -350,16 +299,16 @@
 					)
 				)
 				(pin input line
-					(at -10.16 7.62 0)
+					(at 10.16 7.62 180)
 					(length 2.54)
-					(name "Vbus"
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -368,16 +317,70 @@
 					)
 				)
 				(pin input line
-					(at -10.16 -5.08 0)
+					(at 10.16 5.08 180)
 					(length 2.54)
-					(name "Vin-"
+					(name "A0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "~{Alert}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -386,6 +389,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -465,7 +469,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -482,6 +487,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -3847,7 +3853,6 @@
 	(hierarchical_label "+1001110"
 		(shape input)
 		(at 76.2 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3859,7 +3864,6 @@
 	(hierarchical_label "+1000001"
 		(shape input)
 		(at 212.09 27.94 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3871,7 +3875,6 @@
 	(hierarchical_label "+1000100"
 		(shape input)
 		(at 81.28 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3883,7 +3886,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 78.74 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3895,7 +3897,6 @@
 	(hierarchical_label "-1000111"
 		(shape input)
 		(at 109.22 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3907,7 +3908,6 @@
 	(hierarchical_label "+1000000"
 		(shape input)
 		(at 39.37 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3919,7 +3919,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 36.83 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3931,7 +3930,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 31.75 52.07 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3943,7 +3941,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 109.22 175.26 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3955,7 +3952,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 252.73 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3967,7 +3963,6 @@
 	(hierarchical_label "-1000011"
 		(shape input)
 		(at 248.92 27.94 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3979,7 +3974,6 @@
 	(hierarchical_label "-1001011"
 		(shape input)
 		(at 151.13 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3991,7 +3985,6 @@
 	(hierarchical_label "+1001101"
 		(shape input)
 		(at 129.54 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4003,7 +3996,6 @@
 	(hierarchical_label "-1000001"
 		(shape input)
 		(at 204.47 27.94 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4015,7 +4007,6 @@
 	(hierarchical_label "-1001100"
 		(shape input)
 		(at 158.75 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4027,7 +4018,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 163.83 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4039,7 +4029,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 207.01 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4051,7 +4040,6 @@
 	(hierarchical_label "+1000110"
 		(shape input)
 		(at 214.63 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4063,7 +4051,6 @@
 	(hierarchical_label "-1001010"
 		(shape input)
 		(at 26.67 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4075,7 +4062,6 @@
 	(hierarchical_label "-1001101"
 		(shape input)
 		(at 121.92 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4087,7 +4073,6 @@
 	(hierarchical_label "+1000101"
 		(shape input)
 		(at 44.45 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4099,7 +4084,6 @@
 	(hierarchical_label "+1001100"
 		(shape input)
 		(at 166.37 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4111,7 +4095,6 @@
 	(hierarchical_label "-1001110"
 		(shape input)
 		(at 68.58 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4123,7 +4106,6 @@
 	(hierarchical_label "+1000010"
 		(shape input)
 		(at 171.45 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4135,7 +4117,6 @@
 	(hierarchical_label "+1001011"
 		(shape input)
 		(at 158.75 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4147,7 +4128,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 68.58 175.26 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4159,7 +4139,6 @@
 	(hierarchical_label "-1000000"
 		(shape input)
 		(at 31.75 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4171,7 +4150,6 @@
 	(hierarchical_label "+1001010"
 		(shape input)
 		(at 34.29 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4183,7 +4161,6 @@
 	(hierarchical_label "+1000011"
 		(shape input)
 		(at 256.54 27.94 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4195,7 +4172,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 116.84 52.07 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4207,7 +4183,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 204.47 53.34 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4219,7 +4194,6 @@
 	(hierarchical_label "-1001000"
 		(shape input)
 		(at 116.84 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4231,7 +4205,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 158.75 52.07 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4243,7 +4216,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 121.92 114.3 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4255,7 +4227,6 @@
 	(hierarchical_label "-1001001"
 		(shape input)
 		(at 78.74 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4267,7 +4238,6 @@
 	(hierarchical_label "+1001001"
 		(shape input)
 		(at 86.36 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4279,7 +4249,6 @@
 	(hierarchical_label "-1000100"
 		(shape input)
 		(at 73.66 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4291,7 +4260,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 73.66 52.07 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4303,7 +4271,6 @@
 	(hierarchical_label "-1000101"
 		(shape input)
 		(at 36.83 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4315,7 +4282,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 26.67 175.26 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4327,7 +4293,6 @@
 	(hierarchical_label "-1000010"
 		(shape input)
 		(at 163.83 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4339,7 +4304,6 @@
 	(hierarchical_label "-1001111"
 		(shape input)
 		(at 252.73 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4351,7 +4315,6 @@
 	(hierarchical_label "+1001000"
 		(shape input)
 		(at 124.46 26.67 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4363,7 +4326,6 @@
 	(hierarchical_label "+1001111"
 		(shape input)
 		(at 260.35 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4375,7 +4337,6 @@
 	(hierarchical_label "+1000111"
 		(shape input)
 		(at 116.84 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4387,7 +4348,6 @@
 	(hierarchical_label "-1000110"
 		(shape input)
 		(at 207.01 88.9 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4399,7 +4359,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 248.92 53.34 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4411,7 +4370,6 @@
 	(hierarchical_label "alert out"
 		(shape input)
 		(at 151.13 175.26 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
