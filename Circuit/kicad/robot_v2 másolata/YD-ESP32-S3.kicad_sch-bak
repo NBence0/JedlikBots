@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "3e741f41-1c48-4428-aa59-0b7f225f51d0")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers hide)
@@ -124,6 +124,152 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:FerriteBead"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
 					(name "~"
 						(effects
 							(font
@@ -1982,16 +2128,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 77.47) (xy 207.01 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b4b7aab-ef6b-4eeb-a3a2-f374f7aba330")
-	)
-	(wire
-		(pts
 			(xy 140.97 100.33) (xy 140.97 128.27)
 		)
 		(stroke
@@ -2072,6 +2208,16 @@
 	)
 	(wire
 		(pts
+			(xy 350.52 88.9) (xy 341.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b067317-16b9-4a91-a418-0a6bea6b6f0d")
+	)
+	(wire
+		(pts
 			(xy 189.23 107.95) (xy 193.04 107.95)
 		)
 		(stroke
@@ -2089,16 +2235,6 @@
 			(type default)
 		)
 		(uuid "4e9904aa-3f51-454b-a308-f63752d222b9")
-	)
-	(wire
-		(pts
-			(xy 189.23 77.47) (xy 199.39 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f2d3c77-690b-4e96-8f4d-0b62a3f308dc")
 	)
 	(wire
 		(pts
@@ -2142,6 +2278,16 @@
 	)
 	(wire
 		(pts
+			(xy 326.39 88.9) (xy 334.01 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c3e853a-a1bf-4987-b65e-e253d54ab5cb")
+	)
+	(wire
+		(pts
 			(xy 101.6 151.13) (xy 101.6 144.78)
 		)
 		(stroke
@@ -2179,16 +2325,6 @@
 			(type default)
 		)
 		(uuid "97549fa0-ac8b-4608-be83-3a27151a4eb4")
-	)
-	(wire
-		(pts
-			(xy 213.36 87.63) (xy 213.36 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b930241-fc93-40b1-809a-833beb11db84")
 	)
 	(wire
 		(pts
@@ -2445,110 +2581,176 @@
 	)
 	(global_label "Motor 4 power"
 		(shape input)
-		(at 226.06 130.81 180)
+		(at 326.39 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "3e2fd4cf-84e5-401e-a51f-b9520db98801")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.0704 130.81 0)
+			(at 343.3796 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Motor 2 power"
 		(shape input)
-		(at 226.06 125.73 180)
+		(at 326.39 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "5cdcf4da-b458-4e44-ba75-e2900ab8179e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.0704 125.73 0)
+			(at 343.3796 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TMC_MOSI"
+		(shape input)
+		(at 326.39 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "743b62ca-8fbc-4163-b5f9-6d8031214381")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 338.7231 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "TMC_VIO"
 		(shape input)
-		(at 226.06 119.38 180)
+		(at 326.39 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "813829c6-0795-407f-b0bf-4436c72aefda")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.2992 119.38 0)
+			(at 337.1508 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Motor 1 power"
 		(shape input)
-		(at 226.06 123.19 180)
+		(at 326.39 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "ad68eb01-0093-4b0c-a10c-424e6cad3749")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.0704 123.19 0)
+			(at 343.3796 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TMC_SPI_CLK"
+		(shape input)
+		(at 326.39 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b5d4eecd-0734-4f2b-b3e4-f284afe3e274")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 341.7469 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TMC_MISO"
+		(shape input)
+		(at 326.39 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8902875-797c-4763-a26e-82252841414b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 338.7231 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Motor 3 power"
 		(shape input)
-		(at 226.06 128.27 180)
+		(at 326.39 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "d5bf9d17-478e-466e-9574-a0f2ec53dc31")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.0704 128.27 0)
+			(at 343.3796 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2564,18 +2766,6 @@
 			(justify left)
 		)
 		(uuid "016f1c41-d84c-49c1-8e13-2d0ca69fc3ca")
-	)
-	(hierarchical_label "3v3-input"
-		(shape input)
-		(at 213.36 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0d55f931-9fda-47c5-ac21-a947b34ecb24")
 	)
 	(hierarchical_label "CH343P_usbD-"
 		(shape input)
@@ -3163,6 +3353,74 @@
 			(project "CM4IOv5"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a33696f0-19fe-445e-8a3e-4fa3b57ce168"
 					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 337.82 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4abdc10a-1b5a-487a-8bcf-55e486db0c8e")
+		(property "Reference" "FB1"
+			(at 337.7692 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 337.7692 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 90.678 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 337.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 337.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82558a04-9dd3-4f06-8949-df2736bf5e93")
+		)
+		(pin "2"
+			(uuid "e0d398f9-c7e1-49a1-9309-e03bb4393d0f")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a33696f0-19fe-445e-8a3e-4fa3b57ce168"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -3967,74 +4225,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 203.2 77.47 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a829c7d5-949a-471a-88ef-2f3d8619bb73")
-		(property "Reference" "R43"
-			(at 203.2 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 203.2 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 203.2 75.692 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 203.2 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b47dab5e-a44c-4505-aae5-0de3057f5420")
-		)
-		(pin "2"
-			(uuid "f5c7178d-f9d9-4848-8d1e-da2a893a4769")
-		)
-		(instances
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a33696f0-19fe-445e-8a3e-4fa3b57ce168"
-					(reference "R43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 123.19 26.67 0)
 		(unit 1)
@@ -4233,6 +4423,73 @@
 			(project "CM4IOv5"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a33696f0-19fe-445e-8a3e-4fa3b57ce168"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 350.52 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b471a3fd-48d4-4f08-ae9b-5ba1d0a22bd7")
+		(property "Reference" "#PWR015"
+			(at 356.87 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 354.33 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 350.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d37424cf-c6d6-4afc-9fb9-d9269412fd0f")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a33696f0-19fe-445e-8a3e-4fa3b57ce168"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4587,7 +4844,7 @@
 		)
 	)
 	(sheet
-		(at 226.06 102.87)
+		(at 280.67 80.01)
 		(size 45.72 46.99)
 		(fields_autoplaced yes)
 		(stroke
@@ -4599,7 +4856,7 @@
 		)
 		(uuid "cd172756-addd-44fc-9293-fb24f28cc3c5")
 		(property "Sheetname" "4x tmc5160"
-			(at 226.06 102.1584 0)
+			(at 280.67 79.2984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4608,7 +4865,7 @@
 			)
 		)
 		(property "Sheetfile" "4x tmc5160.kicad_sch"
-			(at 226.06 150.4446 0)
+			(at 280.67 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4617,244 +4874,254 @@
 			)
 		)
 		(pin "M3_vmot" input
-			(at 226.06 128.27 180)
+			(at 326.39 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "42192379-2e3f-441b-8702-0d70c270c1d9")
 		)
 		(pin "TMC_MISO" input
-			(at 226.06 135.89 180)
+			(at 326.39 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "a4de696d-378f-4c39-ad09-cfeb460ef3fb")
 		)
 		(pin "TMC_SPI_CLK" input
-			(at 226.06 140.97 180)
+			(at 326.39 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "e03245f5-45ba-4314-961f-85c7bba521e4")
 		)
 		(pin "TMC_MOSI" input
-			(at 226.06 138.43 180)
+			(at 326.39 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "800153bb-45d4-4019-86a1-5cdd89f7bab5")
 		)
 		(pin "M1_EN" input
-			(at 271.78 110.49 0)
+			(at 280.67 87.63 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "b640b17e-c34e-4c1b-873a-b7d538bce7af")
 		)
 		(pin "M1_DIR" input
-			(at 271.78 105.41 0)
+			(at 280.67 82.55 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "fdc006bd-ff81-43a0-a074-0b948c748ada")
 		)
 		(pin "M1_STEP" input
-			(at 271.78 107.95 0)
+			(at 280.67 85.09 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "a763a086-8e28-49e0-894b-eb196b4f7795")
 		)
 		(pin "M1_CS" input
-			(at 271.78 113.03 0)
+			(at 280.67 90.17 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "540cc413-ca3d-41b8-96b7-cbfb30c11cf9")
 		)
 		(pin "tmc2240_vio" input
-			(at 226.06 119.38 180)
+			(at 326.39 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "60762a06-3911-4dba-82fa-e1f6eecfe30e")
 		)
 		(pin "M2_STEP" input
-			(at 271.78 119.38 0)
+			(at 280.67 96.52 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "b1916880-e5ba-45e6-8ef8-b28fe1ee7ba7")
 		)
 		(pin "M2_DIR" input
-			(at 271.78 116.84 0)
+			(at 280.67 93.98 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "631bdfec-feac-480a-a892-93795e7c2eeb")
 		)
 		(pin "M2_vmot" input
-			(at 226.06 125.73 180)
+			(at 326.39 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "325d433c-e906-41b3-b980-e3de08c25d78")
 		)
 		(pin "M2_EN" input
-			(at 271.78 121.92 0)
+			(at 280.67 99.06 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "c23de16d-9579-4276-a6e6-a84be4db005b")
 		)
 		(pin "M2_CS" input
-			(at 271.78 124.46 0)
+			(at 280.67 101.6 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "ffcb2a85-d7a4-4096-9c5a-06bcc99b5ed4")
 		)
 		(pin "M1_vmot" input
-			(at 226.06 123.19 180)
+			(at 326.39 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "9e909118-3677-4f6b-ae3b-4412fcb0deac")
 		)
 		(pin "M3_EN" input
-			(at 271.78 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "83dec759-594e-43ea-9503-032b740d6c2a")
-		)
-		(pin "M3_CS" input
-			(at 271.78 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e5de4c89-1d60-4e61-ae50-027fb7f24bbb")
-		)
-		(pin "M3_STEP" input
-			(at 271.78 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "2a89ada4-2452-4555-8416-734db1a2bfbc")
-		)
-		(pin "M3_DIR" input
-			(at 271.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "9be590b5-a2b2-45f5-b8d7-621eac93b80f")
-		)
-		(pin "M4_vmot" input
-			(at 226.06 130.81 180)
+			(at 280.67 110.49 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "39098ef9-74bf-4a21-ba57-42d80bc3ebfe")
+			(uuid "83dec759-594e-43ea-9503-032b740d6c2a")
 		)
-		(pin "M4_EN" input
-			(at 271.78 144.78 0)
+		(pin "M3_CS" input
+			(at 280.67 113.03 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e5de4c89-1d60-4e61-ae50-027fb7f24bbb")
+		)
+		(pin "M3_STEP" input
+			(at 280.67 107.95 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2a89ada4-2452-4555-8416-734db1a2bfbc")
+		)
+		(pin "M3_DIR" input
+			(at 280.67 105.41 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9be590b5-a2b2-45f5-b8d7-621eac93b80f")
+		)
+		(pin "M4_vmot" input
+			(at 326.39 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+			(uuid "39098ef9-74bf-4a21-ba57-42d80bc3ebfe")
+		)
+		(pin "M4_EN" input
+			(at 280.67 121.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 			(uuid "0a27815a-169b-4fc2-bbd0-53f3c9dac4d7")
 		)
 		(pin "M4_CS" input
-			(at 271.78 147.32 0)
+			(at 280.67 124.46 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "605777d8-f593-42b2-a989-6e7d0173c7eb")
 		)
 		(pin "M4_STEP" input
-			(at 271.78 142.24 0)
+			(at 280.67 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "85151c48-f82f-4d4d-a243-e3c769df6682")
 		)
 		(pin "M4_DIR" input
-			(at 271.78 139.7 0)
+			(at 280.67 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0df6b62e-783e-4b37-aaca-117144d26a24")
+		)
+		(pin "TMC_GND" input
+			(at 326.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0df6b62e-783e-4b37-aaca-117144d26a24")
+			(uuid "e5a571a3-83b2-444f-aab7-c4beb8077f21")
 		)
 		(instances
 			(project "CM4IOv5"
