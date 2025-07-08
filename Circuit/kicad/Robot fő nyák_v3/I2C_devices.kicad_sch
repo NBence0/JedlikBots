@@ -4317,16 +4317,16 @@
 		)
 		(uuid "2307dc0d-0d05-4bed-b330-c8525e987145")
 	)
-	(hierarchical_label "I2C_VCC"
+	(hierarchical_label "SEN_5V"
 		(shape input)
-		(at 53.34 201.93 90)
+		(at 53.34 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "3fe09cc6-1d20-4d37-9f6d-515bb7fbe32f")
+		(uuid "39549a10-33f5-45f0-9877-6b4fd35ddfd8")
 	)
 	(hierarchical_label "SDA"
 		(shape input)
@@ -4372,6 +4372,17 @@
 		)
 		(uuid "596e8a30-2300-4c07-9291-4705b1cafc18")
 	)
+	(hierarchical_label "SEN_5V"
+		(shape input)
+		(at 53.34 201.93 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d3d8999-9ff2-4626-b7d4-fccc9b6478e2")
+	)
 	(hierarchical_label "SEN_3V3"
 		(shape input)
 		(at 378.46 33.02 90)
@@ -4383,17 +4394,6 @@
 		)
 		(uuid "62f152db-bd09-492a-ba49-de7cdd9a0a0b")
 	)
-	(hierarchical_label "I2C_VCC"
-		(shape input)
-		(at 45.72 147.32 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "63f7119b-2496-4f97-819f-8fcb5a9c8feb")
-	)
 	(hierarchical_label "SCL"
 		(shape input)
 		(at 43.18 207.01 180)
@@ -4404,6 +4404,17 @@
 			(justify right)
 		)
 		(uuid "6a7795b6-879e-492e-9a72-7015ffb02312")
+	)
+	(hierarchical_label "SEN_5V"
+		(shape input)
+		(at 45.72 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6bb3f727-3b80-4ee4-8976-c8789139a999")
 	)
 	(hierarchical_label "SEN_5V"
 		(shape input)
@@ -4460,17 +4471,6 @@
 		)
 		(uuid "8a47b10e-7fcc-4152-9cb4-e625c4495f20")
 	)
-	(hierarchical_label "I2C_VCC"
-		(shape input)
-		(at 53.34 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9558194b-9cb2-4bb5-8a86-f41486e28a4a")
-	)
 	(hierarchical_label "SCL"
 		(shape input)
 		(at 45.72 116.84 180)
@@ -4482,7 +4482,7 @@
 		)
 		(uuid "95d2c218-639e-4831-93ce-e3c0e2fcfb1d")
 	)
-	(hierarchical_label "I2C_VCC"
+	(hierarchical_label "SEN_5V"
 		(shape input)
 		(at 55.88 111.76 90)
 		(effects
