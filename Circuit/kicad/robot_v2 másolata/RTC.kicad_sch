@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "92d938cc-f8b1-437d-8914-3d97a0938f67")
 	(paper "A4")
 	(title_block
@@ -131,35 +131,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 7.62 2.54 180)
+				(pin open_collector line
+					(at 7.62 10.16 180)
 					(length 2.54)
-					(name "PWM"
+					(name "nALERT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "TACH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -185,17 +167,35 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 7.62 10.16 180)
+				(pin input line
+					(at 7.62 5.08 180)
 					(length 2.54)
-					(name "nALERT"
+					(name "TACH"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -217,10 +217,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -287,19 +290,19 @@
 			)
 			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -320,8 +323,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -331,14 +334,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -414,9 +417,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -489,7 +495,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -501,7 +507,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -550,9 +556,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -671,12 +680,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -767,7 +781,52 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Also SMBUS alert IIC address : 0001_100x"
+		(exclude_from_sim no)
+		(at 121.9454 153.9494 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e0f69a6-955c-44f2-af4d-b4ad566ef54b")
+	)
+	(text "IIC address : 0101_111x"
+		(exclude_from_sim no)
+		(at 121.92 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47be24ee-e15b-4cee-b84b-350111ac1499")
+	)
+	(text "FAN controler"
+		(exclude_from_sim no)
+		(at 102.87 113.03 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "71079b24-2e2e-494b-a607-86ccdae75c6e")
+	)
+	(text "FAN connector\n"
+		(exclude_from_sim no)
+		(at 177.8 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "927b1eb6-e6f4-412f-9a58-8dc81a4889a0")
 	)
 	(junction
 		(at 144.78 140.97)
@@ -1039,53 +1098,8 @@
 		)
 		(uuid "f58fca4c-73af-416f-b236-f3bb62b8fd00")
 	)
-	(text "Also SMBUS alert IIC address : 0001_100x"
-		(exclude_from_sim no)
-		(at 121.9454 153.9494 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2e0f69a6-955c-44f2-af4d-b4ad566ef54b")
-	)
-	(text "IIC address : 0101_111x"
-		(exclude_from_sim no)
-		(at 121.92 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "47be24ee-e15b-4cee-b84b-350111ac1499")
-	)
-	(text "FAN controler"
-		(exclude_from_sim no)
-		(at 102.87 113.03 0)
-		(effects
-			(font
-				(size 2.0066 2.0066)
-			)
-			(justify left bottom)
-		)
-		(uuid "71079b24-2e2e-494b-a607-86ccdae75c6e")
-	)
-	(text "FAN connector\n"
-		(exclude_from_sim no)
-		(at 177.8 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "927b1eb6-e6f4-412f-9a58-8dc81a4889a0")
-	)
 	(label "+3.3v"
 		(at 105.41 125.73 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1097,7 +1111,6 @@
 	(hierarchical_label "fan_sda"
 		(shape input)
 		(at 116.84 135.89 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1109,7 +1122,6 @@
 	(hierarchical_label "+3.3v"
 		(shape input)
 		(at 104.14 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -1121,7 +1133,6 @@
 	(hierarchical_label "fan_scl"
 		(shape input)
 		(at 116.84 138.43 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1133,7 +1144,6 @@
 	(hierarchical_label "fan power"
 		(shape input)
 		(at 160.02 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 2.0066 2.0066)
