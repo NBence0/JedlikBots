@@ -18,8 +18,8 @@ void setup() {
 void led(int r, int g, int b) {
   for (int i = 0; i < strip.numPixels(); i++) {
     strip.setPixelColor(i, strip.Color(r, g, b));
+    strip.show();
   }
-  strip.show();
 }
 
 void handleColorPacket(uint8_t colorCode) {
@@ -51,6 +51,6 @@ void loop() {
     Serial.print("Received color code: ");
     Serial.println(colorCode, HEX);
     handleColorPacket(colorCode);
+    delay(100); // Kis késleltetés a következő olvasás előtt
   }
-  delay(100); // Várakozás a következő adatcsomagra
 }
