@@ -1,34 +1,29 @@
 from color_recognition import ColorRecognizer
+from uart_sending import SerialComm
 import time
 import serial
 
 # UART inicializálása (állítsd be a megfelelő portot)
-ser = serial.Serial('/dev/ttyS0', baudrate=115200, timeout=1)
 
-recognizer = ColorRecognizer()
-time.sleep(2)
 
-# Színkódok hozzárendelése
+color_recognizer = ColorRecognizer()
+comm = SerialComm(port="/dev/ttyUSB0", baudrate=115200)
+
+comm.send_command(0)
+time.sleep(0.5)
+
 COLOR_CODES = {
-    "Red":     0x01,
-    "Green":   0x02,
-    "Blue":    0x03,
-    "Yellow":  0x04,
-    "Unknown": 0xFF
+    "Red": 1,
+    "Yellow": 2,
+    "Green": 3,
+    "Blue": 4,
+    "Purple": 5,
+    "Unknown": 6,
 }
 
-def send_color(color_name):
-    color_code = COLOR_CODES.get(color_name, 0xFF)
-    ser.write(bytes([color_code]))
-    print(color_code)
-
-# Folyamatos futás
-try:
-    while True:
-        color = recognizer.get_color(x=640, y=360)
-        print("Detected color:", color)
-        send_color(color)
-        time.sleep(0.1)
-finally:
-    recognizer.stop()
-    ser.close()
+for i in range(2000):
+    color=color_recognizer.get_color(640, 360)
+    color_code = COLOR_CODES.get(color, 0xFF)
+    comm.send_command(7, color_code)
+    time.sleep(0.05)
+    
