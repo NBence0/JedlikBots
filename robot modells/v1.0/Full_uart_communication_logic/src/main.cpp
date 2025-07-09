@@ -1,10 +1,7 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
+#include "LED.h"
 
-#define LED_PIN     38
-#define LED_COUNT   8  // LED-ek száma
-
-Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 class Robot {
 public:
@@ -14,7 +11,7 @@ public:
 };
 
 Robot robot;
-
+Led led;
 uint16_t fletcher16(const uint8_t *data, size_t len) {
   uint16_t sum1 = 0;
   uint16_t sum2 = 0;
@@ -42,25 +39,22 @@ void sendResponse(uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4 = 0
 
 void setup() {
   Serial.begin(115200);
-  Serial1.begin(115200, SERIAL_8N1, 20, 21); // RX, TX
+  Serial1.begin(576000, SERIAL_8N1, 20, 21); // RX, TX
   while (!Serial);
   Serial.println("ESP32 UART vevő elindult.");
-  strip.begin();
-  strip.show(); // LED-ek lekapcsolása
-}
-
-void led(int r, int g, int b) {
-  for (int i = 0; i < strip.numPixels(); i++) {
-    strip.setPixelColor(i, strip.Color(r, g, b));
-  }
-  strip.show();
 }
 
 void loop() {
   if (Serial1.available() >= 7) {
     uint8_t buffer[7];
     Serial1.readBytes(buffer, 7);
-
+    /*
+    Serial.print("📥 Fogadott: ");
+    for (int i = 0; i < 7; i++) {
+      Serial.print(buffer[i], HEX);
+      Serial.print(" ");
+    }
+    */
     if (buffer[0] != 0xAA) {
       return;
     }
@@ -78,63 +72,42 @@ void loop() {
     }
 
     switch (cmd) {
-      case 0:
-        Serial.println("🔁 Újraindítás...");
+      case 0: //reastart
+        Serial.println("Restart");
         ESP.restart();
         break;
 
-      case 1: {
-        int position = (param1 << 8) | param2;
-        Serial.print("📍 Motor pozíció: ");
-        Serial.println(position);
-        sendResponse(param1, param2, param3);
+      case 1: //color sensor
+        Serial.print("Color Sensor");
+        //sendResponse(param1, param2, param3);
         break;
-      }
 
-      case 2: {
-        int color = robot.getcolor(param1);
-        Serial.print("🎨 Szín: ");
-        Serial.println(color);
+      case 2: //Gyro
+        Serial.print("Gyro");
         break;
-      }
+      case 3:
 
-      case 3: {
-        int speed = (param1 << 8) | param2;
-        Serial.print("💨 Sebesség: ");
-        Serial.println(speed);
         break;
-      }
+      case 4:
 
+        break;
+      case 5:
+      
+        break;
+      case 6:
+
+        break;
       case 7:
-        switch (param1) {
-          case 1:
-            led(255, 0, 0);
-            Serial.println("piros");
-            break;
-          case 2:
-            led(255, 255, 0);
-            Serial.println("sárga");
-            break;
-          case 3:
-            led(0, 255, 0);
-            Serial.println("zöld");
-            break;
-          case 4:
-            led(0, 0, 255);
-            Serial.println("kék");
-            break;
-          case 5:
-            led(255, 0, 255);
-            Serial.println("lila");
-            break;
-          default:
-            Serial.println("❓ Ismeretlen szín");
-            break;
-        }
+        led.handleColor(param1);
         break;
-
+      case 8:
+        break;
+      case 9:
+        break;
+      case 10:
+        break;
       default:
-        Serial.println("❓ Ismeretlen parancs");
+        Serial.println("Ismeretlen parancs");
         break;
     }
   }
