@@ -99,4 +99,5 @@ shiftOut(dataPin, clockPin, dataRED);
 digitalWrite(latchPin, 1);
 delay(50); // ennyi időnként küld adatot
 }
+
 }
