@@ -98,7 +98,7 @@ void loop() {
 
         break;
       case 7:
-        led.handleColor(param1);
+        led.handleColor(param1); // param1 Led color
         break;
       case 8:
         break;

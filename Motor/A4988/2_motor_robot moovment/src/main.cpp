@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <AccelStepper.h>
+#define TOUCH_PIN T8
 
 constexpr int DIR_PIN1 = 17;
 constexpr int STEP_PIN1 = 16;
@@ -23,7 +24,16 @@ void moveMotors(long motor1Target, long motor2Target) {
   delay(500);
 }
 
+void waitForTouch() {
+  while (touchRead(TOUCH_PIN) < 30000) {
+    Serial.println(touchRead(TOUCH_PIN));
+    delay(10);
+  }
+}
+
 void setup() {
+
+
   Serial.begin(115200);
   delay(1000);
 
@@ -36,10 +46,16 @@ void setup() {
   motor2.setAcceleration(1000 * microstepp);
 }
 
+
 void loop() {
+  waitForTouch();
   // Előre
-  currentPos += stepSize;
+  for (int i = 0; i < 3; i++)
+  {
+    currentPos += stepSize;
   moveMotors(currentPos, currentPos);
+  Serial.println(touchRead(TOUCH_PIN));
+
 
   // Hátra
   currentPos -= stepSize;
@@ -52,4 +68,7 @@ void loop() {
   // Balra
   currentPos -= stepSize;
   moveMotors(-currentPos, currentPos);
+  }
+  
+  
 }
