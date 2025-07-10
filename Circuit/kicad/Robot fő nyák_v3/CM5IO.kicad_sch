@@ -833,16 +833,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 95.25) (xy 208.28 95.25)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "909b030b-fa1a-4fe8-b1ee-422b4d9e23cf")
-	)
-	(wire
-		(pts
 			(xy 85.09 34.29) (xy 105.41 34.29)
 		)
 		(stroke
@@ -950,16 +940,6 @@
 			(type default)
 		)
 		(uuid "fa96b738-cc1c-4f06-8e19-53bb86f0f468")
-	)
-	(label "+5v"
-		(at 199.39 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4e66a44f-7fa6-4e16-bf9b-62ec864301a5")
 	)
 	(label "+5v"
 		(at 161.29 156.21 0)
@@ -1732,16 +1712,6 @@
 				(justify left)
 			)
 		)
-		(pin "+5v" input
-			(at 195.58 95.25 0)
-			(uuid "0217dfc4-fc13-4699-99ad-d9948522648e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "PCIE_PWR_EN" input
 			(at 167.64 102.87 180)
 			(uuid "97775b76-6935-4c0f-9fc9-91db55c7f4d2")
@@ -1760,6 +1730,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "+3v3" input
+			(at 195.58 78.74 0)
+			(uuid "f501bc5d-4de9-4230-901b-b8bd430c7b8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
