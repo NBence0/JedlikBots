@@ -878,6 +878,28 @@
 		)
 		(uuid "e6392b93-9d64-4f84-bc42-97779defd9da")
 	)
+	(global_label "H-bridge"
+		(shape input)
+		(at 49.53 21.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1fca5e96-5e61-4866-8307-7a206ff600e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 61.4398 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "AIN2"
 		(shape input)
 		(at 29.21 55.88 180)
@@ -965,17 +987,6 @@
 			(justify right)
 		)
 		(uuid "e155bbb3-f6da-45a1-9765-9c2cb0542a05")
-	)
-	(hierarchical_label "VMOT_H-bridge"
-		(shape input)
-		(at 49.53 21.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fb47e3d5-adee-40a7-9205-16fa92532b87")
 	)
 	(hierarchical_label "AIN1"
 		(shape input)

@@ -10030,6 +10030,56 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 233.68 129.54)
+		(end 256.54 142.24)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 26299f4e-ab4a-4736-9baa-57737709217d)
+	)
+	(rectangle
+		(start 232.41 128.27)
+		(end 257.81 143.51)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 255 0 30 1)
+		)
+		(fill
+			(type color)
+			(color 255 0 22 1)
+		)
+		(uuid 66a76c4e-7543-4f1d-8ab1-0d57a197611c)
+	)
+	(rectangle
+		(start 236.22 132.08)
+		(end 254 139.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d35e55d9-5ac5-40ec-9050-93097cb3ea0d)
+	)
+	(rectangle
+		(start 234.95 130.81)
+		(end 255.27 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f5a87a95-311c-4c0a-82af-4212e717a312)
+	)
 	(text "40Way GPIO Header"
 		(exclude_from_sim no)
 		(at 143.51 19.05 0)
@@ -10425,6 +10475,10 @@
 		(uuid "426744f5-151b-4336-9db2-19b96ec1a6aa")
 	)
 	(no_connect
+		(at 44.45 180.34)
+		(uuid "4a34e53b-3208-4276-beb7-7b77e4f7ff04")
+	)
+	(no_connect
 		(at 39.37 100.33)
 		(uuid "6489fbbd-1bc4-4ea3-ab88-9e537d0c503b")
 	)
@@ -10452,7 +10506,7 @@
 	)
 	(polyline
 		(pts
-			(xy 138.43 13.97) (xy 138.43 80.01)
+			(xy 137.16 13.97) (xy 137.16 80.01)
 		)
 		(stroke
 			(width 0)
@@ -10472,7 +10526,7 @@
 	)
 	(polyline
 		(pts
-			(xy 138.43 80.01) (xy 179.07 80.01)
+			(xy 137.16 80.01) (xy 179.07 80.01)
 		)
 		(stroke
 			(width 0)
@@ -11212,7 +11266,7 @@
 	)
 	(polyline
 		(pts
-			(xy 179.07 13.97) (xy 138.43 13.97)
+			(xy 179.07 13.97) (xy 137.16 13.97)
 		)
 		(stroke
 			(width 0)
@@ -11352,7 +11406,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 24.13) (xy 171.45 24.13)
+			(xy 166.37 24.13) (xy 168.91 24.13)
 		)
 		(stroke
 			(width 0)
@@ -11769,16 +11823,6 @@
 			(type solid)
 		)
 		(uuid "866c2804-79f0-42ad-b60b-35330f41683f")
-	)
-	(wire
-		(pts
-			(xy 143.51 24.13) (xy 149.86 24.13)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "86bba780-a183-42d2-86e6-b1ca627942a1")
 	)
 	(wire
 		(pts
@@ -12442,6 +12486,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 21.59) (xy 149.86 24.13)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c14231b3-9b87-41ad-b6e9-2ab2d2840764")
+	)
+	(wire
+		(pts
 			(xy 38.1 36.83) (xy 38.1 46.99)
 		)
 		(stroke
@@ -13062,16 +13116,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 180.34) (xy 58.42 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f612c023-1a29-4c76-9f61-5f96b8089924")
-	)
-	(wire
-		(pts
 			(xy 21.59 182.88) (xy 21.59 185.42)
 		)
 		(stroke
@@ -13210,16 +13254,6 @@
 		)
 		(uuid "02c86f21-caef-4fbc-95b0-d828a7114318")
 	)
-	(label "+5v"
-		(at 170.18 24.13 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "05c1c0ae-f846-4942-b9ca-9f0f8f62492d")
-	)
 	(label "GPIO5"
 		(at 24.13 62.23 0)
 		(effects
@@ -13299,16 +13333,6 @@
 			(justify right bottom)
 		)
 		(uuid "1427beee-3bac-4761-90c7-1d211b9ad51c")
-	)
-	(label "+3.3v"
-		(at 148.59 24.13 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "14891ca4-c283-4a64-98dc-86c5d6e033a0")
 	)
 	(label "GPIO10"
 		(at 24.13 74.93 0)
@@ -14600,6 +14624,138 @@
 		)
 		(uuid "fde990cb-bef7-4857-b479-4a747f3020bc")
 	)
+	(global_label "RPI_5V"
+		(shape input)
+		(at 135.89 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52759719-9a1a-45ff-97de-29d2fba5b7d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.3992 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INA226_SCL"
+		(shape input)
+		(at 238.76 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e71003a-df7c-42b0-8b98-64109d9c7882")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.9679 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RPI_5V"
+		(shape input)
+		(at 114.3 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "86143b19-7b5b-429e-a045-08d4e7b95ae4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.7908 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INA226_SDA"
+		(shape input)
+		(at 238.76 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f24faf4-9f4d-450e-9032-360c97fd5ecf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.0284 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3V3_M.2"
+		(shape input)
+		(at 149.86 21.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ddd9b60b-0346-4534-b676-930f703dd6f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.0388 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RPI_5V"
+		(shape input)
+		(at 168.91 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5aa3b36-6c27-4c6e-855b-c3ef83c0d463")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 178.4008 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "CC1"
 		(shape output)
 		(at 25.4 138.43 180)
@@ -14655,17 +14811,6 @@
 		)
 		(uuid "1d32a3a2-931e-4061-9909-454f851a337d")
 	)
-	(hierarchical_label "+3.3v"
-		(shape output)
-		(at 25.4 125.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2a6753e8-f9e7-4c11-a472-dc9c7e1759c8")
-	)
 	(hierarchical_label "GPIO_VREF"
 		(shape output)
 		(at 25.4 118.11 180)
@@ -14699,17 +14844,6 @@
 		)
 		(uuid "4c3becc9-79e1-4d4a-a3fd-a6e8750302a2")
 	)
-	(hierarchical_label "+5v"
-		(shape input)
-		(at 135.89 167.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "59e8b122-c74b-422c-8f60-6d8ce58f4682")
-	)
 	(hierarchical_label "CAM_GPIO0"
 		(shape output)
 		(at 116.84 143.51 0)
@@ -14721,27 +14855,38 @@
 		)
 		(uuid "81d72d8d-724d-4c93-8ab9-b3c57fbafb28")
 	)
-	(hierarchical_label "+5v"
+	(hierarchical_label "GPIO15_UART_RX"
 		(shape input)
-		(at 114.3 118.11 0)
+		(at 114.3 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b1074f14-d9b1-488c-9ce1-52a2bed8b998")
+		(uuid "db068c1d-b8e4-4510-975e-9b1ce8221c69")
 	)
-	(hierarchical_label "USBOTG"
+	(hierarchical_label "+3.3v"
 		(shape output)
-		(at 58.42 180.34 0)
+		(at 25.4 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dff0d656-e395-46c7-9b45-805fa8fa2c26")
+	)
+	(hierarchical_label "GPIO14_UART_TX"
+		(shape input)
+		(at 114.3 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f1925da3-6d02-4d29-b13d-37e38f996a50")
+		(uuid "e0ea6dd2-cf4a-454b-bcab-22c5fad83898")
 	)
 	(symbol
 		(lib_id "CM5IO:74LVC1G07_copy")

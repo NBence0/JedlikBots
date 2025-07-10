@@ -10797,16 +10797,6 @@
 		)
 		(uuid "3e147ce1-21a6-4e77-a3db-fd00d575cd22")
 	)
-	(label "+5v"
-		(at 24.13 175.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "438bfc29-c054-4e2a-8dd2-0fd0b034d37b")
-	)
 	(label "HDMI1_D0_P"
 		(at 237.49 113.03 0)
 		(effects
@@ -11757,6 +11747,50 @@
 		)
 		(uuid "fe431a80-868e-482d-aa91-c96eb8387d6a")
 	)
+	(global_label "USB_5V"
+		(shape input)
+		(at 24.13 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "21909211-debc-4d70-8681-d95bb7bee391")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 13.974 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_5V"
+		(shape input)
+		(at 191.77 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8ffe89b-160c-4279-bd5d-beede7643333")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 181.614 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "USBOTG_ID"
 		(shape input)
 		(at 105.41 25.4 0)
@@ -11811,17 +11845,6 @@
 			(justify right)
 		)
 		(uuid "4aee84d1-0859-48ac-a053-5a981ee1b24a")
-	)
-	(hierarchical_label "+5v"
-		(shape input)
-		(at 191.77 147.32 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4d55ddc7-73be-49f7-98ea-a0ba474cbdb0")
 	)
 	(hierarchical_label "SCL0"
 		(shape input)

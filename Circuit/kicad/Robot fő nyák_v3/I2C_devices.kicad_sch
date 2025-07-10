@@ -2403,6 +2403,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "	off		on	\n\n1	3.3v	5v\n2	3.3v	5v\n3	3.3v	5v\n4	3.3v	5v\n5	3.3v	5v\n6	3.3v	5v\n7	3.3v	1.8v\n8	3.3v	1.8v\n"
+		(exclude_from_sim no)
+		(at 144.272 47.752 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5365001a-86c6-427c-9aec-6eae57f981ae")
+	)
 	(text_box "Átkapcsoló mosfetek"
 		(exclude_from_sim no)
 		(at 212.09 14.605 0)
@@ -2745,16 +2756,6 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 151.13) (xy 299.72 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "956b287c-2c80-4168-8f4c-a2e34ee30718")
-	)
-	(wire
-		(pts
 			(xy 86.36 48.26) (xy 101.6 48.26)
 		)
 		(stroke
@@ -2902,6 +2903,16 @@
 			(type default)
 		)
 		(uuid "c9c22216-4aab-4ce5-96ea-4bd585429ad7")
+	)
+	(wire
+		(pts
+			(xy 299.72 152.4) (xy 299.72 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccffb338-04d1-4a63-8342-3ad9c7752261")
 	)
 	(wire
 		(pts
@@ -4306,6 +4317,17 @@
 		)
 		(uuid "12f1b3e5-620e-40b7-bc0b-6ad35c9bb697")
 	)
+	(hierarchical_label "SEN_1.8V"
+		(shape input)
+		(at 299.72 152.4 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2197ae7e-40c7-49d4-aaaf-9c7cc09384ae")
+	)
 	(hierarchical_label "SEN_3V3"
 		(shape input)
 		(at 378.46 72.39 90)
@@ -4316,6 +4338,17 @@
 			(justify left)
 		)
 		(uuid "2307dc0d-0d05-4bed-b330-c8525e987145")
+	)
+	(hierarchical_label "SEN_1.8V"
+		(shape input)
+		(at 251.46 152.4 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25b55a78-0411-4434-9220-9aabbfb1089c")
 	)
 	(hierarchical_label "SEN_5V"
 		(shape input)
@@ -4349,17 +4382,6 @@
 			(justify left)
 		)
 		(uuid "435cdf90-b698-4ec4-bd39-6550b5290092")
-	)
-	(hierarchical_label "SEN_5V"
-		(shape input)
-		(at 299.72 151.13 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "464cd582-ce09-465a-8827-ce9b65aaf1c6")
 	)
 	(hierarchical_label "I2C_RST"
 		(shape input)
@@ -4503,17 +4525,6 @@
 			(justify left)
 		)
 		(uuid "a720886e-f040-4cae-a7ef-bfd1a132805d")
-	)
-	(hierarchical_label "SEN_5V"
-		(shape input)
-		(at 251.46 152.4 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c2dcf450-4f78-449c-87f0-e6852afd42d0")
 	)
 	(hierarchical_label "SEN_3V3"
 		(shape input)

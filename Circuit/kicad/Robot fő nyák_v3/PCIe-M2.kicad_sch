@@ -3609,6 +3609,28 @@
 		)
 		(uuid "d4e16015-b812-4622-ac9e-5fa779ea4ba5")
 	)
+	(global_label "3V3_M.2"
+		(shape input)
+		(at 86.36 168.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3fe31824-c8c8-45cc-a083-d876530999e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.36 158.0888 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "PCIE_RX_N"
 		(shape output)
 		(at 86.36 53.34 180)
@@ -3663,17 +3685,6 @@
 			(justify right)
 		)
 		(uuid "62b6b2b3-6ade-4e95-8062-936451a2172f")
-	)
-	(hierarchical_label "+3v3"
-		(shape input)
-		(at 86.36 168.91 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "63d1458c-189e-47e7-a3b1-92acc6f1a763")
 	)
 	(hierarchical_label "PCIE_PWR_EN"
 		(shape input)
