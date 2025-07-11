@@ -36,7 +36,7 @@ void sendResponse(uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4 = 0
 
   Serial1.write(response, 7);
 }
-
+int i = 0; 
 void setup() {
   Serial.begin(115200);
   Serial1.begin(576000, SERIAL_8N1, 20, 21); // RX, TX
@@ -98,7 +98,13 @@ void loop() {
 
         break;
       case 7:
-        led.handleColor(param1); // param1 Led color
+        led.handleColor(param1); 
+        i++; // Increment i for demonstration purposes
+        // param1 Led color
+        if (i >= 20){
+          delay(100);
+          sendResponse(cmd, param1, param2, param3); // Válasz a színkódra
+        }
         break;
       case 8:
         break;

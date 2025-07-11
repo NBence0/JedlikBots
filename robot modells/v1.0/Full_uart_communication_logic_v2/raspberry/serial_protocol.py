@@ -60,7 +60,7 @@ class SerialComm:
             self.ser = serial.Serial(port, baudrate, timeout=timeout)
             print(f"Soros port megnyitva: {port} @ {baudrate} baud")
         except serial.SerialException as e:
-            print(f"KRITIKUS HIBA: Nem sikerült megnyitni a soros portot: {e}")
+            print(f"Nem sikerült megnyitni a soros portot: {e}")
             self.ser = None
 
     def execute_command(self, cmd: int, p1: int = 0, p2: int = 0, p3: int = 0, quiet=False) -> dict | None:

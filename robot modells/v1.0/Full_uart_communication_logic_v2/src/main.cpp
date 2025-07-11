@@ -1,27 +1,23 @@
-// File: main.cpp
 #include <Arduino.h>
 #include "LED.h"
 
-// --- Protokoll Konstansok ---
-// Ezeknek egyezniük kell a Python szkriptben lévőkkel
-// Parancsok (RPI -> ESP32)
+// Commands (RPI -> ESP32)
 const uint8_t CMD_PING = 0;
 const uint8_t CMD_RESTART = 1;
 const uint8_t CMD_SET_LED = 7;
 
-// Válaszok (ESP32 -> RPI)
-const uint8_t RSP_ACK = 100;         // Sikeres parancs végrehajtás
-const uint8_t RSP_PONG = 101;        // Válasz a PING-re
-const uint8_t RSP_ERROR = 200;       // Hiba történt (pl. rossz checksum)
-const uint8_t RSP_UNKNOWN_CMD = 201; // Ismeretlen parancs
+// Responses (ESP32 -> RPI)
+const uint8_t RSP_ACK = 100;         // Command executed successfully
+const uint8_t RSP_PONG = 101;        // Response to PING
+const uint8_t RSP_ERROR = 200;       // Error occurred (e.g. bad checksum)
+const uint8_t RSP_UNKNOWN_CMD = 201; // Unknown command
 
-// --- Kommunikációs Pinek ---
 #define RX1_PIN 20
 #define TX1_PIN 21
 
-Led led; // LED vezérlő objektum
+Led led; // LED controller object
 
-// Ellenőrzőösszeg számító függvény
+// Checksum calculation function
 uint16_t fletcher16(const uint8_t *data, size_t len) {
   uint16_t sum1 = 0;
   uint16_t sum2 = 0;
@@ -32,7 +28,7 @@ uint16_t fletcher16(const uint8_t *data, size_t len) {
   return (sum2 << 8) | sum1;
 }
 
-// Válasz küldése a Raspberry Pi-nek
+// Send response to Raspberry Pi
 void sendResponse(uint8_t cmd, uint8_t p1 = 0, uint8_t p2 = 0, uint8_t p3 = 0) {
   uint8_t response[7];
   response[0] = 0xAA;    // Start byte
@@ -46,21 +42,26 @@ void sendResponse(uint8_t cmd, uint8_t p1 = 0, uint8_t p2 = 0, uint8_t p3 = 0) {
   response[6] = (checksum >> 8) & 0xFF;
 
   Serial1.write(response, 7);
+  //Serial.print("Sent response: ");
+  for (int i = 0; i < 7; i++) {
+    //Serial.print(response[i]);
+    //Serial.print(" ");
+  }
+  //Serial.println();
 }
 
-// Bejövő csomag feldolgozása
 void processPacket(const uint8_t* buffer) {
   uint16_t received_checksum = (buffer[6] << 8) | buffer[5];
   uint16_t calculated_checksum = fletcher16(buffer, 5);
 
   if (received_checksum != calculated_checksum) {
-    sendResponse(RSP_ERROR); // Hiba küldése rossz checksum esetén
+    sendResponse(RSP_ERROR); // Send error if checksum is invalid
     return;
   }
 
   uint8_t cmd    = buffer[1];
   uint8_t param1 = buffer[2];
-  // uint8_t param2 = buffer[3]; // Jelenleg nincsenek használva
+  // uint8_t param2 = buffer[3];
   // uint8_t param3 = buffer[4];
 
   switch (cmd) {
@@ -69,58 +70,61 @@ void processPacket(const uint8_t* buffer) {
       break;
 
     case CMD_RESTART:
-      sendResponse(RSP_ACK, cmd); // Nyugta küldése újraindítás előtt
-      delay(100); // Időt adunk a válasznak, hogy kimenjen
+      sendResponse(RSP_ACK, cmd);
+      delay(100); // Give time for response to be sent
       ESP.restart();
       break;
 
     case CMD_SET_LED:
       led.handleColor(param1);
-      // Nyugta: ACK, az eredeti parancsra, az eredeti paraméterrel
+      // ACK with original command and parameter
       sendResponse(RSP_ACK, cmd, param1);
       break;
 
     default:
-      sendResponse(RSP_UNKNOWN_CMD, cmd); // Ismeretlen parancs jelzése
+      sendResponse(RSP_UNKNOWN_CMD, cmd); // Unknown command
       break;
   }
 }
 
 void setup() {
-  // A Serial debug portot kikapcsolhatod a végleges kódban
-  // Serial.begin(115200);
+  Serial1.begin(576000, SERIAL_8N1, RX1_PIN, TX1_PIN); // RPI Uart
+  Serial.begin(115200); // Debug port for Serial Monitor
   
-  // Kommunikáció a Raspberry Pi-vel
-  Serial1.begin(576000, SERIAL_8N1, RX1_PIN, TX1_PIN);
-  
-  led.begin(); // LED szalag inicializálása
-  led.off();   // Kezdetben a LED legyen kikapcsolva
+  led.begin();
+  led.off();
 }
 
 void loop() {
   static uint8_t buffer[7];
   static uint8_t bytes_received = 0;
 
-  // Nem-blokkoló olvasás a soros portról
+  // Non-blocking read from serial port
   while (Serial1.available() > 0) {
-    uint8_t incoming_byte = Serial1.read();
+    uint8_t incoming_byte = Serial1.read(); // Read bytes one by one
 
-    // Ha szinkronizációs hiba van, keressük a csomag elejét
     if (bytes_received == 0) {
       if (incoming_byte == 0xAA) {
         buffer[0] = incoming_byte;
         bytes_received = 1;
       }
-      // Ha nem 0xAA, ignoráljuk, amíg meg nem találjuk
+      // Ignore until "0xAA" start byte found
     } else {
-      // Gyűjtjük a csomag többi részét
+      // Collect the rest of the packet
       buffer[bytes_received++] = incoming_byte;
     }
 
-    // Ha a teljes csomag megérkezett
+    // Full packet received
     if (bytes_received == 7) {
+      /*
+      Serial.print("Received packet:");
+      for (int i = 0; i < 7; i++) {
+        Serial.print(buffer[i]);
+        Serial.print(" ");
+      }
+      */
       processPacket(buffer);
-      bytes_received = 0; // Reset a következő csomag fogadásához
+      bytes_received = 0; // Reset for next packet
     }
   }
 }
