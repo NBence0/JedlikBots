@@ -6891,7 +6891,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d252475")
-		(property "Reference" "J18"
+		(property "Reference" "J14"
 			(at 250.825 261.62 0)
 			(effects
 				(font
@@ -6909,7 +6909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CM4IO:MOLEX_USB_67298-4090"
+		(property "Footprint" "CM5IO:MOLEX_USB_67298-4090"
 			(at 252.73 243.84 0)
 			(effects
 				(font
@@ -7036,7 +7036,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "J18")
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -7051,7 +7051,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d417c1b")
-		(property "Reference" "R33"
+		(property "Reference" "R14"
 			(at 50.038 61.0616 0)
 			(effects
 				(font
@@ -7069,7 +7069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 46.482 62.23 90)
 			(effects
 				(font
@@ -7159,7 +7159,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R33")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -7174,7 +7174,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d4c03f8")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR040"
 			(at 57.15 265.43 0)
 			(effects
 				(font
@@ -7224,7 +7224,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR074")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -7239,7 +7239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d55749c")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR055"
 			(at 243.84 245.11 0)
 			(effects
 				(font
@@ -7289,7 +7289,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR072")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -7304,7 +7304,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d5574a2")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR056"
 			(at 243.84 261.62 0)
 			(effects
 				(font
@@ -7354,7 +7354,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR073")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -7369,7 +7369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d615d09")
-		(property "Reference" "R26"
+		(property "Reference" "R13"
 			(at 34.925 87.63 0)
 			(effects
 				(font
@@ -7387,7 +7387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 38.862 88.9 90)
 			(effects
 				(font
@@ -7477,7 +7477,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R26")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7492,7 +7492,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005da5464e")
-		(property "Reference" "U24"
+		(property "Reference" "U9"
 			(at 86.995 243.459 0)
 			(effects
 				(font
@@ -7601,7 +7601,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U24")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -7616,7 +7616,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005da5fde6")
-		(property "Reference" "U19"
+		(property "Reference" "U11"
 			(at 87.63 124.46 0)
 			(effects
 				(font
@@ -7827,7 +7827,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U19")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -7842,7 +7842,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005dab10d9")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR042"
 			(at 68.58 166.37 0)
 			(effects
 				(font
@@ -7892,7 +7892,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR039")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7907,7 +7907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005dafd9c4")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR043"
 			(at 68.58 266.7 0)
 			(effects
 				(font
@@ -7957,7 +7957,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR076")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -7972,7 +7972,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db233ef")
-		(property "Reference" "R37"
+		(property "Reference" "R18"
 			(at 67.945 197.485 90)
 			(effects
 				(font
@@ -7990,7 +7990,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 70.612 195.58 90)
 			(effects
 				(font
@@ -8071,7 +8071,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R37")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8086,7 +8086,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db23686")
-		(property "Reference" "R35"
+		(property "Reference" "R17"
 			(at 60.325 197.485 90)
 			(effects
 				(font
@@ -8104,7 +8104,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 62.992 195.58 90)
 			(effects
 				(font
@@ -8185,7 +8185,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R35")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8200,7 +8200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db23a6d")
-		(property "Reference" "R34"
+		(property "Reference" "R16"
 			(at 52.705 197.485 90)
 			(effects
 				(font
@@ -8218,7 +8218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 55.372 195.58 90)
 			(effects
 				(font
@@ -8299,7 +8299,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R34")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -8314,7 +8314,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db36104")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR039"
 			(at 57.15 208.28 0)
 			(effects
 				(font
@@ -8364,7 +8364,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR037")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -8379,7 +8379,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db3990f")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR041"
 			(at 64.77 208.28 0)
 			(effects
 				(font
@@ -8429,7 +8429,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR038")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -8444,7 +8444,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db3d1df")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR044"
 			(at 72.39 208.28 0)
 			(effects
 				(font
@@ -8494,7 +8494,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR040")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8509,7 +8509,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db40afb")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR047"
 			(at 80.01 208.28 0)
 			(effects
 				(font
@@ -8559,7 +8559,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR041")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -8574,7 +8574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db53e31")
-		(property "Reference" "R50"
+		(property "Reference" "R23"
 			(at 110.49 248.92 90)
 			(effects
 				(font
@@ -8592,7 +8592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 106.68 254.508 90)
 			(effects
 				(font
@@ -8682,7 +8682,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R50")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -8697,7 +8697,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db61f2b")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR049"
 			(at 110.49 266.7 0)
 			(effects
 				(font
@@ -8747,7 +8747,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR077")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -8762,7 +8762,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005dc24f31")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR061"
 			(at 265.43 265.43 0)
 			(effects
 				(font
@@ -8812,7 +8812,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR075")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -8828,7 +8828,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e09b996")
-		(property "Reference" "U17"
+		(property "Reference" "U8"
 			(at 60.96 65.659 0)
 			(effects
 				(font
@@ -8949,7 +8949,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U17")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -8964,7 +8964,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e09b9bf")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR050"
 			(at 111.76 208.28 0)
 			(effects
 				(font
@@ -9014,7 +9014,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR044")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -9029,7 +9029,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e0b53d9")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR038"
 			(at 50.8 97.79 0)
 			(effects
 				(font
@@ -9079,7 +9079,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR034")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9094,7 +9094,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e0e65c5")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR037"
 			(at 40.64 99.06 0)
 			(effects
 				(font
@@ -9144,7 +9144,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR033")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -9159,7 +9159,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e39366c")
-		(property "Reference" "R38"
+		(property "Reference" "R19"
 			(at 78.74 156.21 90)
 			(effects
 				(font
@@ -9177,7 +9177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 74.93 160.528 90)
 			(effects
 				(font
@@ -9258,7 +9258,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R38")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -9273,7 +9273,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e39eaf3")
-		(property "Reference" "R39"
+		(property "Reference" "R22"
 			(at 75.565 197.485 90)
 			(effects
 				(font
@@ -9291,7 +9291,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 78.232 195.58 90)
 			(effects
 				(font
@@ -9372,7 +9372,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R39")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9387,7 +9387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e3b6d96")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR054"
 			(at 138.43 228.6 0)
 			(effects
 				(font
@@ -9437,7 +9437,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR036")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -9452,7 +9452,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e3b8d2b")
-		(property "Reference" "C21"
+		(property "Reference" "C14"
 			(at 141.351 213.4616 0)
 			(effects
 				(font
@@ -9560,7 +9560,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C21")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -9575,7 +9575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e3c5b00")
-		(property "Reference" "Y2"
+		(property "Reference" "Y1"
 			(at 36.83 169.545 0)
 			(effects
 				(font
@@ -9672,7 +9672,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "Y2")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -9687,7 +9687,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e3c619a")
-		(property "Reference" "C20"
+		(property "Reference" "C9"
 			(at 28.321 179.1716 0)
 			(effects
 				(font
@@ -9795,7 +9795,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C20")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9810,7 +9810,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e3c68c5")
-		(property "Reference" "C22"
+		(property "Reference" "C11"
 			(at 48.641 179.1716 0)
 			(effects
 				(font
@@ -9918,7 +9918,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C22")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -9933,7 +9933,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e3d5697")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 35.56 193.04 0)
 			(effects
 				(font
@@ -9983,7 +9983,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR035")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -9998,7 +9998,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e9b65ca")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR051"
 			(at 114.808 266.7 0)
 			(effects
 				(font
@@ -10048,7 +10048,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR078")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -10063,7 +10063,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005eaee6a6")
-		(property "Reference" "C23"
+		(property "Reference" "C12"
 			(at 60.071 254.1016 0)
 			(effects
 				(font
@@ -10171,7 +10171,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C23")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -10186,7 +10186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005eb197aa")
-		(property "Reference" "C24"
+		(property "Reference" "C13"
 			(at 117.8052 255.397 0)
 			(effects
 				(font
@@ -10267,7 +10267,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C24")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -10283,7 +10283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "019add24-7623-4030-bd80-c440d0eeddea")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR069"
 			(at 386.08 168.91 0)
 			(effects
 				(font
@@ -10333,7 +10333,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR071")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -10414,7 +10414,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d8503d6-b5d4-4eec-bca7-c1c221b4cf30")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR066"
 			(at 378.46 85.09 0)
 			(effects
 				(font
@@ -10464,7 +10464,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR068")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -10479,7 +10479,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1085a291-d8f8-4b7a-886c-480c23415193")
-		(property "Reference" "R42"
+		(property "Reference" "R25"
 			(at 245.11 87.63 0)
 			(effects
 				(font
@@ -10497,7 +10497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 249.047 88.9 90)
 			(effects
 				(font
@@ -10587,7 +10587,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R42")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -10602,7 +10602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15651add-ee06-4b02-8ec0-04f8fc8794c1")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR065"
 			(at 321.31 124.46 0)
 			(effects
 				(font
@@ -10652,7 +10652,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR067")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -10781,7 +10781,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "286c3a4f-7bfa-4440-aedb-af7e39c0de7c")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR068"
 			(at 386.08 85.09 0)
 			(effects
 				(font
@@ -10831,7 +10831,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR070")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -10847,7 +10847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "298c52e7-d317-4684-9ed9-b9bc763f3cad")
-		(property "Reference" "U21"
+		(property "Reference" "U14"
 			(at 273.05 65.659 0)
 			(effects
 				(font
@@ -10968,7 +10968,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U21")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -11048,7 +11048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d9d2368-77a6-4f86-844e-6c4f984274ea")
-		(property "Reference" "R47"
+		(property "Reference" "R29"
 			(at 328.93 117.475 0)
 			(effects
 				(font
@@ -11066,7 +11066,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 330.2 113.538 90)
 			(effects
 				(font
@@ -11156,7 +11156,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R47")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -11172,7 +11172,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "327e2c55-1b8a-4941-9354-a9d369f88b21")
-		(property "Reference" "J1"
+		(property "Reference" "J13"
 			(at 125.73 36.83 0)
 			(effects
 				(font
@@ -11269,7 +11269,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "J1")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -11284,7 +11284,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3da8afe4-a4d4-4d6a-bcad-3721f1930cb1")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR063"
 			(at 320.04 111.76 0)
 			(effects
 				(font
@@ -11334,7 +11334,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR056")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -11349,7 +11349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4aa623be-cfe8-4352-b4a3-ec6db5a11bdb")
-		(property "Reference" "R41"
+		(property "Reference" "R21"
 			(at 77.47 50.165 0)
 			(effects
 				(font
@@ -11367,7 +11367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 78.74 46.228 90)
 			(effects
 				(font
@@ -11457,7 +11457,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R41")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -11472,7 +11472,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5433da08-e7c7-4fe6-a10c-2bb4d3691c36")
-		(property "Reference" "R48"
+		(property "Reference" "R30"
 			(at 330.2 46.355 0)
 			(effects
 				(font
@@ -11490,7 +11490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 331.47 42.418 90)
 			(effects
 				(font
@@ -11580,7 +11580,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R48")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -11596,7 +11596,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58148cc5-ea1e-4b89-90ab-eac737cbf8f9")
-		(property "Reference" "U22"
+		(property "Reference" "U13"
 			(at 270.51 149.479 0)
 			(effects
 				(font
@@ -11717,7 +11717,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U22")
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -11732,7 +11732,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a20db1c-9498-4f2a-8e1b-8c0cbdc662fc")
-		(property "Reference" "U25"
+		(property "Reference" "U12"
 			(at 187.96 253.1618 0)
 			(effects
 				(font
@@ -11862,7 +11862,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U25")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -11877,7 +11877,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61c9fe0f-b1e2-4063-867e-68850153a252")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR060"
 			(at 262.89 99.06 0)
 			(effects
 				(font
@@ -11927,7 +11927,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR052")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -11942,7 +11942,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6278910a-74b4-4a21-b6bf-6715c1254a6b")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR059"
 			(at 260.35 182.88 0)
 			(effects
 				(font
@@ -11992,7 +11992,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR053")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -12007,7 +12007,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74cc45a3-68ac-4ff2-b321-71e88908f25e")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR035"
 			(at 19.05 151.13 0)
 			(effects
 				(font
@@ -12057,7 +12057,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR087")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -12072,7 +12072,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d5b68e4-50af-4f7f-af4f-7516ecec77bd")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR048"
 			(at 85.09 93.98 0)
 			(effects
 				(font
@@ -12122,7 +12122,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR047")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -12138,7 +12138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e5e361c-5472-44d8-8767-c54412cf8031")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR067"
 			(at 378.46 168.91 0)
 			(effects
 				(font
@@ -12188,7 +12188,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR069")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -12203,7 +12203,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81fb644c-c884-46c3-9448-daf260e9c568")
-		(property "Reference" "R40"
+		(property "Reference" "R20"
 			(at 76.2 37.465 0)
 			(effects
 				(font
@@ -12221,7 +12221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 77.47 33.528 90)
 			(effects
 				(font
@@ -12311,7 +12311,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R40")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -12327,7 +12327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84246832-e726-4ae5-bf6c-1b53799dabb9")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR053"
 			(at 133.35 88.9 0)
 			(effects
 				(font
@@ -12377,7 +12377,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR049")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -12393,7 +12393,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9a7efb67-7dea-4e1e-9959-8f67db8fcae3")
-		(property "Reference" "J17"
+		(property "Reference" "J16"
 			(at 378.46 116.84 0)
 			(effects
 				(font
@@ -12490,7 +12490,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "J17")
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -12505,7 +12505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a173c70f-5903-40e8-b2d2-8ec3249939f9")
-		(property "Reference" "R44"
+		(property "Reference" "R27"
 			(at 260.223 61.0616 0)
 			(effects
 				(font
@@ -12523,7 +12523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 256.667 62.23 90)
 			(effects
 				(font
@@ -12613,7 +12613,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R44")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -12628,7 +12628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7bbb0c1-9ba6-450f-891a-c7347873e1b3")
-		(property "Reference" "U20"
+		(property "Reference" "U10"
 			(at 116.0018 93.98 0)
 			(effects
 				(font
@@ -12758,7 +12758,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U20")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -12773,7 +12773,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b30be61d-11e4-4ca5-984e-ac83adc8ade6")
-		(property "Reference" "R45"
+		(property "Reference" "R26"
 			(at 257.683 144.8816 0)
 			(effects
 				(font
@@ -12791,7 +12791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 254.127 146.05 90)
 			(effects
 				(font
@@ -12881,7 +12881,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R45")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -12896,7 +12896,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b4dd6d56-8b36-46fd-ba55-8eb5ade1dfa3")
-		(property "Reference" "R43"
+		(property "Reference" "R24"
 			(at 242.57 171.45 0)
 			(effects
 				(font
@@ -12914,7 +12914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 246.507 172.72 90)
 			(effects
 				(font
@@ -13004,7 +13004,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R43")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -13020,7 +13020,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb36eda2-15ad-4575-b4c1-492ae23f2c89")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR052"
 			(at 125.73 88.9 0)
 			(effects
 				(font
@@ -13070,7 +13070,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR048")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -13085,7 +13085,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8da3d1e-e8c7-4a76-a45a-d2d9d3d6cb0e")
-		(property "Reference" "U23"
+		(property "Reference" "U15"
 			(at 322.1482 80.01 0)
 			(effects
 				(font
@@ -13215,7 +13215,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "U23")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -13230,7 +13230,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e019ef8b-feb1-45f7-9363-a8b388293c76")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR062"
 			(at 320.04 27.94 0)
 			(effects
 				(font
@@ -13280,7 +13280,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR055")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -13295,7 +13295,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e02b3aed-aa37-4236-a568-83c7258bc611")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR058"
 			(at 250.825 99.06 0)
 			(effects
 				(font
@@ -13345,7 +13345,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR050")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -13361,7 +13361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eceff648-d797-4757-94b9-50691e961249")
-		(property "Reference" "R81"
+		(property "Reference" "R15"
 			(at 54.61 144.78 90)
 			(effects
 				(font
@@ -13377,7 +13377,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 54.61 152.908 90)
 			(effects
 				(font
@@ -13413,7 +13413,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R81")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -13429,7 +13429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f12f3580-d054-4693-aa32-9e0ac23c8df5")
-		(property "Reference" "C55"
+		(property "Reference" "C10"
 			(at 29.21 143.51 90)
 			(effects
 				(font
@@ -13445,7 +13445,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 33.02 150.1648 0)
 			(effects
 				(font
@@ -13481,7 +13481,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C55")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -13496,7 +13496,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f813558c-123f-4155-87fa-20024dd1a93e")
-		(property "Reference" "R46"
+		(property "Reference" "R28"
 			(at 328.93 33.655 0)
 			(effects
 				(font
@@ -13514,7 +13514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 330.2 29.718 90)
 			(effects
 				(font
@@ -13604,7 +13604,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R46")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -13619,7 +13619,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f840ba90-c8d1-4454-9e6a-04e770b2fcd8")
-		(property "Reference" "R49"
+		(property "Reference" "R31"
 			(at 330.2 130.175 0)
 			(effects
 				(font
@@ -13637,7 +13637,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 331.47 126.238 90)
 			(effects
 				(font
@@ -13727,7 +13727,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R49")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -13742,7 +13742,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9d0074a-e825-44bb-b600-6f5f364aaf49")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR064"
 			(at 321.31 40.64 0)
 			(effects
 				(font
@@ -13792,7 +13792,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR057")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -13807,7 +13807,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe787cd8-31ef-4a84-a54c-b2f8f0fc3d8d")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR057"
 			(at 248.285 182.88 0)
 			(effects
 				(font
@@ -13857,7 +13857,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR051")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
