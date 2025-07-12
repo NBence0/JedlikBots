@@ -541,14 +541,14 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 71.12 53.34 180)
+		(at 69.85 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3cdbba65-09cc-4254-8cc8-eea95b3077aa")
+		(uuid "584df02c-5302-4b02-b56f-9216a706fc4f")
 	)
 	(hierarchical_label "SPI_CLK"
 		(shape input)
@@ -814,24 +814,24 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 74.93 53.34 90)
+		(at 73.66 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8cc4868f-9c10-44a3-9f77-06a4ee50260d")
-		(property "Reference" "C59"
-			(at 74.93 45.72 90)
+		(uuid "900f7450-d145-43b8-a45d-84474a1ec18b")
+		(property "Reference" "C125"
+			(at 73.66 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "C"
-			(at 74.93 48.26 90)
+		(property "Value" "1uf"
+			(at 73.66 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +839,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 78.74 52.3748 0)
+			(at 77.47 66.3448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -848,7 +848,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 53.34 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -857,7 +857,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 53.34 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -866,15 +866,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "2cb5942b-7087-469e-87a4-363c2bc192cf")
+			(uuid "e84e70b7-cfd3-4f52-a12d-1ed57d20ab91")
 		)
 		(pin "1"
-			(uuid "984d76d2-f3a9-4b29-b17b-681ad494b022")
+			(uuid "cca9e7b4-e70b-415a-a13c-ef5e15d590ea")
 		)
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/86209e6a-92ae-4699-a125-02d46b525fc7/160ccd78-386a-4b8b-89f3-6c9a73a758a1"
-					(reference "C59")
+					(reference "C125")
 					(unit 1)
 				)
 			)
@@ -882,15 +882,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 53.34 90)
+		(at 77.47 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8f561119-04e2-4f81-8ff5-f98950b281f5")
-		(property "Reference" "#PWR0127"
-			(at 85.09 53.34 0)
+		(uuid "c407d24c-9438-43a4-bb6e-2f82797a5d80")
+		(property "Reference" "#PWR0178"
+			(at 83.82 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -899,7 +899,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.1342 53.213 0)
+			(at 81.8642 67.183 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -907,7 +907,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 53.34 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -916,7 +916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 53.34 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -925,7 +925,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 53.34 0)
+			(at 77.47 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -934,12 +934,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "af727336-0ed1-4243-8273-910568c2b32d")
+			(uuid "075bee89-6d03-41b3-a15e-b80deedccd57")
 		)
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/86209e6a-92ae-4699-a125-02d46b525fc7/160ccd78-386a-4b8b-89f3-6c9a73a758a1"
-					(reference "#PWR0127")
+					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
