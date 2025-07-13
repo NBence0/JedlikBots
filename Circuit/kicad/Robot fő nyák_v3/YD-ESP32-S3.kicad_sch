@@ -2582,6 +2582,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 92.71) (xy 106.68 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18fe7cc8-a875-4a8b-a63e-55d62a011ecf")
+	)
+	(wire
+		(pts
 			(xy 146.05 162.56) (xy 163.83 162.56)
 		)
 		(stroke
@@ -2679,6 +2689,16 @@
 			(type default)
 		)
 		(uuid "31e49fcc-55e9-4b7d-a097-b1a6b7953a11")
+	)
+	(wire
+		(pts
+			(xy 91.44 92.71) (xy 91.44 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3274d999-5b47-413c-a09c-34dd43806eee")
 	)
 	(wire
 		(pts
@@ -3880,16 +3900,6 @@
 		)
 		(uuid "30076c9f-da87-4e95-b70c-916da5914f9c")
 	)
-	(label "TOUCH2"
-		(at 91.44 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "30316c50-6739-4d98-989b-9794182e42e7")
-	)
 	(label "esp_txd0"
 		(at 212.09 116.84 180)
 		(effects
@@ -4080,16 +4090,6 @@
 		)
 		(uuid "9d85b12f-5395-4b0e-94bc-0cd9c1e3ca54")
 	)
-	(label "TOUCH1"
-		(at 91.44 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9ed2633d-cd41-4f5b-b49b-75d043f0280b")
-	)
 	(label "SPI_2_CLK"
 		(at 167.64 15.24 270)
 		(effects
@@ -4240,16 +4240,6 @@
 		)
 		(uuid "c9e07b1f-dcb4-4405-a37d-f5d31513f133")
 	)
-	(label "TOUCH2"
-		(at 76.2 119.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cb6270d6-9129-4baf-984e-cb4ea3d88280")
-	)
 	(label "M3_step"
 		(at 203.2 60.96 0)
 		(effects
@@ -4319,16 +4309,6 @@
 			(justify left bottom)
 		)
 		(uuid "e746caa3-b807-4376-8ac3-d23c283d3961")
-	)
-	(label "TOUCH1"
-		(at 76.2 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "efc14894-b384-43d2-b8bb-1e575bd380fa")
 	)
 	(label "SPI_2_MOSI"
 		(at 165.1 15.24 270)
@@ -4490,6 +4470,50 @@
 			)
 		)
 	)
+	(global_label "TOUCH2"
+		(shape input)
+		(at 106.68 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2d7a2ad8-cdb4-4e37-9dd8-fd5241ed5c7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.1038 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TOUCH2"
+		(shape input)
+		(at 76.2 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "48a34487-a3a7-4266-9b66-9c3da9df4c4c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6238 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI_TMC_CH"
 		(shape input)
 		(at 130.81 107.95 90)
@@ -4503,6 +4527,28 @@
 		(uuid "4bec462f-c2be-4059-9d33-bfeac9501eef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 130.81 93.6558 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TOUCH1"
+		(shape input)
+		(at 76.2 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5721f51a-bf8d-4bb8-9a10-df64d90a407b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6238 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4679,6 +4725,28 @@
 		(uuid "ba99fa1a-ec19-4cbc-a297-5c430eb3236d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.3527 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TOUCH1"
+		(shape input)
+		(at 91.44 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc04d8ae-b074-482a-8531-3f35648a7495")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.8638 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5082,7 +5150,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09550302-6fe6-4413-9e4e-cd3c7dcce4a3")
-		(property "Reference" "#PWR0174"
+		(property "Reference" "#PWR089"
 			(at 162.56 196.85 0)
 			(effects
 				(font
@@ -5132,7 +5200,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR0174")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -5147,7 +5215,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c4a6b8d-9151-47ad-b987-abffd62d1b2b")
-		(property "Reference" "U38"
+		(property "Reference" "U37"
 			(at 223.52 119.126 0)
 			(effects
 				(font
@@ -5244,7 +5312,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "U38")
+					(reference "U37")
 					(unit 1)
 				)
 			)
@@ -5335,7 +5403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a4a9b36-f6ca-4170-89e4-0e84576e8d1d")
-		(property "Reference" "D5"
+		(property "Reference" "D6"
 			(at 40.3225 30.48 0)
 			(effects
 				(font
@@ -5351,7 +5419,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Lumex_SML-LX0303SIUPGUSB"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 41.91 36.83 0)
 			(effects
 				(font
@@ -5387,7 +5455,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "D5")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5403,7 +5471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28d5bdac-82cf-4ee4-949b-0d664bfb287d")
-		(property "Reference" "R71"
+		(property "Reference" "R72"
 			(at 76.2 57.1499 0)
 			(effects
 				(font
@@ -5457,7 +5525,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "R71")
+					(reference "R72")
 					(unit 1)
 				)
 			)
@@ -5473,7 +5541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c1dc057-cafc-4b50-beca-e3bd65b66c32")
-		(property "Reference" "C114"
+		(property "Reference" "C82"
 			(at 139.7 182.8799 0)
 			(effects
 				(font
@@ -5527,7 +5595,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C114")
+					(reference "C82")
 					(unit 1)
 				)
 			)
@@ -5543,7 +5611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f8166c2-6620-46fe-b2e1-077fa59700b7")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR087"
 			(at 73.66 83.82 0)
 			(effects
 				(font
@@ -5593,7 +5661,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR084")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -5609,7 +5677,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "48463f6e-8221-445b-85c5-52f0cc913ba3")
-		(property "Reference" "R73"
+		(property "Reference" "R74"
 			(at 238.76 157.48 90)
 			(effects
 				(font
@@ -5661,7 +5729,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "R73")
+					(reference "R74")
 					(unit 1)
 				)
 			)
@@ -5737,7 +5805,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 91.44 99.06 0)
+		(at 91.44 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5746,7 +5814,7 @@
 		(fields_autoplaced yes)
 		(uuid "5629ca2f-5f23-4b26-a740-fd0942b473c4")
 		(property "Reference" "TP6"
-			(at 93.98 94.4879 0)
+			(at 93.98 85.5979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5755,7 +5823,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 93.98 97.0279 0)
+			(at 93.98 88.1379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5764,7 +5832,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 96.52 99.06 0)
+			(at 96.52 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5773,7 +5841,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 99.06 0)
+			(at 96.52 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5782,7 +5850,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 91.44 99.06 0)
+			(at 91.44 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +5879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "56c57460-f238-4d0c-bb43-3df9e0503fca")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR093"
 			(at 281.94 41.91 0)
 			(effects
 				(font
@@ -5862,7 +5930,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR089")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -5947,7 +6015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fec1b0b-a1cd-4392-a716-c35e447b4903")
-		(property "Reference" "C53"
+		(property "Reference" "C84"
 			(at 187.96 121.9199 0)
 			(effects
 				(font
@@ -6001,7 +6069,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C53")
+					(reference "C84")
 					(unit 1)
 				)
 			)
@@ -6018,7 +6086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62860c24-61e6-40ea-a0e5-8301ad5f0f3d")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR090"
 			(at 191.77 133.35 0)
 			(effects
 				(font
@@ -6068,7 +6136,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR086")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -6084,7 +6152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "658d3eea-69cc-4ad5-95a0-5926df8cd53a")
-		(property "Reference" "C113"
+		(property "Reference" "C81"
 			(at 128.27 182.8799 0)
 			(effects
 				(font
@@ -6138,7 +6206,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C113")
+					(reference "C81")
 					(unit 1)
 				)
 			)
@@ -6154,7 +6222,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "727a1bf3-d7dc-4963-bd31-4fb36ffd68fd")
-		(property "Reference" "R69"
+		(property "Reference" "R71"
 			(at 49.53 30.48 90)
 			(effects
 				(font
@@ -6206,7 +6274,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "R69")
+					(reference "R71")
 					(unit 1)
 				)
 			)
@@ -6222,7 +6290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7466c257-1770-4de7-b8c9-35c15f144b98")
-		(property "Reference" "C51"
+		(property "Reference" "C79"
 			(at 64.77 55.8799 0)
 			(effects
 				(font
@@ -6276,7 +6344,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C51")
+					(reference "C79")
 					(unit 1)
 				)
 			)
@@ -6292,7 +6360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "769ba0f0-c52f-4cb2-85dd-2c4bb95acc88")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR085"
 			(at 45.72 67.31 0)
 			(effects
 				(font
@@ -6342,7 +6410,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR082")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -6358,7 +6426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81b8388c-bd55-4315-8294-152cf2646052")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR086"
 			(at 60.96 67.31 0)
 			(effects
 				(font
@@ -6408,7 +6476,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR083")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -6424,7 +6492,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82910f34-5d20-4879-85b1-faeebdb6d202")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR091"
 			(at 223.52 87.63 0)
 			(effects
 				(font
@@ -6474,7 +6542,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR087")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -6490,7 +6558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "846aac21-8e13-40bf-a30e-e12ffc29a9fb")
-		(property "Reference" "D6"
+		(property "Reference" "D4"
 			(at 37.7825 67.31 90)
 			(effects
 				(font
@@ -6506,7 +6574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Lumex_SML-LX0303SIUPGUSB"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 33.02 64.77 0)
 			(effects
 				(font
@@ -6542,7 +6610,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "D6")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -6558,7 +6626,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84d5d501-4253-48d8-8671-96d002968460")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR088"
 			(at 92.71 49.53 0)
 			(effects
 				(font
@@ -6609,7 +6677,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR085")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -6625,7 +6693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8db342c0-2fbd-4610-8472-9879382a8672")
-		(property "Reference" "U37"
+		(property "Reference" "ESP1"
 			(at 45.3741 86.36 0)
 			(effects
 				(font
@@ -6797,7 +6865,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "U37")
+					(reference "ESP1")
 					(unit 1)
 				)
 			)
@@ -6813,7 +6881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "916766a2-7749-4fe9-bff9-7f8170d43785")
-		(property "Reference" "R68"
+		(property "Reference" "R70"
 			(at 49.53 19.05 90)
 			(effects
 				(font
@@ -6865,7 +6933,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "R68")
+					(reference "R70")
 					(unit 1)
 				)
 			)
@@ -6881,7 +6949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac6ce8bc-bfb2-4ef1-8ea4-e06ac4e8f207")
-		(property "Reference" "C50"
+		(property "Reference" "C78"
 			(at 49.53 55.8799 0)
 			(effects
 				(font
@@ -6899,7 +6967,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
 			(at 46.6852 60.96 0)
 			(effects
 				(font
@@ -6935,7 +7003,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C50")
+					(reference "C78")
 					(unit 1)
 				)
 			)
@@ -6951,7 +7019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad233a0b-b71b-489d-919f-2c7c04a4c599")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR092"
 			(at 228.6 87.63 0)
 			(effects
 				(font
@@ -7001,7 +7069,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR088")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -7017,7 +7085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3c63225-7d00-40ab-9286-8b6f726c8d37")
-		(property "Reference" "R72"
+		(property "Reference" "R73"
 			(at 233.68 132.08 90)
 			(effects
 				(font
@@ -7069,7 +7137,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "R72")
+					(reference "R73")
 					(unit 1)
 				)
 			)
@@ -7085,7 +7153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b62d18d8-4007-42d7-b650-9dd7564f39c9")
-		(property "Reference" "CT4"
+		(property "Reference" "CT3"
 			(at 165.1 182.3338 0)
 			(effects
 				(font
@@ -7103,7 +7171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
 			(at 162.56 184.15 0)
 			(effects
 				(font
@@ -7139,7 +7207,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "CT4")
+					(reference "CT3")
 					(unit 1)
 				)
 			)
@@ -7155,7 +7223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d088a946-3691-4c51-82df-6cff3be0332f")
-		(property "Reference" "C52"
+		(property "Reference" "C80"
 			(at 77.47 72.3899 0)
 			(effects
 				(font
@@ -7209,7 +7277,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C52")
+					(reference "C80")
 					(unit 1)
 				)
 			)
@@ -7225,7 +7293,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4dfa5d5-b95e-4f4d-9029-7666a6098f2f")
-		(property "Reference" "R70"
+		(property "Reference" "R69"
 			(at 38.1 55.88 0)
 			(effects
 				(font
@@ -7277,7 +7345,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "R70")
+					(reference "R69")
 					(unit 1)
 				)
 			)
@@ -7293,7 +7361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd87683f-f7bf-4d01-92e1-704c5d70488e")
-		(property "Reference" "D4"
+		(property "Reference" "D5"
 			(at 40.3225 19.05 0)
 			(effects
 				(font
@@ -7309,7 +7377,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Lumex_SML-LX0303SIUPGUSB"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 41.91 25.4 0)
 			(effects
 				(font
@@ -7345,7 +7413,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -7361,7 +7429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddaeab2d-c12c-4a88-8b30-a122ab41e9d8")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR084"
 			(at 43.18 191.77 0)
 			(effects
 				(font
@@ -7411,7 +7479,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "#PWR081")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -7495,7 +7563,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 91.44 92.71 0)
+		(at 106.68 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7504,7 +7572,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1d2ad55-64b4-4dfc-bd43-5cd0e01da27b")
 		(property "Reference" "TP5"
-			(at 93.98 88.1379 0)
+			(at 109.22 85.5979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7513,7 +7581,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 93.98 90.6779 0)
+			(at 109.22 88.1379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7522,7 +7590,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 96.52 92.71 0)
+			(at 111.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +7599,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 92.71 0)
+			(at 111.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7540,7 +7608,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 91.44 92.71 0)
+			(at 106.68 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7570,7 +7638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2428ca7-33cb-40f8-ac85-dc4839fbc64f")
-		(property "Reference" "C115"
+		(property "Reference" "C83"
 			(at 152.4 182.8799 0)
 			(effects
 				(font
@@ -7624,7 +7692,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(reference "C115")
+					(reference "C83")
 					(unit 1)
 				)
 			)
@@ -8786,48 +8854,6 @@
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
 					(page "22")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 252.73 173.99)
-		(size 12.7 3.81)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ea85c6ab-21e3-4ada-9ce7-e96fd4df8568")
-		(property "Sheetname" "adc"
-			(at 252.73 173.2784 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "adc.kicad_sch"
-			(at 252.73 178.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "CM5IO"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3"
-					(page "9")
 				)
 			)
 		)

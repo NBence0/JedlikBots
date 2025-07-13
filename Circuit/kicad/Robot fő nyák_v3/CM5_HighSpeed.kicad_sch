@@ -5368,7 +5368,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x22_Socket"
+		(symbol "Conn_01x22_Socket_1"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -5376,23 +5376,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 27.94 0)
+			(property "Reference" "DSI1"
+				(at -22.86 29.21 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Conn_01x22_Socket"
-				(at 0 -30.48 0)
+			(property "Value" "Conn_01x22_Female"
+				(at -18.415 29.21 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "CM5IO:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5401,7 +5403,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5410,7 +5412,52 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x22, script generated"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Field4" "Mouser"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Field5" "798-FH12-22S-0.5SH55"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Field6" "FH12-22S-0.5SH55"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Field7" "Hirose"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part Description" "22 Position FFC, FPC Connector Contacts, Bottom 0.020\" (0.50mm) Surface Mount, Right Angle"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5445,7 +5492,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x22_Socket_1_1"
+			(symbol "Conn_01x22_Socket_1_1_1"
 				(polyline
 					(pts
 						(xy -1.27 25.4) (xy -0.508 25.4)
@@ -5701,6 +5748,18 @@
 				(polyline
 					(pts
 						(xy -1.27 -27.94) (xy -0.508 -27.94)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -30.48) (xy -0.508 -30.48)
 					)
 					(stroke
 						(width 0.1524)
@@ -5966,6 +6025,18 @@
 					(start 0 -28.448)
 					(mid -0.5058 -27.94)
 					(end 0 -27.432)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -30.988)
+					(mid -0.5058 -30.48)
+					(end 0 -29.972)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -6363,6 +6434,131 @@
 						)
 					)
 					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -30.48 0)
+					(length 3.81)
+					(name "Pin_22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7220,6 +7416,12 @@
 		(uuid "2ed386d8-1a92-4875-a5f8-9de71531e06f")
 	)
 	(junction
+		(at 110.49 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "353b14e0-ec9f-49ce-aa72-241f1e8864c4")
+	)
+	(junction
 		(at 195.58 54.61)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -7292,6 +7494,12 @@
 		(uuid "6742a066-6a5f-4185-90ae-b7fe8c6eda52")
 	)
 	(junction
+		(at 148.59 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a450c52-885d-4d63-94ca-064551bf351e")
+	)
+	(junction
 		(at 101.6 124.46)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -7332,6 +7540,12 @@
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "84febc35-87fd-4cad-8e04-2b66390cfc12")
+	)
+	(junction
+		(at 148.59 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97dd5bee-e778-4723-a733-c84f91b772f4")
 	)
 	(junction
 		(at 35.56 48.26)
@@ -8319,6 +8533,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 152.4) (xy 148.59 153.67)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "4b53adac-5e4c-4e38-b479-b623e06b05f4")
+	)
+	(wire
+		(pts
 			(xy 21.59 76.2) (xy 38.1 76.2)
 		)
 		(stroke
@@ -8959,7 +9183,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 142.24) (xy 148.59 151.13)
+			(xy 148.59 142.24) (xy 148.59 152.4)
 		)
 		(stroke
 			(width 0)
@@ -9039,16 +9263,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 71.12) (xy 148.59 80.01)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "897277a3-b7ce-4d18-8c5f-1c984a246298")
-	)
-	(wire
-		(pts
 			(xy 31.75 35.56) (xy 38.1 35.56)
 		)
 		(stroke
@@ -9116,6 +9330,16 @@
 			(type solid)
 		)
 		(uuid "8efe6411-1919-4082-b5b8-393585e068c8")
+	)
+	(wire
+		(pts
+			(xy 148.59 152.4) (xy 151.13 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f82f905-c44b-4fb1-95c2-9a69baddebfc")
 	)
 	(wire
 		(pts
@@ -9759,6 +9983,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 81.28) (xy 148.59 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c07996db-2a24-422e-8164-5231372e6f33")
+	)
+	(wire
+		(pts
 			(xy 99.06 53.34) (xy 115.57 53.34)
 		)
 		(stroke
@@ -10006,6 +10240,16 @@
 			(type solid)
 		)
 		(uuid "d5c86a84-6c8b-48b5-b583-2fe7052421ab")
+	)
+	(wire
+		(pts
+			(xy 148.59 71.12) (xy 148.59 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d61a5b42-5bd2-43e5-9681-1dbbb05c072a")
 	)
 	(wire
 		(pts
@@ -12284,7 +12528,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 80.01 0)
+		(at 148.59 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12292,7 +12536,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d250ba3")
 		(property "Reference" "#PWR09"
-			(at 148.59 86.36 0)
+			(at 148.59 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12301,7 +12545,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.717 84.4042 0)
+			(at 148.717 85.6742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12309,7 +12553,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 80.01 0)
+			(at 148.59 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12318,7 +12562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 80.01 0)
+			(at 148.59 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12327,7 +12571,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 80.01 0)
+			(at 148.59 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12349,7 +12593,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 151.13 0)
+		(at 148.59 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12357,7 +12601,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d25a016")
 		(property "Reference" "#PWR010"
-			(at 148.59 157.48 0)
+			(at 148.59 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12366,7 +12610,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.717 155.5242 0)
+			(at 148.717 158.0642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12374,7 +12618,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 151.13 0)
+			(at 148.59 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12383,7 +12627,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 151.13 0)
+			(at 148.59 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12392,7 +12636,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 151.13 0)
+			(at 148.59 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12659,6 +12903,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x22_Socket_1")
 		(lib_id "Connector:Conn_01x22_Socket")
 		(at 156.21 50.8 0)
 		(unit 1)
@@ -12666,8 +12911,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d669a9a")
-		(property "Reference" "J1"
+		(property "Reference" "DSI1"
 			(at 133.35 21.59 0)
 			(effects
 				(font
@@ -12823,184 +13069,13 @@
 		(pin "9"
 			(uuid "986fa662-6dc8-4009-9871-995c9cfdbebc")
 		)
-		(instances
-			(project "CM5IO"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x22_Socket")
-		(at 156.21 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005d66c6e8")
-		(property "Reference" "J2"
-			(at 133.35 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x22_Female"
-			(at 139.7 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "CM5IO:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field4" "Mouser"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "798-FH12-22S-0.5SH55"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "FH12-22S-0.5SH55"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Hirose"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "22 Position FFC, FPC Connector Contacts, Bottom 0.020\" (0.50mm) Surface Mount, Right Angle"
-			(at 156.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9959c68a-7d2a-4f14-b245-3548992673f3")
-		)
-		(pin "10"
-			(uuid "321eb03e-d5d7-4c98-9326-4c49d56670ae")
-		)
-		(pin "11"
-			(uuid "08fa8ff6-09a7-484c-b1d9-0e3b7c49bb26")
-		)
-		(pin "12"
-			(uuid "65e58d89-f213-4051-b36b-7b3454867ad5")
-		)
-		(pin "13"
-			(uuid "9d541d6f-313d-4469-a000-68242c1dd6d6")
-		)
-		(pin "14"
-			(uuid "01422660-08c8-48f3-98ca-26cbe7f98f5b")
-		)
-		(pin "15"
-			(uuid "baaf14d0-0c5c-4bf0-82d7-5ee71082500d")
-		)
-		(pin "16"
-			(uuid "7410568a-af90-4a4e-a67d-5fd1863e0d95")
-		)
-		(pin "17"
-			(uuid "0dcb5ab5-f291-489d-b2bc-0f0b25b801ee")
-		)
-		(pin "18"
-			(uuid "30b75c25-1d2c-45e7-83e2-bb3be98f8f83")
-		)
-		(pin "19"
-			(uuid "44cd273f-f3a1-4b9a-83a6-972b276409e1")
-		)
-		(pin "2"
-			(uuid "5daf2c3c-7702-4a59-b99d-84464c054bc4")
-		)
-		(pin "20"
-			(uuid "e47d9cf3-579e-4750-bc6d-bf58b55862bb")
-		)
-		(pin "21"
-			(uuid "414a1d4c-7afc-4ffa-8579-88675cedc4ce")
-		)
-		(pin "22"
-			(uuid "8e6e5f4d-6567-459b-ac23-dfc1d101e708")
-		)
-		(pin "3"
-			(uuid "0a2d185c-629f-461f-8b6b-f91f1894e6ba")
-		)
-		(pin "4"
-			(uuid "17adff9d-c581-42e4-b552-035b922b5256")
-		)
-		(pin "5"
-			(uuid "5684e95c-6824-46cf-8e72-881178a51d31")
-		)
-		(pin "6"
-			(uuid "0a52fedd-967a-423d-aaaf-3875f20f935b")
-		)
-		(pin "7"
-			(uuid "199ade13-7442-4da9-8eea-a8e7681e2aee")
-		)
-		(pin "8"
-			(uuid "b8381d48-3c5b-401b-ac19-279d8173864c")
-		)
-		(pin "9"
-			(uuid "b4856fa9-d711-4b3f-8ccf-343375c62dce")
+		(pin "MP"
+			(uuid "3fab1488-d306-4701-8b62-6abe46024d13")
 		)
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
-					(reference "J2")
+					(reference "DSI1")
 					(unit 1)
 				)
 			)
@@ -13015,7 +13090,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d807cc9")
-		(property "Reference" "J5"
+		(property "Reference" "J3"
 			(at 269.24 24.13 0)
 			(effects
 				(font
@@ -13186,7 +13261,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
-					(reference "J5")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -13201,7 +13276,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d85c63e")
-		(property "Reference" "J6"
+		(property "Reference" "J4"
 			(at 269.24 96.52 0)
 			(effects
 				(font
@@ -13372,7 +13447,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
-					(reference "J6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -14656,7 +14731,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e67855b")
-		(property "Reference" "J3"
+		(property "Reference" "J11"
 			(at 194.183 114.173 0)
 			(effects
 				(font
@@ -14768,7 +14843,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
-					(reference "J3")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -14840,6 +14915,184 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x22_Socket_1")
+		(lib_id "Connector:Conn_01x22_Socket")
+		(at 156.21 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43e7bcd1-0051-4f20-aa6b-9d6a5bf8216e")
+		(property "Reference" "DSI2"
+			(at 139.446 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x22_Female"
+			(at 144.526 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CM5IO:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" "Mouser"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "798-FH12-22S-0.5SH55"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" "FH12-22S-0.5SH55"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field7" "Hirose"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" "22 Position FFC, FPC Connector Contacts, Bottom 0.020\" (0.50mm) Surface Mount, Right Angle"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75a09416-842e-4127-9c38-cf40ce31666e")
+		)
+		(pin "10"
+			(uuid "f4f33941-518b-4bc4-ae62-710eb05b634e")
+		)
+		(pin "11"
+			(uuid "280b2456-5231-4960-8fc9-543d5c19a7f1")
+		)
+		(pin "12"
+			(uuid "e84f3e24-d9b1-4897-b31b-61b3ab175ec9")
+		)
+		(pin "13"
+			(uuid "0022d2ad-0591-472a-9837-07c5b1401492")
+		)
+		(pin "14"
+			(uuid "114fc2cc-48b2-4f43-bfd0-7c55c019c1be")
+		)
+		(pin "15"
+			(uuid "9e854f30-849a-430f-acd5-d3882484053c")
+		)
+		(pin "16"
+			(uuid "a93df4b7-3845-42bc-9389-3ce7c306e9c1")
+		)
+		(pin "17"
+			(uuid "5c596545-c6b9-4f7c-85b0-b043d191b8c6")
+		)
+		(pin "18"
+			(uuid "62ac996c-a937-47f3-aa63-910ae1ad9f94")
+		)
+		(pin "19"
+			(uuid "db43f4b7-b518-4034-86f6-04623e24d8b3")
+		)
+		(pin "2"
+			(uuid "fa1c271c-c54a-4c14-a7ee-eb3f73daad0e")
+		)
+		(pin "20"
+			(uuid "31f19003-3a86-4707-a61d-daaaf0bf72ee")
+		)
+		(pin "21"
+			(uuid "5dd8e870-2682-46db-9551-c11d5183179b")
+		)
+		(pin "22"
+			(uuid "f098a6aa-efb7-4b51-b3c0-4dc0e8717801")
+		)
+		(pin "3"
+			(uuid "28ca788f-8a47-4b2a-b445-52fdd723a9de")
+		)
+		(pin "4"
+			(uuid "f0ea0011-5c18-46ea-803d-4a35036c06cc")
+		)
+		(pin "5"
+			(uuid "c4324383-467a-4b31-b612-37f202aaa9e7")
+		)
+		(pin "6"
+			(uuid "8ebc5e0c-cf5e-4c6c-ae22-345bd70d0777")
+		)
+		(pin "7"
+			(uuid "dd83822a-90e1-447c-acda-9e9ff8185710")
+		)
+		(pin "8"
+			(uuid "48f1ea88-bef8-461c-8c74-b6131343f986")
+		)
+		(pin "9"
+			(uuid "78546cea-0ed9-4e33-84b1-33f64ddaec78")
+		)
+		(pin "MP"
+			(uuid "03770213-6687-4be4-a57e-a3dcfbeb2de7")
+		)
+		(instances
+			(project "CM5IO"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
+					(reference "DSI2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 100.33 181.61 0)
 		(unit 1)
@@ -14866,7 +15119,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 101.2952 185.42 0)
 			(effects
 				(font
@@ -15600,7 +15853,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 111.4552 185.42 0)
 			(effects
 				(font
@@ -15829,7 +16082,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c789bd3c-ea19-43e0-b046-0c95ce38bfd0")
-		(property "Reference" "J4"
+		(property "Reference" "J2"
 			(at 220.472 56.7944 0)
 			(effects
 				(font
@@ -15970,7 +16223,74 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
-					(reference "J4")
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 110.49 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce10b38a-0308-40f5-8861-b5f38690276a")
+		(property "Reference" "TP4"
+			(at 113.03 170.6879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 113.03 173.2279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 115.57 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 110.49 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca794d00-efba-42e0-bb92-556b5c16a135")
+		)
+		(instances
+			(project "CM5IO"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -16198,7 +16518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 30.1752 184.15 0)
 			(effects
 				(font

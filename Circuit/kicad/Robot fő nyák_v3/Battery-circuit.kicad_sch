@@ -411,26 +411,26 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 6.35 0)
+			(property "Reference" "J1"
+				(at 5.0801 -3.81 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify right)
 				)
 			)
 			(property "Value" "XT60-M"
-				(at 0 -5.08 0)
+				(at 2.5401 -3.81 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify right)
 				)
 			)
-			(property "Footprint" "XT60-M:AMASS_XT60-M"
-				(at 0 0 0)
+			(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+				(at -0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -458,7 +458,7 @@
 				)
 			)
 			(property "MF" "AMASS"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -468,7 +468,7 @@
 				)
 			)
 			(property "MAXIMUM_PACKAGE_HEIGHT" "16.00 mm"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -478,7 +478,7 @@
 				)
 			)
 			(property "Package" "Package"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -488,7 +488,7 @@
 				)
 			)
 			(property "Price" "None"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -498,7 +498,7 @@
 				)
 			)
 			(property "Check_prices" "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/?ref=eda"
-				(at 0 0 0)
+				(at -0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -508,7 +508,7 @@
 				)
 			)
 			(property "STANDARD" "IPC 7351B"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -518,7 +518,7 @@
 				)
 			)
 			(property "PARTREV" "V1.2"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -528,7 +528,7 @@
 				)
 			)
 			(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/?ref=snap"
-				(at 0 0 0)
+				(at -0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -538,7 +538,7 @@
 				)
 			)
 			(property "MP" "XT60-M"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -548,7 +548,7 @@
 				)
 			)
 			(property "Description_1" "Plug; DC supply; XT60; male; PIN: 2; for cable; soldered; 30A; 500V"
-				(at 0 0 0)
+				(at -0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -558,7 +558,7 @@
 				)
 			)
 			(property "Availability" "Not in stock"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -568,7 +568,7 @@
 				)
 			)
 			(property "MANUFACTURER" "AMASS"
-				(at 0 0 0)
+				(at 0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -708,6 +708,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "XT60-M_1_0"
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 5.08)
@@ -718,7 +720,7 @@
 							)
 						)
 					)
-					(number "P"
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -736,7 +738,7 @@
 							)
 						)
 					)
-					(number "N"
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -801,7 +803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99156de0-6b15-43c9-8f84-78107d45719e")
-		(property "Reference" "J39"
+		(property "Reference" "J1"
 			(at 198.12 57.1499 90)
 			(effects
 				(font
@@ -819,8 +821,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "XT60-M:AMASS_XT60-M"
-			(at 194.31 62.23 0)
+		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+			(at 204.724 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -848,7 +850,7 @@
 			)
 		)
 		(property "MF" "AMASS"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -858,7 +860,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "16.00 mm"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -868,7 +870,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -878,7 +880,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -888,7 +890,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/?ref=eda"
-			(at 194.31 62.23 0)
+			(at 204.724 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -898,7 +900,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -908,7 +910,7 @@
 			)
 		)
 		(property "PARTREV" "V1.2"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,7 +920,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/?ref=snap"
-			(at 194.31 62.23 0)
+			(at 204.724 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -928,7 +930,7 @@
 			)
 		)
 		(property "MP" "XT60-M"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -938,7 +940,7 @@
 			)
 		)
 		(property "Description_1" "Plug; DC supply; XT60; male; PIN: 2; for cable; soldered; 30A; 500V"
-			(at 194.31 62.23 0)
+			(at 204.724 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,7 +950,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -958,7 +960,7 @@
 			)
 		)
 		(property "MANUFACTURER" "AMASS"
-			(at 194.31 62.23 0)
+			(at 204.724 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,16 +969,16 @@
 				(hide yes)
 			)
 		)
-		(pin "P"
+		(pin "1"
 			(uuid "c0b6d9f0-1b36-4813-b707-ccf434f48a51")
 		)
-		(pin "N"
+		(pin "2"
 			(uuid "d0ccf004-e18d-4562-91bc-ff5a701130f4")
 		)
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/22d35cae-4904-48d0-a6f6-5ba5919dfbde"
-					(reference "J39")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -992,7 +994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b01e0c9b-0ada-4b2c-8cea-b7aae5dd9efc")
-		(property "Reference" "Q20"
+		(property "Reference" "Q26"
 			(at 195.58 83.8199 0)
 			(effects
 				(font
@@ -1052,7 +1054,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/22d35cae-4904-48d0-a6f6-5ba5919dfbde"
-					(reference "Q20")
+					(reference "Q26")
 					(unit 1)
 				)
 			)
@@ -1068,7 +1070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6aa6063-5636-4ee0-83fa-06b37b502847")
-		(property "Reference" "#PWR0138"
+		(property "Reference" "#PWR0160"
 			(at 194.31 73.66 0)
 			(effects
 				(font
@@ -1118,7 +1120,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/22d35cae-4904-48d0-a6f6-5ba5919dfbde"
-					(reference "#PWR0138")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 			)

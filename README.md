@@ -34,7 +34,7 @@ The robot's physical frame and all mechanical components are entirely custom-des
 
 | Design in CAD Software (Video) | The Finished, Printed Components |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
-| <a href="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.mp4"><img src="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.png" alt="Robot Design Process Video" width="400"></a> | <img src="media/szek%C3%A9r/b4b46991-8e49-46ac-89f4-94b7e5c90a75.jfif" alt="Printed Robot Components" width="400"> |
+| <a href="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.mp4"><img src="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.png" alt="Robot Design Process Video" width="400"></a> | <img src="media/szek%C3%A9r/b4b46991-8e49-46ac-89f4-94b7e5c90a75.jpg" alt="Printed Robot Components" width="400"> |
 <p align="center"><em>On the left, the design process (click for video!), and on the right, the finished, printed components next to measurement instruments. The lattice structure provides optimal rigidity with minimal weight.</em></p>
 
 ### 2. Advanced Electronics and Custom-Designed PCB
@@ -46,9 +46,9 @@ The robot's brain and nervous system are comprised of a custom Printed Circuit B
 *   **Central Processing Unit (CPU):** The board hosts a **Raspberry Pi Compute Module 5 (CM5)**, which is responsible for computationally intensive tasks like machine vision and artificial intelligence.
 *   **Real-Time Microcontroller (MCU):** An **ESP32-S3** microcontroller handles low-level, hardware-related control (motors, sensors), guaranteeing deterministic, real-time operation.
 *   **Motor Control Subsystem:**
-    *   Four **TMC5160** stepper motor drivers controlled via UART for precise and silent movement. These drivers have advanced features like `StealthChop2™` for silent operation and `StallGuard2™` for sensorless homing.
+    *   Four **TMC5160** stepper motor drivers controlled via SPI for precise and silent movement. These drivers have advanced features like `StealthChop2™` for silent operation and `StallGuard2™` for sensorless homing.
     *   Multiple H-bridge outputs for driving DC motors and other actuators.
-*   **Power Supply Unit (PSU):** A complex power supply providing multiple voltage levels (5V, 12V, 24V) and managing battery charging (`Battery-circuit.kicad_sch`). The system monitors the battery status and provides protection against overcharging and deep discharge.
+*   **Power Supply Unit (PSU):** A complex power supply providing multiple voltage levels (5V, 12V) and managing battery charging (`Battery-circuit.kicad_sch`). The system monitors the battery status and provides protection against overcharging and deep discharge.
 *   **Sensor Interfaces:**
     *   **I²C Bus:** Multiple I²C devices, including a 9-axis IMU (BNO085) and an environmental sensor (BME280), are connected through an I²C multiplexer, allowing the simultaneous use of devices with the same address.
     *   **Analog-to-Digital Converter (ADC):** A high-resolution ADC (`ADS8688`) is responsible for the precise digitization of analog sensor signals (e.g., distance sensors).
@@ -219,7 +219,7 @@ A robot fizikai váza és minden mechanikai eleme teljes mértékben egyedi terv
 
 | Tervezés a CAD Szoftverben (Videó) | A Kész, Nyomtatott Alkatrészek |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
-| <a href="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.mp4"><img src="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.png" alt="Robot Tervezési Folyamat Videó" width="400"></a> | <img src="media/szek%C3%A9r/b4b46991-8e49-46ac-89f4-94b7e5c90a75.jfif" alt="Kinyomtatott Robot Alkatrészek" width="400"> |
+| <a href="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.mp4"><img src="media/szek%C3%A9r/f64770ca-9b68-40df-99d6-3363a4f65137.png" alt="Robot Tervezési Folyamat Videó" width="400"></a> | <img src="media/szek%C3%A9r/b4b46991-8e49-46ac-89f4-94b7e5c90a75.jpg" alt="Kinyomtatott Robot Alkatrészek" width="400"> |
 <p align="center"><em>Bal oldalon a tervezési folyamat (kattints a videóért!), jobb oldalon a kész, nyomtatott alkatrészek a mérőműszerek mellett. A rácsszerkezet optimális merevséget biztosít minimális súly mellett.</em></p>
 
 ### 2. Fejlett Elektronika és Egyedi Tervezésű NyÁK
@@ -231,9 +231,9 @@ A robot agyát és idegrendszerét egy általunk, a `Circuit/kicad/Robot fő ny�
 *   **Központi Feldolgozó Egység (CPU):** A panel fogad egy **Raspberry Pi Compute Module 5 (CM5)** kártyát, amely a nagy számítási igényű feladatokért, mint a gépi látás és a mesterséges intelligencia, felel.
 *   **Valós Idejű Mikrokontroller (MCU):** Egy **ESP32-S3** mikrokontroller végzi a hardverközeli, alacsony szintű vezérlést (motorok, szenzorok), garantálva a determinisztikus, valós idejű működést.
 *   **Motorvezérlő Alrendszer:**
-    *   4 darab, UART-on keresztül vezérelt **TMC5160** léptetőmotor-meghajtó a precíz és csendes mozgásért. Ezen meghajtók olyan fejlett funkciókkal bírnak, mint a `StealthChop2™` a hangtalan működésért és a `StallGuard2™` a szenzor nélküli végállás-érzékelésért.
+    *   4 darab, SPI-on keresztül vezérelt **TMC5160** léptetőmotor-meghajtó a precíz és csendes mozgásért. Ezen meghajtók olyan fejlett funkciókkal bírnak, mint a `StealthChop2™` a hangtalan működésért és a `StallGuard2™` a szenzor nélküli végállás-érzékelésért.
     *   Több, H-híddal ellátott kimenet DC motorok és egyéb aktuátorok meghajtásához.
-*   **Energiaellátás (PSU):** Egy komplex, több feszültségszintet (5V, 12V, 24V) biztosító tápegység, amely az akkumulátor töltését is menedzseli (`Battery-circuit.kicad_sch`). A rendszer figyeli az akkumulátor állapotát, és védelmet nyújt a túltöltés és mélykisülés ellen.
+*   **Energiaellátás (PSU):** Egy komplex, több feszültségszintet (5V, 12V) biztosító tápegység, amely az akkumulátor töltését is menedzseli (`Battery-circuit.kicad_sch`). A rendszer figyeli az akkumulátor állapotát, és védelmet nyújt a túltöltés és mélykisülés ellen.
 *   **Szenzor Interfészek:**
     *   **I²C Busz:** Több I²C eszköz, köztük egy 9 tengelyes IMU (BNO085) és egy környezeti szenzor (BME280) csatlakozik egy I²C multiplexeren keresztül, amely lehetővé teszi az azonos című eszközök egyidejű használatát.
     *   **Analóg-Digitális Konverter (ADC):** Egy nagy felbontású ADC (`ADS8688`) felel az analóg szenzorok (pl. távolságmérők) jeleinek precíz digitalizálásáért.
