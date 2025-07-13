@@ -55,7 +55,7 @@ The robot's brain and nervous system are comprised of a custom Printed Circuit B
 *   **Peripherals:** USB hub, SD card reader, and numerous GPIO pins for modular expandability.
 
 <p align="center">
-  <img src="media/szek%C3%A9r/72a72700-1c63-46b1-8f63-8bc725096177.jfif" alt="Prototype Electronics" width="700">
+  <img src="media/szek%C3%A9r/a4bd9e9c-3b34-4e4b-b8af-f0082ad1d816.jfif" alt="Prototype Electronics" width="700">
   <br>
   <em>The "cable jungle"—an essential part of the prototyping phase, from which the final, clean PCB is born.</em>
 </p>
@@ -76,7 +76,7 @@ The Python environment running on the Raspberry Pi is responsible for the robot'
 
 <p align="center">
   <a href="media/szek%C3%A9r/54ec2fce-310a-48c4-85d7-5ac6d85cda42.mp4">
-    <img src="media/szek%C3%A9r/a4bd9e9c-3b34-4e4b-b8af-f0082ad1d816.jfif" alt="Color Recognition in Action" width="700">
+    <img src="" alt="Color Recognition in Action" width="700">
   </a>
   <br>
   <em>Click the image to watch the video! Based on the camera's image, the LED strip connected to the ESP32 lights up with the corresponding color.</em>
@@ -97,7 +97,6 @@ Meet the driving force behind JedlikBots, the students who power the project:
 | Photo | Name | Role & Expertise |
 | :---: | :--- | :--- |
 | <img src="web/nagybence.jpg" width="150"> | **Bence Nagy** | **Software Developer.** Specializes in sensor data processing, embedded systems programming, and 3D modeling. Bence is responsible for the robot's hardware abstraction layer and the design of its mechanical components. |
-| <img src="web/szitaslaszlo.jpg" width="150"> | **László Szitás** | **Software Developer & Project Manager.** Develops the control interfaces and web applications for our robots. He also manages project schedules and coordination. |
 | <img src="web/schmidtnandor.jpg" width="150"> | **Nándor Schmidt** | **Electronics Designer & Firmware Developer.** The expert on the embedded systems behind the robots' "brains." He designs the PCBs and writes the low-level firmware, ensuring a perfect harmony between hardware and software. |
 | <img src="web/budabalint.png" width="150"> | **Bálint Buda** | **AI & Communications Developer.** Bálint is responsible for implementing machine learning algorithms and for the robot's wired and wireless communication. |
 
@@ -117,9 +116,6 @@ We are proud of our achievements so far and have set even bigger goals for ourse
   <br>
   <em>Click the image to watch our LEGO robot's competition run!</em>
 </p>
-
-*   **🥇 National Robotics Programming Team Competition - 1st Place (March 2023)**
-*   **🥈 National Robotics Programming Team Competition - 2nd Place (March 2022)**
 
 ---
 
@@ -240,7 +236,7 @@ A robot agyát és idegrendszerét egy általunk, a `Circuit/kicad/Robot fő ny�
 *   **Perifériák:** USB hub, SD kártya olvasó, és számos GPIO kivezetés a moduláris bővíthetőség érdekében.
 
 <p align="center">
-  <img src="media/szek%C3%A9r/72a72700-1c63-46b1-8f63-8bc725096177.jfif" alt="Prototípus Elektronika" width="700">
+  <img src="media/szek%C3%A9r/a4bd9e9c-3b34-4e4b-b8af-f0082ad1d816.jfif" alt="Prototípus Elektronika" width="700">
   <br>
   <em>A "kábel dzsungel" – a prototípus fázis elengedhetetlen része, amelyből a végleges, letisztult PCB megszületik.</em>
 </p>
@@ -261,7 +257,7 @@ A Raspberry Pi-on futó Python környezet felel a robot "intelligenciájáért".
 
 <p align="center">
   <a href="media/szek%C3%A9r/54ec2fce-310a-48c4-85d7-5ac6d85cda42.mp4">
-    <img src="media/szek%C3%A9r/a4bd9e9c-3b34-4e4b-b8af-f0082ad1d816.jfif" alt="Színfelismerés Működés Közben" width="700">
+    <img src="" alt="Színfelismerés Működés Közben" width="700">
   </a>
   <br>
   <em>Kattints a képre a videó megtekintéséhez! A kamera képe alapján az ESP32-re kötött LED-szalag a megfelelő színnel világít.</em>
@@ -282,7 +278,6 @@ Ismerd meg a JedlikBots motorjait, a diákokat, akik a projekt mögött állnak:
 | Fotó | Név | Szerepkör és szakterület |
 | :---: | :--- | :--- |
 | <img src="web/nagybence.jpg" width="150"> | **Nagy Bence** | **Szoftverfejlesztő.** Specializációja a szenzoradatok feldolgozása, a beágyazott rendszerek programozása és a 3D modellezés. Bence felelős a robot hardverközeli szoftverrétegéért és a mechanikai elemek tervezéséért. |
-| <img src="web/szitaslaszlo.jpg" width="150"> | **Szitás László** | **Szoftverfejlesztő & Projektmenedzser.** Feladata a robotjaink vezérlő felületeinek és webes alkalmazásainak fejlesztése. Emellett ő tartja kézben a projektek ütemezését és koordinálását. |
 | <img src="web/schmidtnandor.jpg" width="150"> | **Schmidt Nándor** | **Elektronikai Tervező & Firmware Fejlesztő.** A robot "agya" mögött álló beágyazott rendszerek szakértője. Ő tervezi a PCB-ket és írja az alacsony szintű firmware-t, biztosítva a hardver és szoftver tökéletes összhangját. |
 | <img src="web/budabalint.png" width="150"> | **Buda Bálint** | **AI & Kommunikációs Fejlesztő.** Bálint felelős a gépi tanulási algoritmusok implementálásáért és a robotok vezetékes és vezeték nélküli kommunikációjáért. |
 
@@ -302,9 +297,6 @@ Büszkék vagyunk az eddig elért sikereinkre, és még nagyobb célokat tűztü
   <br>
   <em>Kattints a képre a LEGO robotunk versenyfutamának megtekintéséhez!</em>
 </p>
-
-*   **🥇 Robotprogramozó Országos Csapatverseny - 1. helyezés (2023. március)**
-*   **🥈 Robotprogramozó Országos Csapatverseny - 2. helyezés (2022. március)**
 
 ---
 
