@@ -2030,6 +2030,50 @@
 			)
 		)
 	)
+	(global_label "ESP_3v3"
+		(shape input)
+		(at 254 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c0e53dd-9a6d-42b3-84db-89cd64a8b965")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 242.937 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_3v3"
+		(shape input)
+		(at 171.45 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a92b405c-bf5c-4a02-957d-73d1a6264684")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.387 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Motor 2 power"
 		(shape input)
 		(at 254 19.05 0)
@@ -2048,6 +2092,72 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_3v3"
+		(shape input)
+		(at 63.5 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c5bd7f5d-80dd-4fe3-9fcc-e1c8ad299265")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.437 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_3v3"
+		(shape input)
+		(at 62.23 24.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d4648b1f-0d93-46a5-a2fc-617fa36777b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.167 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_3v3"
+		(shape input)
+		(at 231.14 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ecebefa9-543d-42eb-ba11-4f4d024818ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.077 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2260,17 +2370,6 @@
 			(justify left)
 		)
 		(uuid "5e7bbf0e-eb8f-4f61-adc7-dacbeb682061")
-	)
-	(hierarchical_label "5V"
-		(shape input)
-		(at 231.14 137.16 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "62d956d3-deb4-4dd3-90de-43855229556c")
 	)
 	(hierarchical_label "MCP_RST"
 		(shape input)
