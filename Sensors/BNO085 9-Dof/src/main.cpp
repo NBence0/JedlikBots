@@ -3,13 +3,13 @@
 #include <SPI.h>
 
 // SPI lábkiosztás
-#define BNO08X_CS    10
-#define BNO08X_INT    9
-#define BNO08X_RESET  6
+#define BNO08X_CS    20
+#define BNO08X_INT    21
+#define BNO08X_RESET  48
 
-#define SPI_SCK     16
-#define SPI_MISO    18
-#define SPI_MOSI    17
+#define SPI_SCK     15
+#define SPI_MISO    16
+#define SPI_MOSI    14
 
 Adafruit_BNO08x bno08x(BNO08X_RESET);
 sh2_SensorValue_t sensorValue;

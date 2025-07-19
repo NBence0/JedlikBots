@@ -1,16 +1,9 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 #include "LED.h"
+#include "Gyro.h"
 
-
-class Robot {
-public:
-  int getcolor(uint8_t index) {
-    return 100 + index;
-  }
-};
-
-Robot robot;
+BNO08xGyro gyro;
 Led led;
 uint16_t fletcher16(const uint8_t *data, size_t len) {
   uint16_t sum1 = 0;
@@ -45,6 +38,7 @@ void setup() {
 }
 
 void loop() {
+  /*
   if (Serial1.available() >= 7) {
     uint8_t buffer[7];
     Serial1.readBytes(buffer, 7);
@@ -54,7 +48,7 @@ void loop() {
       Serial.print(buffer[i], HEX);
       Serial.print(" ");
     }
-    */
+
     if (buffer[0] != 0xAA) {
       return;
     }
@@ -70,7 +64,10 @@ void loop() {
     if (received_checksum != calculated_checksum) {
       return;
     }
-
+    */
+    int cmd = 2; // For testing, replace with actual command from buffer[1]
+    int param1 = 0; // Replace with actual parameter from buffer[2]
+    int param2 = 0;
     switch (cmd) {
       case 0: //reastart
         Serial.println("Restart");
@@ -84,6 +81,11 @@ void loop() {
 
       case 2: //Gyro
         Serial.print("Gyro");
+        float roll, pitch, yaw;
+        gyro.getEuler(roll, pitch, yaw);
+        Serial.print("Roll: "); Serial.print(roll);
+        Serial.print(" Pitch: "); Serial.print(pitch);
+        Serial.print(" Yaw: "); Serial.println(yaw);
         break;
       case 3:
 
@@ -111,4 +113,4 @@ void loop() {
         break;
     }
   }
-}
+
