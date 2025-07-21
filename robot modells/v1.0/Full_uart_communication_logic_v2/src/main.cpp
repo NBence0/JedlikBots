@@ -1,27 +1,32 @@
 // File: main.cpp
 #include <Arduino.h>
 #include "LED.h"
+#include "GYRO.h"
 
 // --- Protokoll Konstansok ---
 // Ezeknek egyezniük kell a Python szkriptben lévőkkel
 // Parancsok (RPI -> ESP32)
 const uint8_t CMD_PING = 0;
 const uint8_t CMD_RESTART = 1;
+const uint8_t CMD_READ_GYRO = 2;
+const uint8_t CMD_CALIBRATE_GYRO = 3;
+const uint8_t CMD_READ_COLOR_SENSOR = 4;
 const uint8_t CMD_SET_LED = 7;
 
-// Válaszok (ESP32 -> RPI)
+// Response (ESP32 -> RPI)
 const uint8_t RSP_ACK = 100;         // Sikeres parancs végrehajtás
 const uint8_t RSP_PONG = 101;        // Válasz a PING-re
 const uint8_t RSP_ERROR = 200;       // Hiba történt (pl. rossz checksum)
 const uint8_t RSP_UNKNOWN_CMD = 201; // Ismeretlen parancs
 
-// --- Kommunikációs Pinek ---
+
 #define RX1_PIN 20
 #define TX1_PIN 21
 
-Led led; // LED vezérlő objektum
+Led led;
+BNO08xGyro gyro;
 
-// Ellenőrzőösszeg számító függvény
+
 uint16_t fletcher16(const uint8_t *data, size_t len) {
   uint16_t sum1 = 0;
   uint16_t sum2 = 0;
@@ -32,7 +37,7 @@ uint16_t fletcher16(const uint8_t *data, size_t len) {
   return (sum2 << 8) | sum1;
 }
 
-// Válasz küldése a Raspberry Pi-nek
+
 void sendResponse(uint8_t cmd, uint8_t p1 = 0, uint8_t p2 = 0, uint8_t p3 = 0) {
   uint8_t response[7];
   response[0] = 0xAA;    // Start byte
@@ -48,8 +53,10 @@ void sendResponse(uint8_t cmd, uint8_t p1 = 0, uint8_t p2 = 0, uint8_t p3 = 0) {
   Serial1.write(response, 7);
 }
 
-// Bejövő csomag feldolgozása
-void processPacket(const uint8_t* buffer) {
+
+void processPacket() {
+  /*
+  const uint8_t* buffer ez megy a függvényhívásba
   uint16_t received_checksum = (buffer[6] << 8) | buffer[5];
   uint16_t calculated_checksum = fletcher16(buffer, 5);
 
@@ -62,6 +69,9 @@ void processPacket(const uint8_t* buffer) {
   uint8_t param1 = buffer[2];
   // uint8_t param2 = buffer[3]; // Jelenleg nincsenek használva
   // uint8_t param3 = buffer[4];
+  */
+  uint8_t cmd = CMD_READ_GYRO;
+  uint8_t param1 = 0;
 
   switch (cmd) {
     case CMD_PING:
@@ -69,9 +79,26 @@ void processPacket(const uint8_t* buffer) {
       break;
 
     case CMD_RESTART:
-      sendResponse(RSP_ACK, cmd); // Nyugta küldése újraindítás előtt
-      delay(100); // Időt adunk a válasznak, hogy kimenjen
+      sendResponse(RSP_ACK, cmd);
+      delay(100);
       ESP.restart();
+      break;
+
+    case CMD_READ_GYRO:
+      if (gyro.update()) {
+        float roll, pitch, yaw;
+        gyro.getEuler(roll, pitch, yaw);
+        Serial.print("Roll: "); Serial.print(roll);
+        Serial.print(" Pitch: "); Serial.print(pitch);
+        Serial.print(" Yaw: "); Serial.println(yaw);
+      } else {
+        Serial.println("Gyro update failed. No new data.");
+      }
+      break; // HIÁNYZÓ BREAK!
+    case CMD_CALIBRATE_GYRO:
+      // Példa: 90 fokra kalibrálás
+      gyro.calibrateToAngle(param1);
+      sendResponse(RSP_ACK, cmd); // Nyugta küldése a kalibráció után
       break;
 
     case CMD_SET_LED:
@@ -80,6 +107,7 @@ void processPacket(const uint8_t* buffer) {
       sendResponse(RSP_ACK, cmd, param1);
       break;
 
+
     default:
       sendResponse(RSP_UNKNOWN_CMD, cmd); // Ismeretlen parancs jelzése
       break;
@@ -87,17 +115,15 @@ void processPacket(const uint8_t* buffer) {
 }
 
 void setup() {
-  // A Serial debug portot kikapcsolhatod a végleges kódban
-  // Serial.begin(115200);
-  
-  // Kommunikáció a Raspberry Pi-vel
+  Serial.begin(115200);
   Serial1.begin(576000, SERIAL_8N1, RX1_PIN, TX1_PIN);
-  
-  led.begin(); // LED szalag inicializálása
-  led.off();   // Kezdetben a LED legyen kikapcsolva
+  led.begin();
+  gyro.begin();
+  led.off();
 }
 
 void loop() {
+  /*
   static uint8_t buffer[7];
   static uint8_t bytes_received = 0;
 
@@ -122,5 +148,7 @@ void loop() {
       processPacket(buffer);
       bytes_received = 0; // Reset a következő csomag fogadásához
     }
+    */
+    processPacket();
+    delay(100);
   }
-}

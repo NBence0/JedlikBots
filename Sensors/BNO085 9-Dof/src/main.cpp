@@ -3,8 +3,8 @@
 #include <SPI.h>
 
 // SPI lábkiosztás
-#define BNO08X_CS    20
-#define BNO08X_INT    21
+#define BNO08X_CS    35
+#define BNO08X_INT    36
 #define BNO08X_RESET  48
 
 #define SPI_SCK     15
@@ -76,5 +76,6 @@ void loop() {
     Serial.print(sensorValue.un.gameRotationVector.j, 4);
     Serial.print(" k: ");
     Serial.println(sensorValue.un.gameRotationVector.k, 4);
+    bno08x.wasReset();
   }
 }
