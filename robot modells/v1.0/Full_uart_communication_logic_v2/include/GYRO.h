@@ -21,7 +21,6 @@ private:
     sh2_SensorValue_t _sensorValue;
     bool _connected = false;
 
-    // <<< IDE ADD HOZZÁ EZT A HÁROM SORT >>>
     float _rollOffset;
     float _pitchOffset;
     float _yawOffset;

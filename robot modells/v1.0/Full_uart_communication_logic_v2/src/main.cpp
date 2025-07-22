@@ -2,6 +2,7 @@
 #include <Arduino.h>
 #include "LED.h"
 #include "GYRO.h"
+#include "COLOR_SENSOR.h"
 
 // --- Protokoll Konstansok ---
 // Ezeknek egyezniük kell a Python szkriptben lévőkkel
@@ -25,6 +26,7 @@ const uint8_t RSP_UNKNOWN_CMD = 201; // Ismeretlen parancs
 
 Led led;
 BNO08xGyro gyro;
+ColorSensor colorSensor;
 
 
 uint16_t fletcher16(const uint8_t *data, size_t len) {
@@ -70,8 +72,9 @@ void processPacket() {
   // uint8_t param2 = buffer[3]; // Jelenleg nincsenek használva
   // uint8_t param3 = buffer[4];
   */
-  uint8_t cmd = CMD_READ_GYRO;
-  uint8_t param1 = 0;
+  uint8_t cmd = CMD_READ_COLOR_SENSOR;
+  uint8_t param1 = 25;
+  uint8_t param2 = 4;
 
   switch (cmd) {
     case CMD_PING:
@@ -100,7 +103,14 @@ void processPacket() {
       gyro.calibrateToAngle(param1);
       sendResponse(RSP_ACK, cmd); // Nyugta küldése a kalibráció után
       break;
-
+    case CMD_READ_COLOR_SENSOR:
+      uint16_t value;
+      colorSensor.readOneChannel(param2, value);
+      Serial.print("Color channel ");
+      Serial.print(param2);
+      Serial.print("value : ");
+      Serial.println(value);
+      break;
     case CMD_SET_LED:
       led.handleColor(param1);
       // Nyugta: ACK, az eredeti parancsra, az eredeti paraméterrel
@@ -118,6 +128,8 @@ void setup() {
   Serial.begin(115200);
   Serial1.begin(576000, SERIAL_8N1, RX1_PIN, TX1_PIN);
   led.begin();
+  colorSensor.begin();
+
   gyro.begin();
   led.off();
 }
