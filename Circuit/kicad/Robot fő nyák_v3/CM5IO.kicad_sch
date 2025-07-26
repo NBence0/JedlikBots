@@ -987,6 +987,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 68.58) (xy 243.84 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4acbe75c-df75-46b9-891c-f6805ef4a95c")
+	)
+	(wire
+		(pts
 			(xy 209.55 29.21) (xy 217.17 29.21)
 		)
 		(stroke
@@ -1817,6 +1827,28 @@
 			)
 		)
 	)
+	(global_label "3v3"
+		(shape input)
+		(at 217.17 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "10b02a63-3d08-4195-9732-35c25770a08b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 223.5418 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "3V3_M.2"
 		(shape input)
 		(at 266.7 116.84 0)
@@ -1993,6 +2025,28 @@
 			)
 		)
 	)
+	(global_label "5v"
+		(shape input)
+		(at 217.17 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6800b994-30dd-445d-b20b-f3bf5c1d1755")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.3323 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "5V1"
 		(shape input)
 		(at 274.32 124.46 0)
@@ -2028,6 +2082,28 @@
 		(uuid "7cdbecdd-453d-4535-9a26-35c59c63c3f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 277.763 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INA226_ALERT"
+		(shape input)
+		(at 243.84 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "801aea05-7333-4447-8d54-2c2ad5aaebfa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 260.0436 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3212,13 +3288,13 @@
 			)
 		)
 		(pin "alert out" input
-			(at 245.11 154.94 270)
+			(at 243.84 72.39 90)
 			(uuid "2d83792f-267a-461c-b56c-f891627d8044")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "-1000001" input

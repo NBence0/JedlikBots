@@ -440,6 +440,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(global_label "BMO_INT"
+		(shape input)
+		(at 133.35 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1d4ff8c-b608-4b27-bad6-779bc72bdfe5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.3527 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "MOSI"
 		(shape input)
 		(at 38.1 88.9 180)
@@ -618,7 +640,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 133.35 62.23 0)
+		(at 133.35 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1778,16 +1800,6 @@
 				(justify left top)
 			)
 		)
-		(pin "3V3" input
-			(at 133.35 62.23 0)
-			(uuid "82caf450-37a3-421b-b7b7-295c1c2b82a5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "CS" input
 			(at 107.95 62.23 180)
 			(uuid "c02f71d9-dd51-45cb-b62e-22607876a83a")
@@ -1826,6 +1838,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "3v3-input" input
+			(at 133.35 54.61 0)
+			(uuid "24dfefed-03c9-4e00-b746-b2d7346ba039")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI_INT" input
+			(at 133.35 59.69 0)
+			(uuid "798012e8-3e91-4593-a6bc-5e61bcb03932")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

@@ -1801,10 +1801,6 @@
 		(uuid "56d522c1-50a2-49b6-9709-a6c629d7f48b")
 	)
 	(no_connect
-		(at 71.12 57.15)
-		(uuid "7759c61e-b734-4a97-b6b4-6ea5eb273a76")
-	)
-	(no_connect
 		(at 71.12 59.69)
 		(uuid "96a493b4-114d-405d-bbb5-f770167dab30")
 	)
@@ -2201,6 +2197,17 @@
 			(justify right)
 		)
 		(uuid "72472410-7510-41b6-968e-65853210712d")
+	)
+	(hierarchical_label "SPI_INT"
+		(shape input)
+		(at 71.12 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c2cd82a-a105-4e3e-a6c3-d04cfa3265d7")
 	)
 	(hierarchical_label "3V3"
 		(shape input)

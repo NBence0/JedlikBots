@@ -1487,6 +1487,12 @@
 		(uuid "769aa1a0-9f53-4791-884a-78e94bc0ad24")
 	)
 	(junction
+		(at 90.17 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9732eb26-f7c5-45e3-86d5-f489bf148cde")
+	)
+	(junction
 		(at 204.47 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1598,6 +1604,26 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 134.62) (xy 90.17 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42ec7ef4-3978-4395-a627-dc909b10c9df")
+	)
+	(wire
+		(pts
+			(xy 81.28 139.7) (xy 115.57 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a95b1d2-973c-4d76-b770-6a7f501a437a")
+	)
+	(wire
+		(pts
 			(xy 217.17 140.97) (xy 231.14 140.97)
 		)
 		(stroke
@@ -1608,7 +1634,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 154.94) (xy 99.06 154.94)
+			(xy 81.28 154.94) (xy 115.57 154.94)
 		)
 		(stroke
 			(width 0)
@@ -1648,7 +1674,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 147.32) (xy 99.06 147.32)
+			(xy 81.28 147.32) (xy 115.57 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1658,7 +1684,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 142.24) (xy 99.06 142.24)
+			(xy 81.28 142.24) (xy 115.57 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1758,13 +1784,23 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 149.86) (xy 99.06 149.86)
+			(xy 81.28 149.86) (xy 115.57 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a2c6ea5a-f36a-4697-bfec-6fe7482c3427")
+	)
+	(wire
+		(pts
+			(xy 115.57 137.16) (xy 115.57 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8a03dd8-240c-4b15-abf5-ae2bac0dd8f8")
 	)
 	(wire
 		(pts
@@ -1788,7 +1824,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 144.78) (xy 99.06 144.78)
+			(xy 81.28 144.78) (xy 115.57 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1818,6 +1854,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 137.16) (xy 90.17 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a5687f-d454-4438-9a94-a28dac99db7c")
+	)
+	(wire
+		(pts
 			(xy 217.17 148.59) (xy 231.14 148.59)
 		)
 		(stroke
@@ -1828,7 +1874,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 152.4) (xy 99.06 152.4)
+			(xy 90.17 137.16) (xy 99.06 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55ce4e9-4631-45f4-bb8d-bb7f8692640f")
+	)
+	(wire
+		(pts
+			(xy 81.28 152.4) (xy 115.57 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1845,6 +1901,16 @@
 			(type default)
 		)
 		(uuid "ebfa40c1-7b52-4547-8a39-06ba59f40979")
+	)
+	(wire
+		(pts
+			(xy 90.17 134.62) (xy 90.17 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3df6ca-4ec1-4401-9231-5355880770d1")
 	)
 	(wire
 		(pts
@@ -1986,6 +2052,50 @@
 		)
 		(uuid "ffa0dc00-d396-437f-a0cb-59e3d60f3a7c")
 	)
+	(global_label "B-B_7"
+		(shape input)
+		(at 115.57 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4aff3f3f-434d-4178-8faa-225eca639864")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.8447 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "H_EN"
+		(shape input)
+		(at 99.06 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "533cc050-12a1-4805-bb8e-9d3610a71ce2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.8228 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Motor 1 power"
 		(shape input)
 		(at 171.45 19.05 0)
@@ -2074,6 +2184,50 @@
 			)
 		)
 	)
+	(global_label "B-B_3"
+		(shape input)
+		(at 115.57 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ad39c8da-7121-455e-bb80-1cf68631f6f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.8447 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_RST"
+		(shape input)
+		(at 115.57 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af0dfd28-1d55-441c-a0c1-19b755a2f2fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.0542 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Motor 2 power"
 		(shape input)
 		(at 254 19.05 0)
@@ -2118,6 +2272,28 @@
 			)
 		)
 	)
+	(global_label "B-B_6"
+		(shape input)
+		(at 115.57 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d197092f-3601-41e9-b5c3-7e3870d5f937")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.8447 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ESP_3v3"
 		(shape input)
 		(at 62.23 24.13 180)
@@ -2136,6 +2312,72 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B-B_5"
+		(shape input)
+		(at 115.57 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e00ee5c8-44a7-49d1-ae45-c4eaa939d4e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.8447 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B-B_4"
+		(shape input)
+		(at 115.57 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2c74a7b-9394-4104-91c5-f3d47a47ac32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.8447 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B-B_2"
+		(shape input)
+		(at 115.57 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e6d5cf10-0b12-4f9d-86de-004b722b4fb3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.8447 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2318,7 +2560,7 @@
 	)
 	(hierarchical_label "I2C_RST"
 		(shape input)
-		(at 81.28 139.7 0)
+		(at 115.57 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2428,7 +2670,7 @@
 	)
 	(hierarchical_label "H_EN"
 		(shape input)
-		(at 81.28 137.16 0)
+		(at 99.06 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
