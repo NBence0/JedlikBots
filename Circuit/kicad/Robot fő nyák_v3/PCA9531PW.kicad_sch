@@ -1660,12 +1660,6 @@
 		(uuid "7699453c-c48e-4eb8-9ed1-cb4fef98a978")
 	)
 	(junction
-		(at 257.81 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c93821fc-f88c-41c4-9934-2ab49704c985")
-	)
-	(junction
 		(at 133.35 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1674,16 +1668,6 @@
 	(no_connect
 		(at 123.19 87.63)
 		(uuid "25fb95d3-8652-48ab-97a9-cc50c29d38ef")
-	)
-	(wire
-		(pts
-			(xy 257.81 127) (xy 257.81 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0508aa53-45f6-4b0f-ba02-021906f90619")
 	)
 	(wire
 		(pts
@@ -1737,16 +1721,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 127) (xy 257.81 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "457d1b38-d406-43fc-b97c-8a5f81ea5279")
-	)
-	(wire
-		(pts
 			(xy 158.75 95.25) (xy 190.5 95.25)
 		)
 		(stroke
@@ -1797,16 +1771,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 129.54) (xy 257.81 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51cca77f-341f-48c7-82e4-1a97616a8fcf")
-	)
-	(wire
-		(pts
 			(xy 158.75 90.17) (xy 171.45 90.17)
 		)
 		(stroke
@@ -1844,16 +1808,6 @@
 			(type default)
 		)
 		(uuid "69496edf-4e88-46a5-90b6-718726c5c228")
-	)
-	(wire
-		(pts
-			(xy 257.81 129.54) (xy 257.81 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "704e2c21-b7b8-4de1-b654-500a4ee30d0c")
 	)
 	(wire
 		(pts
@@ -2105,116 +2059,6 @@
 		)
 		(uuid "f109b934-1a2e-4f7b-bc6f-0ab441d85fb7")
 	)
-	(global_label "ESP_GPIO45"
-		(shape input)
-		(at 246.38 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "00d0ff50-1de4-4414-9b20-7a4285243b04")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.9507 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Motor 1 power"
-		(shape input)
-		(at 246.38 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "195c1514-85fd-4728-b520-7c58dd3f230d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 263.3696 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_3v3"
-		(shape input)
-		(at 246.38 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2277ba3d-0ad8-443e-81df-9078f396ef82")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.443 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TOUCH2"
-		(shape input)
-		(at 246.38 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d569150-e9ce-4b65-844d-91d663ff369d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8038 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TOUCH1"
-		(shape input)
-		(at 246.38 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "650001a1-4fd5-4a78-a40f-a3b6ae763047")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8038 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SERVO1"
 		(shape input)
 		(at 189.23 29.21 180)
@@ -2233,28 +2077,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO47"
-		(shape input)
-		(at 246.38 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "73d80325-f708-4ce2-a0f8-af2c1a3ed890")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.9507 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2325,116 +2147,6 @@
 			)
 		)
 	)
-	(global_label "ESP_GPIO48"
-		(shape input)
-		(at 246.38 109.22 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8644b8e0-7320-4ad0-ba70-4cdfc483322b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.9507 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Motor 2 power"
-		(shape input)
-		(at 246.38 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "892c87ed-59b1-4f16-88fc-438e1e288964")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 263.3696 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO46"
-		(shape input)
-		(at 246.38 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "92945f70-8831-45ec-8095-b3bdf809535f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.9507 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_3v3"
-		(shape input)
-		(at 246.38 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "96a1a817-51f5-428a-afa7-22f97e301c5b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.443 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_5v"
-		(shape input)
-		(at 246.38 114.3 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9d68ca0a-c57c-40ed-a4aa-bb100f269319")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.2335 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SERVO1"
 		(shape input)
 		(at 146.05 27.94 90)
@@ -2492,28 +2204,6 @@
 		(uuid "ea4204d7-c229-413f-a5e1-a47add1b0484")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 120.65 17.6026 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_5v"
-		(shape input)
-		(at 246.38 111.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f202f57f-8420-47ef-88ac-001a3a7355e4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.2335 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3720,71 +3410,6 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/08b4d8be-4170-4220-921a-88518f1299a7/4f9f6c00-c16c-428b-bd43-e257993157a8"
 					(reference "SERVO1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 257.81 128.27 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b7c537d2-f806-4223-be4f-2c518f76e83a")
-		(property "Reference" "#PWR0199"
-			(at 264.16 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 262.2042 128.143 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b5ac213-8532-4e35-a215-6c49fc19e25b")
-		)
-		(instances
-			(project "CM5IO"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/08b4d8be-4170-4220-921a-88518f1299a7/4f9f6c00-c16c-428b-bd43-e257993157a8"
-					(reference "#PWR0199")
 					(unit 1)
 				)
 			)
