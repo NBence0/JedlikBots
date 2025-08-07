@@ -5639,6 +5639,28 @@
 		)
 		(uuid "ff0e04c7-3913-4c2f-8ea3-239aeb973023")
 	)
+	(global_label "Motor 1 power"
+		(shape input)
+		(at 92.71 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2637c7eb-b3df-4e11-b739-9241af6ee31a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.7204 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "SEN_5V"
 		(shape input)
 		(at 299.72 72.39 90)
@@ -5858,17 +5880,6 @@
 			(justify left)
 		)
 		(uuid "7b547481-7d1f-4b8a-8e54-90727186fbed")
-	)
-	(hierarchical_label "SEN_5V"
-		(shape input)
-		(at 92.71 31.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8624a005-c92a-4443-b8a0-b6627cf6b50c")
 	)
 	(hierarchical_label "SEN_3V3"
 		(shape input)
