@@ -5721,21 +5721,19 @@
 		(fields_autoplaced yes)
 		(uuid "84305981-e5a5-4a90-9523-86c57acf160a")
 		(property "Reference" "R110"
-			(at 91.4399 49.53 0)
+			(at 92.71 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 93.9799 49.53 0)
+		(property "Value" "1M"
+			(at 92.71 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -6335,19 +6333,21 @@
 		(fields_autoplaced yes)
 		(uuid "b71f3b49-eea2-4587-b24c-606f08bacff9")
 		(property "Reference" "C120"
-			(at 81.28 26.67 90)
+			(at 92.71 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "C"
-			(at 83.82 26.67 90)
+		(property "Value" "22pf"
+			(at 92.71 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -6479,7 +6479,7 @@
 				)
 			)
 		)
-		(property "Value" "PCM2704C"
+		(property "Value" "PCM2704CDBR"
 			(at 92.71 58.42 0)
 			(effects
 				(font
@@ -7303,7 +7303,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22pf"
 			(at 103.378 26.67 90)
 			(effects
 				(font

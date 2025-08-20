@@ -475,7 +475,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape input)
-		(at 156.21 36.83 180)
+		(at 156.21 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -486,7 +486,7 @@
 	)
 	(hierarchical_label "SPI_CLK"
 		(shape input)
-		(at 156.21 41.91 180)
+		(at 156.21 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -618,7 +618,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 181.61 44.45 0)
+		(at 181.61 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -695,7 +695,7 @@
 	)
 	(hierarchical_label "CS4"
 		(shape input)
-		(at 156.21 44.45 180)
+		(at 156.21 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -717,7 +717,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 156.21 39.37 180)
+		(at 156.21 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1675,7 +1675,7 @@
 		)
 	)
 	(sheet
-		(at 156.21 34.29)
+		(at 156.21 31.75)
 		(size 25.4 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1691,7 +1691,7 @@
 		)
 		(uuid "c41f5f78-bb85-4895-95b0-27817ef7b3b3")
 		(property "Sheetname" "ADS8688"
-			(at 156.21 33.5784 0)
+			(at 156.21 31.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1700,7 +1700,7 @@
 			)
 		)
 		(property "Sheetfile" "ADS8688 .kicad_sch"
-			(at 156.21 47.5746 0)
+			(at 156.21 45.0346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,7 +1709,7 @@
 			)
 		)
 		(pin "3V3" input
-			(at 181.61 44.45 0)
+			(at 181.61 41.91 0)
 			(uuid "69e7a187-4202-4e25-9797-5ad1e054b4a1")
 			(effects
 				(font
@@ -1719,7 +1719,7 @@
 			)
 		)
 		(pin "CS" input
-			(at 156.21 44.45 180)
+			(at 156.21 41.91 180)
 			(uuid "75317dfd-ea97-423b-ac32-77f729638ad2")
 			(effects
 				(font
@@ -1729,7 +1729,7 @@
 			)
 		)
 		(pin "MISO" input
-			(at 156.21 36.83 180)
+			(at 156.21 34.29 180)
 			(uuid "e50f9761-4dee-4927-a250-70a04e37e717")
 			(effects
 				(font
@@ -1739,7 +1739,7 @@
 			)
 		)
 		(pin "MOSI" input
-			(at 156.21 39.37 180)
+			(at 156.21 36.83 180)
 			(uuid "a9c6bc51-7bfd-4887-ad88-f9dc39f78c52")
 			(effects
 				(font
@@ -1749,13 +1749,33 @@
 			)
 		)
 		(pin "SPI_CLK" input
-			(at 156.21 41.91 180)
+			(at 156.21 39.37 180)
 			(uuid "991e15c6-db46-4e03-8376-0cfd14059661")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "5v" input
+			(at 181.61 39.37 0)
+			(uuid "81e6bef3-1545-4014-a579-4af45dc30e96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AD_RST" input
+			(at 181.61 34.29 0)
+			(uuid "6f493667-60aa-4d5e-8bd9-ff08e7428e31")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

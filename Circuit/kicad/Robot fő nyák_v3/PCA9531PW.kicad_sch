@@ -944,6 +944,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Driver_LED:PCA9685PW"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1781,6 +1905,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 90.17) (xy 123.19 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6107c826-93a9-4ba9-a5c0-c82cbbe881ce")
+	)
+	(wire
+		(pts
 			(xy 158.75 100.33) (xy 190.5 100.33)
 		)
 		(stroke
@@ -2257,16 +2391,16 @@
 		)
 		(uuid "3a29f280-b2de-4743-ac28-d29e7e7b2d55")
 	)
-	(hierarchical_label "SEN_5V"
+	(hierarchical_label "PCA_RST"
 		(shape input)
-		(at 125.73 55.88 180)
+		(at 118.11 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "62095eae-5885-4abf-98e0-a37e78223fd3")
+		(uuid "4065f7b4-548b-470f-94ad-5a0f0337298f")
 	)
 	(hierarchical_label "SDA"
 		(shape input)
@@ -2278,6 +2412,17 @@
 			(justify right)
 		)
 		(uuid "8b52f885-58bd-4d29-bf15-5481044454eb")
+	)
+	(hierarchical_label "3v3_in"
+		(shape input)
+		(at 125.73 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "902e625e-99e6-4bef-bbc8-6304dd5141b0")
 	)
 	(hierarchical_label "3v3_in"
 		(shape input)
@@ -2875,6 +3020,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 118.11 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60aca058-09ca-4d55-9ab6-918d041a3d0c")
+		(property "Reference" "R14"
+			(at 120.65 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 120.65 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 116.332 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 118.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5bc4c80-ce56-4785-9c1b-967fb612be03")
+		)
+		(pin "2"
+			(uuid "ce025060-d44d-4b79-b656-acc990f5aa9a")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/08b4d8be-4170-4220-921a-88518f1299a7/4f9f6c00-c16c-428b-bd43-e257993157a8"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 189.23 63.5 270)
 		(unit 1)
@@ -3076,7 +3291,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 90.17 270)
+		(at 118.11 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3084,7 +3299,7 @@
 		(dnp no)
 		(uuid "7a7496be-488a-440c-9470-b93c0c832bbe")
 		(property "Reference" "#PWR0192"
-			(at 116.84 90.17 0)
+			(at 118.11 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3093,7 +3308,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.7958 90.297 0)
+			(at 118.237 102.1842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3101,7 +3316,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 90.17 0)
+			(at 118.11 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3110,7 +3325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 90.17 0)
+			(at 118.11 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3119,7 +3334,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 90.17 0)
+			(at 118.11 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
