@@ -678,7 +678,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "0.1 bom.csv",
+    "bom_export_filename": "0.2 bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -751,7 +751,7 @@
           "group_by": false,
           "label": "Field6",
           "name": "Field6",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -817,7 +817,7 @@
           "group_by": false,
           "label": "Package",
           "name": "Package",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -885,7 +885,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Package"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -1028,6 +1028,10 @@
     [
       "4f9f6c00-c16c-428b-bd43-e257993157a8",
       "PCA9531PW"
+    ],
+    [
+      "57486b20-9f13-463a-809e-b9205715bef2",
+      "diagram"
     ]
   ],
   "text_variables": {}
