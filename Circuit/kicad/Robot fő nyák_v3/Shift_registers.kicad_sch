@@ -1393,6 +1393,12 @@
 		(uuid "a8c6b091-88f5-48d9-a2eb-08c1caf3a029")
 	)
 	(junction
+		(at 170.18 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfd09519-e38a-4cc1-b6f0-64f9ef99a14c")
+	)
+	(junction
 		(at 231.14 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1543,6 +1549,16 @@
 			(type default)
 		)
 		(uuid "36b1e7db-49ed-4327-be36-6e5de3243d74")
+	)
+	(wire
+		(pts
+			(xy 170.18 30.48) (xy 166.37 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37787713-1c3e-4a06-a802-68a558b39ab1")
 	)
 	(wire
 		(pts
@@ -1766,6 +1782,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 24.13) (xy 170.18 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d180b1b1-7062-4547-a9f0-b888baa1678b")
+	)
+	(wire
+		(pts
 			(xy 173.99 59.69) (xy 166.37 59.69)
 		)
 		(stroke
@@ -1846,7 +1872,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 30.48) (xy 166.37 30.48)
+			(xy 173.99 30.48) (xy 170.18 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1884,15 +1910,15 @@
 		)
 		(uuid "23ec977d-3dd5-4701-871a-3486142b7059")
 	)
-	(label "B-B_6"
-		(at 214.63 67.31 0)
+	(label "B-B_2"
+		(at 214.63 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "34139264-8a02-490c-9765-758d92ebda0f")
+		(uuid "4574b76b-8ac6-4baa-a8f4-129ee4656eaa")
 	)
 	(label "B-B_4"
 		(at 99.06 147.32 180)
@@ -1904,15 +1930,15 @@
 		)
 		(uuid "4b637409-da7b-40d0-bd42-715822ce000c")
 	)
-	(label "B-B_5"
-		(at 214.63 38.1 0)
+	(label "B-B_6"
+		(at 138.43 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "5ae92406-6070-4509-835f-fd3b2ebb9535")
+		(uuid "60bdc1d5-bb67-45a9-99f7-0f691dc627e3")
 	)
 	(label "B-B_3"
 		(at 99.06 144.78 180)
@@ -1925,14 +1951,14 @@
 		(uuid "67b68a63-6508-47f1-bd60-8e33b4bf1051")
 	)
 	(label "B-B_3"
-		(at 138.43 67.31 0)
+		(at 214.63 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "7a6beacb-babc-42e9-8845-1523537b938b")
+		(uuid "764de86d-8f08-4b11-ab13-5f2cdcd52680")
 	)
 	(label "B-B_7"
 		(at 99.06 154.94 180)
@@ -1954,27 +1980,7 @@
 		)
 		(uuid "8384704a-d365-4b17-b591-2726c308ab60")
 	)
-	(label "B-B_2"
-		(at 138.43 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c97e35ea-2db3-4819-8998-705c0f86e715")
-	)
-	(label "B-B_7"
-		(at 214.63 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3fae844-250d-4119-b974-db0c4353dc1c")
-	)
-	(label "B-B_4"
+	(label "B-B_5"
 		(at 138.43 96.52 0)
 		(effects
 			(font
@@ -1982,7 +1988,27 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e55bc192-90ea-42b3-bccc-4845f7cd188b")
+		(uuid "a659583a-0e5d-496d-afa4-3410ab115435")
+	)
+	(label "B-B_4"
+		(at 214.63 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf0b9998-04d2-456c-8bc8-3ad2eb53bc06")
+	)
+	(label "B-B_7"
+		(at 138.43 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f816d228-00c1-4ad4-9d8d-a11da1339435")
 	)
 	(label "B-B_2"
 		(at 99.06 142.24 180)
@@ -5700,6 +5726,58 @@
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/158f06f1-5857-46ec-ae0a-0aba22513bca"
 					(reference "#PWR0123")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 166.37 13.97)
+		(size 29.21 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a9456c59-8739-457a-a814-c7334edfd8d5")
+		(property "Sheetname" "JB_leds"
+			(at 166.37 13.2584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "JB_leds.kicad_sch"
+			(at 166.37 24.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+12V" input
+			(at 170.18 24.13 270)
+			(uuid "4c2d9407-d88b-45c1-aaed-f450d4f17c86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "CM5IO"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/158f06f1-5857-46ec-ae0a-0aba22513bca"
+					(page "24")
 				)
 			)
 		)

@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
         self.inputs = {}
         input_data = [
             ("Vezetősáv hossza (mm)", "100"),
-            ("Vezetősáv szélessége (mm)", "0.5"),
+            ("Vezetősáv szélessége (mm)", "0.8"),
             ("Áram (A)", "1"),
             ("Tápfeszültség (V)", "5")
         ]
