@@ -1,79 +1,161 @@
 #include <Arduino.h>
 #include "driver/spi_slave.h"
+#include "esp_crc.h" // <-- JAVÍTÁS: Ezt a headert használjuk a rom/crc.h helyett
+#include <rom/crc.h> // <-- FONTOS: Header a hardveres CRC-hez
+#include "LED.h"
+#include "GYRO.h"
+#include "COLOR_SENSOR.h"
 
-// ESP32-S3 SPI pin definíciók
-#define SPI_HOST_ID   SPI2_HOST // ESP32-S3-on használjuk az SPI2-t (régi nevén HSPI)
-#define SPI_MISO      14
-#define SPI_MOSI      15
-#define SPI_SCLK      16
-#define SPI_CS        5
+// --- Protokoll Konstansok ---
+const uint8_t CMD_PING = 0;
+const uint8_t CMD_RESTART = 1;
+const uint8_t CMD_READ_GYRO = 2;
+const uint8_t CMD_CALIBRATE_GYRO = 3;
+const uint8_t CMD_READ_COLOR_SENSOR = 4;
+const uint8_t CMD_SET_LED = 7;
+const uint8_t CMD_TEST = 100;
 
-// Puffer a bejövő és kimenő adatoknak
-#define BUFFER_SIZE 64
-WORD_ALIGNED_ATTR uint8_t spi_rx_buf[BUFFER_SIZE];
-WORD_ALIGNED_ATTR uint8_t spi_tx_buf[BUFFER_SIZE];
+const uint8_t RSP_ACK = 100;
+const uint8_t RSP_PONG = 101;
+const uint8_t RSP_GYRO_DATA = 102;
+const uint8_t RSP_COLOR_DATA = 103;
+const uint8_t RSP_ERROR_CRC = 200; // Specifikusabb hibakód
+const uint8_t RSP_UNKNOWN_CMD = 201;
 
-// Callback függvény, ami egy tranzakció UTÁN hívódik meg
-// Itt készítjük elő a következő tranzakcióhoz a választ.
-void IRAM_ATTR post_trans_callback(spi_slave_transaction_t *trans) {
-    // A fogadott adat (spi_rx_buf[0]) alapján előkészítjük a következő választ
-    spi_tx_buf[0] = spi_rx_buf[0] + 1;
+// --- SPI Konfiguráció ---
+#define SPI_HOST_ID   SPI2_HOST
+#define SPI_MISO      12
+#define SPI_MOSI      13
+#define SPI_SCLK      11
+#define SPI_CS        7
+
+#define PACKET_SIZE 6 // cmd, p1, p2, p3, crc_low, crc_high
+#define PAYLOAD_SIZE 4 // Az adatbájtok száma, amire a CRC-t számoljuk
+WORD_ALIGNED_ATTR uint8_t spi_rx_buf[PACKET_SIZE];
+WORD_ALIGNED_ATTR uint8_t spi_tx_buf[PACKET_SIZE];
+
+// --- Perifériák ---
+Led led;
+BNO08xGyro gyro;
+ColorSensor colorSensor;
+
+// --- Válasz előkészítő segédfüggvény ---
+void prepare_response(uint8_t rsp_code, uint8_t d1 = 0, uint8_t d2 = 0, uint8_t d3 = 0) {
+    spi_tx_buf[0] = rsp_code;
+    spi_tx_buf[1] = d1;
+    spi_tx_buf[2] = d2;
+    spi_tx_buf[3] = d3;
+    
+    // CRC-16 számítása az első 4 bájtra hardveres gyorsítással
+    uint16_t crc = esp_rom_crc16_le(0xFFFF, spi_tx_buf, PAYLOAD_SIZE);
+    
+    spi_tx_buf[4] = crc & 0xFF;        // Low byte
+    spi_tx_buf[5] = (crc >> 8) & 0xFF; // High byte
 }
 
 void setup() {
     Serial.begin(115200);
+    led.begin();
+    colorSensor.begin();
+    gyro.begin();
+    led.off();
 
     // SPI busz konfigurációja
     spi_bus_config_t buscfg = {
-        .mosi_io_num = SPI_MOSI,
-        .miso_io_num = SPI_MISO,
-        .sclk_io_num = SPI_SCLK,
-        .quadwp_io_num = -1, // Nincs használatban
-        .quadhd_io_num = -1, // Nincs használatban
-        .max_transfer_sz = BUFFER_SIZE
+        .mosi_io_num = SPI_MOSI, .miso_io_num = SPI_MISO, .sclk_io_num = SPI_SCLK,
+        .quadwp_io_num = -1, .quadhd_io_num = -1, .max_transfer_sz = PACKET_SIZE
     };
-
-    // SPI slave interfész konfigurációja
     spi_slave_interface_config_t slvcfg = {
-        .spics_io_num = SPI_CS,
-        .flags = 0,
-        .queue_size = 1, // Egyszerre egy tranzakciót kezelünk
-        .mode = 0, // SPI mód 0
-        .post_setup_cb = NULL,
-        .post_trans_cb = post_trans_callback // Callback a tranzakció után
+        .spics_io_num = SPI_CS, .flags = 0, .queue_size = 1, .mode = 0
     };
-
-    // SPI busz inicializálása
     esp_err_t ret = spi_slave_initialize(SPI_HOST_ID, &buscfg, &slvcfg, SPI_DMA_CH_AUTO);
     if (ret != ESP_OK) {
         Serial.println("Hiba az SPI slave inicializálásakor!");
         return;
     }
 
-    Serial.println("ESP32-S3 SPI Slave készen áll.");
+    // Kezdeti "ACK" válasz előkészítése az első tranzakcióhoz
+    prepare_response(RSP_ACK, 0, 0, 0);
+    Serial.println("SPI Slave (CRC-16) készen áll.");
+}
 
-    // Előkészítjük az első választ (ha a Pi nullát küld, mi egyet válaszolunk)
-    spi_tx_buf[0] = 1; 
+void processCommand() {
+    // 1. CRC ellenőrzése
+    uint16_t received_crc = (spi_rx_buf[5] << 8) | spi_rx_buf[4];
+    uint16_t calculated_crc = esp_rom_crc16_le(0xFFFF, spi_rx_buf, PAYLOAD_SIZE);
+
+    if (received_crc != calculated_crc) {
+        prepare_response(RSP_ERROR_CRC);
+        Serial.printf("CRC Hiba! Kapott: %04X, Számolt: %04X\n", received_crc, calculated_crc);
+        return;
+    }
+
+    // 2. Parancs feldolgozása (a logika változatlan)
+    uint8_t cmd = CMD_TEST;
+    uint8_t param1 = 1;
+    uint8_t param2 = 2;
+
+  switch (cmd) {
+    case CMD_PING:
+    prepare_response(RSP_PONG);
+  break;
+    case CMD_RESTART:
+    prepare_response(RSP_ACK, cmd);
+    delay(100);
+    ESP.restart();
+    break;
+
+  case CMD_READ_GYRO:
+    if (gyro.update()) {
+      float roll, pitch, yaw;
+      gyro.getEuler(roll, pitch, yaw);
+      Serial.print("Roll: "); Serial.print(roll);
+      Serial.print(" Pitch: "); Serial.print(pitch);
+      Serial.print(" Yaw: "); Serial.println(yaw);
+    } else {
+      Serial.println("Gyro update failed. No new data.");
+    }
+    break; // HIÁNYZÓ BREAK!
+  case CMD_CALIBRATE_GYRO:
+    // Példa: 90 fokra kalibrálás
+    gyro.calibrateToAngle(param1);
+    prepare_response(RSP_ACK, cmd); // Nyugta küldése a kalibráció után
+    break;
+  case CMD_READ_COLOR_SENSOR:
+    uint16_t value;
+    colorSensor.readOneChannel(param2, value);
+    Serial.print("Color channel ");
+    Serial.print(param2);
+    Serial.print("value : ");
+    Serial.println(value);
+    break;
+  case CMD_SET_LED:
+    led.handleColor(param1);
+    // Nyugta: ACK, az eredeti parancsra, az eredeti paraméterrel
+    prepare_response(RSP_ACK, cmd, param1);
+    break;
+  case CMD_TEST:
+    // Teszt parancs: csak visszaküld egy PONG választ
+    prepare_response(RSP_PONG);
+    
+    Serial.println("Teszt parancs fogadva, PONG válasz küldve.");
+    break;
+
+
+  default:
+    prepare_response(RSP_UNKNOWN_CMD, cmd); // Ismeretlen parancs jelzése
+    break;
+  }
 }
 
 void loop() {
-    // Tranzakció beállítása és várólistába helyezése
     spi_slave_transaction_t t;
     memset(&t, 0, sizeof(t));
-
-    t.length = 8; // 8 bites (1 bájtos) tranzakció
+    t.length = PACKET_SIZE * 8;
     t.rx_buffer = spi_rx_buf;
     t.tx_buffer = spi_tx_buf;
 
-    // Várakozás a master tranzakciójára.
-    // A portMAX_DELAY biztosítja, hogy a feladat blokkolódik, amíg a tranzakció le nem zajlik.
-    esp_err_t ret = spi_slave_transmit(SPI_HOST_ID, &t, portMAX_DELAY);
-
-    if (ret == ESP_OK) {
-        // A fogadott adatot a callback már feldolgozta, de itt is kiírhatjuk
-        Serial.printf("Fogadva: %d | Következő küldendő: %d\n", spi_rx_buf[0], spi_tx_buf[0]);
+    if (spi_slave_transmit(SPI_HOST_ID, &t, portMAX_DELAY) == ESP_OK) {
+        processCommand();
     }
-
-    // A loop itt várakozik a következő tranzakcióra.
-    // Nincs szükség delay-re.
 }
