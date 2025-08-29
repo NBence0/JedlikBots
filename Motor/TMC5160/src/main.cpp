@@ -14,49 +14,54 @@ TMC5160Stepper driver = TMC5160Stepper(CS_PIN, R_SENSE, MOSI_PIN, MISO_PIN, SCK_
 void setup() {
   Serial.begin(115200);
   while (!Serial);
+  delay(500);
+  Serial.println("TMC5160 teszt indul...");
 
   pinMode(EN_PIN, OUTPUT);
   digitalWrite(EN_PIN, HIGH); // driver tiltva induláskor
 
   driver.begin();
-  driver.toff(4);
+  driver.toff(5);           // Ajánlott érték
   driver.blank_time(24);
-  driver.rms_current(800);
-  driver.microsteps(256); 
-  driver.en_pwm_mode(true);
-  driver.pwm_autoscale(true);
-
-  // Velocity mode
-  driver.RAMPMODE(1);        // 1 = előre velocity mode
-  driver.VMAX(50000);        // sebesség (pozitív = előre, RAMPMODE=2 esetén hátra)
+  driver.rms_current(600);  // Kezdjünk alacsonyabb árammal a teszthez
+  driver.microsteps(16);    // Kezdjünk alacsonyabb mikrolépéssel, ez stabilabb
+  
+  // =========================================================================
+  // KIKAPCSOLJUK a StealthChop-ot a teszt idejére, hogy a nyomatékos
+  // SpreadCycle módot használjuk. Ez a legfontosabb változtatás!
+  driver.en_pwm_mode(false); 
+  // driver.pwm_autoscale(true); // Ezt is kapcsoljuk ki, mert StealthChop-hoz tartozik
+  // =========================================================================
 
   digitalWrite(EN_PIN, LOW); // driver engedélyezése
-  Serial.println("TMC5160 velocity mode indul!");
+  delay(100);
+
+  // Velocity mode beállítása
+  driver.VMAX(50000);        // Sebesség beállítása
+  
+  Serial.println("Driver beállítva, mozgás indul...");
 }
 
 void loop() {
-  static uint32_t last_time = 0;
-  static bool dir = true;
-
-  if (millis() - last_time > 5000) {
-    last_time = millis();
-    dir = !dir;
-    if (dir) {
-      driver.RAMPMODE(1);   // előre
-      driver.VMAX(60000);
-      Serial.println("Előre forog");
-    } else {
-      driver.RAMPMODE(2);   // hátra
-      driver.VMAX(60000);
-      Serial.println("Hátra forog");
-    }
-  }
-
-  // Debug kiírás
   static uint32_t last_print = 0;
   if (millis() - last_print > 1000) {
     last_print = millis();
-    Serial.print("XACTUAL = ");
-    Serial.println(driver.XACTUAL());
+    
+    // Olvassuk ki a GSTAT regisztert a könyvtár segítségével
+    uint32_t gstat_val = driver.GSTAT();
+    bool is_reset = gstat_val & 0b1;
+    bool is_drv_err = (gstat_val >> 1) & 0b1;
+
+    Serial.print("GSTAT: ");
+    if (is_reset) {
+      Serial.print("[RESET!] "); // Ha ez megjelenik, a tápellátás instabil!
+    }
+    if (is_drv_err) {
+      Serial.print("[DRIVER ERROR!] "); // Ha ez megjelenik, komoly hiba van (pl. rövidzár)
+    }
+    if (!is_reset && !is_drv_err) {
+      Serial.print("OK");
+    }
+    Serial.println();
   }
 }
