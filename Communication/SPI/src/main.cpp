@@ -1,12 +1,10 @@
 #include <Arduino.h>
 #include "driver/spi_slave.h"
-#include "esp_crc.h" // <-- JAVÍTÁS: Ezt a headert használjuk a rom/crc.h helyett
-#include <rom/crc.h> // <-- FONTOS: Header a hardveres CRC-hez
+#include "esp_crc.h"
 #include "LED.h"
 #include "GYRO.h"
 #include "COLOR_SENSOR.h"
 
-// --- Protokoll Konstansok ---
 const uint8_t CMD_PING = 0;
 const uint8_t CMD_RESTART = 1;
 const uint8_t CMD_READ_GYRO = 2;
@@ -19,7 +17,7 @@ const uint8_t RSP_ACK = 100;
 const uint8_t RSP_PONG = 101;
 const uint8_t RSP_GYRO_DATA = 102;
 const uint8_t RSP_COLOR_DATA = 103;
-const uint8_t RSP_ERROR_CRC = 200; // Specifikusabb hibakód
+const uint8_t RSP_ERROR_CRC = 200;
 const uint8_t RSP_UNKNOWN_CMD = 201;
 
 // --- SPI Konfiguráció ---
