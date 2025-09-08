@@ -4,21 +4,8 @@
 #include "LED.h"
 #include "GYRO.h"
 #include "COLOR_SENSOR.h"
+#include "Constans.h"
 
-const uint8_t CMD_PING = 0;
-const uint8_t CMD_RESTART = 1;
-const uint8_t CMD_READ_GYRO = 2;
-const uint8_t CMD_CALIBRATE_GYRO = 3;
-const uint8_t CMD_READ_COLOR_SENSOR = 4;
-const uint8_t CMD_SET_LED = 7;
-const uint8_t CMD_TEST = 100;
-
-const uint8_t RSP_ACK = 100;
-const uint8_t RSP_PONG = 101;
-const uint8_t RSP_GYRO_DATA = 102;
-const uint8_t RSP_COLOR_DATA = 103;
-const uint8_t RSP_ERROR_CRC = 200;
-const uint8_t RSP_UNKNOWN_CMD = 201;
 
 // --- SPI Konfiguráció ---
 #define SPI_HOST_ID   SPI2_HOST
@@ -60,8 +47,12 @@ void setup() {
 
     // SPI busz konfigurációja
     spi_bus_config_t buscfg = {
-        .mosi_io_num = SPI_MOSI, .miso_io_num = SPI_MISO, .sclk_io_num = SPI_SCLK,
-        .quadwp_io_num = -1, .quadhd_io_num = -1, .max_transfer_sz = PACKET_SIZE
+        .mosi_io_num = SPI_MOSI,
+        .miso_io_num = SPI_MISO,
+        .sclk_io_num = SPI_SCLK,
+        .quadwp_io_num = -1, 
+        .quadhd_io_num = -1, 
+        .max_transfer_sz = PACKET_SIZE
     };
     spi_slave_interface_config_t slvcfg = {
         .spics_io_num = SPI_CS, .flags = 0, .queue_size = 1, .mode = 0
