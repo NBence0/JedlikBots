@@ -27,3 +27,16 @@ const uint8_t RSP_UNKNOWN_CMD       = 201;
 
 #define PACKET_SIZE 6 // cmd, p1, p2, p3, crc_low, crc_high
 #define PAYLOAD_SIZE 4 // Az adatbájtok száma, amire a CRC-t számoljuk
+
+
+// --- SPI Multiplexer (74HC154) ---
+#define MUX_PIN_A 2
+#define MUX_PIN_B 3
+#define MUX_PIN_C 4
+#define MUX_PIN_D 5
+
+// Eszközök csatornái
+#define MUX_CHANNEL_GYRO 0
+#define MUX_CHANNEL_SD_CARD 1
+// ... stb.
+#define MUX_NO_DEVICE_SELECTED 15 // Egy nem használt csatorna a kikapcsoláshoz
