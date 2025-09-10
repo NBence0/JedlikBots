@@ -8,6 +8,7 @@
 #include "SPI.h"
 #include "driver/spi_slave.h"
 
+
 // Globális bufferek, de csak ebben a file-ban látszódnak
 namespace {
     WORD_ALIGNED_ATTR uint8_t spi_rx_buf[PACKET_SIZE];
