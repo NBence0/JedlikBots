@@ -8,8 +8,9 @@ enum DeviceType {
     DEVICE_GYRO,
     DEVICE_BME
 };
-
+/*
 class DeviceManager {
+
 public:
     DeviceManager(HC154& mux, BNO08xGyro& gyro, BMESensor& bme);
     void beginAll();
@@ -18,6 +19,20 @@ public:
 
 private:
     HC154& _mux;
+    BNO08xGyro& _gyro;
+    BMESensor& _bme;*/
+
+
+class DeviceManager {
+public:
+    // A konstruktorból eltávolítjuk a HC154 referenciát
+    DeviceManager(BNO08xGyro& gyro, BMESensor& bme);
+
+    void beginAll();
+    void selectDevice(DeviceType device);
+    void deselectAll();
+
+private:
     BNO08xGyro& _gyro;
     BMESensor& _bme;
 };

@@ -8,18 +8,23 @@
 #include "tasks.h"
 #include "HC154.h"
 #include "Constans.h"
+#include "DeviceManager.h"
 
 Led led;
-BNO08xGyro gyro;
 ColorSensor colorSensor;
-HC154 spiMux(MUX_PIN_A, MUX_PIN_B, MUX_PIN_C, MUX_PIN_D);
+BMESensor bme;  
+BNO08xGyro gyro;
+DeviceManager deviceManager(gyro, bme);
+//HC154 spiMux(MUX_PIN_A, MUX_PIN_B, MUX_PIN_C, MUX_PIN_D);
 
 void setup() {
     Serial.begin(115200);
-    
+    deviceManager.beginAll();
+
     //led.begin();
     //colorSensor.begin();
-    //gyro.begin();
+    pinMode(DATA_READY_PIN, OUTPUT);
+    digitalWrite(DATA_READY_PIN, LOW); // Alaphelyzetben alacsony
     
     setupSpiSlave();
     

@@ -9,7 +9,6 @@
 #include "driver/spi_slave.h"
 
 
-// Globális bufferek, de csak ebben a file-ban látszódnak
 namespace {
     WORD_ALIGNED_ATTR uint8_t spi_rx_buf[PACKET_SIZE];
     WORD_ALIGNED_ATTR uint8_t spi_tx_buf[PACKET_SIZE];
@@ -20,9 +19,9 @@ void setupSpiSlave() {
         .mosi_io_num = SPI_MOSI,
         .miso_io_num = SPI_MISO,
         .sclk_io_num = SPI_SCLK,
-        .quadwp_io_num = -1,
-        .quadhd_io_num = -1,
-        .max_transfer_sz = PACKET_SIZE
+        .quadwp_io_num = -1, // A -1 azt jelenti hogy nincs használatban
+        .quadhd_io_num = -1, // A -1 azt jelenti hogy nincs használatban
+        .max_transfer_sz = PACKET_SIZE // Max átviteli méret
     };
 
     spi_slave_interface_config_t slvcfg = {
@@ -57,11 +56,14 @@ void prepare_response(uint8_t rsp_code, uint8_t d1, uint8_t d2, uint8_t d3) {
 void handleSpiTransaction() {
     spi_slave_transaction_t t;
     memset(&t, 0, sizeof(t));
-    t.length = PACKET_SIZE * 8;
-    t.rx_buffer = spi_rx_buf;
+    t.length = PACKET_SIZE * 8; // a tranzakció hossza bitekben
+    t.rx_buffer = spi_rx_buf; // 
     t.tx_buffer = spi_tx_buf;
 
     if (spi_slave_transmit(SPI_HOST_ID, &t, portMAX_DELAY) == ESP_OK) {
+
+        digitalWrite(DATA_READY_PIN, LOW);
+        
         processCommand(spi_rx_buf);
     }
 }
