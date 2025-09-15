@@ -1,18 +1,9 @@
 #include "Gyro.h"
 #include <math.h>
+#include <Constans.h>
 
-
-// Fix lábkiosztás
-#define BNO08X_CS    35
-#define BNO08X_INT    36
-#define BNO08X_RESET  48
-
-#define SPI_SCK     15
-#define SPI_MISO    16
-#define SPI_MOSI    14
 
 bool BNO08xGyro::begin() {
-    SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI, BNO08X_CS);
 
     if (!_bno08x.begin_SPI(BNO08X_CS, BNO08X_INT)) {
         _connected = false;
