@@ -572,7 +572,7 @@
 		)
 		(uuid "cc709ded-579c-4c9d-b1fe-d69c6fa65836")
 	)
-	(global_label "B-B_7"
+	(global_label "DC12V_1"
 		(shape input)
 		(at 86.36 67.31 180)
 		(fields_autoplaced yes)
@@ -582,9 +582,9 @@
 			)
 			(justify right)
 		)
-		(uuid "2799d69e-1460-49f6-983b-4836b55ac3a0")
+		(uuid "0ad2e419-2b5b-4fee-a962-946faf36ec4e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.0853 67.31 0)
+			(at 75.055 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -594,51 +594,7 @@
 			)
 		)
 	)
-	(global_label "B-B_5"
-		(shape input)
-		(at 86.36 125.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a499fd12-59f9-4b62-8d0c-25af31ff5974")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.0853 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "B-B_6"
-		(shape input)
-		(at 86.36 96.52 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a8a7460f-05c5-427d-b7f9-5b8bf145a057")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.0853 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "B-B_3"
+	(global_label "DC5V_2"
 		(shape input)
 		(at 162.56 96.52 180)
 		(fields_autoplaced yes)
@@ -648,9 +604,9 @@
 			)
 			(justify right)
 		)
-		(uuid "ac558f46-6b09-4b29-9c77-610362bf681f")
+		(uuid "7c358270-8ce1-4106-a280-dbbc337c9507")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.2853 96.52 0)
+			(at 152.4645 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -660,9 +616,9 @@
 			)
 		)
 	)
-	(global_label "B-B_2"
+	(global_label "DC3.3V_1"
 		(shape input)
-		(at 162.56 125.73 180)
+		(at 86.36 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -670,9 +626,9 @@
 			)
 			(justify right)
 		)
-		(uuid "b2402fc8-21fd-49f7-9c92-00318e6f2b1b")
+		(uuid "aae446cc-62ff-4bbc-9cf9-19ba8c6f760d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.2853 125.73 0)
+			(at 74.4502 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -682,7 +638,7 @@
 			)
 		)
 	)
-	(global_label "B-B_4"
+	(global_label "DC12V_2"
 		(shape input)
 		(at 162.56 67.31 180)
 		(fields_autoplaced yes)
@@ -692,9 +648,53 @@
 			)
 			(justify right)
 		)
-		(uuid "efa05d56-2ac0-4cc8-8571-03767d10ee32")
+		(uuid "bed7fa64-d7ca-43b1-8f66-78bb8ab69ce1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.2853 67.31 0)
+			(at 151.255 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DC5V_1"
+		(shape input)
+		(at 86.36 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c09c7f5c-8243-492a-b89d-b48efd67f0eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.2645 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DC3.3V_2"
+		(shape input)
+		(at 162.56 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e52b158f-834e-4bee-8a44-476457926528")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 150.6502 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -706,7 +706,7 @@
 	)
 	(hierarchical_label "12v_2"
 		(shape input)
-		(at 162.56 59.69 180)
+		(at 86.36 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -717,7 +717,7 @@
 	)
 	(hierarchical_label "5v"
 		(shape input)
-		(at 162.56 118.11 180)
+		(at 162.56 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -728,7 +728,7 @@
 	)
 	(hierarchical_label "12v_1"
 		(shape input)
-		(at 86.36 59.69 180)
+		(at 162.56 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -739,7 +739,7 @@
 	)
 	(hierarchical_label "3v3"
 		(shape input)
-		(at 86.36 88.9 180)
+		(at 86.36 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -750,7 +750,7 @@
 	)
 	(hierarchical_label "5v"
 		(shape input)
-		(at 86.36 118.11 180)
+		(at 86.36 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -761,7 +761,7 @@
 	)
 	(hierarchical_label "3v3"
 		(shape input)
-		(at 162.56 88.9 180)
+		(at 162.56 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
