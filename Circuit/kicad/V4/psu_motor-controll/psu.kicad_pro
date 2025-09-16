@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.0,
-          "width": 2.0
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -59,7 +59,40 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|104305000|129562500|43c598fc-1e36-4967-ac17-ebaaa1902f10|6bf798ab-9e27-4698-bb6e-5603189e695c",
+          ""
+        ],
+        [
+          "courtyards_overlap|109806809|140105000|028cbb26-ad5b-425f-9c81-523ed55aec5a|43c598fc-1e36-4967-ac17-ebaaa1902f10",
+          ""
+        ],
+        [
+          "courtyards_overlap|122905000|129562500|7364c05e-394e-49b2-a73d-4aa648a43fcc|f0146713-1852-486d-b6d2-60ac3af404fd",
+          ""
+        ],
+        [
+          "courtyards_overlap|128381868|140105000|a76b3350-59a6-4b2a-bb24-f8cb7a855656|f0146713-1852-486d-b6d2-60ac3af404fd",
+          ""
+        ],
+        [
+          "courtyards_overlap|66955000|129562500|c2f552d2-880b-4932-ac35-520a7d22b741|e6d39491-540b-4bd6-8dfd-99ae1ecab663",
+          ""
+        ],
+        [
+          "courtyards_overlap|72454309|140105000|c2f552d2-880b-4932-ac35-520a7d22b741|f8a7e24a-8f85-436e-a2d9-9bc4ef1b6b61",
+          ""
+        ],
+        [
+          "courtyards_overlap|85705000|129612500|3ce17e9c-e291-4a8f-ad2b-4324d08d630f|b6254598-7a49-449e-94a4-4454920dcbd1",
+          ""
+        ],
+        [
+          "courtyards_overlap|91242104|140155000|3ce17e9c-e291-4a8f-ad2b-4324d08d630f|9bfccded-7607-4556-bb07-70d077d8dcf0",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -103,7 +136,7 @@
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
-        "silk_over_copper": "error",
+        "silk_over_copper": "warning",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
@@ -963,7 +996,7 @@
     ],
     [
       "12f3a577-813a-4f19-bedd-d568a50cedd9",
-      "PCA9531PW"
+      "PCA9685PW"
     ],
     [
       "681cd5e3-d1a9-4f5a-899b-9dce52990abf",
