@@ -62,35 +62,35 @@
       "drc_exclusions": [
         [
           "courtyards_overlap|104305000|129562500|43c598fc-1e36-4967-ac17-ebaaa1902f10|6bf798ab-9e27-4698-bb6e-5603189e695c",
-          ""
+          "magasságban befér alá"
         ],
         [
           "courtyards_overlap|109806809|140105000|028cbb26-ad5b-425f-9c81-523ed55aec5a|43c598fc-1e36-4967-ac17-ebaaa1902f10",
-          ""
+          "magasságban befér alá"
         ],
         [
           "courtyards_overlap|122905000|129562500|7364c05e-394e-49b2-a73d-4aa648a43fcc|f0146713-1852-486d-b6d2-60ac3af404fd",
-          ""
+          "magasságban befér alá"
         ],
         [
-          "courtyards_overlap|128381868|140105000|a76b3350-59a6-4b2a-bb24-f8cb7a855656|f0146713-1852-486d-b6d2-60ac3af404fd",
-          ""
+          "courtyards_overlap|128432655|140105000|a76b3350-59a6-4b2a-bb24-f8cb7a855656|f0146713-1852-486d-b6d2-60ac3af404fd",
+          "magasságban befér alá"
         ],
         [
           "courtyards_overlap|66955000|129562500|c2f552d2-880b-4932-ac35-520a7d22b741|e6d39491-540b-4bd6-8dfd-99ae1ecab663",
-          ""
+          "magasságban befér alá"
         ],
         [
           "courtyards_overlap|72454309|140105000|c2f552d2-880b-4932-ac35-520a7d22b741|f8a7e24a-8f85-436e-a2d9-9bc4ef1b6b61",
-          ""
+          "magasságban befér alá"
         ],
         [
           "courtyards_overlap|85705000|129612500|3ce17e9c-e291-4a8f-ad2b-4324d08d630f|b6254598-7a49-449e-94a4-4454920dcbd1",
-          ""
+          "magasságban befér alá"
         ],
         [
           "courtyards_overlap|91242104|140155000|3ce17e9c-e291-4a8f-ad2b-4324d08d630f|9bfccded-7607-4556-bb07-70d077d8dcf0",
-          ""
+          "magasságban befér alá"
         ]
       ],
       "meta": {
@@ -107,8 +107,8 @@
         "diff_pair_gap_out_of_range": "warning",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
-        "duplicate_footprints": "warning",
-        "extra_footprint": "warning",
+        "duplicate_footprints": "error",
+        "extra_footprint": "error",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
@@ -118,7 +118,7 @@
         "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
-        "isolated_copper": "warning",
+        "isolated_copper": "error",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
@@ -128,19 +128,19 @@
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
-        "missing_footprint": "warning",
+        "missing_footprint": "error",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
         "padstack": "error",
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
-        "silk_edge_clearance": "ignore",
+        "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
-        "starved_thermal": "ignore",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
@@ -153,14 +153,14 @@
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "ignore",
         "zones_intersect": "error"
       },
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
-        "max_error": 0.005,
-        "min_clearance": 0.18,
+        "max_error": 0.001,
+        "min_clearance": 0.1,
         "min_connection": 0.15,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
@@ -707,7 +707,7 @@
       "gencad": "CM5IOUSB3.cad",
       "idf": "",
       "netlist": "CM5IO.net",
-      "plot": "V1_GBR/",
+      "plot": "V5_GBR/",
       "pos_files": "V0_GBR/",
       "specctra_dsn": "",
       "step": "",
@@ -999,24 +999,20 @@
       "PCA9685PW"
     ],
     [
-      "681cd5e3-d1a9-4f5a-899b-9dce52990abf",
-      "Battery-circuit"
+      "4c1824a3-ede3-44a9-9cc4-1658cb86e3ae",
+      "power-management"
     ],
     [
-      "8f321f2b-74a5-485c-81d9-61e57d518c6a",
-      "INA226"
+      "681cd5e3-d1a9-4f5a-899b-9dce52990abf",
+      "Battery-circuit"
     ],
     [
       "8d8c01f2-bc23-426f-ae43-f6b1b408a8ae",
       "PSUs"
     ],
     [
-      "f546de6f-698f-479e-9650-7ba26fd6c883",
-      "diagram"
-    ],
-    [
-      "4c1824a3-ede3-44a9-9cc4-1658cb86e3ae",
-      "power-management"
+      "8f321f2b-74a5-485c-81d9-61e57d518c6a",
+      "INA226"
     ],
     [
       "d5bc52fe-5a18-4afa-9723-032dd3c24aab",
@@ -1025,6 +1021,10 @@
     [
       "353dfb05-cac4-483c-9164-428eccf7c509",
       "fpp-kábel"
+    ],
+    [
+      "f546de6f-698f-479e-9650-7ba26fd6c883",
+      "diagram"
     ]
   ],
   "text_variables": {}
