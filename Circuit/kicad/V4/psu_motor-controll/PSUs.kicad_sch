@@ -2265,7 +2265,7 @@
 	)
 	(rectangle
 		(start 19.05 17.78)
-		(end 166.37 63.5)
+		(end 181.61 63.5)
 		(stroke
 			(width 0)
 			(type default)
@@ -6675,6 +6675,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01066e43-b0f8-4f18-99fc-32cf969ae661")
+		(property "Reference" "TP7"
+			(at 130.81 183.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 130.81 185.9279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 133.35 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 128.27 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 128.27 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7da7ee2b-b33e-452b-999f-031751b8dea9")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/8d8c01f2-bc23-426f-ae43-f6b1b408a8ae"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 205.74 63.5 180)
 		(unit 1)
@@ -10123,6 +10208,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "405ae73f-bea5-4006-a32d-570d2c796e67")
+		(property "Reference" "TP6"
+			(at 109.22 183.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 109.22 185.9279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 111.76 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e1f8d0b-7172-4b69-bed4-bdc7acd36e6e")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/8d8c01f2-bc23-426f-ae43-f6b1b408a8ae"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 317.5 165.1 0)
 		(unit 1)
@@ -10323,6 +10493,71 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/8d8c01f2-bc23-426f-ae43-f6b1b408a8ae"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 128.27 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "433c3be7-ce88-48ea-aa11-b8e30ace03bf")
+		(property "Reference" "#PWR0121"
+			(at 128.27 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.397 192.3542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96b3edcb-8ba6-4f95-8bc4-17239a786a2f")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/8d8c01f2-bc23-426f-ae43-f6b1b408a8ae"
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -12208,6 +12443,71 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/8d8c01f2-bc23-426f-ae43-f6b1b408a8ae"
 					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69a9c06c-1eb8-4441-962e-9c690220af8c")
+		(property "Reference" "#PWR0120"
+			(at 106.68 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.807 192.3542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea57d46c-eb8e-4a31-bd4a-3e1a7eebf2be")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/8d8c01f2-bc23-426f-ae43-f6b1b408a8ae"
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
