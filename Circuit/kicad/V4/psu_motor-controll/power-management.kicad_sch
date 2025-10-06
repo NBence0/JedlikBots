@@ -1503,7 +1503,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 54.61) (xy 91.44 54.61)
+			(xy 50.8 54.61) (xy 91.44 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1613,7 +1613,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 52.07) (xy 91.44 52.07)
+			(xy 50.8 52.07) (xy 91.44 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1762,7 +1762,7 @@
 		(uuid "4005a94d-d0ef-41b6-9f62-c04ab433d7af")
 	)
 	(label "SW_N"
-		(at 83.82 52.07 0)
+		(at 50.8 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1772,7 +1772,7 @@
 		(uuid "5049b7e8-f9a1-4122-a827-c974147b56b5")
 	)
 	(label "SW_P"
-		(at 83.82 54.61 0)
+		(at 50.8 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4480,48 +4480,6 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae"
 					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 17.78 19.05)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f546de6f-698f-479e-9650-7ba26fd6c883")
-		(property "Sheetname" "diagram"
-			(at 17.78 18.3384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "diagram.kicad_sch"
-			(at 17.78 23.4446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae"
-					(page "11")
 				)
 			)
 		)
