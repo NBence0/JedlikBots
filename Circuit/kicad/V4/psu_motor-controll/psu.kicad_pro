@@ -735,39 +735,51 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": false
+          "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Do Not Place",
+          "name": "${DNP}",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": false
         },
         {
-          "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
+          "group_by": false,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
           "show": false
         },
         {
@@ -777,148 +789,28 @@
           "show": false
         },
         {
-          "group_by": true,
-          "label": "Field4",
-          "name": "Field4",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field6",
-          "name": "Field6",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field7",
-          "name": "Field7",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field8",
-          "name": "Field8",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Part Description",
-          "name": "Part Description",
-          "show": false
-        },
-        {
-          "group_by": true,
+          "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
-          "group_by": true,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
+          "group_by": false,
+          "label": "Cikkszám",
+          "name": "Cikkszám",
+          "show": true
         },
         {
-          "group_by": true,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
+          "group_by": false,
+          "label": "Link",
+          "name": "Link",
+          "show": true
         },
         {
-          "group_by": true,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "SNAPEDA_PN",
-          "name": "SNAPEDA_PN",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Sim.Type",
-          "name": "Sim.Type",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Url",
-          "name": "Url",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Availability",
-          "name": "Availability",
-          "show": false
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -926,7 +818,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Package"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
