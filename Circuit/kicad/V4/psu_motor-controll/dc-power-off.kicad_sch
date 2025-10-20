@@ -170,145 +170,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -423,182 +284,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Driver_FET:MCP1415"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "MCP1415"
-				(at 1.27 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf"
-				(at -5.08 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1.5A High speed power MOSFET driver with inverting output, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mosfet gate driver"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP1415_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "MCP1415_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "Vdd"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "~{OUT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1117,6 +802,322 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Simulation_SPICE:PMOS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "PMOS"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "P-MOSFET transistor, drain/source/gate"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "PMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "VDMOS"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=D 2=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PMOS_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PMOS_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1220,40 +1221,40 @@
 		)
 	)
 	(junction
-		(at 59.69 46.99)
+		(at 132.08 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5ec469ca-9045-410e-94de-f6fab8ff1805")
+		(uuid "21ded755-62b8-47a0-8dae-f683016a7b78")
 	)
 	(junction
-		(at 143.51 45.72)
+		(at 57.15 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "96d615dc-849b-4931-8b1d-70176b86175a")
+		(uuid "41a65e7e-3a0c-4a31-b044-17ee0644c754")
 	)
 	(junction
-		(at 48.26 46.99)
+		(at 44.45 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "975e427e-06ac-4d96-bdd0-e8de637b8274")
+		(uuid "6d0d8d6c-d894-478a-923f-722589bf3557")
 	)
 	(junction
-		(at 139.7 33.02)
+		(at 57.15 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c58c399d-9fd3-49ac-bc8c-220ba99ca48a")
+		(uuid "775416af-fda8-4dda-98aa-37b19b0b921f")
 	)
 	(junction
-		(at 57.15 34.29)
+		(at 144.78 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e0be1965-6743-472a-a238-1bb400554467")
+		(uuid "a6174941-baf8-44f3-b4a2-a75477b53895")
 	)
 	(junction
-		(at 132.08 45.72)
+		(at 144.78 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fa5209c3-8fc2-4dfa-9ee0-cfe254b0c526")
+		(uuid "bdd5a8cc-bcb0-4b23-bc71-ebb9843a2b14")
 	)
 	(no_connect
 		(at 52.07 91.44)
@@ -1299,43 +1300,63 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 46.99) (xy 59.69 49.53)
+			(xy 81.28 25.4) (xy 57.15 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0eca9ba3-da0f-474f-922e-7954eaa6fb13")
+		(uuid "1261e87c-73a1-44a3-9d31-539e098d0505")
 	)
 	(wire
 		(pts
-			(xy 77.47 34.29) (xy 57.15 34.29)
+			(xy 144.78 36.83) (xy 144.78 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20ae91f8-425a-43b8-b6f7-05d2c2cb14a3")
+		(uuid "16aa86d1-423c-46a4-939c-26af4f8e05dd")
 	)
 	(wire
 		(pts
-			(xy 77.47 57.15) (xy 77.47 52.07)
+			(xy 57.15 34.29) (xy 57.15 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "279cf3b7-b41b-41cc-b387-56bb48cd1abb")
+		(uuid "21c75f58-cc71-4cad-810e-cb77763bc734")
 	)
 	(wire
 		(pts
-			(xy 77.47 41.91) (xy 77.47 34.29)
+			(xy 132.08 49.53) (xy 132.08 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3389119d-9e4e-4c31-ae36-55aff72b26ce")
+		(uuid "2d5ce6c7-1018-46c0-84ac-8c721f7bf3a0")
+	)
+	(wire
+		(pts
+			(xy 46.99 25.4) (xy 57.15 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea092e2-85e4-4f9d-af5d-ab3d55b8fd7e")
+	)
+	(wire
+		(pts
+			(xy 44.45 45.72) (xy 49.53 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e678ec-66c7-42e5-9c46-f2c87b8792db")
 	)
 	(wire
 		(pts
@@ -1349,33 +1370,23 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 57.15) (xy 161.29 50.8)
+			(xy 144.78 41.91) (xy 153.67 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39e91df6-82a0-4ba9-a12d-8c50c5174c83")
+		(uuid "478f98c0-f4dc-4bac-955f-84ab85196dad")
 	)
 	(wire
 		(pts
-			(xy 161.29 33.02) (xy 139.7 33.02)
+			(xy 134.62 27.94) (xy 144.78 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e5364b4-eff9-4ad5-a8e6-136dde085b46")
-	)
-	(wire
-		(pts
-			(xy 48.26 46.99) (xy 48.26 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5924c204-6009-44ce-8bda-dcf935f46401")
+		(uuid "4c9e5a60-35cc-4188-bcf6-bc7b43ce9c82")
 	)
 	(wire
 		(pts
@@ -1389,93 +1400,143 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 45.72) (xy 153.67 45.72)
+			(xy 132.08 48.26) (xy 137.16 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d183b59-ea84-40de-af41-012e7f475f95")
+		(uuid "7267420d-2c53-4b3f-9b29-58de00364e0e")
 	)
 	(wire
 		(pts
-			(xy 132.08 45.72) (xy 132.08 48.26)
+			(xy 57.15 39.37) (xy 66.04 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "734c1584-06d9-4618-929d-e8f4c83e80f5")
+		(uuid "729fb4e9-c10e-41ca-84fc-5003a6315a86")
 	)
 	(wire
 		(pts
-			(xy 128.27 45.72) (xy 132.08 45.72)
+			(xy 168.91 36.83) (xy 168.91 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "77686d29-410c-41f5-95fb-e33c439c68aa")
+		(uuid "7bcc9f31-b983-43b3-a13f-b7126642ce20")
 	)
 	(wire
 		(pts
-			(xy 143.51 45.72) (xy 143.51 48.26)
+			(xy 81.28 50.8) (xy 81.28 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78a13179-37ab-4d50-9bad-c5c4ed1db8c5")
+		(uuid "85a6d2aa-3dda-45a8-979d-2fe9dfca566a")
 	)
 	(wire
 		(pts
-			(xy 48.26 46.99) (xy 59.69 46.99)
+			(xy 57.15 25.4) (xy 57.15 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "805bf787-a2c7-4dae-8f23-b6b9e1b218a8")
+		(uuid "893f139d-afa5-4d8d-b2b1-83f303fcf1cd")
 	)
 	(wire
 		(pts
-			(xy 118.11 33.02) (xy 118.11 38.1)
+			(xy 44.45 46.99) (xy 44.45 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "87e39624-cf8a-4378-a7ad-76ee6d92ffec")
+		(uuid "9a7c59da-cdd7-4c80-9590-09262ee1d5b2")
 	)
 	(wire
 		(pts
-			(xy 57.15 34.29) (xy 34.29 34.29)
+			(xy 40.64 45.72) (xy 44.45 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90242087-4318-4bba-8dd8-dcae0150ecc4")
+		(uuid "9bc15a0f-7c2a-438e-8be1-5b5e20cf830d")
 	)
 	(wire
 		(pts
-			(xy 44.45 46.99) (xy 48.26 46.99)
+			(xy 57.15 54.61) (xy 57.15 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd1feb7f-580b-4b23-a06f-6f2289206339")
+		(uuid "a642f955-10f0-4905-a2c2-e8f3bf3978ad")
 	)
 	(wire
 		(pts
-			(xy 161.29 40.64) (xy 161.29 33.02)
+			(xy 128.27 48.26) (xy 132.08 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca8fb356-c6a1-4afb-b8d7-a41254587796")
+		(uuid "acd767e4-adff-4f20-8cc5-753948d4a023")
+	)
+	(wire
+		(pts
+			(xy 144.78 57.15) (xy 144.78 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "affa907c-3554-4e4d-9e76-48985107d5d7")
+	)
+	(wire
+		(pts
+			(xy 168.91 27.94) (xy 144.78 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3322543-2382-450f-8bf2-07543979cb9d")
+	)
+	(wire
+		(pts
+			(xy 168.91 53.34) (xy 168.91 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b540ccf1-bf50-466c-9e3a-6d04e0779e47")
+	)
+	(wire
+		(pts
+			(xy 81.28 34.29) (xy 81.28 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7953d33-eb52-4277-ae51-f01e907bec03")
+	)
+	(wire
+		(pts
+			(xy 144.78 43.18) (xy 144.78 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c88d634c-12fc-493b-91d7-92c3158d4e0d")
 	)
 	(wire
 		(pts
@@ -1489,87 +1550,23 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 46.99) (xy 69.85 46.99)
+			(xy 57.15 40.64) (xy 57.15 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cf5cffe8-38da-417d-a42f-a36381d4425c")
+		(uuid "e08593bc-7b8a-4dae-b03c-a38e8dc1a02d")
 	)
 	(wire
 		(pts
-			(xy 132.08 45.72) (xy 143.51 45.72)
+			(xy 144.78 27.94) (xy 144.78 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3cb85eb-c76d-4060-97a7-e3c20bf02e55")
-	)
-	(wire
-		(pts
-			(xy 34.29 34.29) (xy 34.29 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6c13046-245b-42ca-8a60-a267a0eeea7b")
-	)
-	(wire
-		(pts
-			(xy 139.7 33.02) (xy 118.11 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eae76193-9e57-4386-a3dd-fab1f0d6db1e")
-	)
-	(global_label "DC12V_2"
-		(shape input)
-		(at 26.67 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1d9ccbdb-d3d7-4215-bd78-ab3e84033052")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.365 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DC12V_1"
-		(shape input)
-		(at 110.49 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3c9b47c0-ea22-417e-bf7e-ba5cda50812c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.185 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "e2ac4975-ccab-4820-a662-d014a8c667f1")
 	)
 	(global_label "DC5V_2"
 		(shape input)
@@ -1584,6 +1581,50 @@
 		(uuid "7c358270-8ce1-4106-a280-dbbc337c9507")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 78.8045 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DC12V_1"
+		(shape input)
+		(at 120.65 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99e6f1e4-75a0-4fab-8843-be30b5be1cf3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.345 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DC12V_2"
+		(shape input)
+		(at 33.02 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a758161f-02f9-4bdd-a036-2072e94a9bce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.715 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1659,6 +1700,17 @@
 			)
 		)
 	)
+	(hierarchical_label "12v_2"
+		(shape input)
+		(at 46.99 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3f3615ab-938f-499a-a089-d5ef57f68a20")
+	)
 	(hierarchical_label "5v"
 		(shape input)
 		(at 88.9 83.82 180)
@@ -1670,16 +1722,16 @@
 		)
 		(uuid "558b50ff-c746-46a6-b315-405e63b71b2c")
 	)
-	(hierarchical_label "12v_2"
+	(hierarchical_label "12v_1"
 		(shape input)
-		(at 34.29 34.29 180)
+		(at 134.62 27.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "68f074df-2d71-4f8b-9d49-3abd683de0dc")
+		(uuid "65b34258-60fb-4428-b260-4bcffc4ab582")
 	)
 	(hierarchical_label "3v3"
 		(shape input)
@@ -1691,17 +1743,6 @@
 			(justify right)
 		)
 		(uuid "939ac80e-3469-4c5b-8fa7-81f522c8dac8")
-	)
-	(hierarchical_label "12v_1"
-		(shape input)
-		(at 118.11 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9433e97d-b2f0-4939-b9e0-b8dd06ad670c")
 	)
 	(hierarchical_label "5v"
 		(shape input)
@@ -1727,293 +1768,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01b042fe-295a-48c6-a977-f048b11e5a79")
-		(property "Reference" "#PWR0125"
-			(at 48.26 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24581c68-19a4-489b-abbb-5da46edb72da")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 80.01 57.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09faf426-a874-4de5-aa57-a91db26fa78b")
-		(property "Reference" "#PWR088"
-			(at 86.36 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 83.82 57.1499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bced434a-abd8-4740-84bd-051802cca013")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 139.7 29.21 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d9d8fda-b801-4b48-b119-f0e487fa2383")
-		(property "Reference" "C23"
-			(at 143.51 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1uf"
-			(at 143.51 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 138.7348 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=4317"
-			(at 139.7 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 139.7 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.277.53"
-			(at 139.7 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10027753.html"
-			(at 139.7 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "44fc9c21-d427-4675-9325-1e66d20f81b4")
-		)
-		(pin "1"
-			(uuid "d4b4e33c-fc75-4d8b-bf7c-19bc56ad3f30")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 34.29 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f2ed1c4-a23b-4374-9ec7-2e47040d8fff")
-		(property "Reference" "#PWR090"
-			(at 34.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 34.29 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6065c82f-c252-4c55-921f-73c80640955f")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 41.91 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2022,7 +1776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17365fe1-b94f-49c2-843b-85d2e2dc0f2b")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR0123"
 			(at 41.91 132.08 0)
 			(effects
 				(font
@@ -2072,7 +1826,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR098")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -2176,7 +1930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22b41300-c008-44ab-a1a8-d4dc6557cb66")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR097"
 			(at 41.91 102.87 0)
 			(effects
 				(font
@@ -2226,95 +1980,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 143.51 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fdb8638-370e-4b1e-9e80-852b3f5b182f")
-		(property "Reference" "R79"
-			(at 146.05 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 146.05 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 141.732 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3654"
-			(at 143.51 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 143.51 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.011.43"
-			(at 143.51 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10001143.html"
-			(at 143.51 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9e134abf-3e92-43d1-8308-684a5486c5f6")
-		)
-		(pin "2"
-			(uuid "73cab9d5-3568-440b-8781-0526e8eafaee")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "R79")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -2322,16 +1988,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 26.67 180)
+		(at 171.45 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "32d17a61-549d-4887-9996-6df2fb8f4248")
-		(property "Reference" "#PWR0127"
-			(at 57.15 20.32 0)
+		(uuid "2c45014b-e01d-44e1-83cc-89e9b4af5696")
+		(property "Reference" "#PWR089"
+			(at 177.8 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,15 +2006,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 21.59 0)
+			(at 175.26 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 26.67 0)
+			(at 171.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2357,7 +2024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 26.67 0)
+			(at 171.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2366,7 +2033,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 26.67 0)
+			(at 171.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2375,12 +2042,103 @@
 			)
 		)
 		(pin "1"
-			(uuid "01b6f7f0-36bf-407b-a549-b4626d723a15")
+			(uuid "0b928258-606f-4d37-96f3-0f2845ce9c00")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR0127")
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 54.61 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "355fce2b-2683-4a44-84ba-51ed51c99eca")
+		(property "Reference" "Q6"
+			(at 60.96 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400-CF"
+			(at 60.96 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
+			(at 59.69 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=11378"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 54.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.401.27"
+			(at 54.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10040127.html"
+			(at 54.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f893e8ec-ed57-4e58-b84d-009c74884bfa")
+		)
+		(pin "1"
+			(uuid "36be269c-2711-4b9a-bbe1-940be48f2d36")
+		)
+		(pin "3"
+			(uuid "6e00a3b7-b75e-45f2-a63b-2ebb0c5cd130")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -2396,7 +2154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b0be644-867f-41c1-a860-45b0e3cff741")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR0122"
 			(at 63.5 113.03 0)
 			(effects
 				(font
@@ -2447,102 +2205,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR096")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Driver_FET:MCP1415")
-		(at 34.29 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "411d4f0e-6f3d-4479-a92a-34b3e1ff2e6b")
-		(property "Reference" "U26"
-			(at 49.53 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP1401T-E"
-			(at 49.53 43.1098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 34.29 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=12063"
-			(at 29.21 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.5A High speed power MOSFET driver with inverting output, SOT-23-5"
-			(at 34.29 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.408.33"
-			(at 34.29 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10040833.html"
-			(at 34.29 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "e49a3121-f365-43c7-bc0e-897ac9d33485")
-		)
-		(pin "2"
-			(uuid "7e362537-f54f-4755-8d28-897cc8f17e8d")
-		)
-		(pin "1"
-			(uuid "4e327afb-0b1a-491e-bcac-afdd01b82017")
-		)
-		(pin "4"
-			(uuid "d96bac56-4087-46a4-9a34-6d37cc4739d5")
-		)
-		(pin "3"
-			(uuid "2290cb10-3ffa-4c4d-ae44-9f84a4c8d73f")
-		)
-		(instances
-			(project ""
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "U26")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -2558,7 +2221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d229e31-5da2-4b12-9a72-1f35246893a1")
-		(property "Reference" "DC5"
+		(property "Reference" "DC6"
 			(at 58.42 116.2049 90)
 			(effects
 				(font
@@ -2630,7 +2293,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC5")
+					(reference "DC6")
 					(unit 1)
 				)
 			)
@@ -2638,16 +2301,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 25.4 180)
+		(at 144.78 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4e596d02-6d50-488c-b47d-15ba4ee49bf2")
-		(property "Reference" "#PWR0126"
-			(at 139.7 19.05 0)
+		(uuid "51b6050c-7f4c-4f49-b0aa-462e7a05c44d")
+		(property "Reference" "#PWR093"
+			(at 144.78 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2656,7 +2319,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 20.32 0)
+			(at 144.78 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,7 +2327,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 25.4 0)
+			(at 144.78 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2673,7 +2336,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 25.4 0)
+			(at 144.78 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +2345,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 25.4 0)
+			(at 144.78 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2691,100 +2354,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4474ee82-2d00-454c-8e68-a4e548e5cb5a")
+			(uuid "498aa8e2-fb3c-4cd2-ab79-71d4b5d8ee13")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 163.83 62.23 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "53172b49-8c8f-45c3-8222-944f12ab9587")
-		(property "Reference" "DC2"
-			(at 165.1 60.3249 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 165.1 62.8649 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 163.83 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=9997"
-			(at 163.83 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 163.83 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.385.23"
-			(at 163.83 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10038523.html"
-			(at 163.83 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "67c4be64-06f3-428a-82f4-c8ced0b4e7ad")
-		)
-		(pin "1"
-			(uuid "f8bdd39f-6169-4984-8446-c098344a6ead")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC2")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -2800,7 +2375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53485de3-1f63-4b1d-b0b2-b5353958f6dd")
-		(property "Reference" "DC_U3"
+		(property "Reference" "DC_U1"
 			(at 41.91 76.2 0)
 			(effects
 				(font
@@ -2882,24 +2457,24 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC_U3")
+					(reference "DC_U1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 48.26 53.34 0)
+		(lib_id "Device:R")
+		(at 44.45 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "567f4fea-0b8c-4130-bb72-87616aeaf1ca")
-		(property "Reference" "C22"
-			(at 52.07 52.0699 0)
+		(uuid "57c5db9a-6d46-47ba-bd2d-cec7f159bf87")
+		(property "Reference" "R82"
+			(at 46.99 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2907,8 +2482,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68pf"
-			(at 52.07 54.6099 0)
+		(property "Value" "10k"
+			(at 46.99 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2916,8 +2491,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 49.2252 57.15 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 42.672 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2925,8 +2500,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=9667"
-			(at 48.26 53.34 0)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3654"
+			(at 44.45 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2934,8 +2509,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 48.26 53.34 0)
+		(property "Description" "Resistor"
+			(at 44.45 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2943,8 +2518,8 @@
 				(hide yes)
 			)
 		)
-		(property "Cikkszám" "100.380.72"
-			(at 48.26 53.34 0)
+		(property "Cikkszám" "100.011.43"
+			(at 44.45 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2952,42 +2527,42 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.hestore.hu/prod_10038072.html"
-			(at 48.26 53.34 0)
+		(property "Link" "https://www.hestore.hu/prod_10001143.html"
+			(at 44.45 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "b37aab2e-064c-44b8-a161-e3a573109ff3")
 		)
 		(pin "1"
-			(uuid "1c632b03-fb50-49f5-b1f7-24c44e9cc279")
+			(uuid "40dd49c9-3499-43ad-babc-bd5c2647dd85")
+		)
+		(pin "2"
+			(uuid "47cfd9db-41d6-43f4-bbf1-e4e4e2f29573")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "C22")
+					(reference "R82")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 158.75 45.72 0)
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 83.82 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "581ceb2c-6f40-489d-9b70-bd773b15b998")
-		(property "Reference" "Q5"
-			(at 165.1 44.4499 0)
+		(uuid "60f05351-505d-45cc-b15c-2f89d7e3001e")
+		(property "Reference" "DC1"
+			(at 85.09 53.9749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,8 +2570,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AO3400-CF"
-			(at 165.1 46.9899 0)
+		(property "Value" "Conn_01x02_Socket"
+			(at 85.09 56.5149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,8 +2579,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 163.83 43.18 0)
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+			(at 83.82 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,8 +2588,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=11378"
-			(at 158.75 58.42 0)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=9997"
+			(at 83.82 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,8 +2597,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 158.75 45.72 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 83.82 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,8 +2606,8 @@
 				(hide yes)
 			)
 		)
-		(property "Cikkszám" "100.401.27"
-			(at 158.75 45.72 0)
+		(property "Cikkszám" "100.385.23"
+			(at 83.82 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,8 +2615,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.hestore.hu/prod_10040127.html"
-			(at 158.75 45.72 0)
+		(property "Link" "https://www.hestore.hu/prod_10038523.html"
+			(at 83.82 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,194 +2625,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "72beefbc-d705-4fb8-b7f7-0d6497098656")
+			(uuid "5d22f8cc-c4f3-4690-beb1-6d3577122a70")
 		)
 		(pin "1"
-			(uuid "0b976bbb-3aa8-45bf-bc9b-afd93de84bd4")
-		)
-		(pin "3"
-			(uuid "210783ef-7a83-4af5-a42e-1d4c2097a4c2")
+			(uuid "c342d6c3-0a0a-4fa8-8c07-87e88433b450")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 132.08 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "634c1d9b-18a8-4468-ad45-f1286c1823b7")
-		(property "Reference" "C21"
-			(at 135.89 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "68pf"
-			(at 135.89 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 133.0452 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=9667"
-			(at 132.08 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 132.08 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.380.72"
-			(at 132.08 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10038072.html"
-			(at 132.08 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1d2c0ad5-5464-42b6-a49b-39c96b50aea7")
-		)
-		(pin "1"
-			(uuid "ebd98f09-87f0-476d-89c0-bded2b9bfa6e")
-		)
-		(instances
-			(project ""
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 57.15 30.48 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "635ce9bc-78cf-4f39-80ef-c6f4c04b1d52")
-		(property "Reference" "C24"
-			(at 60.96 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1uf"
-			(at 60.96 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 56.1848 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=4317"
-			(at 57.15 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 57.15 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.277.53"
-			(at 57.15 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10027753.html"
-			(at 57.15 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5efdddf4-4508-4dc9-b8f3-1a8483abcdf9")
-		)
-		(pin "1"
-			(uuid "f628164e-12b4-48ea-afd7-0ecda3b82b81")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "C24")
+					(reference "DC1")
 					(unit 1)
 				)
 			)
@@ -3253,7 +2649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68c33c28-7eaa-4083-95a7-28f681ffe921")
-		(property "Reference" "DC6"
+		(property "Reference" "DC5"
 			(at 175.26 86.9949 90)
 			(effects
 				(font
@@ -3325,7 +2721,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC6")
+					(reference "DC5")
 					(unit 1)
 				)
 			)
@@ -3341,7 +2737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68e2e0d8-2947-4b0e-b8ac-c9c63ae55913")
-		(property "Reference" "DC_U4"
+		(property "Reference" "DC_U2"
 			(at 99.06 76.2 0)
 			(effects
 				(font
@@ -3423,73 +2819,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC_U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 143.51 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ec47669-8ed3-4615-abbc-56e7329d2439")
-		(property "Reference" "#PWR0123"
-			(at 143.51 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 143.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b9084d15-7a73-444f-9acd-d5501c7ab378")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR0123")
+					(reference "DC_U2")
 					(unit 1)
 				)
 			)
@@ -3505,7 +2835,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7058b2f1-3b85-4b28-a2a0-da53b111c749")
-		(property "Reference" "DC_U6"
+		(property "Reference" "DC_U3"
 			(at 158.75 76.2 0)
 			(effects
 				(font
@@ -3587,7 +2917,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC_U6")
+					(reference "DC_U3")
 					(unit 1)
 				)
 			)
@@ -3595,32 +2925,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 45.72 270)
+		(at 132.08 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7a1155f1-3925-47a3-9d46-ca26a14e1ffd")
-		(property "Reference" "R78"
-			(at 147.32 39.37 90)
+		(uuid "8751246b-47a2-484d-bb45-bcbd60b75289")
+		(property "Reference" "R83"
+			(at 134.62 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "100R"
-			(at 147.32 41.91 90)
+		(property "Value" "10k"
+			(at 134.62 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 147.32 43.942 90)
+			(at 130.302 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3628,8 +2960,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3653"
-			(at 147.32 45.72 0)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3654"
+			(at 132.08 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3638,7 +2970,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 45.72 0)
+			(at 132.08 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,8 +2978,8 @@
 				(hide yes)
 			)
 		)
-		(property "Cikkszám" "100.011.42"
-			(at 147.32 45.72 90)
+		(property "Cikkszám" "100.011.43"
+			(at 132.08 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3655,8 +2987,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.hestore.hu/prod_10001142.html"
-			(at 147.32 45.72 90)
+		(property "Link" "https://www.hestore.hu/prod_10001143.html"
+			(at 132.08 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3665,15 +2997,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e9f1d5d-c6c8-4c07-93af-64f8ecd918a2")
+			(uuid "175921d5-fa79-47e9-a2af-cd9bce00fd0f")
 		)
 		(pin "2"
-			(uuid "27747340-4334-4b4c-a7e7-14ec07583024")
+			(uuid "55edf244-7507-47cf-8827-769193d37828")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "R78")
+					(reference "R83")
 					(unit 1)
 				)
 			)
@@ -3681,32 +3013,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 63.5 46.99 270)
+		(at 144.78 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "97735904-d60a-4290-b80e-24baf17414f0")
-		(property "Reference" "R76"
-			(at 63.5 40.64 90)
+		(uuid "88ebe348-7b59-4bd2-ba2b-aa7053cc3c94")
+		(property "Reference" "R77"
+			(at 147.32 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "100R"
-			(at 63.5 43.18 90)
+		(property "Value" "10k"
+			(at 147.32 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 63.5 45.212 90)
+			(at 143.002 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3714,8 +3048,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3653"
-			(at 63.5 46.99 0)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3654"
+			(at 144.78 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,7 +3058,184 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 63.5 46.99 0)
+			(at 144.78 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.43"
+			(at 144.78 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001143.html"
+			(at 144.78 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82a92496-0b70-4039-be34-2dc981656316")
+		)
+		(pin "2"
+			(uuid "7e5edd97-bedb-4e7b-9b9f-504fa2a87ea0")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 142.24 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9657a41b-263f-4de8-8a1d-5855f89e2d67")
+		(property "Reference" "Q7"
+			(at 148.59 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400-CF"
+			(at 148.59 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
+			(at 147.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=11378"
+			(at 142.24 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 142.24 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.401.27"
+			(at 142.24 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10040127.html"
+			(at 142.24 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2f72211a-3d08-4a1b-89b8-8f15dc364f88")
+		)
+		(pin "1"
+			(uuid "18dc8df3-d437-42d8-b636-144d319ad894")
+		)
+		(pin "3"
+			(uuid "043ec6f6-b514-4906-85ba-b2eeed00c832")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 36.83 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97735904-d60a-4290-b80e-24baf17414f0")
+		(property "Reference" "R80"
+			(at 36.83 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 36.83 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 36.83 43.942 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3653"
+			(at 36.83 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +3244,7 @@
 			)
 		)
 		(property "Cikkszám" "100.011.42"
-			(at 63.5 46.99 90)
+			(at 36.83 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3742,7 +3253,7 @@
 			)
 		)
 		(property "Link" "https://www.hestore.hu/prod_10001142.html"
-			(at 63.5 46.99 90)
+			(at 36.83 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3757,9 +3268,195 @@
 			(uuid "59550f1c-bd0b-43d4-9bf2-376b1a202e38")
 		)
 		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "R80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 78.74 39.37 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a2fb017-75d6-4ec3-a783-6bd051378c7a")
+		(property "Reference" "Q4"
+			(at 85.09 40.6401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401"
+			(at 85.09 38.1001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
+			(at 83.82 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 78.74 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 78.74 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PMOS"
+			(at 78.74 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 78.74 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 78.74 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3d7788e3-d797-4d71-b976-11d95615ad6a")
+		)
+		(pin "1"
+			(uuid "7bc9d08d-173c-464a-a03a-565a10450d0c")
+		)
+		(pin "3"
+			(uuid "00066203-531a-4dff-a3fa-0e4d263af9ab")
+		)
+		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "R76")
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a44b107b-55e5-4dc2-a1ec-4641f31248e4")
+		(property "Reference" "R81"
+			(at 124.46 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 124.46 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 124.46 46.482 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3653"
+			(at 124.46 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.42"
+			(at 124.46 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001142.html"
+			(at 124.46 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d04856bb-fc2b-4f2a-85af-e234d0ca4ceb")
+		)
+		(pin "2"
+			(uuid "79dc2435-b7c6-4c92-badd-a905b35a4df9")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "R81")
 					(unit 1)
 				)
 			)
@@ -3832,35 +3529,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 80.01 62.23 270)
+		(lib_id "Device:R")
+		(at 157.48 41.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a5a2a6bc-ef04-4d47-82e4-67b0c7842e5d")
-		(property "Reference" "DC1"
-			(at 81.28 60.3249 90)
+		(uuid "a4dc9fff-f7ea-4d7e-a83f-409a2a329b6f")
+		(property "Reference" "R79"
+			(at 157.48 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 81.28 62.8649 90)
+		(property "Value" "100R"
+			(at 157.48 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 80.01 62.23 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 157.48 40.132 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,8 +3563,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=9997"
-			(at 80.01 62.23 0)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3653"
+			(at 157.48 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,8 +3572,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 80.01 62.23 0)
+		(property "Description" "Resistor"
+			(at 157.48 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,8 +3581,8 @@
 				(hide yes)
 			)
 		)
-		(property "Cikkszám" "100.385.23"
-			(at 80.01 62.23 90)
+		(property "Cikkszám" "100.011.42"
+			(at 157.48 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3895,91 +3590,25 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.hestore.hu/prod_10038523.html"
-			(at 80.01 62.23 90)
+		(property "Link" "https://www.hestore.hu/prod_10001142.html"
+			(at 157.48 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "31fdf9d3-5dee-4748-88fd-3d7ab9887c06")
 		)
 		(pin "2"
-			(uuid "6f60446d-4efc-4f12-8de9-17a8d6ecd3bf")
-		)
-		(pin "1"
-			(uuid "e8ea5d60-3b28-4a33-968e-bf0a1cd7a101")
+			(uuid "c346e647-dab5-497d-835b-998adb947b60")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 118.11 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a7f0fc31-b013-44b6-ba74-2f915de9a277")
-		(property "Reference" "#PWR0122"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5244a4ed-8bfc-47f5-a3a3-26e5bb0096a4")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR0122")
+					(reference "R79")
 					(unit 1)
 				)
 			)
@@ -3995,7 +3624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af4d239a-48dc-40ec-868e-924c894ddc49")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR095"
 			(at 120.65 83.82 0)
 			(effects
 				(font
@@ -4046,7 +3675,73 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR093")
+					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2aafc3d-d44b-4a30-92fe-b3314ad5f842")
+		(property "Reference" "#PWR091"
+			(at 57.15 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7407f22e-a9d0-458a-ab5d-152162e2445d")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -4141,6 +3836,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 171.45 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b532f95f-9648-472c-98c2-2c9896a9f335")
+		(property "Reference" "DC2"
+			(at 172.72 56.5149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 172.72 59.0549 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+			(at 171.45 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=9997"
+			(at 171.45 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 171.45 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.385.23"
+			(at 171.45 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10038523.html"
+			(at 171.45 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba4a695d-1a33-4c26-aac8-6803ec57ff68")
+		)
+		(pin "1"
+			(uuid "a54dfce2-2664-4d28-bd65-458a718d1b42")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "DC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 99.06 96.52 0)
 		(unit 1)
@@ -4150,7 +3933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b724eaf1-664f-4b65-8ebf-282f776f2399")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR098"
 			(at 99.06 102.87 0)
 			(effects
 				(font
@@ -4200,103 +3983,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR095")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Driver_FET:MCP1415")
-		(at 118.11 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b803101f-3194-4f61-9b79-282ed1b1facf")
-		(property "Reference" "U27"
-			(at 133.35 39.2998 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP1401T-E"
-			(at 133.35 41.8398 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 118.11 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=12063"
-			(at 113.03 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.5A High speed power MOSFET driver with inverting output, SOT-23-5"
-			(at 118.11 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.408.33"
-			(at 118.11 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10040833.html"
-			(at 118.11 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "9af26b7a-5ac4-4e98-9be1-f169ca199810")
-		)
-		(pin "2"
-			(uuid "0dbfa78c-0882-4116-8fe0-0b77fada15e8")
-		)
-		(pin "1"
-			(uuid "24623f1d-ad98-40ef-a963-3c28bd607b0b")
-		)
-		(pin "4"
-			(uuid "4cb146be-455a-44e6-8c28-12234faffbb6")
-		)
-		(pin "3"
-			(uuid "e5b5be3b-f0a7-4242-b4ca-da6e60a040a5")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "U27")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -4304,7 +3991,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 57.15 0)
+		(at 44.45 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4312,8 +3999,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b941f239-de34-4d84-8b04-dd758a937d8c")
-		(property "Reference" "#PWR091"
-			(at 59.69 63.5 0)
+		(property "Reference" "#PWR090"
+			(at 44.45 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +4009,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 62.23 0)
+			(at 44.45 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4330,7 +4017,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 57.15 0)
+			(at 44.45 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4339,7 +4026,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 57.15 0)
+			(at 44.45 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4348,7 +4035,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 57.15 0)
+			(at 44.45 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4049,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR091")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -4370,16 +4057,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 55.88 0)
+		(at 83.82 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c80b38a5-0b54-45b0-923e-4e9a0e659a79")
-		(property "Reference" "#PWR0124"
-			(at 132.08 62.23 0)
+		(uuid "beae218a-e50e-4fb4-b3e2-0b9e69d0a43c")
+		(property "Reference" "#PWR088"
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,15 +4075,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 60.96 0)
+			(at 87.63 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 55.88 0)
+			(at 83.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4405,7 +4093,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 55.88 0)
+			(at 83.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4414,7 +4102,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 55.88 0)
+			(at 83.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,12 +4111,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9359a58c-32f4-45c6-aebf-815578214eba")
+			(uuid "172cbad6-8f83-460f-b31d-fe20d9d1bd6e")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR0124")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -4444,7 +4132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb200d6a-7c32-448f-9572-a712ecce673a")
-		(property "Reference" "DC_U5"
+		(property "Reference" "DC_U4"
 			(at 41.91 105.41 0)
 			(effects
 				(font
@@ -4526,24 +4214,110 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "DC_U5")
+					(reference "DC_U4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 74.93 46.99 0)
+		(lib_id "Device:R")
+		(at 69.85 39.37 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d69cdc7e-e912-4611-b6ca-cbe6628e2026")
-		(property "Reference" "Q4"
-			(at 81.28 45.7199 0)
+		(uuid "d06dd78d-3b41-4d13-98ec-8c75a71443bd")
+		(property "Reference" "R78"
+			(at 69.85 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 69.85 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.85 37.592 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3653"
+			(at 69.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.42"
+			(at 69.85 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001142.html"
+			(at 69.85 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fc8b025-f397-4422-ad6c-d3b4d9a04443")
+		)
+		(pin "2"
+			(uuid "ec6977cf-d4d8-4efe-a0ce-97f5bbf1439b")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "R78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 166.37 41.91 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea087104-0608-4a97-88fb-5d28f6df4d74")
+		(property "Reference" "Q5"
+			(at 172.72 43.1801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4551,8 +4325,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AO3400-CF"
-			(at 81.28 48.2599 0)
+		(property "Value" "AO3401"
+			(at 172.72 40.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4561,7 +4335,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 80.01 44.45 0)
+			(at 171.45 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4569,8 +4343,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=11378"
-			(at 74.93 59.69 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 166.37 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4578,8 +4352,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 74.93 46.99 0)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 166.37 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4587,8 +4361,8 @@
 				(hide yes)
 			)
 		)
-		(property "Cikkszám" "100.401.27"
-			(at 74.93 46.99 0)
+		(property "Sim.Device" "PMOS"
+			(at 166.37 24.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4596,8 +4370,17 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.hestore.hu/prod_10040127.html"
-			(at 74.93 46.99 0)
+		(property "Sim.Type" "VDMOS"
+			(at 166.37 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 166.37 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,85 +4389,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "15886804-5957-4478-b268-cac2bef622d9")
+			(uuid "b275d2de-aa77-4369-b7d6-0d831cd0ed73")
 		)
 		(pin "1"
-			(uuid "beaff58b-a55d-443f-9fe4-8a2c1c963a04")
+			(uuid "fa9fbf67-0c62-4b7b-b664-9194e30a7a5f")
 		)
 		(pin "3"
-			(uuid "474cb764-410c-44f1-81e5-78aefb13c354")
-		)
-		(instances
-			(project ""
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 163.83 57.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db31a6fe-3152-4285-a496-71263314725f")
-		(property "Reference" "#PWR089"
-			(at 170.18 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.64 57.1499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc29869d-c235-4302-b28d-28f9bf0000bc")
+			(uuid "491622a0-f83a-404a-983a-2cc8e72eb79b")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR089")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -4700,7 +4416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed34b7df-718f-4f9f-b57c-3c381a44bd7e")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR096"
 			(at 180.34 83.82 0)
 			(effects
 				(font
@@ -4751,7 +4467,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR097")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -4759,16 +4475,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 59.69 53.34 0)
+		(at 57.15 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ef7da053-11e9-44d5-bb7e-c35c6b8a6f2e")
-		(property "Reference" "R77"
-			(at 62.23 52.0699 0)
+		(uuid "f3426278-0e92-4086-b157-14088107c3ad")
+		(property "Reference" "R76"
+			(at 59.69 29.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4776,8 +4492,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
-			(at 62.23 54.6099 0)
+		(property "Value" "10k"
+			(at 59.69 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,7 +4502,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 57.912 53.34 90)
+			(at 55.372 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4795,7 +4511,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3654"
-			(at 59.69 53.34 0)
+			(at 57.15 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,7 +4520,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 59.69 53.34 0)
+			(at 57.15 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,7 +4529,7 @@
 			)
 		)
 		(property "Cikkszám" "100.011.43"
-			(at 59.69 53.34 0)
+			(at 57.15 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4822,7 +4538,7 @@
 			)
 		)
 		(property "Link" "https://www.hestore.hu/prod_10001143.html"
-			(at 59.69 53.34 0)
+			(at 57.15 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,15 +4547,81 @@
 			)
 		)
 		(pin "1"
-			(uuid "dfd09160-f085-49e6-b837-1753755daab5")
+			(uuid "07c8510b-9cfc-4709-84d0-49ecb2a02f9c")
 		)
 		(pin "2"
-			(uuid "8e9fcbfe-75e3-42f4-ad13-1461cb78b2a5")
+			(uuid "5f4481cc-7d28-45bb-8710-e1d8fe8bed39")
 		)
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "R77")
+					(reference "R76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3b01008-c1ef-49ab-9dc3-155c4387c87e")
+		(property "Reference" "#PWR092"
+			(at 132.08 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f2ef718-689d-4f11-b022-697f2a73eebc")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -4855,7 +4637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa0c2de8-c195-478a-808d-4f260232108e")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR094"
 			(at 63.5 83.82 0)
 			(effects
 				(font
@@ -4906,7 +4688,7 @@
 		(instances
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4c1824a3-ede3-44a9-9cc4-1658cb86e3ae/d5bc52fe-5a18-4afa-9723-032dd3c24aab"
-					(reference "#PWR092")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
