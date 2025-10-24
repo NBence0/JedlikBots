@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 0.39
         }
       },
       "diff_pair_dimensions": [
@@ -180,11 +180,11 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.154,
-        "min_via_annular_width": 0.15,
+        "min_via_annular_width": 0.1,
         "min_via_annulus": 0.049999999999999996,
-        "min_via_diameter": 0.6,
+        "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -715,7 +715,7 @@
       "gencad": "CM5IOUSB3.cad",
       "idf": "",
       "netlist": "CM5IO.net",
-      "plot": "V1.4.7_GBR/",
+      "plot": "V1.4.9_GBR/",
       "pos_files": "V0_GBR/",
       "specctra_dsn": "",
       "step": "psu.step",
@@ -762,7 +762,7 @@
           "group_by": false,
           "label": "Value",
           "name": "Value",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -774,7 +774,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -813,7 +813,7 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Cikkszám",
           "name": "Cikkszám",
           "show": true
@@ -822,7 +822,7 @@
           "group_by": false,
           "label": "Link",
           "name": "Link",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,

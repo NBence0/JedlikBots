@@ -1,0 +1,283 @@
+(footprint "HCM1A0805"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Inductor, KOHERelec, MDA7030, 7.1x6.6x2.8mm, (http://www.kohergroup.com/template/default/pdf/MDA7030.pdf), generated with kicad-footprint-generator gen_inductor.py")
+	(tags "high-current power shielded")
+	(property "Reference" "REF**"
+		(at 0 -4.25 0)
+		(layer "F.SilkS")
+		(uuid "bdcd87c6-8919-4892-a1f1-cf33dd5eb390")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HCM1A0805"
+		(at 0 4.25 0)
+		(layer "F.Fab")
+		(uuid "0a30194b-acb4-463c-87b1-1966ff04fa8c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a74ae312-d7fc-4cde-bce6-68cbacf08c2f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5bc4471b-65da-4fe7-aff3-511745249223")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.66 -3.41)
+		(end 3.66 -3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eedb6a14-189b-4383-9de7-e64530a35ac8")
+	)
+	(fp_line
+		(start -3.66 -1.96)
+		(end -3.66 -3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d7b07b5b-975e-4679-9d33-52c75efa6840")
+	)
+	(fp_line
+		(start -3.66 3.41)
+		(end -3.66 1.96)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bfadbc8f-a7ee-429c-b30a-f1af0bd0fd59")
+	)
+	(fp_line
+		(start 3.66 -3.41)
+		(end 3.66 -1.96)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eef23ea4-9bd1-4947-b5e8-2cf6ea2929ae")
+	)
+	(fp_line
+		(start 3.66 1.96)
+		(end 3.66 3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ed9d73d5-2475-4b90-8d71-cf8794ba4063")
+	)
+	(fp_line
+		(start 3.66 3.41)
+		(end -3.66 3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5498f568-706d-4118-a647-f240d81c029c")
+	)
+	(fp_line
+		(start -4.75 -1.95)
+		(end -3.8 -1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "80d97bca-0f07-4826-93c3-b655a68dcd27")
+	)
+	(fp_line
+		(start -4.75 1.95)
+		(end -4.75 -1.96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "128aa5da-cc03-4762-830a-d024ff03950d")
+	)
+	(fp_line
+		(start -3.8 -3.55)
+		(end 3.8 -3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b519afb7-5576-4ec1-85ea-5ec7d347c1b6")
+	)
+	(fp_line
+		(start -3.8 -1.95)
+		(end -3.8 -3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "35779034-26a1-4a49-8d4d-c158f7389f38")
+	)
+	(fp_line
+		(start -3.8 1.95)
+		(end -4.75 1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "44d73032-196a-499e-9b54-3a8016ea221d")
+	)
+	(fp_line
+		(start -3.8 3.55)
+		(end -3.8 1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8e648e46-6c63-4050-ab59-9a849e3c798d")
+	)
+	(fp_line
+		(start 3.8 -3.55)
+		(end 3.8 -1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a0d803d6-9b24-4443-96c3-dc6df9352ee7")
+	)
+	(fp_line
+		(start 3.8 -1.95)
+		(end 4.75 -1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3ccd7ca8-493f-4a8d-8a6c-fb5c0a4f9393")
+	)
+	(fp_line
+		(start 3.8 1.95)
+		(end 3.8 3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "466f11cf-bc11-4f78-a9ea-0529053123af")
+	)
+	(fp_line
+		(start 3.8 3.55)
+		(end -3.8 3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2d8f0cfa-ca9b-4dcf-a13c-6b9da12d0dc1")
+	)
+	(fp_line
+		(start 4.75 -1.95)
+		(end 4.75 1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "67897275-d12c-4fd7-8cc2-b47ee83a6355")
+	)
+	(fp_line
+		(start 4.75 1.95)
+		(end 3.8 1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1ead6f86-82e0-4375-8940-a7743fc795f6")
+	)
+	(fp_rect
+		(start -3.55 -3.3)
+		(end 3.55 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f61b41ba-ab59-43fc-bbd5-53ccc2b3abc4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "54f1a13d-008c-4455-ac80-01ddf20f0646")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.1 0)
+		(size 2.8 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.108696)
+		(uuid "0eb0d7cc-c684-4b6a-a9e9-19801e8b974b")
+	)
+	(pad "2" smd roundrect
+		(at 3.1 0)
+		(size 2.8 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.108696)
+		(uuid "26c6f8fc-1ced-49dd-99ea-d5f05856a2ff")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_KOHERelec_MDA7030.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

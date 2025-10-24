@@ -5,394 +5,6 @@
 	(uuid "4c053b6c-4df0-4b59-ae34-535bf2ba3b79")
 	(paper "A4")
 	(lib_symbols
-		(symbol "CM5:TMC_STEPSTICK"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TMC"
-				(at -10.16 21.59 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TMC_STEPSTICK_0_0"
-				(rectangle
-					(start -12.7 20.32)
-					(end 12.7 -20.32)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -17.78 5.08 0)
-					(length 5.08)
-					(name "STEP"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "DIR"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -17.78 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TMC_STEPSTICK_1_0"
-				(pin input line
-					(at -17.78 10.16 0)
-					(length 5.08)
-					(name "Enable"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -2.54 0)
-					(length 5.08)
-					(name "MOSI"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -5.08 0)
-					(length 5.08)
-					(name "MISO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -7.62 0)
-					(length 5.08)
-					(name "Spi_clk"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -10.16 0)
-					(length 5.08)
-					(name "Chip_select"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 17.78 180)
-					(length 5.08)
-					(name "VMOT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 15.24 180)
-					(length 5.08)
-					(name "VIO/VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 10.16 180)
-					(length 5.08)
-					(name "DIAG"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "AIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 2.54 180)
-					(length 5.08)
-					(name "M1B"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "M2B"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 -2.54 180)
-					(length 5.08)
-					(name "M2A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 -5.08 180)
-					(length 5.08)
-					(name "M1A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Polarized"
 			(pin_numbers
 				(hide yes)
@@ -1239,6 +851,412 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TMC_STEPSTICK_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TMC4"
+				(at 0 24.13 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2*8pin socket"
+				(at 0 21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "panel:TMC2209"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cikkszám" "100.280.57"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.hestore.hu/prod_10028057.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TMC_STEPSTICK_1_0_0"
+				(rectangle
+					(start -12.7 20.32)
+					(end 12.7 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "STEP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "DIR"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TMC_STEPSTICK_1_1_0"
+				(pin input line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "Enable"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -7.62 0)
+					(length 5.08)
+					(name "Spi_clk"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -10.16 0)
+					(length 5.08)
+					(name "Chip_select"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -12.7 0)
+					(length 5.08)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 17.78 180)
+					(length 5.08)
+					(name "VMOT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 15.24 180)
+					(length 5.08)
+					(name "VIO/VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "DIAG"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "AIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "M1B"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "M2B"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "M2A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -5.08 180)
+					(length 5.08)
+					(name "M1A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1454,12 +1472,6 @@
 		(uuid "27f26e29-ab5d-4fe0-93a3-93045ed3ff80")
 	)
 	(junction
-		(at 208.28 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "316988b4-58bd-43ae-86b4-36bc0c4c6dea")
-	)
-	(junction
 		(at 74.93 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1470,12 +1482,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33798d7d-eb61-4e9e-8246-0e37310aed63")
-	)
-	(junction
-		(at 74.93 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3be2ec23-93eb-409d-b867-8bf56ce13662")
 	)
 	(junction
 		(at 110.49 106.68)
@@ -1490,16 +1496,22 @@
 		(uuid "576403df-f2b8-4d55-891a-86af9b8458da")
 	)
 	(junction
-		(at 74.93 44.45)
+		(at 74.93 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "66980505-7e36-46b1-97c0-5fb31d15ab85")
+		(uuid "7adb0d37-078e-4995-88b5-ca295c742455")
 	)
 	(junction
 		(at 93.98 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e4a44ec-f82f-4efe-b245-41f1132a1b7c")
+	)
+	(junction
+		(at 208.28 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8136e791-3925-4639-9761-35b1163b9c32")
 	)
 	(junction
 		(at 227.33 49.53)
@@ -1536,6 +1548,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce038fff-0d35-4039-b9e9-3380ff773b77")
+	)
+	(junction
+		(at 74.93 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df4400ba-7a2b-4b19-9da2-5563d6200ccd")
 	)
 	(junction
 		(at 167.64 125.73)
@@ -3950,140 +3968,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CM5:TMC_STEPSTICK")
-		(at 57.15 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f10d4e2-bef6-4040-b3d1-41aab2f421da")
-		(property "Reference" "TMC3"
-			(at 57.15 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2*8pin socket"
-			(at 57.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "psu:TMC2209"
-			(at 57.15 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
-			(at 57.15 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 57.15 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.280.57"
-			(at 57.15 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10028057.html"
-			(at 57.15 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7b2d2bd3-dbbe-4b28-b7c1-4a3a917251e0")
-		)
-		(pin "3"
-			(uuid "ec529ac6-fd02-4f93-bddb-691b423e9eba")
-		)
-		(pin "17"
-			(uuid "5ac1ffb1-6a90-4a47-a7d4-961a1f81d8d1")
-		)
-		(pin "5"
-			(uuid "9645cd06-878f-49bd-8220-197313a2df06")
-		)
-		(pin "11"
-			(uuid "6ff1b1ca-5b05-4cd5-8105-82ef55f21749")
-		)
-		(pin "6"
-			(uuid "b02a044e-dd94-4e87-b1c9-50a9caed0d29")
-		)
-		(pin "4"
-			(uuid "ecd6365c-ebb8-430c-8318-f0f1ea361e02")
-		)
-		(pin "16"
-			(uuid "d17c87bc-c9a8-4a2a-9cbe-7173b329f156")
-		)
-		(pin "1"
-			(uuid "005690a6-3437-4cdb-94fb-c04e9811d5a0")
-		)
-		(pin "10"
-			(uuid "0cd85345-db2c-4300-925a-7ee11b3672fe")
-		)
-		(pin "13"
-			(uuid "8ce33032-b4e7-4c95-a777-cef1e1f0e21f")
-		)
-		(pin "18"
-			(uuid "5f1ec00d-32a7-4377-bc7b-e52702a6b869")
-		)
-		(pin "7"
-			(uuid "ace60e80-922c-45e4-a32b-1e8328fdf41d")
-		)
-		(pin "15"
-			(uuid "eebe0bca-021e-46ca-a295-8c834468bbce")
-		)
-		(pin "14"
-			(uuid "b75f3a54-a60c-4c14-a360-49b554f0ef3b")
-		)
-		(pin "12"
-			(uuid "ebf6157f-fa2b-42dc-b95b-db4c793b8ba4")
-		)
-		(pin "9"
-			(uuid "2bc8de9f-81b9-4f0d-83d4-dfeefaacfe87")
-		)
-		(pin "8"
-			(uuid "6ecc9379-836b-43f1-9ab3-d29c6c9587fc")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
-					(reference "TMC3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 74.93 33.02 180)
 		(unit 1)
@@ -4210,6 +4094,276 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "TMC_STEPSTICK_1")
+		(lib_id "CM5:TMC_STEPSTICK")
+		(at 57.15 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42611fe6-8c58-4eb1-adb9-91da02ee3703")
+		(property "Reference" "TMC3"
+			(at 57.15 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2*8pin socket"
+			(at 57.15 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "panel:TMC2209"
+			(at 57.15 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
+			(at 57.15 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.280.57"
+			(at 57.15 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10028057.html"
+			(at 57.15 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "00dfb5d7-cda4-4147-9bd8-b3da03ffb18b")
+		)
+		(pin "3"
+			(uuid "f8064228-97ae-4dea-bdfa-c3f842ac0250")
+		)
+		(pin "17"
+			(uuid "cf1d1ba6-a47a-4a0a-b123-d32c25568411")
+		)
+		(pin "5"
+			(uuid "91a8748e-4613-4ff5-8e0f-f91dc6acc635")
+		)
+		(pin "11"
+			(uuid "f6fb5aa3-3274-460d-bc6b-1cc47a965363")
+		)
+		(pin "6"
+			(uuid "19c2a6b3-aa10-4490-b818-a726a3362ef7")
+		)
+		(pin "4"
+			(uuid "8dfa4d32-57b5-42ed-89e6-5df75295f6c3")
+		)
+		(pin "16"
+			(uuid "4bbbad58-8d9a-45df-b01f-74e97971809e")
+		)
+		(pin "1"
+			(uuid "071eab8f-9da8-462e-890c-f96ab6f0b998")
+		)
+		(pin "10"
+			(uuid "87fdc3d6-573b-4c05-ab6b-66a593596ed7")
+		)
+		(pin "13"
+			(uuid "af383197-6c08-4571-87a8-b822f34031cf")
+		)
+		(pin "18"
+			(uuid "7b25eaae-9c64-49bd-968b-045fe47d9517")
+		)
+		(pin "7"
+			(uuid "44d703dd-ac20-4ed1-a260-3651abfb224f")
+		)
+		(pin "15"
+			(uuid "b0b95de6-0a5e-4c85-97a9-b8489fa580a9")
+		)
+		(pin "14"
+			(uuid "785ad146-aaf1-4dbf-98b0-f3f0a1d80bfb")
+		)
+		(pin "12"
+			(uuid "7a90c4da-294f-4d8e-bb81-01f591ac1764")
+		)
+		(pin "9"
+			(uuid "f780aa3f-4eb9-4a76-a0a1-3cb235c0d97c")
+		)
+		(pin "8"
+			(uuid "0ddd1fa8-a7b0-4ae9-bb06-a20e8fb1bff5")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
+					(reference "TMC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "TMC_STEPSTICK_1")
+		(lib_id "CM5:TMC_STEPSTICK")
+		(at 190.5 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b65b698-05eb-4e52-9ad4-afaa84922ba7")
+		(property "Reference" "TMC2"
+			(at 190.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2*8pin socket"
+			(at 190.5 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "panel:TMC2209"
+			(at 190.5 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
+			(at 190.5 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.280.57"
+			(at 190.5 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10028057.html"
+			(at 190.5 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4ccc7668-29b8-4110-8117-ccfbbbe3750c")
+		)
+		(pin "3"
+			(uuid "2e791e70-a949-48b4-8d9c-fb9db95a804a")
+		)
+		(pin "17"
+			(uuid "4e9e8c2a-34db-4433-8bf0-5291a78ec449")
+		)
+		(pin "5"
+			(uuid "2f9704b8-22f3-462e-88eb-20847e07d41f")
+		)
+		(pin "11"
+			(uuid "9b3f70c0-4a9b-482a-8867-42458572a05d")
+		)
+		(pin "6"
+			(uuid "c56f8bab-2a7c-4340-a092-1381b3e34405")
+		)
+		(pin "4"
+			(uuid "8ab64142-7a8d-49bd-9a52-3cbbe8a168f7")
+		)
+		(pin "16"
+			(uuid "449a5784-b300-4b84-8df7-4f916f385aa8")
+		)
+		(pin "1"
+			(uuid "0518b954-4e7f-4d4a-b288-57573e035625")
+		)
+		(pin "10"
+			(uuid "6e12ed36-fa47-486d-93fd-25118a34a46c")
+		)
+		(pin "13"
+			(uuid "584d0163-d304-46d2-8426-aea5233d23a3")
+		)
+		(pin "18"
+			(uuid "b9e5355b-a714-47b3-8ea8-7ded3c190e30")
+		)
+		(pin "7"
+			(uuid "a8871bb7-b858-42cc-9194-e9da505397a6")
+		)
+		(pin "15"
+			(uuid "86495499-9b8d-40cd-b36c-04f40baf2be7")
+		)
+		(pin "14"
+			(uuid "3956220c-c597-4d58-8197-86d81eb45923")
+		)
+		(pin "12"
+			(uuid "a1604f93-3517-466f-a7a2-1f8b72bc7cdf")
+		)
+		(pin "9"
+			(uuid "e7a4f34b-4a68-490c-887a-3de45c64d1e1")
+		)
+		(pin "8"
+			(uuid "918319f9-19d1-44e3-915b-0509b32c3aff")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
+					(reference "TMC2")
 					(unit 1)
 				)
 			)
@@ -4550,140 +4704,6 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CM5:TMC_STEPSTICK")
-		(at 190.5 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "65b47497-3c98-41f5-9d51-2c6b38e7b99d")
-		(property "Reference" "TMC2"
-			(at 190.5 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2*8pin socket"
-			(at 190.5 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "psu:TMC2209"
-			(at 190.5 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
-			(at 190.5 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 190.5 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.280.57"
-			(at 190.5 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10028057.html"
-			(at 190.5 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "66101212-bec4-4206-b752-78c43871ae5f")
-		)
-		(pin "3"
-			(uuid "11334f20-e658-4d56-a867-149a7bf220f7")
-		)
-		(pin "17"
-			(uuid "052531fa-e81e-4ce3-a87c-a3f7c9dba989")
-		)
-		(pin "5"
-			(uuid "64ca206f-d00f-4bd3-ad3c-9957d96df893")
-		)
-		(pin "11"
-			(uuid "b7f90df4-e03d-465b-8964-44b2c51cc76a")
-		)
-		(pin "6"
-			(uuid "b43a59e5-ac23-4376-ba41-503d5f53968d")
-		)
-		(pin "4"
-			(uuid "f0c6beb5-0639-4e9b-9bf4-aba37f0cf6e3")
-		)
-		(pin "16"
-			(uuid "d9a0b661-47ff-480b-a524-c130d15c7f8e")
-		)
-		(pin "1"
-			(uuid "c9dd573b-ccdd-4381-8187-ff48c3eb776b")
-		)
-		(pin "10"
-			(uuid "b36274e1-b204-4915-8ced-bb417e710a2c")
-		)
-		(pin "13"
-			(uuid "8d5b28bf-32b1-4dca-9791-a9e46d4b1178")
-		)
-		(pin "18"
-			(uuid "28fe7434-ff29-4b22-a6f0-b838767162f8")
-		)
-		(pin "7"
-			(uuid "9ad200b0-62d1-466b-9a58-e06ac9739fd3")
-		)
-		(pin "15"
-			(uuid "f5dc135d-7638-4cbc-aa58-8c54f05ade7b")
-		)
-		(pin "14"
-			(uuid "99e138d2-30e9-4906-adcf-86c022557562")
-		)
-		(pin "12"
-			(uuid "db1c2100-4abe-42c5-9f77-4df75846831d")
-		)
-		(pin "9"
-			(uuid "b14161c8-1822-47f2-aec8-7d661c2bec98")
-		)
-		(pin "8"
-			(uuid "d1b9bda1-77cc-42fe-957c-9741fbc4e257")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
-					(reference "TMC2")
 					(unit 1)
 				)
 			)
@@ -5962,6 +5982,7 @@
 		)
 	)
 	(symbol
+		(lib_name "TMC_STEPSTICK_1")
 		(lib_id "CM5:TMC_STEPSTICK")
 		(at 190.5 135.89 0)
 		(unit 1)
@@ -5987,7 +6008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "psu:TMC2209"
+		(property "Footprint" "panel:TMC2209"
 			(at 190.5 135.89 0)
 			(effects
 				(font
@@ -6090,6 +6111,141 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
 					(reference "TMC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "TMC_STEPSTICK_1")
+		(lib_id "CM5:TMC_STEPSTICK")
+		(at 57.15 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d67e7760-c827-455b-b696-e9b2f78f2428")
+		(property "Reference" "TMC1"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2*8pin socket"
+			(at 57.15 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "panel:TMC2209"
+			(at 57.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
+			(at 57.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.280.57"
+			(at 57.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10028057.html"
+			(at 57.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "944bf971-966c-43cf-86d5-80ce7e825658")
+		)
+		(pin "3"
+			(uuid "6075d54b-e7e9-42bd-8680-a26e87653472")
+		)
+		(pin "17"
+			(uuid "46013896-94ae-401b-8c1a-9f306a7fe3e1")
+		)
+		(pin "5"
+			(uuid "55a91053-9e94-4e79-8854-d9192efe0eff")
+		)
+		(pin "11"
+			(uuid "4ebb1c1d-6546-4874-a217-8ee5947eaa7a")
+		)
+		(pin "6"
+			(uuid "cf329775-3720-4745-9854-450a433cb20e")
+		)
+		(pin "4"
+			(uuid "ccffed9c-244b-4f25-b8fe-b360aae04cbc")
+		)
+		(pin "16"
+			(uuid "80decf08-cec3-41ae-9b3f-c8dda551289b")
+		)
+		(pin "1"
+			(uuid "ec0f8d07-7f81-4912-a964-e05092107450")
+		)
+		(pin "10"
+			(uuid "a234b067-730c-4ce4-a182-96b14d355aaa")
+		)
+		(pin "13"
+			(uuid "501c4f5b-de57-411b-9ea9-13bed4decc55")
+		)
+		(pin "18"
+			(uuid "31b6e431-7dc3-4d97-9312-f9b9d744429f")
+		)
+		(pin "7"
+			(uuid "03b866a5-d3f9-4fb4-8b28-5d02c74489e8")
+		)
+		(pin "15"
+			(uuid "1f815392-12a3-42f5-82fb-fa7b7c53ab7a")
+		)
+		(pin "14"
+			(uuid "b56182df-694f-4b5e-bbdb-ad44c578254f")
+		)
+		(pin "12"
+			(uuid "fc3466b0-5b81-4ccc-b134-7a721626e15b")
+		)
+		(pin "9"
+			(uuid "1ef33712-eb9c-443f-9646-b51b99ddefbd")
+		)
+		(pin "8"
+			(uuid "ce52b400-8d4c-44cb-b118-fd1742a581e1")
+		)
+		(instances
+			(project "psu"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
+					(reference "TMC1")
 					(unit 1)
 				)
 			)
@@ -6535,140 +6691,6 @@
 			(project "psu"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CM5:TMC_STEPSTICK")
-		(at 57.15 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7342f12-b9bc-4895-9e03-b4a929e353b3")
-		(property "Reference" "TMC1"
-			(at 57.15 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2*8pin socket"
-			(at 57.15 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "psu:TMC2209"
-			(at 57.15 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3274"
-			(at 57.15 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 57.15 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "100.280.57"
-			(at 57.15 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.hestore.hu/prod_10028057.html"
-			(at 57.15 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e54e2e75-7800-4adc-99ea-ecc161fb3f7e")
-		)
-		(pin "3"
-			(uuid "6c70ff27-4b58-40ec-ab40-b927052ba2e8")
-		)
-		(pin "17"
-			(uuid "c190ccd5-c716-4165-82be-16be0dbbb004")
-		)
-		(pin "5"
-			(uuid "93201a07-cc9c-4170-bfac-f9c0261af9d1")
-		)
-		(pin "11"
-			(uuid "64153f39-5c01-4f98-a9d5-b9dbefa678c5")
-		)
-		(pin "6"
-			(uuid "a79ea015-8d36-4031-8da5-75e9e4536641")
-		)
-		(pin "4"
-			(uuid "1b57b6e2-65cd-4160-b1f1-7571bbbf5ddf")
-		)
-		(pin "16"
-			(uuid "8c8fee2a-5cbe-4c8c-ba58-29a2e114e79b")
-		)
-		(pin "1"
-			(uuid "7c3387aa-cdeb-46b1-a385-d33a472a2b74")
-		)
-		(pin "10"
-			(uuid "57ff86b2-2696-4534-a209-f7d4c2042bf4")
-		)
-		(pin "13"
-			(uuid "e21b1bc3-923d-42b6-a665-a22cba9c4a88")
-		)
-		(pin "18"
-			(uuid "4e38c6ce-8de5-4349-a66c-d05964aecd57")
-		)
-		(pin "7"
-			(uuid "9df72466-66e7-47cc-b686-f4e75ee94b62")
-		)
-		(pin "15"
-			(uuid "da37da6c-e6c9-4f69-81e2-2147d036f527")
-		)
-		(pin "14"
-			(uuid "624748ee-20ab-48d2-9f7c-fd53b13f6245")
-		)
-		(pin "12"
-			(uuid "44a85a52-d6d1-492b-a576-4402e6e98589")
-		)
-		(pin "9"
-			(uuid "e50eecd1-d78c-4833-b83d-184dc2a6341c")
-		)
-		(pin "8"
-			(uuid "7eee5c5b-e553-4561-983c-fbff02d844ad")
-		)
-		(instances
-			(project "psu"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d1e0c7e2-68f3-4828-b2d5-d40ec13307ce"
-					(reference "TMC1")
 					(unit 1)
 				)
 			)

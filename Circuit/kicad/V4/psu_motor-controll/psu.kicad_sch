@@ -2252,6 +2252,28 @@
 			)
 		)
 	)
+	(global_label "WS_2802B_POWER"
+		(shape input)
+		(at 78.74 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "59d679d6-7335-4418-9260-89d39d8c2bd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.9953 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Motor 4 power"
 		(shape input)
 		(at 186.69 101.6 0)
@@ -2688,28 +2710,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_5v"
-		(shape input)
-		(at 78.74 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ac4da804-75ce-4265-beff-0f3ef1b331ac")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.5935 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
