@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.39
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -168,8 +168,8 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.001,
-        "min_clearance": 0.154,
-        "min_connection": 0.154,
+        "min_clearance": 0.1524,
+        "min_connection": 0.1524,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.19,
@@ -181,7 +181,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.154,
+        "min_track_width": 0.1524,
         "min_via_annular_width": 0.1,
         "min_via_annulus": 0.049999999999999996,
         "min_via_diameter": 0.3,
@@ -756,10 +756,10 @@
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": false
+          "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -774,36 +774,6 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Do Not Place",
-          "name": "${DNP}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Exclude from Simulation",
-          "name": "${EXCLUDE_FROM_SIM}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
           "show": false
         },
         {
@@ -832,20 +802,26 @@
         },
         {
           "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "Sim.Device",
           "name": "Sim.Device",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Sim.Type",
-          "name": "Sim.Type",
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
+          "label": "Sim.Type",
+          "name": "Sim.Type",
           "show": false
         }
       ],

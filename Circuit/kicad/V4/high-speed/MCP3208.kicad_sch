@@ -478,169 +478,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x02_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Pin"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_Pin_1_1"
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -904,6 +741,166 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:XC6206PxxxMR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U25"
+				(at 8.89 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "XC6206P332MR"
+				(at 8.89 4.826 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cikkszám" "100.370.77"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.hestore.hu/prod_10037077.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?3*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XC6206PxxxMR_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "XC6206PxxxMR_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1007,20 +1004,112 @@
 		)
 	)
 	(junction
-		(at 106.68 45.72)
+		(at 106.68 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "54e48dcd-636e-4069-91d8-5a6596daa0fc")
+		(uuid "03e03b16-9ea5-4be2-8567-327db81f79d4")
 	)
 	(junction
-		(at 106.68 52.07)
+		(at 46.99 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fbb9e441-45ea-4025-8b0f-93ea00e7e4c8")
+		(uuid "0907fc9c-28a0-40fb-8767-1b124cd5fa41")
+	)
+	(junction
+		(at 46.99 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e6ef4f6-0fd4-49dd-b6b3-663a9bf7a3a8")
+	)
+	(junction
+		(at 142.24 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20163160-f7c5-4590-8e7a-4735986b29d0")
+	)
+	(junction
+		(at 149.86 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23ad9bc2-f386-4c02-a1f1-2de05b2238b8")
+	)
+	(junction
+		(at 46.99 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b694ee6-4d50-426f-8660-bc2924fb5427")
+	)
+	(junction
+		(at 46.99 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37275fe8-bd7c-4033-baca-5b65ad5e8da3")
+	)
+	(junction
+		(at 106.68 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f495790-8ea2-470c-84db-c85d1510a226")
+	)
+	(junction
+		(at 46.99 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78ffb9e3-7a4f-49b3-a1d4-b517cf9e8ce8")
+	)
+	(junction
+		(at 46.99 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8067ac48-1a26-4fc7-8e73-a378b8d1b9f3")
+	)
+	(junction
+		(at 149.86 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aba13fad-acb6-459b-8807-862288d5e830")
+	)
+	(junction
+		(at 46.99 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0017d97-9300-48ca-a3ae-08a3c75ba824")
+	)
+	(junction
+		(at 46.99 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e311a5a9-bd99-4023-a1b3-1f26047dd75c")
+	)
+	(junction
+		(at 106.68 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5dc9e57-6116-40ca-b77c-35d4f4d2d632")
 	)
 	(wire
 		(pts
-			(xy 80.01 71.12) (xy 80.01 102.87)
+			(xy 106.68 43.18) (xy 106.68 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00a6a827-538a-4fac-ac80-7f014975327d")
+	)
+	(wire
+		(pts
+			(xy 40.64 35.56) (xy 46.99 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b0dd78-f798-443e-a10c-9d34b7556037")
+	)
+	(wire
+		(pts
+			(xy 72.39 71.12) (xy 72.39 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1030,67 +1119,107 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 39.37) (xy 106.68 45.72)
+			(xy 149.86 68.58) (xy 149.86 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "174a5e26-324b-456c-aced-18bbbc2916b9")
+		(uuid "0f8b3bc0-c40b-4257-87db-d609007cdbd6")
 	)
 	(wire
 		(pts
-			(xy 39.37 60.96) (xy 46.99 60.96)
+			(xy 77.47 76.2) (xy 77.47 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d321404-3b98-4e57-a5fe-772e2bc9a29a")
+		(uuid "27787ffe-62bc-4ecb-8f3c-f485373c382f")
 	)
 	(wire
 		(pts
-			(xy 38.1 45.72) (xy 45.72 45.72)
+			(xy 57.15 76.2) (xy 46.99 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e65977c-494d-40f1-8550-0f218bc5f864")
+		(uuid "283556f9-c42f-4ec4-9989-690e9eeee474")
 	)
 	(wire
 		(pts
-			(xy 39.37 73.66) (xy 46.99 73.66)
+			(xy 142.24 57.15) (xy 142.24 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24b91af8-c396-41e7-a4e9-b43bc1ebc724")
+		(uuid "2866d8e2-8e82-48bf-a9de-3c63c0594f1b")
 	)
 	(wire
 		(pts
-			(xy 86.36 60.96) (xy 86.36 48.26)
+			(xy 74.93 60.96) (xy 74.93 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3577c1ea-78ee-4066-a820-fd412db6b7aa")
+		(uuid "2a0257b1-2a51-4824-841a-bb5c074aa2da")
 	)
 	(wire
 		(pts
-			(xy 38.1 35.56) (xy 90.17 35.56)
+			(xy 41.91 130.81) (xy 46.99 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e0dedf1-f291-409f-9881-34a9321f1064")
+		(uuid "2abd3e78-cbd2-4e73-b5c6-1ed1e3f4586e")
 	)
 	(wire
 		(pts
-			(xy 46.99 78.74) (xy 46.99 80.01)
+			(xy 31.75 130.81) (xy 34.29 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f38751a-2739-450d-aa8d-54b2e12e3246")
+	)
+	(wire
+		(pts
+			(xy 64.77 35.56) (xy 77.47 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34761237-0fc6-4247-8cf5-1c1afb322438")
+	)
+	(wire
+		(pts
+			(xy 142.24 68.58) (xy 142.24 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a852640-6d76-44ab-a667-379adc93b215")
+	)
+	(wire
+		(pts
+			(xy 106.68 36.83) (xy 106.68 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d6bdfc7-8c07-45f6-bc22-8795ff5fee1b")
+	)
+	(wire
+		(pts
+			(xy 46.99 81.28) (xy 46.99 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1100,7 +1229,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 76.2) (xy 39.37 76.2)
+			(xy 67.31 76.2) (xy 64.77 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1110,17 +1239,17 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 63.5) (xy 93.98 63.5)
+			(xy 39.37 90.17) (xy 46.99 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "43f3c723-40aa-49de-83c7-05eed1448447")
+		(uuid "54af5f18-902e-424d-87a5-5dc60fae3be9")
 	)
 	(wire
 		(pts
-			(xy 46.99 52.07) (xy 46.99 53.34)
+			(xy 46.99 54.61) (xy 46.99 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1130,7 +1259,17 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 91.44) (xy 46.99 92.71)
+			(xy 46.99 109.22) (xy 46.99 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "659f51c1-61d3-46a7-881b-b407aa6ddb73")
+	)
+	(wire
+		(pts
+			(xy 46.99 93.98) (xy 46.99 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1140,7 +1279,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 64.77) (xy 46.99 66.04)
+			(xy 46.99 67.31) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1150,7 +1289,27 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 93.98 58.42)
+			(xy 92.71 24.13) (xy 106.68 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76199861-4f79-48cd-b812-97f026ef62e4")
+	)
+	(wire
+		(pts
+			(xy 57.15 48.26) (xy 46.99 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764496a1-9326-421a-a742-b0392f3e6793")
+	)
+	(wire
+		(pts
+			(xy 77.47 58.42) (xy 93.98 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1160,7 +1319,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 36.83) (xy 45.72 38.1)
+			(xy 46.99 39.37) (xy 46.99 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1170,17 +1329,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 52.07) (xy 106.68 53.34)
+			(xy 46.99 121.92) (xy 46.99 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ce5bc7c-a833-4990-a4e1-817a1734ca5a")
+		(uuid "7f20586b-8a70-428b-b143-eb3fbbce34d5")
 	)
 	(wire
 		(pts
-			(xy 45.72 24.13) (xy 45.72 25.4)
+			(xy 46.99 26.67) (xy 46.99 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1190,7 +1349,37 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 102.87) (xy 39.37 102.87)
+			(xy 64.77 130.81) (xy 77.47 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81c79052-0eaa-4a21-bd09-f870f4ca0f5a")
+	)
+	(wire
+		(pts
+			(xy 41.91 102.87) (xy 46.99 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ab614f-1f08-46fe-acbd-64d412dd8ddf")
+	)
+	(wire
+		(pts
+			(xy 149.86 57.15) (xy 149.86 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "872d6f54-6dbd-4d41-9d63-9fa045747539")
+	)
+	(wire
+		(pts
+			(xy 72.39 102.87) (xy 64.77 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1200,7 +1389,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 35.56) (xy 90.17 58.42)
+			(xy 77.47 35.56) (xy 77.47 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1210,7 +1399,67 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 68.58) (xy 73.66 68.58)
+			(xy 31.75 102.87) (xy 34.29 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92ac0b49-2b8b-4468-ade9-efb08ca40ea4")
+	)
+	(wire
+		(pts
+			(xy 39.37 63.5) (xy 46.99 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "946d8a92-fa3b-4582-8390-54581f2a0637")
+	)
+	(wire
+		(pts
+			(xy 64.77 63.5) (xy 93.98 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94d9b390-026a-49be-8732-4dc9dc0db0bc")
+	)
+	(wire
+		(pts
+			(xy 57.15 102.87) (xy 46.99 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96614a03-ea32-4493-8802-5225fe9dcee4")
+	)
+	(wire
+		(pts
+			(xy 93.98 60.96) (xy 74.93 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1749d77-8a77-4e17-aaef-bd7ba6a982e8")
+	)
+	(wire
+		(pts
+			(xy 46.99 118.11) (xy 57.15 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a47096-c60c-4f3c-88f7-f78cd03a74d2")
+	)
+	(wire
+		(pts
+			(xy 93.98 68.58) (xy 69.85 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1220,37 +1469,77 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 66.04) (xy 68.58 66.04)
+			(xy 74.93 118.11) (xy 74.93 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ae4117e4-bdee-4491-83a6-9254b1c3ebe5")
+		(uuid "ade02985-5ceb-46e5-a09a-ce2e7cc447fc")
 	)
 	(wire
 		(pts
-			(xy 39.37 87.63) (xy 46.99 87.63)
+			(xy 39.37 76.2) (xy 46.99 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af15b9dd-860e-4b92-83c5-b7ce5c0b6f90")
+		(uuid "bb4db724-ea2c-4236-9578-000595b95d6b")
 	)
 	(wire
 		(pts
-			(xy 38.1 33.02) (xy 45.72 33.02)
+			(xy 31.75 118.11) (xy 34.29 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b8f05658-3c31-4312-8119-1896957ded54")
+		(uuid "bd685548-1c12-4dfc-ab26-8ef2ffe1b03e")
 	)
 	(wire
 		(pts
-			(xy 93.98 71.12) (xy 80.01 71.12)
+			(xy 106.68 49.53) (xy 106.68 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf2e32e4-5287-4ecb-8d49-e1fc63595080")
+	)
+	(wire
+		(pts
+			(xy 74.93 73.66) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf68707f-9a8f-488b-a5db-95fad97276df")
+	)
+	(wire
+		(pts
+			(xy 114.3 52.07) (xy 114.3 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c011c193-ca8b-476c-9600-5f3ee8342ee4")
+	)
+	(wire
+		(pts
+			(xy 46.99 63.5) (xy 57.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1587a54-20ee-495b-b81a-00cb8ba6eba0")
+	)
+	(wire
+		(pts
+			(xy 93.98 71.12) (xy 72.39 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1260,7 +1549,47 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 66.04) (xy 68.58 76.2)
+			(xy 46.99 48.26) (xy 39.37 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca7627bd-d7e7-40ea-9cab-460ead3e4fc4")
+	)
+	(wire
+		(pts
+			(xy 41.91 118.11) (xy 46.99 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbb47bec-0707-471a-b338-b8edd8fa3734")
+	)
+	(wire
+		(pts
+			(xy 67.31 66.04) (xy 93.98 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce3eac61-09ca-47a8-a4d3-cf1af944d51e")
+	)
+	(wire
+		(pts
+			(xy 57.15 90.17) (xy 46.99 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0cade26-3dfd-48d8-bf29-ad50e49ba850")
+	)
+	(wire
+		(pts
+			(xy 67.31 66.04) (xy 67.31 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1270,17 +1599,47 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 100.33) (xy 46.99 100.33)
+			(xy 77.47 76.2) (xy 93.98 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1510439-2617-46cd-a06a-bb6bc72631ca")
+		(uuid "d2b50d95-8995-4dd0-a522-d621584a3ce1")
 	)
 	(wire
 		(pts
-			(xy 106.68 45.72) (xy 106.68 52.07)
+			(xy 64.77 118.11) (xy 74.93 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5e33890-e9f8-4bd8-87af-f50295b2a9af")
+	)
+	(wire
+		(pts
+			(xy 46.99 130.81) (xy 57.15 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e77a1203-09a1-4871-b674-71975b938004")
+	)
+	(wire
+		(pts
+			(xy 46.99 35.56) (xy 57.15 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8adfdfa-938e-425e-bd38-08678c500f8f")
+	)
+	(wire
+		(pts
+			(xy 106.68 31.75) (xy 106.68 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1290,7 +1649,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 48.26) (xy 38.1 48.26)
+			(xy 74.93 48.26) (xy 64.77 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1300,7 +1659,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 90.17) (xy 39.37 90.17)
+			(xy 69.85 90.17) (xy 64.77 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1310,17 +1669,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 60.96) (xy 86.36 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f898a210-4990-4654-acea-979087ae34a0")
-	)
-	(wire
-		(pts
-			(xy 73.66 68.58) (xy 73.66 90.17)
+			(xy 69.85 68.58) (xy 69.85 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1328,9 +1677,130 @@
 		)
 		(uuid "fc503b72-799e-4b04-858e-79566cbadada")
 	)
+	(global_label "1NTC"
+		(shape input)
+		(at 39.37 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "07a03450-4dcf-4b2f-a504-289cb0151e34")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.5121 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3NTC"
+		(shape input)
+		(at 39.37 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09d985e3-2633-48e0-8d38-cb88dcf8f831")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.5121 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PSU-NTC"
+		(shape input)
+		(at 40.64 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "57f755c3-5858-4fdb-a551-4a6bc41fafc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.6092 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "2NTC"
+		(shape input)
+		(at 39.37 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7dfd3b89-fa81-44f1-a42f-f758f34dde92")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.5121 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "0NTC"
+		(shape input)
+		(at 39.37 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "df079a8e-dbc9-44ff-93b3-eccb3ae85eca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.5121 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 45.72 24.13 0)
+		(at 46.99 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ac36f01-e9d3-48cc-b6ad-14c78234e5e6")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 46.99 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1350,6 +1820,17 @@
 		)
 		(uuid "48473a0c-83ef-49bf-ac8c-e2d66f8a34dd")
 	)
+	(hierarchical_label "5v_to_ref"
+		(shape input)
+		(at 77.47 24.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5262d0fd-628d-45c9-9883-deab1b5eb429")
+	)
 	(hierarchical_label "CS"
 		(shape input)
 		(at 124.46 71.12 0)
@@ -1363,18 +1844,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 106.68 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "72f83e22-c708-4b60-8f17-9c3bd2b9f4f6")
-	)
-	(hierarchical_label "3V3"
-		(shape input)
-		(at 46.99 52.07 0)
+		(at 46.99 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1385,7 +1855,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 46.99 64.77 0)
+		(at 46.99 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1407,7 +1877,18 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 46.99 78.74 0)
+		(at 142.24 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a3d9e89c-c3b2-43a9-ad97-e1bd3ae8624c")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 46.99 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1418,7 +1899,18 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 46.99 91.44 0)
+		(at 46.99 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bec67690-afa1-475d-8ae6-5703a93dcde7")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 46.99 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1440,7 +1932,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 114.3 53.34 180)
+		(at 114.3 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1451,7 +1943,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 45.72 36.83 0)
+		(at 46.99 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1462,34 +1954,32 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 45.72 41.91 0)
+		(at 38.1 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "19e530d6-b077-44d3-b06a-677c72ac226a")
-		(property "Reference" "R71"
-			(at 48.26 40.6399 0)
+		(uuid "173e1157-abf1-4fe6-b5f3-f5842368dfe6")
+		(property "Reference" "R110"
+			(at 38.1 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 48.26 43.1799 0)
+		(property "Value" "10K ntc"
+			(at 38.1 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 43.942 41.91 90)
+			(at 38.1 104.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1498,7 +1988,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 41.91 0)
+			(at 38.1 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1507,7 +1997,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 45.72 41.91 0)
+			(at 38.1 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1515,8 +2005,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 45.72 41.91 0)
+		(property "Cikkszám" "100.396.66"
+			(at 38.1 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1524,8 +2014,96 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 45.72 41.91 0)
+		(property "Link" "https://www.hestore.hu/prod_10039666.html"
+			(at 38.1 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "889e1f4e-174d-4a86-bc7f-3d207dbb7fd2")
+		)
+		(pin "2"
+			(uuid "089b950a-e2fe-43f6-95c7-ce44023f2080")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 46.99 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19e530d6-b077-44d3-b06a-677c72ac226a")
+		(property "Reference" "R101"
+			(at 49.53 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 49.53 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 45.212 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 46.99 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1542,7 +2120,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "R71")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -1550,7 +2128,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 110.49 45.72 90)
+		(at 110.49 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1558,8 +2136,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21e4e905-97af-405c-9fba-9966ac5ec81c")
-		(property "Reference" "C52"
-			(at 110.49 38.1 90)
+		(property "Reference" "C51"
+			(at 110.49 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1567,7 +2145,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 110.49 40.64 90)
+			(at 110.49 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1575,7 +2153,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 114.3 44.7548 0)
+			(at 114.3 42.2148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1584,7 +2162,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 45.72 0)
+			(at 110.49 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1593,7 +2171,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 110.49 45.72 0)
+			(at 110.49 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1601,8 +2179,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 110.49 45.72 90)
+		(property "Cikkszám" "100.011.22"
+			(at 110.49 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1610,8 +2188,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 110.49 45.72 90)
+		(property "Link" "https://www.hestore.hu/prod_10001122.html"
+			(at 110.49 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1628,7 +2206,74 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "C52")
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24007bd8-c8a6-4e12-8eb1-d41ca086cc24")
+		(property "Reference" "#PWR0132"
+			(at 85.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.0899 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0063e4eb-c370-4c6d-b2df-f1b92c25b266")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -1636,34 +2281,32 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 45.72 29.21 0)
+		(at 38.1 130.81 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2eb827c3-788b-44e4-bad7-9feb62f6a63d")
-		(property "Reference" "R70"
-			(at 48.26 27.9399 0)
+		(uuid "29e9c5c3-1de1-432d-8df9-e82b7d733279")
+		(property "Reference" "R116"
+			(at 38.1 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 48.26 30.4799 0)
+		(property "Value" "10K ntc"
+			(at 38.1 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 43.942 29.21 90)
+			(at 38.1 132.588 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1672,7 +2315,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 29.21 0)
+			(at 38.1 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1681,7 +2324,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 45.72 29.21 0)
+			(at 38.1 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1689,8 +2332,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 45.72 29.21 0)
+		(property "Cikkszám" "100.396.66"
+			(at 38.1 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1698,8 +2341,163 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 45.72 29.21 0)
+		(property "Link" "https://www.hestore.hu/prod_10039666.html"
+			(at 38.1 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bab64fc0-4f51-430c-91eb-0be11d25f309")
+		)
+		(pin "2"
+			(uuid "54303549-884f-4a3e-bf04-dbef62c606a9")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bdc35da-442d-413d-bc7c-b8d75be06b90")
+		(property "Reference" "#PWR0141"
+			(at 25.4 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e808f993-6207-4b9e-9a6d-a345fa31a8ff")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "#PWR0141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 46.99 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2eb827c3-788b-44e4-bad7-9feb62f6a63d")
+		(property "Reference" "R99"
+			(at 49.53 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 49.53 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 45.212 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 46.99 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1716,40 +2514,51 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "R70")
+					(reference "R99")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 34.29 87.63 0)
+		(lib_id "Regulator_Linear:XC6206PxxxMR")
+		(at 85.09 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3fc01adb-c930-4278-a2fb-ad387d14589b")
-		(property "Reference" "J20"
-			(at 34.925 82.55 0)
+		(uuid "343d1f21-51a0-4130-a1cc-4110b937b59f")
+		(property "Reference" "U25"
+			(at 93.98 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 34.925 85.09 0)
+		(property "Value" "XC6206P332MR"
+			(at 93.98 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
-			(at 34.29 87.63 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 85.09 18.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(at 85.09 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1757,8 +2566,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 34.29 87.63 0)
+		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+			(at 85.09 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1766,8 +2575,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 34.29 87.63 0)
+		(property "Cikkszám" "100.370.77"
+			(at 85.09 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,17 +2584,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 34.29 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 34.29 87.63 0)
+		(property "Link" "https://www.hestore.hu/prod_10037077.html"
+			(at 85.09 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,50 +2594,51 @@
 			)
 		)
 		(pin "2"
-			(uuid "8cbf3744-be97-4a0b-9f22-c677154a6e98")
+			(uuid "0d3c2d43-6646-4538-93d7-56dc5ed76320")
+		)
+		(pin "3"
+			(uuid "759a79d6-9fc8-4955-87c3-695fe73f98ed")
 		)
 		(pin "1"
-			(uuid "65b99911-bb5c-45ff-99eb-ade0dd967160")
+			(uuid "a0d12cfb-624e-487b-9b2f-6d144dc75baf")
 		)
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "J20")
+					(reference "U25")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 46.99 83.82 0)
+		(lib_id "Device:C")
+		(at 146.05 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4223cc01-bcea-459c-970f-c0516ba40db7")
-		(property "Reference" "R74"
-			(at 49.53 82.5499 0)
+		(uuid "377ddd1e-163e-469d-aab8-100ae95ba0c2")
+		(property "Reference" "C54"
+			(at 146.05 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 49.53 85.0899 0)
+		(property "Value" "100nf"
+			(at 146.05 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 45.212 83.82 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 149.86 67.6148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +2647,93 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 83.82 0)
+			(at 146.05 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.22"
+			(at 146.05 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001122.html"
+			(at 146.05 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b12714bd-7907-4147-b2b5-001da4f8aaeb")
+		)
+		(pin "1"
+			(uuid "89e3276c-b24c-46fa-bb5f-42f377a2a68e")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3eb06e6a-39c8-4356-946d-fbdfa2337dc1")
+		(property "Reference" "R100"
+			(at 60.96 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 60.96 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1855,7 +2742,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 83.82 0)
+			(at 60.96 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1863,8 +2750,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 46.99 83.82 0)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1872,8 +2759,182 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 46.99 83.82 0)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64c3da8e-8b2d-4c5a-9463-dc4f11c18fa4")
+		)
+		(pin "1"
+			(uuid "a70d5e8c-6e0c-4580-a5cc-63275b169154")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "404e2fc2-46c1-4ef1-8d7e-8ce07127f33d")
+		(property "Reference" "R114"
+			(at 60.96 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 60.96 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 119.888 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 60.96 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fc6c984c-974a-4318-aef0-ba33641ecee6")
+		)
+		(pin "1"
+			(uuid "225521b6-92fc-4ef0-be58-593c1b3a9558")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 46.99 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4223cc01-bcea-459c-970f-c0516ba40db7")
+		(property "Reference" "R107"
+			(at 49.53 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 49.53 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 45.212 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 46.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1890,40 +2951,40 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "R74")
+					(reference "R107")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 34.29 100.33 0)
+		(lib_id "Device:R")
+		(at 60.96 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "526cf1b7-4ae9-4e7a-a6fc-2a87ab82da9d")
-		(property "Reference" "J21"
-			(at 34.925 95.25 0)
+		(uuid "460cd917-863c-47a0-81c1-af5b001b13e6")
+		(property "Reference" "R104"
+			(at 60.96 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 34.925 97.79 0)
+		(property "Value" "1K"
+			(at 60.96 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
-			(at 34.29 100.33 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 65.278 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1932,7 +2993,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 100.33 0)
+			(at 60.96 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1940,8 +3001,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 34.29 100.33 0)
+		(property "Description" "Resistor"
+			(at 60.96 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,8 +3010,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 34.29 100.33 0)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,8 +3019,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 34.29 100.33 0)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1968,15 +3029,101 @@
 			)
 		)
 		(pin "2"
-			(uuid "d06ad1d6-cccc-4932-a80a-ad1686152b42")
+			(uuid "16a8fecf-c6fe-48ba-b166-9f33448a396a")
 		)
 		(pin "1"
-			(uuid "f80eade3-e5ca-400a-a2a3-825b964801c2")
+			(uuid "0bad185e-0255-466c-9080-6356ad6a6a24")
 		)
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "J21")
+					(reference "R104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c975e9-4990-4bfa-8400-d362eaee8806")
+		(property "Reference" "R117"
+			(at 60.96 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 60.96 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 132.588 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 60.96 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "96cd1e1f-bb0b-40b7-87bd-cedc4649d0e5")
+		)
+		(pin "1"
+			(uuid "15d81033-484d-41a7-afcd-7719537fc954")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R117")
 					(unit 1)
 				)
 			)
@@ -1992,7 +3139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e21f957-ad0f-419b-9c69-fee45f359037")
-		(property "Reference" "#PWR0150"
+		(property "Reference" "#PWR0137"
 			(at 106.68 87.63 0)
 			(effects
 				(font
@@ -2042,7 +3189,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "#PWR0150")
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -2050,7 +3197,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 57.15 0)
+		(at 46.99 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2058,16 +3205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61fa016b-3df2-4257-9deb-a42fc48a1f71")
-		(property "Reference" "R72"
-			(at 49.53 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
+		(property "Reference" "R103"
 			(at 49.53 58.4199 0)
 			(effects
 				(font
@@ -2076,8 +3214,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "10K"
+			(at 49.53 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 45.212 57.15 90)
+			(at 45.212 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2086,7 +3233,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 57.15 0)
+			(at 46.99 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,7 +3242,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 57.15 0)
+			(at 46.99 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2103,8 +3250,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 46.99 57.15 0)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2112,8 +3259,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 46.99 57.15 0)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,40 +3277,40 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "R72")
+					(reference "R103")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 33.02 45.72 0)
+		(lib_id "Device:R")
+		(at 60.96 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "65452351-cca0-4157-8d2b-5271cac2854e")
-		(property "Reference" "J17"
-			(at 33.655 40.64 0)
+		(uuid "65b4aae7-802b-4625-b0ac-480edb1ad90d")
+		(property "Reference" "R111"
+			(at 60.96 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 33.655 43.18 0)
+		(property "Value" "1K"
+			(at 60.96 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
-			(at 33.02 45.72 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 104.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2172,7 +3319,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 45.72 0)
+			(at 60.96 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2180,8 +3327,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 33.02 45.72 0)
+		(property "Description" "Resistor"
+			(at 60.96 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2189,8 +3336,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 33.02 45.72 0)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2198,8 +3345,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 33.02 45.72 0)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2208,15 +3355,254 @@
 			)
 		)
 		(pin "2"
-			(uuid "523c5129-8fdd-4b02-939c-4a08e77e2f97")
+			(uuid "02cf4b3a-14cc-4829-9dd5-a910ca126e2f")
 		)
 		(pin "1"
-			(uuid "3f3823b0-17e5-4cfd-9a94-00f0d6dcc443")
+			(uuid "b5b08e99-01a0-4bcd-82b4-50cf767560f2")
 		)
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "J17")
+					(reference "R111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 36.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c229943-0530-4690-a5b8-0eedf4d88fd8")
+		(property "Reference" "#PWR0133"
+			(at 92.71 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 94.6658 36.957 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e605b29-5dca-4697-a860-9aae78e68170")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 106.68 27.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fb44271-c527-4f7d-86a2-24afae68ca36")
+		(property "Reference" "R98"
+			(at 109.22 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10R"
+			(at 109.22 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 108.458 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 106.68 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.44"
+			(at 106.68 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001144.html"
+			(at 106.68 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f77204d7-2fce-4832-a581-9ee8c53ce2dd")
+		)
+		(pin "1"
+			(uuid "b43237c5-2029-495a-9efb-24eb3870e965")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72c57283-c82b-4695-9e4c-95d53497e14b")
+		(property "Reference" "R108"
+			(at 60.96 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 60.96 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 91.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 60.96 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b273139-542c-430d-ae9c-7242cca562dd")
+		)
+		(pin "1"
+			(uuid "81b4a2d1-1395-4890-bef9-26218eee1352")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R108")
 					(unit 1)
 				)
 			)
@@ -2232,7 +3618,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7486e463-2b57-4ce1-8f3c-591b71b61cda")
-		(property "Reference" "#PWR0151"
+		(property "Reference" "#PWR0138"
 			(at 114.3 87.63 0)
 			(effects
 				(font
@@ -2282,7 +3668,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "#PWR0151")
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -2290,7 +3676,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 96.52 0)
+		(at 46.99 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2298,16 +3684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "815b0ec9-5ff3-4ebc-92e6-d255131e1c50")
-		(property "Reference" "R75"
-			(at 49.53 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
+		(property "Reference" "R109"
 			(at 49.53 97.7899 0)
 			(effects
 				(font
@@ -2316,8 +3693,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "10K"
+			(at 49.53 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 45.212 96.52 90)
+			(at 45.212 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2326,7 +3712,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 96.52 0)
+			(at 46.99 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2335,7 +3721,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 96.52 0)
+			(at 46.99 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2343,8 +3729,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 46.99 96.52 0)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2352,8 +3738,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 46.99 96.52 0)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2370,40 +3756,42 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "R75")
+					(reference "R109")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 33.02 33.02 0)
+		(lib_id "Device:R")
+		(at 46.99 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8930f348-3457-4f21-a66c-054b5dd126e7")
-		(property "Reference" "J16"
-			(at 33.655 27.94 0)
+		(uuid "8fe00ddf-4cfd-4ed9-b2a1-f34db1a9e3f4")
+		(property "Reference" "R112"
+			(at 49.53 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 33.655 30.48 0)
+		(property "Value" "10K"
+			(at 49.53 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
-			(at 33.02 33.02 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 45.212 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2412,7 +3800,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 33.02 0)
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2420,8 +3808,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 33.02 33.02 0)
+		(property "Description" "Resistor"
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2429,8 +3817,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 33.02 33.02 0)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2438,25 +3826,25 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 33.02 33.02 0)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "66cbc038-7941-425b-9a93-855b7f80c2b9")
 		)
 		(pin "1"
-			(uuid "a3950b7a-3fd4-40bd-825a-83ae82ad4051")
+			(uuid "2cec40ac-e333-47c7-b23e-8da973d7af04")
+		)
+		(pin "2"
+			(uuid "5e14f1e3-afc3-4784-82c6-f46803686b46")
 		)
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "J16")
+					(reference "R112")
 					(unit 1)
 				)
 			)
@@ -2464,7 +3852,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 102.87 52.07 90)
+		(at 102.87 49.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2472,8 +3860,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90f399e3-118a-4b05-8d93-8a159df5ba23")
-		(property "Reference" "C53"
-			(at 102.87 44.45 90)
+		(property "Reference" "C52"
+			(at 102.87 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,7 +3869,7 @@
 			)
 		)
 		(property "Value" "68pf"
-			(at 102.87 46.99 90)
+			(at 102.87 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,7 +3877,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 106.68 51.1048 0)
+			(at 106.68 48.5648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2498,7 +3886,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 52.07 0)
+			(at 102.87 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,7 +3895,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 102.87 52.07 0)
+			(at 102.87 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2515,8 +3903,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 102.87 52.07 90)
+		(property "Cikkszám" "100.380.72"
+			(at 102.87 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,8 +3912,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 102.87 52.07 90)
+		(property "Link" "https://www.hestore.hu/prod_10038072.html"
+			(at 102.87 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,7 +3930,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "C53")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -2558,7 +3946,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "927e291d-d1d4-48a8-b583-381714ce5c8b")
-		(property "Reference" "U24"
+		(property "Reference" "U26"
 			(at 116.4433 50.8 0)
 			(effects
 				(font
@@ -2603,7 +3991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.491.18"
 			(at 109.22 66.04 0)
 			(effects
 				(font
@@ -2612,7 +4000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049118.html"
 			(at 109.22 66.04 0)
 			(effects
 				(font
@@ -2672,7 +4060,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "U24")
+					(reference "U26")
 					(unit 1)
 				)
 			)
@@ -2680,16 +4068,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 69.85 0)
+		(at 46.99 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a1517428-a53b-4e75-9e37-77b179ea3825")
-		(property "Reference" "R73"
-			(at 49.53 68.5799 0)
+		(uuid "9ab830ef-cd47-4a46-9163-658cd3c6fd94")
+		(property "Reference" "R115"
+			(at 49.53 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,8 +4085,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 49.53 71.1199 0)
+		(property "Value" "10K"
+			(at 49.53 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2707,7 +4095,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 45.212 69.85 90)
+			(at 45.212 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +4104,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 69.85 0)
+			(at 46.99 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +4113,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 69.85 0)
+			(at 46.99 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,8 +4121,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 46.99 69.85 0)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2742,8 +4130,96 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 46.99 69.85 0)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "237f2de5-bb24-424d-9fa2-2c7f45276aeb")
+		)
+		(pin "2"
+			(uuid "fe59261a-6980-4302-b783-98517f31df8b")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 46.99 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1517428-a53b-4e75-9e37-77b179ea3825")
+		(property "Reference" "R105"
+			(at 49.53 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 49.53 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 45.212 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 46.99 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.45"
+			(at 46.99 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 46.99 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2760,40 +4236,40 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "R73")
+					(reference "R105")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 34.29 73.66 0)
+		(lib_id "Device:C")
+		(at 146.05 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eddf4f68-29e9-418e-95d6-d59c9e61509f")
-		(property "Reference" "J19"
-			(at 34.925 68.58 0)
+		(uuid "a412c449-c63f-4530-b816-ec6806defb50")
+		(property "Reference" "C53"
+			(at 146.05 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 34.925 71.12 0)
+		(property "Value" "1uf"
+			(at 146.05 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
-			(at 34.29 73.66 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 149.86 56.1848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2802,7 +4278,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 73.66 0)
+			(at 146.05 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2810,8 +4286,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 34.29 73.66 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2819,8 +4295,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 34.29 73.66 0)
+		(property "Cikkszám" "100.277.53"
+			(at 146.05 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2828,8 +4304,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 34.29 73.66 0)
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
+			(at 146.05 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,48 +4314,48 @@
 			)
 		)
 		(pin "2"
-			(uuid "1268c7b4-8eca-4c20-b9cb-84ad907c3b93")
+			(uuid "5c414127-ec13-41ae-a41a-4510054859d0")
 		)
 		(pin "1"
-			(uuid "e25d78c3-816d-4cd4-a6e9-d3dfacf91c89")
+			(uuid "2269b177-9632-4d2b-b503-9dad72f0baaa")
 		)
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "J19")
+					(reference "C53")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 34.29 60.96 0)
+		(lib_id "Device:R")
+		(at 60.96 48.26 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee0274d8-3919-47bc-aa23-00a8ce60703b")
-		(property "Reference" "J18"
-			(at 34.925 55.88 0)
+		(uuid "b5c0e301-3f72-4fb4-88e8-6a496122ebbe")
+		(property "Reference" "R102"
+			(at 60.96 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 34.925 58.42 0)
+		(property "Value" "1K"
+			(at 60.96 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
-			(at 34.29 60.96 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 50.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,7 +4364,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 60.96 0)
+			(at 60.96 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2896,8 +4372,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 34.29 60.96 0)
+		(property "Description" "Resistor"
+			(at 60.96 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2905,8 +4381,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 34.29 60.96 0)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,8 +4390,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 34.29 60.96 0)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2924,15 +4400,101 @@
 			)
 		)
 		(pin "2"
-			(uuid "51a45024-5a86-41df-93f6-1c777b16095c")
+			(uuid "a7c3ca4b-cfd1-4b5e-84dc-9c5093fb91fd")
 		)
 		(pin "1"
-			(uuid "2722907d-c2c9-491b-b95b-758107c1ca39")
+			(uuid "34ebb936-424c-4216-8a77-d91c2b7bf01b")
 		)
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "J18")
+					(reference "R102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 36.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c82f1b33-aa4f-4c6f-b502-a7b17ae6a0a8")
+		(property "Reference" "C50"
+			(at 102.87 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uf"
+			(at 102.87 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 106.68 35.8648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 102.87 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.277.53"
+			(at 102.87 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
+			(at 102.87 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8d81b753-bf52-4c1f-9da1-984a7fe6fc8a")
+		)
+		(pin "1"
+			(uuid "946d3ddb-e5bb-4a0e-8d7b-7eec0815ef52")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -2940,16 +4502,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 52.07 270)
+		(at 149.86 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "efa19951-9bfe-4152-95a0-04f22cb74cc9")
-		(property "Reference" "#PWR0149"
-			(at 92.71 52.07 0)
+		(uuid "d0147d25-25e5-4998-9d65-fcdfd2a36df8")
+		(property "Reference" "#PWR0136"
+			(at 156.21 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2958,16 +4519,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 52.0699 90)
+			(at 154.2542 57.023 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 52.07 0)
+			(at 149.86 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2976,7 +4536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 52.07 0)
+			(at 149.86 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2985,7 +4545,380 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 52.07 0)
+			(at 149.86 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dd00394-7be9-412b-a30a-1224a6bf863b")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "#PWR0136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 118.11 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d16a6556-b31e-41fb-b047-82cb14e64965")
+		(property "Reference" "#PWR0140"
+			(at 25.4 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "383c1006-a057-43b1-b507-b268537fc3ec")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7ef5173-9ed2-469a-87f4-96dc10a35979")
+		(property "Reference" "R106"
+			(at 60.96 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 60.96 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 60.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.57"
+			(at 60.96 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001157.html"
+			(at 60.96 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d5877d5f-29e3-4837-94f8-c9f365914216")
+		)
+		(pin "1"
+			(uuid "b0c34c29-e18d-44b4-8206-8e1c05088907")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e146bf41-97b0-4e20-a3ea-bdcdfc4c9140")
+		(property "Reference" "#PWR0139"
+			(at 25.4 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 102.8699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7853f978-86b8-4f87-8515-001ba1c14c67")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "#PWR0139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 146.05 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec43f4b3-6af6-47c0-ae13-7cb0402aac7f")
+		(property "Reference" "C55"
+			(at 146.05 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22nf c0g"
+			(at 146.05 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 149.86 79.0448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.011.30"
+			(at 146.05 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10001130.html"
+			(at 146.05 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "09b57b91-8fe4-4862-8d8d-5f8c00b99e28")
+		)
+		(pin "1"
+			(uuid "afb964a6-acaa-42f2-8a56-24640696847f")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 49.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "efa19951-9bfe-4152-95a0-04f22cb74cc9")
+		(property "Reference" "#PWR0135"
+			(at 92.71 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +4932,93 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "#PWR0149")
+					(reference "#PWR0135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 38.1 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f50d290e-995b-47e9-8d1e-049b50b864e5")
+		(property "Reference" "R113"
+			(at 38.1 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K ntc"
+			(at 38.1 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 38.1 119.888 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "100.396.66"
+			(at 38.1 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.hestore.hu/prod_10039666.html"
+			(at 38.1 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "815ae931-6b15-461b-b1f2-39dd4a8a8f64")
+		)
+		(pin "2"
+			(uuid "fbc676ed-8827-4ffd-8497-1008769a8ad0")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
+					(reference "R113")
 					(unit 1)
 				)
 			)
@@ -3007,7 +5026,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 45.72 90)
+		(at 114.3 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3015,8 +5034,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd819c69-70aa-4c73-9c90-0be5a628cb4a")
-		(property "Reference" "#PWR0148"
-			(at 120.65 45.72 0)
+		(property "Reference" "#PWR0134"
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +5044,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 45.7199 90)
+			(at 118.11 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3034,7 +5053,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 45.72 0)
+			(at 114.3 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3043,7 +5062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 45.72 0)
+			(at 114.3 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3052,7 +5071,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 45.72 0)
+			(at 114.3 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,7 +5085,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/c6f49d9c-a02f-49cf-b959-0c17cccf9470"
-					(reference "#PWR0148")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)

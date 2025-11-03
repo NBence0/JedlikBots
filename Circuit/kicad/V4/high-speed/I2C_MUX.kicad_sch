@@ -739,26 +739,26 @@
 		)
 	)
 	(junction
-		(at 44.45 63.5)
+		(at 62.23 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0642d220-29d3-4972-97ed-411b3f3dddec")
 	)
 	(junction
-		(at 73.66 53.34)
+		(at 91.44 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "beab8742-3d4b-4b3c-96a6-059603a7b371")
 	)
 	(junction
-		(at 40.64 63.5)
+		(at 58.42 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd49bd36-717d-4b5d-968e-98c12e0edb05")
 	)
 	(wire
 		(pts
-			(xy 40.64 63.5) (xy 44.45 63.5)
+			(xy 58.42 68.58) (xy 62.23 68.58)
 		)
 		(stroke
 			(width 0)
@@ -768,7 +768,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 58.42) (xy 44.45 63.5)
+			(xy 62.23 63.5) (xy 62.23 68.58)
 		)
 		(stroke
 			(width 0)
@@ -778,7 +778,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 63.5) (xy 44.45 68.58)
+			(xy 62.23 68.58) (xy 62.23 73.66)
 		)
 		(stroke
 			(width 0)
@@ -788,7 +788,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 68.58) (xy 81.28 68.58)
+			(xy 62.23 73.66) (xy 99.06 73.66)
 		)
 		(stroke
 			(width 0)
@@ -798,7 +798,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 58.42) (xy 44.45 58.42)
+			(xy 99.06 63.5) (xy 62.23 63.5)
 		)
 		(stroke
 			(width 0)
@@ -808,7 +808,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 40.64 63.5)
+			(xy 58.42 66.04) (xy 58.42 68.58)
 		)
 		(stroke
 			(width 0)
@@ -818,7 +818,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 53.34) (xy 73.66 53.34)
+			(xy 88.9 58.42) (xy 91.44 58.42)
 		)
 		(stroke
 			(width 0)
@@ -828,7 +828,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 63.5) (xy 40.64 63.5)
+			(xy 54.61 68.58) (xy 58.42 68.58)
 		)
 		(stroke
 			(width 0)
@@ -838,7 +838,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 53.34) (xy 81.28 53.34)
+			(xy 91.44 58.42) (xy 99.06 58.42)
 		)
 		(stroke
 			(width 0)
@@ -848,7 +848,7 @@
 	)
 	(global_label "I2C_CH"
 		(shape input)
-		(at 40.64 60.96 90)
+		(at 58.42 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -858,7 +858,7 @@
 		)
 		(uuid "c5ec11c9-7d8e-4135-aed6-f7dc6d3d3921")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 51.3224 90)
+			(at 58.42 56.4024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -870,7 +870,7 @@
 	)
 	(hierarchical_label "RPI_I2C_SCL_sensors"
 		(shape input)
-		(at 116.84 71.12 0)
+		(at 134.62 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -881,7 +881,7 @@
 	)
 	(hierarchical_label "I2C_SCL_sensors"
 		(shape input)
-		(at 81.28 73.66 180)
+		(at 99.06 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -892,7 +892,7 @@
 	)
 	(hierarchical_label "ESP_I2C_SDA_sensors"
 		(shape input)
-		(at 116.84 63.5 0)
+		(at 134.62 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -903,7 +903,7 @@
 	)
 	(hierarchical_label "ESP_I2C_SCL_sensors"
 		(shape input)
-		(at 116.84 73.66 0)
+		(at 134.62 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -914,7 +914,7 @@
 	)
 	(hierarchical_label "3V3_in"
 		(shape input)
-		(at 71.12 53.34 180)
+		(at 88.9 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -925,7 +925,7 @@
 	)
 	(hierarchical_label "RPI_I2C_SDA_sensors"
 		(shape input)
-		(at 116.84 60.96 0)
+		(at 134.62 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -936,7 +936,7 @@
 	)
 	(hierarchical_label "I2C_SDA_sensors"
 		(shape input)
-		(at 81.28 63.5 180)
+		(at 99.06 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -947,7 +947,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 45.72 180)
+		(at 91.44 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -955,8 +955,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15d67b93-d20d-456e-99c9-cce9d9e5886a")
-		(property "Reference" "#PWR088"
-			(at 73.66 39.37 0)
+		(property "Reference" "#PWR082"
+			(at 91.44 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -965,7 +965,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 40.64 0)
+			(at 91.44 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -973,7 +973,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 45.72 0)
+			(at 91.44 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -982,7 +982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 45.72 0)
+			(at 91.44 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -991,7 +991,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 45.72 0)
+			(at 91.44 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1005,7 +1005,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
-					(reference "#PWR088")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -1013,7 +1013,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 63.5 270)
+		(at 46.99 68.58 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1021,8 +1021,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2abe4822-b0eb-4602-9b88-ec7d55eb550d")
-		(property "Reference" "#PWR089"
-			(at 22.86 63.5 0)
+		(property "Reference" "#PWR083"
+			(at 40.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1031,7 +1031,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 63.4999 90)
+			(at 43.18 68.5799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1040,7 +1040,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 63.5 0)
+			(at 46.99 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1049,7 +1049,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 63.5 0)
+			(at 46.99 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1058,7 +1058,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 63.5 0)
+			(at 46.99 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,7 +1072,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
-					(reference "#PWR089")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -1080,7 +1080,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 49.53 0)
+		(at 91.44 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1088,8 +1088,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e85c489-2ad7-42cf-85df-06722912509c")
-		(property "Reference" "C25"
-			(at 77.47 48.2599 0)
+		(property "Reference" "C31"
+			(at 95.25 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1098,7 +1098,7 @@
 			)
 		)
 		(property "Value" "1uf"
-			(at 77.47 50.7999 0)
+			(at 95.25 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1107,7 +1107,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 74.6252 53.34 0)
+			(at 92.4052 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1116,7 +1116,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 49.53 0)
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1125,7 +1125,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 49.53 0)
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1133,8 +1133,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 73.66 49.53 0)
+		(property "Cikkszám" "100.277.53"
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1142,8 +1142,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 73.66 49.53 0)
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1160,7 +1160,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
-					(reference "C25")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -1168,7 +1168,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 33.02 63.5 90)
+		(at 50.8 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1176,16 +1176,16 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54f90241-2b00-4312-98f9-387a7e51e7a6")
-		(property "Reference" "R30"
-			(at 33.02 57.15 90)
+		(property "Reference" "R41"
+			(at 50.8 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "47k"
-			(at 33.02 59.69 90)
+		(property "Value" "47K"
+			(at 50.8 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1193,7 +1193,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 33.02 65.278 90)
+			(at 50.8 70.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1202,7 +1202,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 63.5 0)
+			(at 50.8 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1211,7 +1211,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 33.02 63.5 0)
+			(at 50.8 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1219,8 +1219,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 33.02 63.5 90)
+		(property "Cikkszám" "100.011.81"
+			(at 50.8 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,8 +1228,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 33.02 63.5 90)
+		(property "Link" "https://www.hestore.hu/prod_10001181.html"
+			(at 50.8 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1246,7 +1246,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
-					(reference "R30")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -1254,7 +1254,7 @@
 	)
 	(symbol
 		(lib_id "TS5A23157DGSR:TS5A23157DGSR")
-		(at 99.06 66.04 0)
+		(at 116.84 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1263,7 +1263,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab063aa6-1040-4dda-b7e9-19b7875be369")
 		(property "Reference" "U14"
-			(at 99.06 45.72 0)
+			(at 116.84 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1271,15 +1271,15 @@
 			)
 		)
 		(property "Value" "TS5A23157DGSR"
-			(at 99.06 48.26 0)
+			(at 116.84 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "psu:SOP50P490X110-10N"
-			(at 99.06 66.04 0)
+		(property "Footprint" "panel:SOP50P490X110-10N"
+			(at 116.84 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1289,7 +1289,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 66.04 0)
+			(at 116.84 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1298,7 +1298,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 66.04 0)
+			(at 116.84 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1306,128 +1306,8 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.1 mm"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "VSSOP-10 Texas Instruments"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/TS5A23157DGSR/Texas+Instruments/view-part/?ref=eda"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "F"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TS5A23157DGSR/Texas+Instruments/view-part/?ref=snap"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "TS5A23157DGSR"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "5-V, 2:1 (SPDT), 2-channel analog switch"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 99.06 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 99.06 66.04 0)
+		(property "Cikkszám" "100.491.28"
+			(at 116.84 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1435,8 +1315,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 99.06 66.04 0)
+		(property "Link" "https://www.hestore.hu/prod_10049128.html"
+			(at 116.84 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1485,7 +1365,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 78.74 90)
+		(at 134.62 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1493,8 +1373,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbc8f733-7060-4556-b69d-e206cf6feea5")
-		(property "Reference" "#PWR090"
-			(at 123.19 78.74 0)
+		(property "Reference" "#PWR084"
+			(at 140.97 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1503,7 +1383,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 78.7399 90)
+			(at 138.43 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1512,7 +1392,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 78.74 0)
+			(at 134.62 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1521,7 +1401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 78.74 0)
+			(at 134.62 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,7 +1410,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 78.74 0)
+			(at 134.62 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1544,7 +1424,7 @@
 		(instances
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
-					(reference "#PWR090")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)

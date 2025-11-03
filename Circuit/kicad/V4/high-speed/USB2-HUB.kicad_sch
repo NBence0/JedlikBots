@@ -15,16 +15,16 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 3.81 -6.35 0)
+			(property "Reference" "U13"
+				(at -0.635 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "AP2553W6"
-				(at -3.81 -6.35 0)
+			(property "Value" "AP22653W6"
+				(at -0.635 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -58,7 +58,7 @@
 					(hide yes)
 				)
 			)
-			(property "Field4" "Digikey"
+			(property "Cikkszám" "100.460.82"
 				(at 0 0 0)
 				(effects
 					(font
@@ -67,7 +67,7 @@
 					(hide yes)
 				)
 			)
-			(property "Field5" "AP2553W6-7DICT-ND"
+			(property "Link" "https://www.hestore.hu/prod_10046082.html"
 				(at 0 0 0)
 				(effects
 					(font
@@ -167,7 +167,22 @@
 						)
 					)
 				)
-				(pin open_collector line
+			)
+			(symbol "AP2553W6_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AP2553W6_1_0"
+				(pin output line
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "nFault"
@@ -183,19 +198,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(symbol "AP2553W6_0_1"
-				(rectangle
-					(start -6.35 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
@@ -4434,12 +4436,6 @@
 		(uuid "28e37b45-f843-47c2-85c9-ca19f5430ece")
 	)
 	(junction
-		(at 106.68 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30f479e0-bcdd-415d-ab09-ea82d4a8a855")
-	)
-	(junction
 		(at 238.76 173.99)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -4464,22 +4460,10 @@
 		(uuid "441ca309-76ec-43a3-8784-95d9f379ceea")
 	)
 	(junction
-		(at 230.505 86.36)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "4b22c29d-0a15-4704-afdb-695be828739c")
-	)
-	(junction
 		(at 138.43 251.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f60c87f-f46b-4b52-87e7-035880eb708d")
-	)
-	(junction
-		(at 101.6 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5121a6c0-d5c0-44a7-a8c3-041b63fe062f")
 	)
 	(junction
 		(at 104.14 123.19)
@@ -4488,10 +4472,10 @@
 		(uuid "5478afbb-3697-4d39-8542-666d82424cd3")
 	)
 	(junction
-		(at 234.95 99.06)
+		(at 229.87 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5ef92bbc-a43d-4343-9870-457ac830a091")
+		(uuid "55ba2d1f-9f54-4f10-b7f6-5c9a4ca4edc7")
 	)
 	(junction
 		(at 353.06 220.98)
@@ -4512,28 +4496,16 @@
 		(uuid "6bd115d6-07e0-45db-8f2e-3cbb0429104f")
 	)
 	(junction
-		(at 83.82 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "70c27f2f-7623-420c-a62d-80723e32bf9e")
-	)
-	(junction
-		(at 222.885 86.36)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "881fd5db-7b98-4868-a7e9-4489b15a8b84")
-	)
-	(junction
 		(at 238.76 168.91)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "88610282-a92d-4c3d-917a-ea95d59e0759")
 	)
 	(junction
-		(at 141.478 251.46)
+		(at 236.22 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "931be037-d4bc-44ef-9246-07644d028e00")
+		(uuid "9756df5b-18b7-4eb5-9673-3d2d20053489")
 	)
 	(junction
 		(at 48.26 74.93)
@@ -4658,16 +4630,8 @@
 		(uuid "51e09bd2-9028-49ff-b9c5-81987ebe50cf")
 	)
 	(no_connect
-		(at 106.68 106.68)
-		(uuid "8b19c15e-8f5c-4de2-9d05-3ea9f0dd9a4d")
-	)
-	(no_connect
 		(at 83.82 173.99)
 		(uuid "92035a88-6c95-4a61-bd8a-cb8dd9e5018a")
-	)
-	(no_connect
-		(at 101.6 106.68)
-		(uuid "9f26b21d-49fc-4558-8455-9a650d3d21a0")
 	)
 	(no_connect
 		(at 110.49 74.93)
@@ -4687,7 +4651,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 146.05) (xy 148.59 146.05)
+			(xy 139.7 146.05) (xy 149.86 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4707,7 +4671,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 138.43) (xy 148.59 138.43)
+			(xy 139.7 138.43) (xy 149.86 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4717,17 +4681,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 96.52) (xy 234.95 99.06)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "059bf051-79eb-436f-830b-90ab17206c53")
-	)
-	(wire
-		(pts
-			(xy 255.27 96.52) (xy 276.225 96.52)
+			(xy 256.54 96.52) (xy 275.59 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4767,17 +4721,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 86.36) (xy 230.505 86.36)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0e6a2d42-3784-4aeb-8cc7-4878319c53c2")
-	)
-	(wire
-		(pts
-			(xy 139.7 166.37) (xy 148.59 166.37)
+			(xy 139.7 166.37) (xy 149.86 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4797,7 +4741,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.225 69.85) (xy 337.82 69.85)
+			(xy 275.59 69.85) (xy 337.82 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4807,7 +4751,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 62.23) (xy 110.49 62.23)
+			(xy 87.63 62.23) (xy 110.49 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4877,7 +4821,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 140.97) (xy 148.59 140.97)
+			(xy 139.7 140.97) (xy 149.86 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4927,7 +4871,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 163.83) (xy 148.59 163.83)
+			(xy 139.7 163.83) (xy 149.86 163.83)
 		)
 		(stroke
 			(width 0)
@@ -4977,16 +4921,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 260.35) (xy 171.45 260.35)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "2f0d0ce1-3b4a-4332-8a1b-eca7954a17bc")
-	)
-	(wire
-		(pts
 			(xy 50.8 74.93) (xy 48.26 74.93)
 		)
 		(stroke
@@ -4997,7 +4931,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 179.07) (xy 148.59 179.07)
+			(xy 139.7 179.07) (xy 149.86 179.07)
 		)
 		(stroke
 			(width 0)
@@ -5037,17 +4971,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 62.23) (xy 101.6 62.23)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "39878b75-c385-43d5-a88b-22520f2b52f1")
-	)
-	(wire
-		(pts
-			(xy 234.95 99.06) (xy 234.95 104.14)
+			(xy 236.22 99.06) (xy 236.22 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5077,7 +5001,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 184.15) (xy 148.59 184.15)
+			(xy 128.27 256.54) (xy 121.92 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d85aa99-dfdf-4bb5-aee6-925c0c30f774")
+	)
+	(wire
+		(pts
+			(xy 139.7 184.15) (xy 149.86 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5167,23 +5101,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 262.89) (xy 171.45 262.89)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4e8e7bad-9c79-45c9-85fa-3064734acea1")
-	)
-	(wire
-		(pts
-			(xy 101.6 62.23) (xy 101.6 81.28)
+			(xy 139.7 143.51) (xy 149.86 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53dc7cee-6bab-4a38-82f0-970b362853e7")
+		(uuid "53602a13-8661-4101-8ec8-37b3449deef3")
 	)
 	(wire
 		(pts
@@ -5267,7 +5191,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 151.13) (xy 148.59 151.13)
+			(xy 139.7 151.13) (xy 149.86 151.13)
 		)
 		(stroke
 			(width 0)
@@ -5317,7 +5241,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 99.06) (xy 255.27 99.06)
+			(xy 273.05 99.06) (xy 256.54 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5347,7 +5271,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 171.45) (xy 148.59 171.45)
+			(xy 139.7 171.45) (xy 149.86 171.45)
 		)
 		(stroke
 			(width 0)
@@ -5387,7 +5311,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 58.42) (xy 106.68 58.42)
+			(xy 85.09 58.42) (xy 110.49 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5407,23 +5331,13 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 83.82) (xy 266.7 83.82)
+			(xy 256.54 83.82) (xy 266.7 83.82)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "6ea1372c-9025-4b02-ac3c-67d11b7f8b99")
-	)
-	(wire
-		(pts
-			(xy 217.17 86.36) (xy 222.885 86.36)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "6fe3f1e2-903d-4755-9f90-124802e12be1")
 	)
 	(wire
 		(pts
@@ -5457,7 +5371,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 90.17) (xy 234.95 90.17)
+			(xy 217.17 90.17) (xy 236.22 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5477,7 +5391,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 153.67) (xy 148.59 153.67)
+			(xy 139.7 153.67) (xy 149.86 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5504,26 +5418,6 @@
 			(type solid)
 		)
 		(uuid "7a74c4b1-6243-4a12-85a2-bc41d346e7aa")
-	)
-	(wire
-		(pts
-			(xy 106.68 58.42) (xy 110.49 58.42)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "7a822351-3e0d-4b8b-ab53-a2efaeae75bb")
-	)
-	(wire
-		(pts
-			(xy 141.478 251.46) (xy 142.24 251.46)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "7a8e5b9b-bc16-4279-97d7-c3c87ae062c4")
 	)
 	(wire
 		(pts
@@ -5557,7 +5451,17 @@
 	)
 	(wire
 		(pts
-			(xy 230.505 35.56) (xy 230.505 69.85)
+			(xy 222.25 109.22) (xy 222.25 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802fa105-e828-43b6-9e51-9a0d3e88590c")
+	)
+	(wire
+		(pts
+			(xy 229.87 35.56) (xy 229.87 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5577,7 +5481,7 @@
 	)
 	(wire
 		(pts
-			(xy 230.505 35.56) (xy 325.12 35.56)
+			(xy 229.87 35.56) (xy 325.12 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5617,7 +5521,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 158.75) (xy 148.59 158.75)
+			(xy 139.7 158.75) (xy 149.86 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5647,6 +5551,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 161.29) (xy 256.54 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8db7b872-c303-41fe-97fc-37d6f642ac61")
+	)
+	(wire
+		(pts
 			(xy 328.93 220.98) (xy 340.36 220.98)
 		)
 		(stroke
@@ -5657,7 +5571,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.225 69.85) (xy 276.225 96.52)
+			(xy 275.59 69.85) (xy 275.59 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5694,16 +5608,6 @@
 			(type solid)
 		)
 		(uuid "935057d5-6882-4c15-9a35-54677912ba12")
-	)
-	(wire
-		(pts
-			(xy 106.68 58.42) (xy 106.68 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9376ef18-63b0-4eb6-8670-69dcd2a9ef8d")
 	)
 	(wire
 		(pts
@@ -5747,6 +5651,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 166.37) (xy 265.43 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af72135-391a-4245-b4bf-8a110047b33e")
+	)
+	(wire
+		(pts
 			(xy 111.76 199.39) (xy 111.76 201.93)
 		)
 		(stroke
@@ -5757,7 +5671,7 @@
 	)
 	(wire
 		(pts
-			(xy 230.505 77.47) (xy 230.505 86.36)
+			(xy 229.87 77.47) (xy 229.87 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5767,7 +5681,7 @@
 	)
 	(wire
 		(pts
-			(xy 141.478 251.46) (xy 141.478 254)
+			(xy 142.24 251.46) (xy 142.24 254)
 		)
 		(stroke
 			(width 0)
@@ -5787,7 +5701,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 176.53) (xy 148.59 176.53)
+			(xy 139.7 176.53) (xy 149.86 176.53)
 		)
 		(stroke
 			(width 0)
@@ -5827,16 +5741,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 143.51) (xy 148.59 143.51)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "aeb03be9-98f0-43f6-9432-1bb35aa04bab")
-	)
-	(wire
-		(pts
 			(xy 309.88 59.69) (xy 309.88 52.07)
 		)
 		(stroke
@@ -5857,16 +5761,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 256.54) (xy 128.27 256.54)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "b59f18ce-2e34-4b6e-b14d-8d73b8268179")
-	)
-	(wire
-		(pts
 			(xy 99.06 44.45) (xy 110.49 44.45)
 		)
 		(stroke
@@ -5874,6 +5768,16 @@
 			(type default)
 		)
 		(uuid "b5b2b4c8-a35b-489b-913b-f27b61dfe4bd")
+	)
+	(wire
+		(pts
+			(xy 299.72 161.29) (xy 290.83 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6889e28-f4e5-4c94-a821-44aa710765e2")
 	)
 	(wire
 		(pts
@@ -5897,6 +5801,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 262.89) (xy 182.88 262.89)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b8e2768f-f3b1-437d-bb57-8f3ba3b1d6f5")
+	)
+	(wire
+		(pts
 			(xy 33.02 151.13) (xy 50.8 151.13)
 		)
 		(stroke
@@ -5917,7 +5831,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 92.71) (xy 234.95 92.71)
+			(xy 217.17 92.71) (xy 236.22 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6037,7 +5951,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 86.36) (xy 266.7 86.36)
+			(xy 256.54 86.36) (xy 266.7 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6047,7 +5961,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 251.46) (xy 141.478 251.46)
+			(xy 138.43 251.46) (xy 142.24 251.46)
 		)
 		(stroke
 			(width 0)
@@ -6064,6 +5978,16 @@
 			(type default)
 		)
 		(uuid "d167bdd7-1dca-4a6d-8b04-679f1227887b")
+	)
+	(wire
+		(pts
+			(xy 171.45 260.35) (xy 182.88 260.35)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "d2c0be8b-8abc-4d83-9e56-8d319cffb540")
 	)
 	(wire
 		(pts
@@ -6087,7 +6011,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.885 86.36) (xy 222.885 96.52)
+			(xy 222.25 86.36) (xy 222.25 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6197,6 +6121,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 86.36) (xy 222.25 86.36)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "edd83f74-5158-4c94-9b7c-d18e546d74bb")
+	)
+	(wire
+		(pts
 			(xy 312.42 57.15) (xy 312.42 39.37)
 		)
 		(stroke
@@ -6227,23 +6161,13 @@
 	)
 	(wire
 		(pts
-			(xy 230.505 86.36) (xy 222.885 86.36)
+			(xy 229.87 86.36) (xy 236.22 86.36)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "f43520c5-8a21-427a-b883-bc1d68c878dd")
-	)
-	(wire
-		(pts
-			(xy 83.82 151.13) (xy 85.09 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f458509f-4ed3-4e60-8da8-557aac485636")
 	)
 	(wire
 		(pts
@@ -6254,6 +6178,26 @@
 			(type default)
 		)
 		(uuid "f4e7163e-100f-4d63-9afe-9777f8e8c1f7")
+	)
+	(wire
+		(pts
+			(xy 236.22 96.52) (xy 236.22 99.06)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "f5ae3903-c36e-4430-8869-b498f65b8c07")
+	)
+	(wire
+		(pts
+			(xy 299.72 166.37) (xy 290.83 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5c53a53-af71-4061-aa58-228aad18550c")
 	)
 	(wire
 		(pts
@@ -6297,7 +6241,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.155 83.82) (xy 234.95 83.82)
+			(xy 223.52 83.82) (xy 236.22 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6346,12 +6290,12 @@
 		(uuid "fd36dff2-1899-4668-9def-b509f42b5b57")
 	)
 	(label "nOCS1"
-		(at 143.51 146.05 0)
+		(at 149.86 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "05f2859d-2820-4e84-b395-696011feb13b")
 	)
@@ -6364,6 +6308,26 @@
 			(justify left bottom)
 		)
 		(uuid "07532b13-aa89-4e69-b929-517f2e35593e")
+	)
+	(label "USBF_P"
+		(at 304.8 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "07cb46c7-0a3c-43a3-9c96-d21bafb2fea5")
+	)
+	(label "USBD_N"
+		(at 299.72 161.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "250bbf4d-45a5-43ef-ba53-b0aa305471c5")
 	)
 	(label "HD2_P"
 		(at 209.55 151.13 0)
@@ -6396,32 +6360,32 @@
 		(uuid "283c990c-ae5a-4e41-a3ad-b40ca29fe90e")
 	)
 	(label "HD1_N"
-		(at 143.51 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2a1de22d-6451-488d-af77-0bf8841bd695")
-	)
-	(label "HD4_P"
-		(at 176.53 262.89 180)
+		(at 149.86 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "2a519fae-5f93-4077-9ced-d4c5d6ae6019")
+		(uuid "2a1de22d-6451-488d-af77-0bf8841bd695")
 	)
-	(label "nOCS1"
-		(at 121.92 256.54 0)
+	(label "HD4_P"
+		(at 171.45 262.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "2a519fae-5f93-4077-9ced-d4c5d6ae6019")
+	)
+	(label "nOCS1"
+		(at 128.27 256.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "49575217-40b0-4890-8acf-12982cca52b5")
 	)
@@ -6446,7 +6410,7 @@
 		(uuid "4aa97874-2fd2-414c-b381-9420384c2fd8")
 	)
 	(label "PWR1"
-		(at 148.59 143.51 180)
+		(at 149.86 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6455,13 +6419,33 @@
 		)
 		(uuid "4b1fce17-dec7-457e-ba3b-a77604e77dc9")
 	)
-	(label "nOCS1"
-		(at 143.51 158.75 0)
+	(label "USBD_P"
+		(at 299.72 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e5263d0-8998-419b-b5d0-041b6bc8c512")
+	)
+	(label "USBF_P"
+		(at 256.54 166.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "55f922f7-4f91-4cdf-85c7-1ee32adb4e94")
+	)
+	(label "nOCS1"
+		(at 149.86 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "576f00e6-a1be-45d3-9b93-e26d9e0fe306")
 	)
@@ -6475,6 +6459,16 @@
 		)
 		(uuid "5889287d-b845-4684-b23e-663811b25d27")
 	)
+	(label "USBF_N"
+		(at 304.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "58b07875-c36b-4c7a-960c-a09c97fe5d3c")
+	)
 	(label "USBD_N"
 		(at 88.9 62.23 0)
 		(effects
@@ -6486,14 +6480,24 @@
 		(uuid "6ac3ab53-7523-4805-bfd2-5de19dff127e")
 	)
 	(label "HD2_P"
-		(at 143.51 153.67 0)
+		(at 149.86 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "713e0777-58b2-4487-baca-60d0ebed27c3")
+	)
+	(label "nEXTRST"
+		(at 57.15 27.94 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "74a61e92-fec8-4ec7-a6f3-7d1835e77b5f")
 	)
 	(label "HD1_P"
 		(at 165.1 165.1 180)
@@ -6525,23 +6529,43 @@
 		)
 		(uuid "7bfa5cb3-aae1-4150-a62c-2b5782e958df")
 	)
+	(label "USBF_N"
+		(at 256.54 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cf4de23-3999-456c-aeeb-86d01fc7f352")
+	)
 	(label "HD4_N"
-		(at 176.53 260.35 180)
+		(at 171.45 260.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94396caf-bcee-4c3f-b7dc-22094890a47e")
+	)
+	(label "nEXTRST"
+		(at 41.91 151.13 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "94396caf-bcee-4c3f-b7dc-22094890a47e")
+		(uuid "974f3a1e-254e-4f47-94a8-4438703791bc")
 	)
 	(label "HD4_P"
-		(at 143.51 179.07 0)
+		(at 149.86 179.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "9881d349-3da4-4be4-9803-99db348e03a7")
 	)
@@ -6556,32 +6580,32 @@
 		(uuid "a07b6b2b-7179-4297-b163-5e47ffbe76d3")
 	)
 	(label "HD3_P"
-		(at 143.51 166.37 0)
+		(at 149.86 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "a0dee8e6-f88a-4f05-aba0-bab3aafdf2bc")
 	)
 	(label "HD3_P"
-		(at 261.62 83.82 0)
+		(at 266.7 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "a858886d-f019-4dcc-9e0f-74788278bc4e")
 	)
 	(label "HD2_N"
-		(at 143.51 151.13 0)
+		(at 149.86 151.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "a8fb8ee0-623f-4870-a716-ecc88f37ef9a")
 	)
@@ -6616,22 +6640,22 @@
 		(uuid "d1a9be32-38ba-44e6-bc35-f031541ab1fe")
 	)
 	(label "nOCS1"
-		(at 143.51 184.15 0)
+		(at 149.86 184.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d66d3c12-11ce-4566-9a45-962e329503d8")
 	)
 	(label "nOCS1"
-		(at 143.51 171.45 0)
+		(at 149.86 171.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d7e5a060-eb57-4238-9312-26bc885fc97d")
 	)
@@ -6666,66 +6690,44 @@
 		(uuid "edfa64c0-17f7-4191-ae98-415ec8e03f1f")
 	)
 	(label "HD4_N"
-		(at 143.51 176.53 0)
+		(at 149.86 176.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "eede9403-49c4-481b-9cd9-0e3d52a4d782")
 	)
 	(label "HD3_N"
-		(at 143.51 163.83 0)
+		(at 149.86 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f19c9655-8ddb-411a-96dd-bd986870c3c6")
 	)
 	(label "HD1_P"
-		(at 143.51 140.97 0)
+		(at 149.86 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f3044f68-903d-4063-b253-30d8e3a83eae")
 	)
 	(label "HD3_N"
-		(at 261.62 86.36 0)
+		(at 266.7 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f75a664f-7382-4852-b7ea-8fd1f19f7338")
-	)
-	(global_label "TPA_ON"
-		(shape input)
-		(at 182.88 252.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1e9feb92-d776-4aa6-94e5-10ed7f2282c9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.8449 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "USB_5V"
 		(shape input)
@@ -6826,17 +6828,6 @@
 		)
 		(uuid "2e0a9f64-1b78-4597-8d50-d12d2268a95a")
 	)
-	(hierarchical_label "nEXTRST"
-		(shape input)
-		(at 57.15 27.94 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "482fe498-2c3c-4bf1-a413-6d16f8895ee2")
-	)
 	(hierarchical_label "USB2_P"
 		(shape bidirectional)
 		(at 35.56 78.74 180)
@@ -6872,7 +6863,7 @@
 	)
 	(hierarchical_label "+3.3v"
 		(shape input)
-		(at 224.155 83.82 180)
+		(at 223.52 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6880,17 +6871,6 @@
 			(justify right)
 		)
 		(uuid "de0a5cb9-ecf5-4a49-a0ee-cf2756476c73")
-	)
-	(hierarchical_label "nEXTRST"
-		(shape input)
-		(at 41.91 151.13 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e0c7ddff-8c90-465f-be62-21fb49b059fa")
 	)
 	(symbol
 		(lib_id "CM4IO:USB_67298-4090")
@@ -6900,26 +6880,25 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d252475")
-		(property "Reference" "J12"
-			(at 224.155 179.07 0)
+		(property "Reference" "J13"
+			(at 228.5365 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "690-008-221-904"
-			(at 215.9 182.245 0)
+			(at 228.5365 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "psu:MOLEX_USB_67298-4090"
+		(property "Footprint" "panel:MOLEX_USB_67298-4090"
 			(at 226.06 161.29 0)
 			(effects
 				(font
@@ -6948,57 +6927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 226.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Field5" "2751688"
-			(at 226.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Field6" "None"
-			(at 226.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Molex"
-			(at 226.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Field8" "None"
-			(at 226.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "USB-A (USB TYPE-A), Stacked Receptacle Connector 8 Position Through Hole, Right Angle"
+		(property "Cikkszám" "100.491.17"
 			(at 226.06 161.29 0)
 			(effects
 				(font
@@ -7007,16 +6936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 226.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049117.html"
 			(at 226.06 161.29 0)
 			(effects
 				(font
@@ -7064,7 +6984,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "J12")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -7078,9 +6998,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d417c1b")
-		(property "Reference" "R19"
-			(at 50.038 61.0616 0)
+		(property "Reference" "R30"
+			(at 50.8 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7088,8 +7009,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2K 1%"
-			(at 50.038 63.373 0)
+		(property "Value" "2.2K"
+			(at 50.8 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7124,7 +7045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.406.77"
 			(at 48.26 62.23 0)
 			(effects
 				(font
@@ -7133,61 +7054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10040677.html"
 			(at 48.26 62.23 0)
 			(effects
 				(font
@@ -7205,7 +7072,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R19")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -7219,8 +7086,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d4c03f8")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR078"
 			(at 83.82 266.7 0)
 			(effects
 				(font
@@ -7230,7 +7098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.947 264.7442 0)
+			(at 83.82 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7270,7 +7138,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR084")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -7284,8 +7152,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d55749c")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR067"
 			(at 217.17 162.56 0)
 			(effects
 				(font
@@ -7295,7 +7164,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.297 160.6042 0)
+			(at 217.17 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7335,7 +7204,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR073")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -7349,8 +7218,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d5574a2")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR069"
 			(at 217.17 179.07 0)
 			(effects
 				(font
@@ -7360,7 +7230,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.297 177.1142 0)
+			(at 217.17 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7400,7 +7270,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR075")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -7414,9 +7284,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d615d09")
-		(property "Reference" "R21"
-			(at 34.925 87.63 0)
+		(property "Reference" "R32"
+			(at 43.18 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7424,8 +7295,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2K 1%"
-			(at 31.115 90.17 0)
+		(property "Value" "10K"
+			(at 43.18 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7460,7 +7331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.011.45"
 			(at 40.64 88.9 0)
 			(effects
 				(font
@@ -7469,61 +7340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
 			(at 40.64 88.9 0)
 			(effects
 				(font
@@ -7541,7 +7358,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R21")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -7555,9 +7372,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005da5464e")
 		(property "Reference" "U13"
-			(at 113.665 244.729 0)
+			(at 113.665 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7565,7 +7383,7 @@
 			)
 		)
 		(property "Value" "AP22653W6"
-			(at 113.665 247.0404 0)
+			(at 113.665 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7599,7 +7417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Digikey"
+		(property "Cikkszám" "100.460.82"
 			(at 114.3 254 0)
 			(effects
 				(font
@@ -7608,52 +7426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "AP2553W6-7DICT-ND"
-			(at 114.3 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "AP22653W6"
-			(at 114.3 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Diodes"
-			(at 114.3 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "	Power Switch/Driver 1:1 P-Channel 2.1A SOT-23-6"
-			(at 114.3 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 114.3 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10046082.html"
 			(at 114.3 254 0)
 			(effects
 				(font
@@ -7697,21 +7470,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005da5fde6")
 		(property "Reference" "U11"
-			(at 87.63 124.46 0)
+			(at 113.9033 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "USB2514B-I/M2"
-			(at 95.25 201.93 0)
+			(at 113.9033 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-36-1EP_6x6mm_P0.5mm_EP3.7x3.7mm"
@@ -7741,7 +7517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.491.01"
 			(at 111.76 161.29 0)
 			(effects
 				(font
@@ -7750,61 +7526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "2775060"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "USB2514B-I/M2"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Microchip"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "	USB Hub Controller USB Interface 36-SQFN (6x6)"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "UICC00931"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049101.html"
 			(at 111.76 161.29 0)
 			(effects
 				(font
@@ -7941,8 +7663,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005dab10d9")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR068"
 			(at 68.58 166.37 0)
 			(effects
 				(font
@@ -7952,7 +7675,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.707 164.4142 0)
+			(at 68.58 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7992,7 +7715,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR074")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -8006,8 +7729,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005dafd9c4")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR079"
 			(at 95.25 267.97 0)
 			(effects
 				(font
@@ -8017,7 +7741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.377 266.0142 0)
+			(at 95.25 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8057,7 +7781,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR085")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -8071,23 +7795,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db233ef")
-		(property "Reference" "R27"
-			(at 67.945 197.485 90)
+		(property "Reference" "R38"
+			(at 69.85 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "36K 1%"
-			(at 69.85 198.755 90)
+		(property "Value" "36K"
+			(at 69.85 196.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -8117,52 +7842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 72.39 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "1458788"
-			(at 72.39 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 72.39 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "MCR01MZPF3602"
-			(at 72.39 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 36K M1005 1% 63mW"
-			(at 72.39 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.491.04"
 			(at 72.39 195.58 90)
 			(effects
 				(font
@@ -8171,7 +7851,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049104.html"
 			(at 72.39 195.58 90)
 			(effects
 				(font
@@ -8189,7 +7869,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R27")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -8203,23 +7883,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db23686")
-		(property "Reference" "R26"
-			(at 60.325 197.485 90)
+		(property "Reference" "R37"
+			(at 62.23 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "36K 1%"
-			(at 62.23 198.755 90)
+		(property "Value" "36K"
+			(at 62.23 196.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -8249,52 +7930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 64.77 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "1458788"
-			(at 64.77 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 64.77 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "MCR01MZPF3602"
-			(at 64.77 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 36K M1005 1% 63mW"
-			(at 64.77 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.491.04"
 			(at 64.77 195.58 90)
 			(effects
 				(font
@@ -8303,7 +7939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049104.html"
 			(at 64.77 195.58 90)
 			(effects
 				(font
@@ -8321,7 +7957,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R26")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -8335,23 +7971,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db23a6d")
-		(property "Reference" "R25"
-			(at 52.705 197.485 90)
+		(property "Reference" "R36"
+			(at 54.61 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "36K 1%"
-			(at 54.61 198.755 90)
+		(property "Value" "36K"
+			(at 54.61 196.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -8381,52 +8018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 57.15 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "1458788"
-			(at 57.15 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 57.15 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "MCR01MZPF3602"
-			(at 57.15 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 36K M1005 1% 63mW"
-			(at 57.15 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.491.04"
 			(at 57.15 195.58 90)
 			(effects
 				(font
@@ -8435,7 +8027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049104.html"
 			(at 57.15 195.58 90)
 			(effects
 				(font
@@ -8453,7 +8045,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R25")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -8467,8 +8059,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db36104")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR072"
 			(at 57.15 208.28 0)
 			(effects
 				(font
@@ -8478,7 +8071,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.277 206.3242 0)
+			(at 57.15 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8518,7 +8111,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR078")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -8532,8 +8125,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db3990f")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR073"
 			(at 64.77 208.28 0)
 			(effects
 				(font
@@ -8543,7 +8137,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.897 206.3242 0)
+			(at 64.77 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8583,7 +8177,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR079")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -8597,8 +8191,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db3d1df")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR074"
 			(at 72.39 208.28 0)
 			(effects
 				(font
@@ -8608,7 +8203,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.517 206.3242 0)
+			(at 72.39 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8648,7 +8243,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR080")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -8662,8 +8257,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db40afb")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR075"
 			(at 80.01 208.28 0)
 			(effects
 				(font
@@ -8673,7 +8269,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.137 206.3242 0)
+			(at 80.01 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8713,7 +8309,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR081")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -8727,23 +8323,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db53e31")
-		(property "Reference" "R29"
-			(at 137.16 250.19 90)
+		(property "Reference" "R40"
+			(at 133.35 257.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "15K 1%"
-			(at 133.35 250.19 90)
+		(property "Value" "15K"
+			(at 133.35 260.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -8773,61 +8368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 133.35 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "9239375"
-			(at 133.35 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "MCR01MZPF1502"
-			(at 133.35 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 133.35 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 15K M1005 1% 63mW"
-			(at 133.35 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120891581"
-			(at 133.35 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.437.82"
 			(at 133.35 254 90)
 			(effects
 				(font
@@ -8836,7 +8377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10043782.html"
 			(at 133.35 254 90)
 			(effects
 				(font
@@ -8854,7 +8395,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R29")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -8868,8 +8409,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db61f2b")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR080"
 			(at 137.16 267.97 0)
 			(effects
 				(font
@@ -8879,7 +8421,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.287 266.0142 0)
+			(at 137.16 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8919,7 +8461,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR086")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -8933,8 +8475,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005dc24f31")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR070"
 			(at 238.76 182.88 0)
 			(effects
 				(font
@@ -8944,7 +8487,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 238.887 180.9242 0)
+			(at 238.76 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8984,7 +8527,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR076")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -8999,9 +8542,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e09b996")
 		(property "Reference" "U8"
-			(at 60.96 65.659 0)
+			(at 60.96 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9009,7 +8553,7 @@
 			)
 		)
 		(property "Value" "FSUSB42MUX"
-			(at 60.96 67.9704 0)
+			(at 60.96 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9043,7 +8587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.491.19"
 			(at 59.69 88.9 0)
 			(effects
 				(font
@@ -9052,52 +8596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "2564479"
-			(at 59.69 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "FSUSB42MUX"
-			(at 59.69 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Onsemi"
-			(at 59.69 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "USB Switch IC 1 Channel 10-MSOP"
-			(at 59.69 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 59.69 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049119.html"
 			(at 59.69 88.9 0)
 			(effects
 				(font
@@ -9153,8 +8652,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e09b9bf")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR076"
 			(at 111.76 208.28 0)
 			(effects
 				(font
@@ -9164,7 +8664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.887 206.3242 0)
+			(at 111.76 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9204,7 +8704,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR082")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -9218,8 +8718,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e0b53d9")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR061"
 			(at 50.8 97.79 0)
 			(effects
 				(font
@@ -9229,7 +8730,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.927 95.8342 0)
+			(at 50.8 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9269,7 +8770,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR067")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -9283,8 +8784,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e0e65c5")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR062"
 			(at 40.64 99.06 0)
 			(effects
 				(font
@@ -9294,7 +8796,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.767 97.1042 0)
+			(at 40.64 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9334,7 +8836,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR068")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -9348,23 +8850,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e39366c")
-		(property "Reference" "R24"
-			(at 78.74 156.21 90)
+		(property "Reference" "R35"
+			(at 74.93 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "12K 1%"
-			(at 74.93 156.21 90)
+		(property "Value" "12K"
+			(at 74.93 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -9394,52 +8895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 74.93 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "9239367"
-			(at 74.93 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 74.93 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "MCR01MZPF1202"
-			(at 74.93 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 12K M1005 1% 63mW"
-			(at 74.93 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.011.48"
 			(at 74.93 158.75 90)
 			(effects
 				(font
@@ -9448,7 +8904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001148.html"
 			(at 74.93 158.75 90)
 			(effects
 				(font
@@ -9466,7 +8922,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R24")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -9480,23 +8936,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e39eaf3")
-		(property "Reference" "R28"
-			(at 75.565 197.485 90)
+		(property "Reference" "R39"
+			(at 77.47 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "36K 1%"
-			(at 77.47 198.755 90)
+		(property "Value" "36K"
+			(at 77.47 196.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -9526,52 +8983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 80.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" "1458788"
-			(at 80.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 80.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "MCR01MZPF3602"
-			(at 80.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 36K M1005 1% 63mW"
-			(at 80.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.491.04"
 			(at 80.01 195.58 90)
 			(effects
 				(font
@@ -9580,7 +8992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049104.html"
 			(at 80.01 195.58 90)
 			(effects
 				(font
@@ -9598,7 +9010,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R28")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -9612,9 +9024,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e3c5b00")
 		(property "Reference" "Y1"
-			(at 36.83 169.545 0)
+			(at 36.83 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9622,7 +9035,7 @@
 			)
 		)
 		(property "Value" "24MHz"
-			(at 36.83 171.45 0)
+			(at 36.83 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9656,7 +9069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.370.19"
 			(at 36.83 175.26 0)
 			(effects
 				(font
@@ -9665,52 +9078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "2508493"
-			(at 36.83 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "AEL"
-			(at 36.83 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "X24M000000S128"
-			(at 36.83 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "24MHz Crystal 18pf 30ppm 30ppm"
-			(at 36.83 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 36.83 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10037019.html"
 			(at 36.83 175.26 0)
 			(effects
 				(font
@@ -9742,23 +9110,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e3c619a")
-		(property "Reference" "C16"
-			(at 28.321 179.1716 0)
+		(property "Reference" "C22"
+			(at 21.59 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "22pf"
-			(at 28.321 181.483 0)
+			(at 21.59 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -9788,7 +9157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field8" "UCAP00738 "
+		(property "Cikkszám" "100.011.31"
 			(at 25.4 180.34 0)
 			(effects
 				(font
@@ -9797,61 +9166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "490-17672-1-ND"
-			(at 25.4 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "GJM1555C1H270JB01D"
-			(at 25.4 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Murata"
-			(at 25.4 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "	27pF 5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
-			(at 25.4 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field4" "Digikey"
-			(at 25.4 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 25.4 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001131.html"
 			(at 25.4 180.34 0)
 			(effects
 				(font
@@ -9869,7 +9184,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C16")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -9883,9 +9198,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e3c68c5")
-		(property "Reference" "C17"
-			(at 48.641 179.1716 0)
+		(property "Reference" "C23"
+			(at 49.53 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9894,7 +9210,7 @@
 			)
 		)
 		(property "Value" "22pf"
-			(at 48.641 181.483 0)
+			(at 49.53 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9929,7 +9245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field8" "UCAP00738 "
+		(property "Cikkszám" "100.011.31"
 			(at 45.72 180.34 0)
 			(effects
 				(font
@@ -9938,61 +9254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "490-17672-1-ND"
-			(at 45.72 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "GJM1555C1H270JB01D"
-			(at 45.72 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Murata"
-			(at 45.72 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "	27pF 5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
-			(at 45.72 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field4" "Digikey"
-			(at 45.72 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 45.72 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001131.html"
 			(at 45.72 180.34 0)
 			(effects
 				(font
@@ -10010,7 +9272,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C17")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -10024,8 +9286,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e3d5697")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR071"
 			(at 35.56 193.04 0)
 			(effects
 				(font
@@ -10035,7 +9298,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.687 191.0842 0)
+			(at 35.56 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10075,7 +9338,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR077")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -10083,15 +9346,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 141.478 261.62 0)
+		(at 142.24 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e9b65ca")
-		(property "Reference" "#PWR087"
-			(at 141.478 267.97 0)
+		(property "Reference" "#PWR081"
+			(at 142.24 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10100,7 +9364,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 141.605 266.0142 0)
+			(at 142.24 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10108,7 +9372,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 141.478 261.62 0)
+			(at 142.24 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10117,7 +9381,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 141.478 261.62 0)
+			(at 142.24 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10126,7 +9390,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 141.478 261.62 0)
+			(at 142.24 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10140,7 +9404,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR087")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -10154,9 +9418,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005eaee6a6")
-		(property "Reference" "C23"
-			(at 86.741 255.3716 0)
+		(property "Reference" "C29"
+			(at 87.63 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10164,8 +9429,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 86.741 257.683 0)
+		(property "Value" "10uF"
+			(at 87.63 257.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10200,7 +9465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "490-14381-1-ND"
+		(property "Cikkszám" "100.230.37"
 			(at 83.82 256.54 0)
 			(effects
 				(font
@@ -10209,61 +9474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Digikey"
-			(at 83.82 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "GRM21BR71A106KA73L"
-			(at 83.82 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Murata"
-			(at 83.82 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "	10uF 10% 10V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 83.82 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "111893011"
-			(at 83.82 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 83.82 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10023037.html"
 			(at 83.82 256.54 0)
 			(effects
 				(font
@@ -10281,7 +9492,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C23")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -10289,15 +9500,16 @@
 	)
 	(symbol
 		(lib_id "Device:CP")
-		(at 141.478 257.81 0)
+		(at 142.24 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005eb197aa")
-		(property "Reference" "C24"
-			(at 144.4752 256.667 0)
+		(property "Reference" "C30"
+			(at 145.542 255.6509 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10306,7 +9518,7 @@
 			)
 		)
 		(property "Value" "470uF"
-			(at 144.4752 258.953 0)
+			(at 145.542 258.1909 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10315,7 +9527,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
-			(at 142.4432 261.62 0)
+			(at 143.2052 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10324,7 +9536,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 141.478 257.81 0)
+			(at 142.24 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10333,7 +9545,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 141.478 257.81 0)
+			(at 142.24 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10341,8 +9553,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Mouser"
-			(at 141.478 257.81 0)
+		(property "Cikkszám" "100.392.15"
+			(at 142.24 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10350,35 +9562,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "667-EEF-CX0J101R"
-			(at 141.478 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Capacitor, SP-Cap, 100u, 6.3V, 15mR ESR"
-			(at 141.478 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 141.478 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 141.478 257.81 0)
+		(property "Link" "https://www.hestore.hu/prod_10039215.html"
+			(at 142.24 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10395,7 +9580,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C24")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -10410,8 +9595,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "019add24-7623-4030-bd80-c440d0eeddea")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR060"
 			(at 360.68 96.52 0)
 			(effects
 				(font
@@ -10421,7 +9607,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 360.553 94.5642 0)
+			(at 360.68 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10461,7 +9647,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR066")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -10472,12 +9658,12 @@
 		(at 138.43 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "066b89c6-f3b1-4959-9d68-896f54a1dba9")
-		(property "Reference" "TP35"
+		(property "Reference" "TP8"
 			(at 140.97 243.0779 0)
 			(effects
 				(font
@@ -10522,7 +9708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "-"
 			(at 138.43 247.65 0)
 			(effects
 				(font
@@ -10531,7 +9717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "-"
 			(at 138.43 247.65 0)
 			(effects
 				(font
@@ -10546,7 +9732,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "TP35")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -10560,8 +9746,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0c04185d-0e6a-4892-bc88-dc03fd5ebeb5")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR053"
 			(at 67.31 31.75 0)
 			(effects
 				(font
@@ -10571,11 +9758,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.2658 31.877 0)
+			(at 69.85 31.7499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -10611,7 +9799,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR059")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -10625,8 +9813,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "15651add-ee06-4b02-8ec0-04f8fc8794c1")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR056"
 			(at 295.91 52.07 0)
 			(effects
 				(font
@@ -10636,11 +9825,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 297.8658 52.197 0)
+			(at 298.45 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -10676,7 +9866,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR062")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -10692,7 +9882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27a536f6-84b1-47de-995d-375361a7cc33")
-		(property "Reference" "C21"
+		(property "Reference" "C27"
 			(at 344.17 223.5199 0)
 			(effects
 				(font
@@ -10737,7 +9927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.277.53"
 			(at 340.36 224.79 0)
 			(effects
 				(font
@@ -10746,7 +9936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
 			(at 340.36 224.79 0)
 			(effects
 				(font
@@ -10764,7 +9954,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C21")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -10780,7 +9970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2babfe8d-1ef6-4eae-a9b6-3a6d7d83a706")
-		(property "Reference" "C19"
+		(property "Reference" "C25"
 			(at 320.04 223.5199 0)
 			(effects
 				(font
@@ -10825,7 +10015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.277.53"
 			(at 316.23 224.79 0)
 			(effects
 				(font
@@ -10834,7 +10024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
 			(at 316.23 224.79 0)
 			(effects
 				(font
@@ -10852,7 +10042,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C19")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -10866,8 +10056,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "2d9a28df-5a1b-4437-a423-f1758a23f318")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR055"
 			(at 68.58 44.45 0)
 			(effects
 				(font
@@ -10877,11 +10068,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 70.5358 44.577 0)
+			(at 71.12 44.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -10917,7 +10109,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR061")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -10931,23 +10123,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "2d9d2368-77a6-4f86-844e-6c4f984274ea")
-		(property "Reference" "R16"
-			(at 303.53 45.085 0)
+		(property "Reference" "R27"
+			(at 304.8 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "5.1K 1%"
-			(at 306.07 48.895 0)
+		(property "Value" "5.1K"
+			(at 304.8 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -10977,7 +10168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.013.49"
 			(at 304.8 39.37 0)
 			(effects
 				(font
@@ -10986,61 +10177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 304.8 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 304.8 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 304.8 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 304.8 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 304.8 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 304.8 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001349.html"
 			(at 304.8 39.37 0)
 			(effects
 				(font
@@ -11058,7 +10195,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R16")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -11073,21 +10210,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "327e2c55-1b8a-4941-9354-a9d369f88b21")
-		(property "Reference" "J10"
-			(at 125.73 36.83 0)
+		(property "Reference" "J11"
+			(at 137.16 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 125.73 39.37 0)
+			(at 137.16 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G"
@@ -11117,7 +10257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.469.70"
 			(at 125.73 59.69 0)
 			(effects
 				(font
@@ -11126,7 +10266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10046970.html"
 			(at 125.73 59.69 0)
 			(effects
 				(font
@@ -11189,7 +10329,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "J10")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -11205,7 +10345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3319a9f4-c434-44a4-a3e6-0c1209945c85")
-		(property "Reference" "CT3"
+		(property "Reference" "CT5"
 			(at 369.57 222.9738 0)
 			(effects
 				(font
@@ -11214,7 +10354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uf"
+		(property "Value" "100uF"
 			(at 369.57 225.5138 0)
 			(effects
 				(font
@@ -11250,7 +10390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.286.19"
 			(at 367.03 224.79 0)
 			(effects
 				(font
@@ -11259,7 +10399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10028619.html"
 			(at 367.03 224.79 0)
 			(effects
 				(font
@@ -11277,7 +10417,73 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "CT3")
+					(reference "CT5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c3b8a76-2dec-4795-bdef-8887846ea4f6")
+		(property "Reference" "#PWR0163"
+			(at 177.8 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e859ac0f-c82b-4c2b-b9a9-1cd6e8a2e12a")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
@@ -11291,8 +10497,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "3da8afe4-a4d4-4d6a-bcad-3721f1930cb1")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR054"
 			(at 294.64 39.37 0)
 			(effects
 				(font
@@ -11302,11 +10509,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 296.5958 39.497 0)
+			(at 297.18 39.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -11342,7 +10550,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR060")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11356,23 +10564,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4aa623be-cfe8-4352-b4a3-ec6db5a11bdb")
-		(property "Reference" "R17"
-			(at 77.47 50.165 0)
+		(property "Reference" "R28"
+			(at 78.74 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "5.1K 1%"
-			(at 80.01 53.975 0)
+		(property "Value" "5.1K"
+			(at 78.74 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -11402,7 +10609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.013.49"
 			(at 78.74 44.45 0)
 			(effects
 				(font
@@ -11411,61 +10618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 78.74 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 78.74 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 78.74 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 78.74 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 78.74 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 78.74 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001349.html"
 			(at 78.74 44.45 0)
 			(effects
 				(font
@@ -11483,7 +10636,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R17")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -11491,16 +10644,17 @@
 	)
 	(symbol
 		(lib_id "CM4IO:FSUSB42MX")
-		(at 243.84 100.33 0)
+		(at 245.11 100.33 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "58148cc5-ea1e-4b89-90ab-eac737cbf8f9")
 		(property "Reference" "U10"
-			(at 245.11 77.089 0)
+			(at 246.38 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11508,7 +10662,7 @@
 			)
 		)
 		(property "Value" "FSUSB42MUX"
-			(at 245.11 79.4004 0)
+			(at 246.38 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11516,7 +10670,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:MSOP-10_3x3mm_P0.5mm"
-			(at 243.84 100.33 0)
+			(at 245.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11525,7 +10679,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF"
-			(at 243.84 100.33 0)
+			(at 245.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11534,7 +10688,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.84 100.33 0)
+			(at 245.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11542,8 +10696,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 243.84 100.33 0)
+		(property "Cikkszám" "100.491.19"
+			(at 245.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11551,53 +10705,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "2564479"
-			(at 243.84 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "FSUSB42MUX"
-			(at 243.84 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Onsemi"
-			(at 243.84 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "USB Switch IC 1 Channel 10-MSOP"
-			(at 243.84 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 243.84 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 243.84 100.33 0)
+		(property "Link" "https://www.hestore.hu/prod_10049119.html"
+			(at 245.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11652,9 +10761,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "5a20db1c-9498-4f2a-8e1b-8c0cbdc662fc")
 		(property "Reference" "U12"
-			(at 177.8 174.4218 0)
+			(at 177.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11662,7 +10772,7 @@
 			)
 		)
 		(property "Value" "TPD4EUSB30"
-			(at 177.8 172.1104 0)
+			(at 177.8 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11696,7 +10806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.490.99"
 			(at 177.8 162.56 0)
 			(effects
 				(font
@@ -11705,61 +10815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "2335455"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "CDDFN10-3324P-13"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Bourns"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "UDIO00346"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Quad TVS diode for high speed signals (USB3, GigE etc.)"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10049099.html"
 			(at 177.8 162.56 0)
 			(effects
 				(font
@@ -11817,7 +10873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b3920df-4a16-4ded-a3bd-ba94cd7f88c3")
-		(property "Reference" "C18"
+		(property "Reference" "C24"
 			(at 308.61 223.5199 0)
 			(effects
 				(font
@@ -11862,7 +10918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.277.53"
 			(at 304.8 224.79 0)
 			(effects
 				(font
@@ -11871,7 +10927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
 			(at 304.8 224.79 0)
 			(effects
 				(font
@@ -11889,7 +10945,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C18")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -11897,15 +10953,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 104.14 0)
+		(at 236.22 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "6278910a-74b4-4a21-b6bf-6715c1254a6b")
-		(property "Reference" "#PWR071"
-			(at 234.95 110.49 0)
+		(property "Reference" "#PWR065"
+			(at 236.22 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11914,7 +10971,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 235.077 108.5342 0)
+			(at 236.22 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11922,7 +10979,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 104.14 0)
+			(at 236.22 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11931,7 +10988,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 104.14 0)
+			(at 236.22 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11940,7 +10997,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 104.14 0)
+			(at 236.22 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11954,7 +11011,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR071")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -11968,8 +11025,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "74cc45a3-68ac-4ff2-b321-71e88908f25e")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR066"
 			(at 19.05 151.13 0)
 			(effects
 				(font
@@ -11979,11 +11037,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 21.0058 151.257 0)
+			(at 21.59 151.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -12019,7 +11078,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR072")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -12027,15 +11086,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 93.98 270)
+		(at 278.13 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7d5b68e4-50af-4f7f-af4f-7516ecec77bd")
-		(property "Reference" "#PWR069"
-			(at 85.09 93.98 0)
+		(property "Reference" "#PWR063"
+			(at 278.13 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12044,7 +11104,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.0458 94.107 0)
+			(at 278.13 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12052,7 +11112,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 93.98 0)
+			(at 278.13 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12061,7 +11121,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 93.98 0)
+			(at 278.13 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12070,7 +11130,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 93.98 0)
+			(at 278.13 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12084,7 +11144,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR069")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -12099,8 +11159,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7e5e361c-5472-44d8-8767-c54412cf8031")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR059"
 			(at 353.06 96.52 0)
 			(effects
 				(font
@@ -12110,7 +11171,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 352.933 94.5642 0)
+			(at 353.06 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12150,7 +11211,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR065")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -12164,23 +11225,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "81fb644c-c884-46c3-9448-daf260e9c568")
-		(property "Reference" "R15"
-			(at 76.2 37.465 0)
+		(property "Reference" "R26"
+			(at 77.47 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "5.1K 1%"
-			(at 78.74 41.275 0)
+		(property "Value" "5.1K"
+			(at 77.47 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -12210,7 +11270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.013.49"
 			(at 77.47 31.75 0)
 			(effects
 				(font
@@ -12219,61 +11279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 77.47 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 77.47 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 77.47 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 77.47 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 77.47 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 77.47 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001349.html"
 			(at 77.47 31.75 0)
 			(effects
 				(font
@@ -12291,7 +11297,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R15")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -12306,8 +11312,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "84246832-e726-4ae5-bf6c-1b53799dabb9")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR058"
 			(at 133.35 88.9 0)
 			(effects
 				(font
@@ -12317,7 +11324,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.223 86.9442 0)
+			(at 133.35 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12357,7 +11364,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR064")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -12372,21 +11379,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9a7efb67-7dea-4e1e-9959-8f67db8fcae3")
-		(property "Reference" "J11"
-			(at 353.06 44.45 0)
+		(property "Reference" "J12"
+			(at 364.49 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 353.06 46.99 0)
+			(at 364.49 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G"
@@ -12416,7 +11426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.469.70"
 			(at 353.06 67.31 0)
 			(effects
 				(font
@@ -12425,7 +11435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10046970.html"
 			(at 353.06 67.31 0)
 			(effects
 				(font
@@ -12488,7 +11498,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "J11")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -12504,7 +11514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6525a29-db79-4238-ab1f-eefd80a61d12")
-		(property "Reference" "C20"
+		(property "Reference" "C26"
 			(at 332.74 223.5199 0)
 			(effects
 				(font
@@ -12549,7 +11559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.277.53"
 			(at 328.93 224.79 0)
 			(effects
 				(font
@@ -12558,7 +11568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
 			(at 328.93 224.79 0)
 			(effects
 				(font
@@ -12576,7 +11586,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C20")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -12584,15 +11594,16 @@
 	)
 	(symbol
 		(lib_id "CM4IO:TPD4EUSB30")
-		(at 104.14 93.98 270)
+		(at 278.13 163.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a7bbb0c1-9ba6-450f-891a-c7347873e1b3")
 		(property "Reference" "U9"
-			(at 116.0018 93.98 0)
+			(at 278.13 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12600,7 +11611,7 @@
 			)
 		)
 		(property "Value" "TPD4EUSB30"
-			(at 113.6904 93.98 0)
+			(at 278.13 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12608,7 +11619,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-			(at 93.98 69.85 0)
+			(at 302.26 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12617,7 +11628,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
-			(at 104.14 93.98 0)
+			(at 278.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12626,7 +11637,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.14 93.98 0)
+			(at 278.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12634,8 +11645,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 104.14 93.98 0)
+		(property "Cikkszám" "100.490.99"
+			(at 278.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12643,62 +11654,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "2335455"
-			(at 104.14 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "CDDFN10-3324P-13"
-			(at 104.14 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "Bourns"
-			(at 104.14 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "UDIO00346"
-			(at 104.14 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Quad TVS diode for high speed signals (USB3, GigE etc.)"
-			(at 104.14 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 104.14 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 104.14 93.98 0)
+		(property "Link" "https://www.hestore.hu/prod_10049099.html"
+			(at 278.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12747,33 +11704,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 230.505 73.66 0)
+		(at 229.87 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b30be61d-11e4-4ca5-984e-ac83adc8ade6")
-		(property "Reference" "R20"
-			(at 232.283 72.4916 0)
+		(property "Reference" "R31"
+			(at 227.965 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "2.2K 1%"
-			(at 232.283 74.803 0)
+		(property "Value" "2.2K"
+			(at 227.965 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 228.727 73.66 90)
+			(at 228.092 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12782,7 +11740,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 230.505 73.66 0)
+			(at 229.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12791,7 +11749,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 230.505 73.66 0)
+			(at 229.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12799,8 +11757,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 230.505 73.66 0)
+		(property "Cikkszám" "100.406.77"
+			(at 229.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12808,62 +11766,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 230.505 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 230.505 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 230.505 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 230.505 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 230.505 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 230.505 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 230.505 73.66 0)
+		(property "Link" "https://www.hestore.hu/prod_10040677.html"
+			(at 229.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12880,7 +11784,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R20")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -12894,8 +11798,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b43d55e0-4d7e-4911-8d9e-22e2cd8be4bc")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR077"
 			(at 367.03 237.49 0)
 			(effects
 				(font
@@ -12905,7 +11810,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 367.157 235.5342 0)
+			(at 367.03 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12945,7 +11850,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR083")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -12953,33 +11858,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 222.885 100.33 0)
+		(at 222.25 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b4dd6d56-8b36-46fd-ba55-8eb5ade1dfa3")
-		(property "Reference" "R22"
-			(at 217.17 99.06 0)
+		(property "Reference" "R33"
+			(at 220.345 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "2.2K 1%"
-			(at 213.36 101.6 0)
+		(property "Value" "10K"
+			(at 220.345 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 221.107 100.33 90)
+			(at 220.472 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12988,7 +11894,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.885 100.33 0)
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12997,7 +11903,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 222.885 100.33 0)
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13005,8 +11911,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
-			(at 222.885 100.33 0)
+		(property "Cikkszám" "100.011.45"
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13014,62 +11920,8 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 222.885 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 222.885 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 222.885 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 222.885 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 222.885 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 222.885 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 222.885 100.33 0)
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13086,7 +11938,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R22")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -13101,8 +11953,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "bb36eda2-15ad-4575-b4c1-492ae23f2c89")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR057"
 			(at 125.73 88.9 0)
 			(effects
 				(font
@@ -13112,7 +11965,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.603 86.9442 0)
+			(at 125.73 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13152,7 +12005,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR063")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -13168,7 +12021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4332cc9-2b47-4d64-a6f5-650ea468d189")
-		(property "Reference" "C22"
+		(property "Reference" "C28"
 			(at 356.87 223.5199 0)
 			(effects
 				(font
@@ -13213,7 +12066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.277.53"
 			(at 353.06 224.79 0)
 			(effects
 				(font
@@ -13222,7 +12075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10027753.html"
 			(at 353.06 224.79 0)
 			(effects
 				(font
@@ -13240,7 +12093,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C22")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -13256,7 +12109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eceff648-d797-4757-94b9-50691e961249")
-		(property "Reference" "R23"
+		(property "Reference" "R34"
 			(at 54.61 144.78 90)
 			(effects
 				(font
@@ -13264,7 +12117,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 54.61 147.32 90)
 			(effects
 				(font
@@ -13299,7 +12152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.011.45"
 			(at 54.61 151.13 90)
 			(effects
 				(font
@@ -13308,7 +12161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001145.html"
 			(at 54.61 151.13 90)
 			(effects
 				(font
@@ -13326,7 +12179,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R23")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -13342,7 +12195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f12f3580-d054-4693-aa32-9e0ac23c8df5")
-		(property "Reference" "C15"
+		(property "Reference" "C21"
 			(at 29.21 143.51 90)
 			(effects
 				(font
@@ -13385,7 +12238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Cikkszám" "100.011.22"
 			(at 29.21 151.13 90)
 			(effects
 				(font
@@ -13394,7 +12247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001122.html"
 			(at 29.21 151.13 90)
 			(effects
 				(font
@@ -13412,7 +12265,7 @@
 		(instances
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "C15")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -13426,23 +12279,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "f840ba90-c8d1-4454-9e6a-04e770b2fcd8")
-		(property "Reference" "R18"
-			(at 304.8 57.785 0)
+		(property "Reference" "R29"
+			(at 306.07 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "5.1K 1%"
-			(at 307.34 61.595 0)
+		(property "Value" "5.1K"
+			(at 306.07 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -13472,7 +12324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field4" "Farnell"
+		(property "Cikkszám" "100.013.49"
 			(at 306.07 52.07 0)
 			(effects
 				(font
@@ -13481,61 +12333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "9239278"
-			(at 306.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 306.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field6" "RK73G1ETQTP2201D         "
-			(at 306.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Description" "Resistor 2.2K M1005 1% 63mW"
-			(at 306.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field8" "120889581"
-			(at 306.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 306.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
+		(property "Link" "https://www.hestore.hu/prod_10001349.html"
 			(at 306.07 52.07 0)
 			(effects
 				(font
@@ -13553,7 +12351,7 @@
 		(instances
 			(project "CM5IO"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "R18")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -13561,15 +12359,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.885 104.14 0)
+		(at 222.25 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "fe787cd8-31ef-4a84-a54c-b2f8f0fc3d8d")
-		(property "Reference" "#PWR070"
-			(at 222.885 110.49 0)
+		(property "Reference" "#PWR064"
+			(at 222.25 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13578,7 +12377,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.012 108.5342 0)
+			(at 222.25 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13586,7 +12385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.885 104.14 0)
+			(at 222.25 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13595,7 +12394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.885 104.14 0)
+			(at 222.25 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13604,7 +12403,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.885 104.14 0)
+			(at 222.25 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13616,9 +12415,9 @@
 			(uuid "74180694-a6d6-4cff-932f-098f7f97360b")
 		)
 		(instances
-			(project "CM5IO"
+			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
-					(reference "#PWR070")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -13661,16 +12460,6 @@
 		(pin "5V in" input
 			(at 182.88 248.92 180)
 			(uuid "b4ddcdd4-1439-4797-aff9-e819a7d8ec3d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "TPA-ON" input
-			(at 182.88 252.73 180)
-			(uuid "e67f84de-cfc8-4647-8483-a5af89708441")
 			(effects
 				(font
 					(size 1.27 1.27)
