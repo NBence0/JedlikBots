@@ -6993,6 +6993,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+1V0"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+1V0"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V0\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+1V0_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V0_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -7095,20 +7220,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "USB 3 Pairs P/N swapped to help routing"
+	(text "Current Limit switch for USB 3.0"
 		(exclude_from_sim no)
-		(at 178.816 16.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "16b37671-e7db-4148-92fb-275bb14c3b4c")
-	)
-	(text "Current Limit switch"
-		(exclude_from_sim no)
-		(at 68.58 166.37 0)
+		(at 76.2 166.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7119,10 +7233,12 @@
 	)
 	(text "DSI/CSI Connectors"
 		(exclude_from_sim no)
-		(at 130.175 19.05 0)
+		(at 130.81 19.05 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
+				(thickness 0.4013)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
@@ -7130,7 +7246,7 @@
 	)
 	(text "Gyári kapcsolásban sincs használva a fault,\nnem probléma ha nem megy ugyis észreveszem"
 		(exclude_from_sim no)
-		(at 83.82 196.342 0)
+		(at 83.82 196.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7141,7 +7257,7 @@
 	)
 	(text "Stacked USB connectors"
 		(exclude_from_sim no)
-		(at 220.98 19.685 0)
+		(at 220.98 20.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7150,16 +7266,16 @@
 		)
 		(uuid "a2e2c994-919f-481f-891c-d52553f82aea")
 	)
-	(text "Current Limit switch"
+	(text "Current Limit switch for HDMI"
 		(exclude_from_sim no)
-		(at 68.58 166.37 0)
+		(at 217.678 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "c7aa973f-9a43-402a-907c-ceac197a1829")
+		(uuid "d2aaa28a-0b0f-4028-8920-69af8433a219")
 	)
 	(junction
 		(at 148.59 33.02)
@@ -7282,7 +7398,7 @@
 		(uuid "64256223-cf3b-4a78-97d3-f1dca769968f")
 	)
 	(junction
-		(at 196.85 147.32)
+		(at 186.69 116.84)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "6742a066-6a5f-4185-90ae-b7fe8c6eda52")
@@ -7462,7 +7578,7 @@
 		(uuid "df9a1242-2d73-4343-b170-237bc9a8080f")
 	)
 	(junction
-		(at 229.87 147.32)
+		(at 219.71 116.84)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "e3c3d042-f4c5-4fb1-a6b8-52aa1c14cc0e")
@@ -7855,7 +7971,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 147.32) (xy 208.28 147.32)
+			(xy 186.69 116.84) (xy 198.12 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7895,7 +8011,7 @@
 	)
 	(polyline
 		(pts
-			(xy 167.64 15.24) (xy 167.64 160.655)
+			(xy 167.64 15.24) (xy 167.64 161.29)
 		)
 		(stroke
 			(width 0)
@@ -7955,7 +8071,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 147.32) (xy 229.87 147.32)
+			(xy 213.36 116.84) (xy 219.71 116.84)
 		)
 		(stroke
 			(width 0)
@@ -8335,7 +8451,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 147.32) (xy 240.03 147.32)
+			(xy 219.71 116.84) (xy 229.87 116.84)
 		)
 		(stroke
 			(width 0)
@@ -8425,7 +8541,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 153.67) (xy 208.28 154.94)
+			(xy 198.12 123.19) (xy 198.12 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8665,7 +8781,7 @@
 	)
 	(polyline
 		(pts
-			(xy 122.555 88.9) (xy 167.64 88.9)
+			(xy 123.19 88.9) (xy 167.64 88.9)
 		)
 		(stroke
 			(width 0)
@@ -8835,7 +8951,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 147.32) (xy 196.85 147.32)
+			(xy 181.61 116.84) (xy 186.69 116.84)
 		)
 		(stroke
 			(width 0)
@@ -9275,7 +9391,7 @@
 	)
 	(polyline
 		(pts
-			(xy 122.555 15.24) (xy 168.148 15.24)
+			(xy 123.19 15.24) (xy 167.64 15.24)
 		)
 		(stroke
 			(width 0)
@@ -9775,7 +9891,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 137.16) (xy 134.62 137.16)
+			(xy 130.81 137.16) (xy 134.62 137.16)
 		)
 		(stroke
 			(width 0)
@@ -9975,7 +10091,7 @@
 	)
 	(polyline
 		(pts
-			(xy 122.555 160.655) (xy 122.555 15.24)
+			(xy 123.19 161.29) (xy 123.19 15.24)
 		)
 		(stroke
 			(width 0)
@@ -10235,7 +10351,7 @@
 	)
 	(polyline
 		(pts
-			(xy 167.64 160.655) (xy 122.555 160.655)
+			(xy 167.64 161.29) (xy 123.19 161.29)
 		)
 		(stroke
 			(width 0)
@@ -10592,16 +10708,6 @@
 			(justify left bottom)
 		)
 		(uuid "3675ad1a-972f-4046-b23a-e6ca04304035")
-	)
-	(label "+3.3v"
-		(at 134.62 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3768cce7-1e64-480e-bb38-0c6794a852ac")
 	)
 	(label "USB3-0-D_P"
 		(at 180.34 30.48 0)
@@ -11084,7 +11190,7 @@
 		(uuid "a2a4b1ad-c51a-492d-9e99-410eec4f55a3")
 	)
 	(label "HDMI_5v"
-		(at 238.76 147.32 180)
+		(at 228.6 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11403,16 +11509,6 @@
 		)
 		(uuid "dea1d9fb-c6c4-4113-8f01-510c0ae3ded2")
 	)
-	(label "+3.3v"
-		(at 134.62 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0781b80-6f1b-4d08-b53f-b7d3f582e2ea")
-	)
 	(label "USB3-0-D_N"
 		(at 180.34 33.02 0)
 		(effects
@@ -11472,16 +11568,6 @@
 			(justify left bottom)
 		)
 		(uuid "edb2db40-12f7-45b3-a514-2a1299ac0231")
-	)
-	(label "+3.3v"
-		(at 128.27 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f2f7734a-8f5a-47b3-aa14-115ebd0261ef")
 	)
 	(label "HDMI1_SCL"
 		(at 237.49 130.81 0)
@@ -11563,50 +11649,6 @@
 		)
 		(uuid "fe431a80-868e-482d-aa91-c96eb8387d6a")
 	)
-	(global_label "USB_5V"
-		(shape input)
-		(at 24.13 175.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "21909211-debc-4d70-8681-d95bb7bee391")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 13.974 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "USB_5V"
-		(shape input)
-		(at 191.77 147.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c8ffe89b-160c-4279-bd5d-beede7643333")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.614 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "USBOTG_ID"
 		(shape input)
 		(at 105.41 25.4 0)
@@ -11617,6 +11659,17 @@
 			(justify left)
 		)
 		(uuid "02b1295e-cf95-47ff-9c57-f8ada28f2e94")
+	)
+	(hierarchical_label "+3.3v"
+		(shape input)
+		(at 130.81 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0971da54-c240-4ae7-8f84-e966a1ae3ad6")
 	)
 	(hierarchical_label "PCIE_PWR_EN"
 		(shape output)
@@ -11827,6 +11880,17 @@
 		)
 		(uuid "d68589fa-205b-4356-a20d-821c85f5f45e")
 	)
+	(hierarchical_label "+3.3v"
+		(shape input)
+		(at 134.62 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa8889f9-8865-4397-aae2-33d2d83589d6")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 81.28 0)
@@ -11835,6 +11899,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d0564c5")
 		(property "Reference" "#PWR018"
 			(at 259.08 87.63 0)
@@ -11846,11 +11911,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.207 85.6742 0)
+			(at 256.54 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -11900,6 +11966,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d09ce38")
 		(property "Reference" "#PWR024"
 			(at 259.08 160.02 0)
@@ -11911,11 +11978,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.207 158.0642 0)
+			(at 256.54 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -11965,6 +12033,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d18172e")
 		(property "Reference" "#PWR022"
 			(at 101.6 158.75 0)
@@ -11976,11 +12045,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.727 156.7942 0)
+			(at 104.14 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -12030,6 +12100,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d1874b1")
 		(property "Reference" "#PWR021"
 			(at 35.56 158.75 0)
@@ -12041,11 +12112,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.687 156.7942 0)
+			(at 33.02 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -12095,6 +12167,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d250ba3")
 		(property "Reference" "#PWR017"
 			(at 148.59 87.63 0)
@@ -12106,11 +12179,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.717 85.6742 0)
+			(at 146.05 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -12160,6 +12234,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d25a016")
 		(property "Reference" "#PWR023"
 			(at 148.59 160.02 0)
@@ -12171,11 +12246,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.717 158.0642 0)
+			(at 151.13 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -12229,7 +12305,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d669a9a")
 		(property "Reference" "DSI1"
-			(at 133.35 21.59 0)
+			(at 157.48 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12237,8 +12313,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x22_Female"
-			(at 137.795 21.59 0)
+		(property "Value" "dsi"
+			(at 157.48 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12255,7 +12331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=16890"
 			(at 156.21 50.8 0)
 			(effects
 				(font
@@ -12377,9 +12453,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d807cc9")
 		(property "Reference" "J3"
-			(at 269.24 24.13 0)
+			(at 275.59 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12388,7 +12465,7 @@
 			)
 		)
 		(property "Value" "HDMI"
-			(at 261.62 82.55 0)
+			(at 275.59 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12405,7 +12482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tme.eu/Document/f15dffbcfad8545e17826f72d36911c8/206A-SEAN-R03.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=12072"
 			(at 264.795 50.8 0)
 			(effects
 				(font
@@ -12527,9 +12604,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005d85c63e")
 		(property "Reference" "J5"
-			(at 269.24 96.52 0)
+			(at 275.59 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12538,7 +12616,7 @@
 			)
 		)
 		(property "Value" "HDMI"
-			(at 261.62 154.94 0)
+			(at 275.59 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12555,7 +12633,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tme.eu/Document/f15dffbcfad8545e17826f72d36911c8/206A-SEAN-R03.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=12072"
 			(at 264.795 123.19 0)
 			(effects
 				(font
@@ -12671,15 +12749,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 229.87 151.13 0)
+		(at 219.71 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005da83896")
 		(property "Reference" "C8"
-			(at 232.791 149.9616 0)
+			(at 223.52 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12688,7 +12767,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 232.791 152.273 0)
+			(at 223.52 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12697,7 +12776,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 230.8352 154.94 0)
+			(at 220.6752 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12705,8 +12784,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
-			(at 229.87 151.13 0)
+		(property "Datasheet" "-"
+			(at 219.71 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12715,7 +12794,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 151.13 0)
+			(at 219.71 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12724,7 +12803,7 @@
 			)
 		)
 		(property "Cikkszám" "100.011.22"
-			(at 229.87 151.13 0)
+			(at 219.71 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12733,7 +12812,7 @@
 			)
 		)
 		(property "Link" "https://www.hestore.hu/prod_10001122.html"
-			(at 229.87 151.13 0)
+			(at 219.71 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12758,15 +12837,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 196.85 151.13 0)
+		(at 186.69 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005daa0732")
 		(property "Reference" "C7"
-			(at 199.771 149.9616 0)
+			(at 190.5 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12775,7 +12855,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 199.771 152.273 0)
+			(at 190.5 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12784,7 +12864,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 197.8152 154.94 0)
+			(at 187.6552 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12792,8 +12872,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
-			(at 196.85 151.13 0)
+		(property "Datasheet" "-"
+			(at 186.69 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12802,7 +12882,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 151.13 0)
+			(at 186.69 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12811,7 +12891,7 @@
 			)
 		)
 		(property "Cikkszám" "100.011.22"
-			(at 196.85 151.13 0)
+			(at 186.69 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12820,7 +12900,7 @@
 			)
 		)
 		(property "Link" "https://www.hestore.hu/prod_10001122.html"
-			(at 196.85 151.13 0)
+			(at 186.69 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12845,15 +12925,16 @@
 	)
 	(symbol
 		(lib_id "CM5IO:RT9742SNGV")
-		(at 213.36 151.13 0)
+		(at 203.2 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005dad5ba8")
 		(property "Reference" "U2"
-			(at 215.9 140.589 0)
+			(at 205.74 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12861,7 +12942,7 @@
 			)
 		)
 		(property "Value" "RT9742SNGV"
-			(at 215.9 142.9004 0)
+			(at 205.74 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12869,7 +12950,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 213.36 151.13 0)
+			(at 203.2 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12877,8 +12958,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.richtek.com/assets/product_file/RT9742/DS9742-10.pdf"
-			(at 213.36 151.13 0)
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=20051"
+			(at 203.2 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12887,7 +12968,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 213.36 151.13 0)
+			(at 203.2 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12896,7 +12977,7 @@
 			)
 		)
 		(property "Cikkszám" "100.490.97"
-			(at 213.36 151.13 0)
+			(at 203.2 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12905,7 +12986,7 @@
 			)
 		)
 		(property "Link" "https://www.hestore.hu/prod_10049097.html"
-			(at 213.36 151.13 0)
+			(at 203.2 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12933,15 +13014,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 229.87 154.94 0)
+		(at 219.71 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db8426d")
 		(property "Reference" "#PWR027"
-			(at 229.87 161.29 0)
+			(at 219.71 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12950,7 +13032,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 229.997 159.3342 0)
+			(at 219.71 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12958,7 +13040,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 154.94 0)
+			(at 219.71 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12967,7 +13049,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 154.94 0)
+			(at 219.71 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12976,7 +13058,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 229.87 154.94 0)
+			(at 219.71 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12998,15 +13080,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 154.94 0)
+		(at 186.69 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005db9fe14")
 		(property "Reference" "#PWR025"
-			(at 196.85 161.29 0)
+			(at 186.69 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13015,7 +13098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.977 159.3342 0)
+			(at 186.69 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13023,7 +13106,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 154.94 0)
+			(at 186.69 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13032,7 +13115,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 154.94 0)
+			(at 186.69 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13041,7 +13124,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 154.94 0)
+			(at 186.69 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13063,15 +13146,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 208.28 154.94 0)
+		(at 198.12 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005dbbbebc")
 		(property "Reference" "#PWR026"
-			(at 208.28 161.29 0)
+			(at 198.12 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13080,15 +13164,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 208.407 159.3342 0)
+			(at 195.58 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 154.94 0)
+			(at 198.12 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13097,7 +13182,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 154.94 0)
+			(at 198.12 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13106,7 +13191,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 154.94 0)
+			(at 198.12 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13134,9 +13219,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e471fb9")
 		(property "Reference" "Module1"
-			(at 68.58 14.097 0)
+			(at 68.58 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13144,7 +13230,7 @@
 			)
 		)
 		(property "Value" "ComputeModule5-CM5"
-			(at 68.58 16.4084 0)
+			(at 68.58 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13160,7 +13246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=20048"
 			(at 71.12 113.03 0)
 			(effects
 				(font
@@ -13813,6 +13899,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "2dee0a35-df63-4bf9-9345-666fd7667b3c")
 		(property "Reference" "#PWR028"
 			(at 29.21 190.5 0)
@@ -13824,7 +13911,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.337 188.5442 0)
+			(at 29.21 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13879,9 +13966,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "43e7bcd1-0051-4f20-aa6b-9d6a5bf8216e")
 		(property "Reference" "DSI2"
-			(at 139.446 93.472 0)
+			(at 157.48 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13889,8 +13977,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x22_Female"
-			(at 144.526 93.472 0)
+		(property "Value" "dsi1"
+			(at 157.48 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13907,7 +13995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=16890"
 			(at 156.21 121.92 0)
 			(effects
 				(font
@@ -14029,9 +14117,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4f114cbe-127d-402b-9e43-20055519ebe9")
 		(property "Reference" "C11"
-			(at 103.251 180.4416 0)
+			(at 104.14 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14040,7 +14129,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 103.251 182.753 0)
+			(at 104.14 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14048,7 +14137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_HandSolder"
 			(at 101.2952 185.42 0)
 			(effects
 				(font
@@ -14057,7 +14146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3401"
 			(at 100.33 181.61 0)
 			(effects
 				(font
@@ -14116,23 +14205,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "56815f19-5edb-42cc-967e-20bccee93080")
 		(property "Reference" "R5"
-			(at 136.525 134.62 90)
+			(at 138.43 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "2.2K"
-			(at 144.78 134.62 90)
+			(at 138.43 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -14144,7 +14232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "-"
 			(at 138.43 137.16 0)
 			(effects
 				(font
@@ -14203,6 +14291,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "6d44e492-a075-4e65-8666-060c978c8123")
 		(property "Reference" "#PWR019"
 			(at 195.58 97.79 0)
@@ -14214,11 +14303,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.707 95.8342 0)
+			(at 193.04 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -14261,6 +14351,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+1V0")
+		(at 24.13 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6decad51-8cd8-4b7d-a087-213dd7832946")
+		(property "Reference" "#PWR0193"
+			(at 24.13 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "USB_5v"
+			(at 24.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 24.13 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b05f020b-d304-4fc7-81bf-2e811b7caf19")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
+					(reference "#PWR0193")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 87.63 181.61 0)
 		(unit 1)
@@ -14268,9 +14424,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7af4c403-0a0f-4cd6-92c0-049725258d6c")
 		(property "Reference" "C10"
-			(at 90.6272 180.467 0)
+			(at 91.44 179.4509 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14279,7 +14436,7 @@
 			)
 		)
 		(property "Value" "100uF"
-			(at 90.6272 182.753 0)
+			(at 91.44 181.9909 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14287,7 +14444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 88.5952 185.42 0)
 			(effects
 				(font
@@ -14296,7 +14453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 87.63 181.61 0)
 			(effects
 				(font
@@ -14355,6 +14512,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "819066b2-26bf-4da2-8574-c925e1fe9cb3")
 		(property "Reference" "#PWR031"
 			(at 87.63 191.77 0)
@@ -14366,7 +14524,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.757 189.8142 0)
+			(at 87.63 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14420,23 +14578,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8285f9ed-94cb-4a50-bc45-60131837a76c")
 		(property "Reference" "R6"
-			(at 82.55 173.99 90)
+			(at 78.74 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "15K"
-			(at 78.74 173.99 90)
+			(at 78.74 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -14448,7 +14605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=14757"
 			(at 78.74 177.8 0)
 			(effects
 				(font
@@ -14507,6 +14664,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8310b3e1-110d-4416-9986-f3fd73009f05")
 		(property "Reference" "#PWR033"
 			(at 110.49 191.77 0)
@@ -14518,7 +14676,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.617 189.8142 0)
+			(at 110.49 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14572,6 +14730,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8b7f874f-10ff-4b63-b89c-2800507b80e9")
 		(property "Reference" "#PWR030"
 			(at 82.55 191.77 0)
@@ -14583,11 +14742,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.677 189.8142 0)
+			(at 80.01 186.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -14637,9 +14797,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9f9390e5-f859-41ea-a607-789531da8abb")
 		(property "Reference" "C12"
-			(at 113.411 180.4416 0)
+			(at 114.3 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14648,7 +14809,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 113.411 182.753 0)
+			(at 114.3 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14656,7 +14817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_HandSolder"
 			(at 111.4552 185.42 0)
 			(effects
 				(font
@@ -14665,7 +14826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3401"
 			(at 110.49 181.61 0)
 			(effects
 				(font
@@ -14717,6 +14878,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+1V0")
+		(at 181.61 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7c9dbcd-7524-4bb3-bf38-47b003575981")
+		(property "Reference" "#PWR0192"
+			(at 181.61 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "USB_5v"
+			(at 181.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 181.61 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e752a4d-e4b3-4a2e-a9d1-9e60c2e119a4")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff70b1"
+					(reference "#PWR0192")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CM5IO:AP2553W6")
 		(at 59.69 177.8 0)
 		(unit 1)
@@ -14724,9 +14951,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "bf051790-2c52-4db9-8be2-608cdd970d8a")
 		(property "Reference" "U3"
-			(at 59.055 168.529 0)
+			(at 59.055 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14734,7 +14962,7 @@
 			)
 		)
 		(property "Value" "AP22653W6"
-			(at 59.055 170.8404 0)
+			(at 59.055 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14750,7 +14978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP255x.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=16887"
 			(at 63.5 184.15 0)
 			(effects
 				(font
@@ -14821,23 +15049,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "c789bd3c-ea19-43e0-b046-0c95ce38bfd0")
 		(property "Reference" "J4"
-			(at 220.472 56.7944 0)
+			(at 209.55 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "USB3_A"
-			(at 220.472 59.1058 0)
+			(at 209.55 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "panel:MTCONN_UBAF30-D2011"
@@ -14849,7 +15076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=20088"
 			(at 212.09 31.75 0)
 			(effects
 				(font
@@ -15044,6 +15271,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d2c99b58-309c-4c00-8a1c-d5e929d99ecd")
 		(property "Reference" "#PWR029"
 			(at 40.64 191.77 0)
@@ -15055,11 +15283,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.767 189.8142 0)
+			(at 43.18 186.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15109,6 +15338,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d3a43d5c-466a-4431-b7e1-30c977e6a3fb")
 		(property "Reference" "#PWR020"
 			(at 223.52 97.79 0)
@@ -15120,11 +15350,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.647 95.8342 0)
+			(at 226.06 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15174,6 +15405,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d914e846-f3ca-4b72-9188-bff342000ee3")
 		(property "Reference" "#PWR032"
 			(at 100.33 191.77 0)
@@ -15185,7 +15417,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.457 189.8142 0)
+			(at 100.33 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15239,9 +15471,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ebac8f36-1624-46eb-be91-d5377e148349")
 		(property "Reference" "C9"
-			(at 32.131 179.1716 0)
+			(at 33.02 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15250,7 +15483,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 32.131 181.483 0)
+			(at 33.02 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15258,7 +15491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_HandSolder"
 			(at 30.1752 184.15 0)
 			(effects
 				(font
@@ -15267,7 +15500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3401"
 			(at 29.21 180.34 0)
 			(effects
 				(font

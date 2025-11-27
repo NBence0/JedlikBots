@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.7,
-          "height": 2.7,
-          "width": 2.7
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -139,7 +139,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.4,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.153,
         "min_via_annular_width": 0.1,
         "min_via_annulus": 0.049999999999999996,
@@ -193,9 +193,10 @@
       ],
       "track_widths": [
         0.0,
-        0.127,
         0.13,
         0.147,
+        0.1524,
+        0.153,
         0.173,
         0.2,
         0.227,
@@ -588,11 +589,11 @@
         "pattern": "/CM5_HighSpeed/DPHY*"
       },
       {
-        "netclass": "inner diff 100R",
+        "netclass": "onboard 100R (calc: W=9mil S=7mil H=8.85mil Zd=99.998R)",
         "pattern": "/CM5_HighSpeed/HDMI*_D*"
       },
       {
-        "netclass": "inner diff 100R",
+        "netclass": "onboard 100R (calc: W=9mil S=7mil H=8.85mil Zd=99.998R)",
         "pattern": "/CM5_HighSpeed/HDMI*_CK*"
       },
       {
@@ -618,7 +619,7 @@
       "gencad": "CM5IOUSB3.cad",
       "idf": "",
       "netlist": "CM5IO.net",
-      "plot": "V1_GBR/",
+      "plot": "./V2.3_GBR",
       "pos_files": "V0_GBR/",
       "specctra_dsn": "",
       "step": "",
@@ -661,7 +662,7 @@
           "group_by": true,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -689,146 +690,8 @@
         },
         {
           "group_by": true,
-          "label": "Field4",
-          "name": "Field4",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field6",
-          "name": "Field6",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field7",
-          "name": "Field7",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Field8",
-          "name": "Field8",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Part Description",
-          "name": "Part Description",
-          "show": false
-        },
-        {
-          "group_by": true,
           "label": "Description",
           "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "SNAPEDA_PN",
-          "name": "SNAPEDA_PN",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Sim.Type",
-          "name": "Sim.Type",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Url",
-          "name": "Url",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Availability",
-          "name": "Availability",
           "show": false
         },
         {
@@ -841,7 +704,7 @@
           "group_by": false,
           "label": "Link",
           "name": "Link",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -849,7 +712,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Package"
+      "sort_field": ""
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -915,7 +778,7 @@
     ],
     [
       "00000000-0000-0000-0000-00005cff706a",
-      "CM5_GPIO ( Ethernet, GPIO, SDCARD)"
+      "CM5_GPIO ( Ethernet, GPIOs)"
     ],
     [
       "00000000-0000-0000-0000-00005ed4bb5b",
@@ -934,8 +797,8 @@
       "I2C_devices"
     ],
     [
-      "a83afe30-5c7e-43cb-a5b2-f6f97a0812b3",
-      "YD-ESP32-S3"
+      "e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb",
+      "Real-time-controll"
     ],
     [
       "22db6783-000b-491c-a9a9-359609b9f1e7",
@@ -946,12 +809,24 @@
       "BMO085"
     ],
     [
+      "c6f49d9c-a02f-49cf-b959-0c17cccf9470",
+      "MCP3208"
+    ],
+    [
       "f138a32c-ad4c-4aa0-ad48-b8ad62da7339",
       "ICM-45686"
     ],
     [
-      "c6f49d9c-a02f-49cf-b959-0c17cccf9470",
-      "MCP3208"
+      "6f501e9e-2852-4cad-b4d2-c4292fc5657e",
+      "multiplexer_0x70"
+    ],
+    [
+      "6979a0c9-3525-4d90-a7ce-7d93cb58ee02",
+      "multiplexer_0x71"
+    ],
+    [
+      "df91efd7-46e5-489c-becc-dc311c2f7a5b",
+      "Voltage_level_translation"
     ],
     [
       "afb7c805-0a69-4031-971c-bde542cd42a6",
