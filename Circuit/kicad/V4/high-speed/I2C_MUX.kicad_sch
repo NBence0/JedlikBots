@@ -636,6 +636,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+1V0"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+1V0"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V0\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+1V0_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V0_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -778,6 +903,26 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 58.42) (xy 91.44 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42cccf79-b40e-4454-a9ca-1de9e5f39cc4")
+	)
+	(wire
+		(pts
+			(xy 78.74 50.8) (xy 78.74 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59a5f3c2-7fb7-4eca-a7f8-9f88a2d95fcb")
+	)
+	(wire
+		(pts
 			(xy 62.23 68.58) (xy 62.23 73.66)
 		)
 		(stroke
@@ -818,16 +963,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 58.42) (xy 91.44 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bccf2f5c-7942-40d4-bd23-b5ee84cc58d8")
-	)
-	(wire
-		(pts
 			(xy 54.61 68.58) (xy 58.42 68.58)
 		)
 		(stroke
@@ -846,27 +981,16 @@
 		)
 		(uuid "ff19d970-d4c3-4836-aa84-302e7737ab63")
 	)
-	(global_label "I2C_CH"
+	(hierarchical_label "I2C_CH"
 		(shape input)
 		(at 58.42 66.04 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "c5ec11c9-7d8e-4135-aed6-f7dc6d3d3921")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.42 56.4024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "150a34e4-8f07-4dd1-bcfc-16234df7a9cc")
 	)
 	(hierarchical_label "RPI_I2C_SCL_sensors"
 		(shape input)
@@ -911,17 +1035,6 @@
 			(justify left)
 		)
 		(uuid "4ddbd217-a64e-481c-bd4d-05432f361137")
-	)
-	(hierarchical_label "3V3_in"
-		(shape input)
-		(at 88.9 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "906d6f43-b260-4155-bdba-ca383f06a9eb")
 	)
 	(hierarchical_label "RPI_I2C_SDA_sensors"
 		(shape input)
@@ -1115,7 +1228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=4317"
 			(at 91.44 54.61 0)
 			(effects
 				(font
@@ -1201,7 +1314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 50.8 68.58 0)
 			(effects
 				(font
@@ -1288,7 +1401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=20092"
 			(at 116.84 71.12 0)
 			(effects
 				(font
@@ -1358,6 +1471,72 @@
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
 					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V0")
+		(at 78.74 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df6cda06-f405-464c-a4eb-3c4dc19d71e2")
+		(property "Reference" "#PWR0168"
+			(at 78.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESP_3v3"
+			(at 78.74 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 78.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e742775b-4452-45f1-9a18-9583b5480a58")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1a907f2b-d3e5-439d-98da-1d9490f6586c"
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)

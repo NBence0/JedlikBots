@@ -662,7 +662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ca80fd5-d2ce-46cd-953f-86a3e4c1ddb5")
-		(property "Reference" "C41"
+		(property "Reference" "C43"
 			(at 76.2 59.69 90)
 			(effects
 				(font
@@ -687,7 +687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3647"
 			(at 76.2 67.31 0)
 			(effects
 				(font
@@ -724,15 +724,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "36dfa623-045b-4487-a373-b4ff0a564f14")
+			(uuid "1479c658-e707-4d7b-b3d6-c1c1d1ec1599")
 		)
 		(pin "1"
-			(uuid "4a3588f9-e4cc-436d-bacd-78aa98b0c89c")
+			(uuid "be31038d-a7ce-4f39-8e58-0679b15ca290")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "C41")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -747,7 +747,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60e0916c-9393-4c22-95ff-61779b0b2536")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0135"
 			(at 113.03 73.66 0)
 			(effects
 				(font
@@ -792,12 +792,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc8b75cb-7f1c-47c4-a21c-4ec353600262")
+			(uuid "b3bf7dcf-5301-4aa3-9d78-7ee2495cdfad")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "#PWR0123")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -812,7 +812,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74201202-226c-4c40-a92c-9c1f2cf15737")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0134"
 			(at 107.95 73.66 0)
 			(effects
 				(font
@@ -857,12 +857,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7672c883-5279-402e-9ee3-198b71f9c9cb")
+			(uuid "91408850-97e3-48b1-a07a-2901057d1a3f")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "#PWR0122")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -878,7 +878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75d5c5f0-0645-4344-9265-f27cb5ab7a59")
-		(property "Reference" "U22"
+		(property "Reference" "U23"
 			(at 99.06 50.7999 0)
 			(effects
 				(font
@@ -905,7 +905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=20045"
 			(at 110.49 57.15 0)
 			(effects
 				(font
@@ -942,33 +942,33 @@
 			)
 		)
 		(pin "7"
-			(uuid "60c88735-7052-4240-9336-93e84cb005f1")
+			(uuid "0d922d7f-c1c0-4de9-a28e-7d508184a973")
 		)
 		(pin "1"
-			(uuid "6e6e669a-38be-4cf5-b34f-cb24a1f60a56")
+			(uuid "176970e4-def3-4ac5-839e-e6819efc162c")
 		)
 		(pin "8"
-			(uuid "51058882-d9db-4a1c-94f3-0ea25874a6f1")
+			(uuid "641bcadf-5876-4368-872e-bf33a580f921")
 		)
 		(pin "3"
-			(uuid "1f54465c-b92d-4d43-9650-309deb5cc0fb")
+			(uuid "b8694216-4ac7-4925-b12b-ae145f58bf31")
 		)
 		(pin "2"
-			(uuid "38fe27c3-0c20-499e-8349-e7c3bed0c313")
+			(uuid "f665e89f-4a15-40c1-a79f-b2c644c22f2e")
 		)
 		(pin "6"
-			(uuid "df0ac7a0-ebf2-4089-a885-baff57c1ceb5")
+			(uuid "9b493b49-e67d-4d92-8c2a-27ca9ce352e0")
 		)
 		(pin "5"
-			(uuid "e04e92e8-279b-4f35-84eb-4b801dea3d38")
+			(uuid "12b648ec-9e40-4712-852d-20caecc4333f")
 		)
 		(pin "4"
-			(uuid "7d4317f9-ca23-47b7-af71-7f618d4d5eeb")
+			(uuid "cfe5e94b-4a44-4c92-b940-f9b117b2b11d")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "U22")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "U23")
 					(unit 1)
 				)
 			)
@@ -984,7 +984,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b84a6fd-9600-497b-8083-c18d3279998f")
-		(property "Reference" "C40"
+		(property "Reference" "C42"
 			(at 76.2 48.26 90)
 			(effects
 				(font
@@ -1009,7 +1009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 76.2 55.88 0)
 			(effects
 				(font
@@ -1046,15 +1046,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "635993b2-d18a-48f4-a699-abaf26ac8bd1")
+			(uuid "44e7e733-8e55-45de-878e-c3db36306d21")
 		)
 		(pin "1"
-			(uuid "6dbe72ae-3dca-4bd5-a9d3-8e01631fa1f6")
+			(uuid "9ff39530-7e7c-4e6f-999f-904460e7e76c")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "C40")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -1070,7 +1070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d499994-8b28-4749-afd0-69d78d90477b")
-		(property "Reference" "C39"
+		(property "Reference" "C41"
 			(at 76.2 36.83 90)
 			(effects
 				(font
@@ -1095,7 +1095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=4317"
 			(at 76.2 44.45 0)
 			(effects
 				(font
@@ -1132,15 +1132,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "de093e45-5db7-40e1-8fb1-fdb14f463d3d")
+			(uuid "c6f2fef5-2726-44d2-8a2d-106ee3143885")
 		)
 		(pin "1"
-			(uuid "fbc8c38d-b1fb-48a1-9009-510f45ba9504")
+			(uuid "5686df24-4c9c-46a9-81d8-7e9efaa157ca")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "C39")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -1155,7 +1155,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a33d9fba-6e72-40c8-b477-ed4046881143")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0133"
 			(at 86.36 44.45 0)
 			(effects
 				(font
@@ -1200,12 +1200,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d1d55d95-3c9a-4bfc-91c0-d7fc9475183d")
+			(uuid "bebe7494-74f7-4d7a-ba7f-29473697de86")
 		)
 		(instances
 			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a83afe30-5c7e-43cb-a5b2-f6f97a0812b3/22db6783-000b-491c-a9a9-359609b9f1e7"
-					(reference "#PWR0121")
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb/22db6783-000b-491c-a9a9-359609b9f1e7"
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
