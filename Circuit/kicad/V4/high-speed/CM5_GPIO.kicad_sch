@@ -3764,23 +3764,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 0 0)
+			(property "Reference" "J7"
+				(at -17.78 76.2 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "MagJack-A70-112-331N126"
-				(at 0 0 0)
+				(at -17.78 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "panel:PULSE_JT4-1121CHL"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3789,7 +3791,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "-"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3799,6 +3801,24 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cikkszám" "100.454.99"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.hestore.hu/prod_10045499.html"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3835,8 +3855,8 @@
 			)
 			(symbol "MagJack-A70-112-331N126_1_1"
 				(rectangle
-					(start -17.78 1.27)
-					(end 12.7 74.93)
+					(start -17.78 74.93)
+					(end 12.7 1.27)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -11197,16 +11217,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 149.86) (xy 173.99 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9938a98e-10d9-4a15-9295-5112756dac9a")
-	)
-	(wire
-		(pts
 			(xy 102.87 64.77) (xy 105.41 64.77)
 		)
 		(stroke
@@ -12226,7 +12236,7 @@
 		(uuid "5aa517b4-b629-462a-bfc6-488f8564494a")
 	)
 	(label "WL_nDis"
-		(at 50.8 163.83 0)
+		(at 50.8 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12274,16 +12284,6 @@
 			(justify left bottom)
 		)
 		(uuid "64ab901b-ea46-43a5-9f7f-64cceeb0129b")
-	)
-	(label "SYNC_OUT"
-		(at 186.69 149.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "70396b64-ba42-4955-ac7d-aeff65748330")
 	)
 	(label "PWR_BUT"
 		(at 203.2 111.76 0)
@@ -12626,7 +12626,7 @@
 		(uuid "e65cdd4f-d044-4664-ac08-106160a06115")
 	)
 	(label "PMIC_ENABLE"
-		(at 50.8 171.45 0)
+		(at 50.8 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15275,7 +15275,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "panel:TRJG0926HENL"
+		(property "Footprint" "panel:PULSE_JT4-1121CHL"
 			(at 267.97 92.71 0)
 			(effects
 				(font
@@ -16609,89 +16609,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 173.99 149.86 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "965c41e0-c946-4d39-b33e-00115615100d")
-		(property "Reference" "TP4"
-			(at 170.688 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 170.688 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 173.99 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 173.99 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cikkszám" "-"
-			(at 173.99 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "-"
-			(at 173.99 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c50f2807-8cb1-43b9-ba8b-2c1e31b3e3c6")
-		)
-		(instances
-			(project "high-speed"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+1V0")
 		(at 153.67 27.94 90)
 		(unit 1)
@@ -17390,6 +17307,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
