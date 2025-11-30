@@ -1,8 +1,19 @@
+#pragma once
+
 //ESP GPIO pins
 const int DM_A0pin = 4;
 const int DM_A1pin = 5;
 const int DM_A2pin = 6;
 const int DM_A3pin = 7;
+//Sensor SPI bus
+const int Sensor_SPI_MOSI = 38;
+const int Sensor_SPI_MISO = 39;
+const int Sensor_SPI_CS = 40;
+const int Sensor_SPI_SCL = 41;
+
+//for tessting
+const int BNO_INT = 36;
+const int BNO_RST = 35;
 
 // << ======= >>
 // Demultilexer pins
