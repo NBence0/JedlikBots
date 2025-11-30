@@ -1,6 +1,5 @@
-.pio/build/freenove_esp32_s3_wroom/lib280/Adafruit\ BusIO/Adafruit_GenericDevice.cpp.o: \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_GenericDevice.cpp \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_GenericDevice.h \
+.pio/build/freenove_esp32_s3_wroom/liba35/Adafruit\ BusIO/74HC154M.cpp.o: \
+ lib/Adafruit\ BusIO/74HC154M.cpp \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp_arduino_version.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/freertos/FreeRTOS.h \
@@ -180,4 +179,5 @@
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/spi_flash/include/esp_spi_flash_counters.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32/spiram.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
- C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h
+ C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
+ lib/Adafruit\ BusIO/74HC154.h

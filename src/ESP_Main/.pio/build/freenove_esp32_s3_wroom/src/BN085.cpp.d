@@ -186,12 +186,12 @@
  .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BNO08x/src/sh2_hal.h \
  .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BNO08x/src/sh2_SensorValue.h \
  .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BNO08x/src/sh2_err.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_BusIO_Register.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_GenericDevice.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_I2CDevice.h \
+ lib/Adafruit\ BusIO/Adafruit_BusIO_Register.h \
+ lib/Adafruit\ BusIO/Adafruit_GenericDevice.h \
+ lib/Adafruit\ BusIO/Adafruit_I2CDevice.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_SPIDevice.h \
+ lib/Adafruit\ BusIO/Adafruit_SPIDevice.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src/SPI.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h \
  .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ Unified\ Sensor/Adafruit_Sensor.h \

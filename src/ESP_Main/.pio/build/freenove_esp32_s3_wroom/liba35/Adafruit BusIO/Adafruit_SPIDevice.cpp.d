@@ -1,6 +1,6 @@
-.pio/build/freenove_esp32_s3_wroom/lib280/Adafruit\ BusIO/Adafruit_BusIO_Register.cpp.o: \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_BusIO_Register.cpp \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_BusIO_Register.h \
+.pio/build/freenove_esp32_s3_wroom/liba35/Adafruit\ BusIO/Adafruit_SPIDevice.cpp.o: \
+ lib/Adafruit\ BusIO/Adafruit_SPIDevice.cpp \
+ lib/Adafruit\ BusIO/Adafruit_SPIDevice.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp_arduino_version.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/freertos/FreeRTOS.h \
@@ -181,10 +181,6 @@
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32/spiram.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_GenericDevice.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_I2CDevice.h \
- C:/Users/balint/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.h \
- C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
- .pio/libdeps/freenove_esp32_s3_wroom/Adafruit\ BusIO/Adafruit_SPIDevice.h \
  C:/Users/balint/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src/SPI.h \
- C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h
+ C:/Users/balint/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h \
+ lib/Adafruit\ BusIO/74HC154.h

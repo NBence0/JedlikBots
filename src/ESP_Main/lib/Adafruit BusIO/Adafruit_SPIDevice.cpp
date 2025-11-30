@@ -1,4 +1,7 @@
 #include "Adafruit_SPIDevice.h"
+#include "74HC154.h"
+
+extern Demux dm;
 
 // #define DEBUG_SERIAL Serial
 
@@ -109,8 +112,9 @@ Adafruit_SPIDevice::~Adafruit_SPIDevice() {
  */
 bool Adafruit_SPIDevice::begin(void) {
   if (_cs != -1) {
-    pinMode(_cs, OUTPUT);
-    digitalWrite(_cs, HIGH);
+    //digitalWrite(_cs, HIGH);
+    dm.writeDemultiplexer(_cs, HIGH);
+
   }
 
   if (_spi) { // hardware SPI
@@ -309,7 +313,9 @@ void Adafruit_SPIDevice::endTransaction(void) {
  */
 void Adafruit_SPIDevice::setChipSelect(int value) {
   if (_cs != -1) {
-    digitalWrite(_cs, value);
+    //digitalWrite(_cs, value);
+    dm.writeDemultiplexer(_cs, value);
+    
   }
 }
 
