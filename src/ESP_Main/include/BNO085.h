@@ -19,8 +19,8 @@ public:
 
     void enableRotation();
     void update();
-    Rotacio getRotation();
     bool hasNewData();
+    Rotacio getRotation();
     EulerRotacio getEulerAngle();
     float getRoll(); // x
     float getPitch(); // y
