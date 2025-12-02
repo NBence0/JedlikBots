@@ -28,7 +28,7 @@ TMC5160::TMC5160(uint8_t cs_pin,
 
 bool TMC5160::begin() {
     pinMode(TMC_EN, OUTPUT);
-    digitalWrite(TMC_EN, LOW);
+    digitalWrite(TMC_EN, HIGH);
     driver.begin();
     driver.toff(_toff);
     driver.blank_time(_blank_time);
@@ -42,5 +42,6 @@ bool TMC5160::begin() {
     driver.AMAX(_amax);
     driver.DMAX(_dmax);
     driver.VMAX(_vmax);
+    digitalWrite(TMC_EN, LOW);
     return true;
 }
