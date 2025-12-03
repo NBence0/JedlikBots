@@ -1,4 +1,5 @@
 #pragma once
+#include <Arduino.h>
 
 //ESP GPIO pins
 const int DM_A0pin = 4;
@@ -11,9 +12,11 @@ const int Sensor_SPI_MISO = 39;
 const int Sensor_SPI_CS = 40;
 const int Sensor_SPI_SCL = 41;
 
-//for tessting
+
+//for testing
 const int BNO_INT = 36;
 const int BNO_RST = 35;
+const uint8_t TMC_EN = 20;
 
 // << ======= >>
 // Demultilexer pins
@@ -33,3 +36,6 @@ const int DM_MCP_CS = 12; // MCP IO Expander Chip Select
 const int DM_DIAG_LED1 = 13; // Dignostic Led 1
 const int DM_DIAG_LED2 = 14; // Dignostic Led 2
 const int DM_DIAG3_LED3 = 15; // Dignostic Led 2 (Also Empty Chanel)
+
+// TMC5160
+const float TMC_R_SENSE = 0.075f;
