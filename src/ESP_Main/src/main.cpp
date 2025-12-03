@@ -27,11 +27,7 @@ void loop() {
   bno.update();
   if (bno.hasNewData()) {
   float z = bno.getYaw();
-  float x = bno.getRoll();
-  float y = bno.getPitch();
   Serial.println(z);
-  Serial.println(x);
-  Serial.println(y);
-  delay(100);
+  delay(2000);
   }
 }
