@@ -179,8 +179,8 @@
  C:/Users/budab/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32/spiram.h \
  C:/Users/budab/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
  C:/Users/budab/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
- lib/Adafruit\ BusIO/74HC154.h include/BNO085.h include/hardware_pins.h \
- lib/Adafruit\ BNO08x/src/Adafruit_BNO08x.h \
+ include/Robot.h lib/Adafruit\ BusIO/74HC154.h include/BNO085.h \
+ include/hardware_pins.h lib/Adafruit\ BNO08x/src/Adafruit_BNO08x.h \
  lib/Adafruit\ BNO08x/src/sh2.h lib/Adafruit\ BNO08x/src/sh2_hal.h \
  lib/Adafruit\ BNO08x/src/sh2_SensorValue.h \
  lib/Adafruit\ BNO08x/src/sh2_err.h \
@@ -204,5 +204,5 @@
  lib/TMCStepper/src/source/TMC5160_bitfields.h \
  lib/TMCStepper/src/source/TMC2208_bitfields.h \
  lib/TMCStepper/src/source/TMC2209_bitfields.h \
- lib/TMCStepper/src/source/TMC2660_bitfields.h include/Robot.h \
- include/BME280.h lib/Adafruit\ BME280\ Library/Adafruit_BME280.h
+ lib/TMCStepper/src/source/TMC2660_bitfields.h include/BME280.h \
+ lib/Adafruit\ BME280\ Library/Adafruit_BME280.h

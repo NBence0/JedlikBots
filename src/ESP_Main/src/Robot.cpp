@@ -24,7 +24,7 @@ void Robot::begin() {
     pinMode(48, OUTPUT);
     _L_Motor.begin();
     _R_Motor.begin();
-    //driver.shaft(inverse); 
+    //driver.shaft(true); 
     dm.begin();
     Serial.begin(115200);
     

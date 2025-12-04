@@ -1,9 +1,4 @@
 #include <Arduino.h>
-#include <74HC154.h>
-#include <BNO085.h>
-#include <hardware_pins.h>
-#include <TMC5160.h>
-#include <SPI.h>
 #include <Robot.h>
 
 Robot robot;
