@@ -17,6 +17,7 @@ const int Sensor_SPI_SCL = 41;
 const int BNO_INT = 36;
 const int BNO_RST = 35;
 const uint8_t TMC_EN = 20;
+const uint8_t BME280_CS = 45;
 
 // << ======= >>
 // Demultilexer pins
