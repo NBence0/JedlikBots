@@ -23,16 +23,14 @@ void BNO085::enableRotation() {
 void BNO085::update() {
     if (bno.wasReset()) {
         Serial.println("Bno Reseted");
-        enableRotation(); // Than turn on the rotation mode again
+        enableRotation();
     }
 
-    // If the int is low the function returns
     if (!bno.getSensorEvent(&_sensorValue)) { // writes the sensor data to the _sensorValue structure
         return;
     }
 
     if (_sensorValue.sensorId == SH2_GAME_ROTATION_VECTOR) { 
-        // writes the data to our structure
         _myData.x = _sensorValue.un.gameRotationVector.i;
         _myData.y = _sensorValue.un.gameRotationVector.j;
         _myData.z = _sensorValue.un.gameRotationVector.k;

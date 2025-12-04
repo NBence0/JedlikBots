@@ -24,10 +24,11 @@ void Demux::DM_selectChannel(byte ch) {
 }
 
 void Demux::writeDemultiplexer(byte channel, int state) {
-    if (state == HIGH) {
+    /*if (state == HIGH) {
         DM_selectChannel(15);
 
     } else {
         DM_selectChannel(channel);
-    }
+    }*/
+    digitalWrite(channel, state);
 }

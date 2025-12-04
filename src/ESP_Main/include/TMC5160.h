@@ -21,8 +21,14 @@ public:
             bool pwm_autoscale = TMC_PWM_AUTOSCALE);
     
     bool begin();
+    void disable_motor(uint8_t en_pin);
+    void stop_motor(uint16_t deceleration = TMC_DMAX);
+    void rotate_motor(bool direction, uint32_t speed, uint16_t axeleration = TMC_AMAX); // direction: true = forward, false = backward
+    void rotate_steps(bool direction, uint32_t steps, uint32_t speed, uint16_t acceleration = TMC_AMAX, uint16_t deceleration = TMC_DMAX,  bool wait = true); // direction: true = forward, false = backward
+    bool ismoving();
+    
 
-private:
+    private:
     uint32_t _amax, _dmax, _current;
     int _vmax, _microstep;
     uint8_t _cs_pin, _toff, _blank_time, _rampmode;

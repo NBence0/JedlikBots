@@ -4,35 +4,21 @@
 #include <hardware_pins.h>
 #include <TMC5160.h>
 #include <SPI.h>
+#include <Robot.h>
 
-
-Demux dm(DM_A0pin, DM_A1pin, DM_A2pin, DM_A3pin);
-BNO085 bno(BNO_INT, 0, BNO_RST);
-TMC5160 tmc1(1);
-
+Robot robot;
 void setup() {
-  Serial.begin(115200);
-  SPI.begin(Sensor_SPI_SCL, Sensor_SPI_MISO, Sensor_SPI_MOSI);
-  dm.begin();
-  tmc1.begin();
-  Serial.println("Megy");
-  if (bno.begin(&SPI)) {
-    Serial.println("Sikeres szenzorinicializáció");
-    bno.enableRotation();
-
-  } else {
-    Serial.println("Sikertelen inicializáció");
-  }
+  robot.begin();
+  delay(100);
 }
 
 void loop() { 
-  bno.update();
-  if (bno.hasNewData()) {
-  float z = bno.getYaw();
-  Serial.println(z);
-  delay(2000);
-  }
-  static uint32_t last_time = 0;
+  //robot._L_Motor.rotate_motor(true, 30000);
+  //robot._R_Motor.rotate_motor(false, 30000);
+
+}
+
+/*  static uint32_t last_time = 0;
   static bool dir = true;
 
   if (millis() - last_time > 5000) {
@@ -48,5 +34,30 @@ void loop() {
       Serial.println("Hátra forog");
     }
   }
+    
+  
+  
+  Serial.println("Megy");
+  if (bno.begin(&SPI)) {
+    Serial.println("Sikeres szenzorinicializáció");
+    bno.enableRotation();
 
-}
+  } else {
+    Serial.println("Sikertelen inicializáció");
+  }
+  
+  
+
+  bno.update();
+  if (bno.hasNewData()) {
+  float z = bno.getYaw();
+  float x = bno.getRoll();
+  float y = bno.getPitch();
+  Serial.println(z);
+  Serial.println(x);
+  Serial.println(y);
+  delay(100);
+  }
+
+
+  */

@@ -38,4 +38,4 @@ const int DM_DIAG_LED2 = 14; // Dignostic Led 2
 const int DM_DIAG3_LED3 = 15; // Dignostic Led 2 (Also Empty Chanel)
 
 // TMC5160
-const float TMC_R_SENSE = 0.075f;
+const float TMC_R_SENSE = 0.075;
