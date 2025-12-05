@@ -3867,7 +3867,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 39.37) (xy 248.92 39.37)
+			(xy 260.35 31.75) (xy 248.92 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4247,7 +4247,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 31.75) (xy 248.92 31.75)
+			(xy 260.35 39.37) (xy 248.92 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4477,16 +4477,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 27.94) (xy 80.01 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3f7099b-9346-4af6-93b4-c2132e3c431b")
-	)
-	(wire
-		(pts
 			(xy 208.28 68.58) (xy 213.36 68.58)
 		)
 		(stroke
@@ -4597,7 +4587,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 36.83) (xy 248.92 36.83)
+			(xy 260.35 34.29) (xy 248.92 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4657,7 +4647,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 34.29) (xy 248.92 34.29)
+			(xy 260.35 36.83) (xy 248.92 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4764,16 +4754,6 @@
 			(type default)
 		)
 		(uuid "dbf3b02e-e325-4712-b466-99656ec601d8")
-	)
-	(wire
-		(pts
-			(xy 68.58 25.4) (xy 80.01 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc610146-e4b4-4812-b4b3-c0716e9a5558")
 	)
 	(wire
 		(pts
@@ -5135,16 +5115,6 @@
 		)
 		(uuid "219509ee-4eaf-45de-9b70-32e446b7c127")
 	)
-	(label "esp_rxd0"
-		(at 133.35 41.91 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2425f965-e49f-49ba-b5ea-b3ba7baab040")
-	)
 	(label "SENSOR_MOSI"
 		(at 77.47 143.51 0)
 		(effects
@@ -5176,7 +5146,7 @@
 		(uuid "30a82975-4e62-4cb0-816b-99773e4c71ed")
 	)
 	(label "BTN_G"
-		(at 260.35 34.29 180)
+		(at 260.35 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5196,7 +5166,7 @@
 		(uuid "3af2de54-9bde-4ecd-b6f5-29bdd5f59819")
 	)
 	(label "BTN_R"
-		(at 260.35 31.75 180)
+		(at 260.35 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5296,7 +5266,7 @@
 		(uuid "6a6d8bf6-84ff-43f8-986c-e46230f43eca")
 	)
 	(label "BTN_ACT"
-		(at 260.35 39.37 180)
+		(at 260.35 31.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5415,16 +5385,6 @@
 		)
 		(uuid "8e5eb82e-c7fa-4bdd-8f3d-e32d6efbee19")
 	)
-	(label "esp_rxd0"
-		(at 80.01 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8e6f33c5-ea7e-4921-8e0b-8508264299e2")
-	)
 	(label "SPI_DIAG0"
 		(at 210.82 142.24 180)
 		(effects
@@ -5444,16 +5404,6 @@
 			(justify left bottom)
 		)
 		(uuid "97a57784-0372-4204-aa32-bdbbd858574f")
-	)
-	(label "esp_txd0"
-		(at 80.01 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "994ff4f5-5d4f-417a-a3c0-c7ee08312cc2")
 	)
 	(label "SENSOR_MISO"
 		(at 27.94 114.3 0)
@@ -5516,7 +5466,7 @@
 		(uuid "b28b8084-5944-4e46-9e0f-84d440f21263")
 	)
 	(label "BTN_B"
-		(at 260.35 36.83 180)
+		(at 260.35 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5574,16 +5524,6 @@
 			(justify left bottom)
 		)
 		(uuid "cbf8dcc6-9ee6-421f-b4ef-29bb2379390c")
-	)
-	(label "esp_txd0"
-		(at 133.35 30.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cebbf683-23b5-47d3-b2e4-2140388950cb")
 	)
 	(label "BTN_R"
 		(at 243.84 95.25 0)
@@ -5798,6 +5738,17 @@
 		)
 		(uuid "1062304f-aa95-4665-958f-69c0394f5b32")
 	)
+	(hierarchical_label "ESP_UART_RX"
+		(shape input)
+		(at 68.58 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c62f4ef-9170-4f24-90c3-a8cef62f60ff")
+	)
 	(hierarchical_label "MCP_CS"
 		(shape input)
 		(at 205.74 29.21 180)
@@ -5908,6 +5859,17 @@
 		)
 		(uuid "506f3900-824e-42fd-863c-a42b3cb55a0a")
 	)
+	(hierarchical_label "ESP_UART_TX"
+		(shape output)
+		(at 68.58 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56b616f1-2a0f-4b49-b4f5-091d8b8d4125")
+	)
 	(hierarchical_label "I2C_RST"
 		(shape input)
 		(at 248.92 62.23 0)
@@ -5918,6 +5880,17 @@
 			(justify left)
 		)
 		(uuid "5b5bc0d3-6b7c-40b4-8ad3-3ccc4e63dc6f")
+	)
+	(hierarchical_label "ESP_UART_TX"
+		(shape output)
+		(at 133.35 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5e872d1e-baaa-4c19-8a68-4b84ac00ae67")
 	)
 	(hierarchical_label "ESP_usbD+"
 		(shape input)
@@ -5985,6 +5958,17 @@
 		)
 		(uuid "78f02d7d-157a-4fca-970b-bdf7888e564a")
 	)
+	(hierarchical_label "ESP_UART_RX"
+		(shape input)
+		(at 133.35 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b225009-f363-4dd2-8b45-345bcf2d1415")
+	)
 	(hierarchical_label "RPI_MOSI"
 		(shape output)
 		(at 38.1 63.5 180)
@@ -6028,28 +6012,6 @@
 			(justify right)
 		)
 		(uuid "ad2993b5-5fac-44d7-86eb-71f389a83bf4")
-	)
-	(hierarchical_label "ESP_UART_RX"
-		(shape input)
-		(at 68.58 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aed3cf9f-0b42-41d9-8e47-22d554eb1691")
-	)
-	(hierarchical_label "ESP_UART_TX"
-		(shape output)
-		(at 68.58 33.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b04a3fc4-db0c-49c4-8fe3-250b3f6a96de")
 	)
 	(hierarchical_label "MCP_RST"
 		(shape input)
@@ -7345,6 +7307,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 68.58 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "239801d3-90f3-4ba2-8292-739eaf6edb43")
+		(property "Reference" "TP11"
+			(at 70.358 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IO17"
+			(at 76.708 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 73.66 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 68.58 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "-"
+			(at 68.58 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "-"
+			(at 68.58 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ccb54bbf-15cc-4b26-bd4d-43cfa9a3bff0")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 129.54 64.77 270)
 		(unit 1)
@@ -8556,6 +8602,90 @@
 			(project "high-speed"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb"
 					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 68.58 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "88551f8b-ec97-4b81-a9ad-cb55b9a15b08")
+		(property "Reference" "TP14"
+			(at 70.358 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IO18"
+			(at 76.708 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 73.66 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 68.58 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cikkszám" "-"
+			(at 68.58 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "-"
+			(at 68.58 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfc94aa4-9cbf-4a58-9078-88246cad03ea")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e6a127e0-e8a4-4ccd-bbc7-ce5df0e2aadb"
+					(reference "TP14")
 					(unit 1)
 				)
 			)

@@ -6607,17 +6607,6 @@
 		)
 		(uuid "582622a2-fad4-4737-9a80-be9fffbba8ab")
 	)
-	(hierarchical_label "+3.3v"
-		(shape input)
-		(at 40.64 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73dd05eb-f441-4cb9-a8c0-9aded91784df")
-	)
 	(hierarchical_label "ESP_usbD+"
 		(shape input)
 		(at 166.37 72.39 180)
@@ -6628,17 +6617,6 @@
 			(justify right)
 		)
 		(uuid "7c2b232e-3dfc-46cf-9e90-7d33cc7ed7d4")
-	)
-	(hierarchical_label "+3.3v"
-		(shape input)
-		(at 172.72 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "de0a5cb9-ecf5-4a49-a0ee-cf2756476c73")
 	)
 	(symbol
 		(lib_id "CM4IO:USB_67298-4090")
@@ -9407,6 +9385,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+1V0")
+		(at 172.72 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f7652f3-b96f-43d0-b53d-4ebff5ac5b1f")
+		(property "Reference" "#PWR0220"
+			(at 172.72 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESP_3v3"
+			(at 172.72 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 172.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c86d499-8d46-4916-a44f-aa0d635f2cc8")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
+					(reference "#PWR0220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 227.33 153.67 0)
 		(unit 1)
@@ -11754,6 +11798,72 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
 					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V0")
+		(at 40.64 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f056d35b-cb51-4b5e-b7d2-8adbbbee60ab")
+		(property "Reference" "#PWR0158"
+			(at 40.64 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESP_3v3"
+			(at 40.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95cee1d0-0928-4738-94b2-48da9faca1d2")
+		)
+		(instances
+			(project "high-speed"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cff930b7-73aa-4016-850e-19e704dc474e"
+					(reference "#PWR0158")
 					(unit 1)
 				)
 			)

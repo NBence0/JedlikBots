@@ -6864,7 +6864,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic_MountingPin:Conn_01x11_MountingPin"
+		(symbol "Connector_Generic_MountingPin:Conn_01x10_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -6873,14 +6873,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 15.24 0)
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x11_MountingPin"
+			(property "Value" "Conn_01x10_MountingPin"
 				(at 1.27 -15.24 0)
 				(effects
 					(font
@@ -6907,7 +6907,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connectable mounting pin connector, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6934,9 +6934,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x11_MountingPin_1_1"
+			(symbol "Conn_01x10_MountingPin_1_1"
 				(rectangle
-					(start -1.27 13.97)
+					(start -1.27 11.43)
 					(end 1.27 -13.97)
 					(stroke
 						(width 0.254)
@@ -6944,17 +6944,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 12.827)
-					(end 0 12.573)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -7088,7 +7077,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 12.7 0)
+					(at -5.08 10.16 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -7106,7 +7095,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 10.16 0)
+					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -7124,7 +7113,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -7142,7 +7131,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -7160,7 +7149,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -7178,7 +7167,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -7196,7 +7185,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -7214,7 +7203,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -7232,7 +7221,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at -5.08 -10.16 0)
 					(length 3.81)
 					(name "Pin_9"
 						(effects
@@ -7250,7 +7239,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -10.16 0)
+					(at -5.08 -12.7 0)
 					(length 3.81)
 					(name "Pin_10"
 						(effects
@@ -7260,24 +7249,6 @@
 						)
 					)
 					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -12.7 0)
-					(length 3.81)
-					(name "Pin_11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9848,6 +9819,18 @@
 		(uuid "ebc05d4e-ad2b-4267-bddb-704aafe43beb")
 	)
 	(no_connect
+		(at 246.38 64.77)
+		(uuid "048d83e8-04d8-47fa-9577-dd3ae0f96b53")
+	)
+	(no_connect
+		(at 246.38 67.31)
+		(uuid "2d6a3f37-df73-43e3-8f10-f3988d9beebd")
+	)
+	(no_connect
+		(at 246.38 59.69)
+		(uuid "300d5494-6de1-4461-9d4b-eaef0fb8b005")
+	)
+	(no_connect
 		(at 41.91 107.95)
 		(uuid "3561e74a-3b9b-4754-9c3b-0a6e0ad07bbe")
 	)
@@ -9862,6 +9845,10 @@
 	(no_connect
 		(at 41.91 100.33)
 		(uuid "6489fbbd-1bc4-4ea3-ab88-9e537d0c503b")
+	)
+	(no_connect
+		(at 246.38 62.23)
+		(uuid "692a9c21-e7c2-4c5e-ba5e-d3caba46371e")
 	)
 	(no_connect
 		(at 41.91 105.41)
@@ -16105,7 +16092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x11_MountingPin")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x10_MountingPin")
 		(at 270.51 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16149,7 +16136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 270.51 144.78 0)
 			(effects
 				(font
@@ -16208,9 +16195,6 @@
 		)
 		(pin "MP"
 			(uuid "f41e5900-4337-4c97-9816-0d2bc39eb5aa")
-		)
-		(pin "11"
-			(uuid "9290c784-fa4f-4eaf-9f3f-01389255438e")
 		)
 		(instances
 			(project "high-speed"

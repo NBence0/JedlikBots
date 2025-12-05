@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.7,
-          "height": 5.8,
-          "width": 5.8
+          "drill": 0.0,
+          "height": 1.0,
+          "width": 1.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -59,7 +59,60 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|199544366|118994981|5a7f2542-7296-4db6-8835-59bd0a475746|7a09b90b-4e5f-4e39-b7f7-1b8a2092d976",
+          "nembaj"
+        ],
+        [
+          "footprint_type_mismatch|159474844|102204954|048b7625-4d0f-4736-9e95-ad2b0daf3f93|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|164024844|102204954|0c647eb7-fe88-462f-9cd5-3515be0ac39a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|168624844|102004954|a056828c-7557-4f9f-a408-35cf69ca850c|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|204324844|119104954|7a09b90b-4e5f-4e39-b7f7-1b8a2092d976|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "hole_clearance|182315400|123984400|3e96f4b9-93e7-479a-a6f2-ec042e8cb24c|8bee9d8d-7734-43bb-b6f1-4a354f2f87c6",
+          ""
+        ],
+        [
+          "hole_clearance|182315400|123984400|b2a61879-2b07-48f3-8c8c-2ce3836f84be|8bee9d8d-7734-43bb-b6f1-4a354f2f87c6",
+          ""
+        ],
+        [
+          "hole_clearance|188115400|123984400|3bbf8392-884d-49bb-9ae6-03a3b98600a0|17b43391-8e38-4f72-a97e-0768626a437f",
+          ""
+        ],
+        [
+          "hole_clearance|188115400|123984400|f4149c76-f630-410e-a64f-ccb39692260b|17b43391-8e38-4f72-a97e-0768626a437f",
+          ""
+        ],
+        [
+          "hole_clearance|193335400|124029400|36ca1fcc-8beb-4497-b3c2-b18587f582a5|166f686f-031e-46fb-9b27-74389312c0b5",
+          ""
+        ],
+        [
+          "hole_clearance|193335400|124029400|9baf40ae-0758-4d85-a9dd-c9ce535bb7f3|166f686f-031e-46fb-9b27-74389312c0b5",
+          ""
+        ],
+        [
+          "hole_clearance|199135400|124029400|32b5d3a2-2ebc-4e4e-a833-f64b267531c3|99c39a49-3802-411f-b749-8193abcbaea4",
+          ""
+        ],
+        [
+          "hole_clearance|199135400|124029400|eda6b9a3-73a9-4ffc-a983-f6114ba0d16a|99c39a49-3802-411f-b749-8193abcbaea4",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -70,11 +123,11 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
-        "creepage": "error",
+        "creepage": "warning",
         "diff_pair_gap_out_of_range": "warning",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
-        "duplicate_footprints": "warning",
+        "duplicate_footprints": "error",
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
@@ -85,10 +138,10 @@
         "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
-        "isolated_copper": "warning",
+        "isolated_copper": "error",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
-        "length_out_of_range": "error",
+        "length_out_of_range": "warning",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
@@ -96,15 +149,15 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
-        "net_conflict": "warning",
+        "net_conflict": "error",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
         "padstack": "error",
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
-        "silk_over_copper": "error",
-        "silk_overlap": "error",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
         "starved_thermal": "ignore",
@@ -120,7 +173,7 @@
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rules": {
@@ -249,7 +302,7 @@
           "drill": 0.3
         }
       ],
-      "zones_allow_external_fillets": false,
+      "zones_allow_external_fillets": true,
       "zones_use_no_outline": false
     },
     "ipc2581": {
@@ -609,8 +662,12 @@
         "pattern": "/CM5_HighSpeed/PCIE_*CLK_*"
       },
       {
-        "netclass": "inner diff 90",
+        "netclass": "onboard 90R (calc: W=11.1mil S=7mil H=8.85mil Zd=90,178R)",
         "pattern": "/USB2-HUB/*_*"
+      },
+      {
+        "netclass": "onboard 90R (calc: W=11.1mil S=7mil H=8.85mil Zd=90,178R)",
+        "pattern": "/CM5_HighSpeed/USB2_*"
       }
     ]
   },
@@ -619,7 +676,7 @@
       "gencad": "CM5IOUSB3.cad",
       "idf": "",
       "netlist": "CM5IO.net",
-      "plot": "./V2.3_GBR",
+      "plot": "./V2.5_GBR",
       "pos_files": "V0_GBR/",
       "specctra_dsn": "",
       "step": "",
