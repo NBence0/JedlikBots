@@ -79,38 +79,6 @@
         [
           "footprint_type_mismatch|204324844|119104954|7a09b90b-4e5f-4e39-b7f7-1b8a2092d976|00000000-0000-0000-0000-000000000000",
           ""
-        ],
-        [
-          "hole_clearance|182315400|123984400|3e96f4b9-93e7-479a-a6f2-ec042e8cb24c|8bee9d8d-7734-43bb-b6f1-4a354f2f87c6",
-          ""
-        ],
-        [
-          "hole_clearance|182315400|123984400|b2a61879-2b07-48f3-8c8c-2ce3836f84be|8bee9d8d-7734-43bb-b6f1-4a354f2f87c6",
-          ""
-        ],
-        [
-          "hole_clearance|188115400|123984400|3bbf8392-884d-49bb-9ae6-03a3b98600a0|17b43391-8e38-4f72-a97e-0768626a437f",
-          ""
-        ],
-        [
-          "hole_clearance|188115400|123984400|f4149c76-f630-410e-a64f-ccb39692260b|17b43391-8e38-4f72-a97e-0768626a437f",
-          ""
-        ],
-        [
-          "hole_clearance|193335400|124029400|36ca1fcc-8beb-4497-b3c2-b18587f582a5|166f686f-031e-46fb-9b27-74389312c0b5",
-          ""
-        ],
-        [
-          "hole_clearance|193335400|124029400|9baf40ae-0758-4d85-a9dd-c9ce535bb7f3|166f686f-031e-46fb-9b27-74389312c0b5",
-          ""
-        ],
-        [
-          "hole_clearance|199135400|124029400|32b5d3a2-2ebc-4e4e-a833-f64b267531c3|99c39a49-3802-411f-b749-8193abcbaea4",
-          ""
-        ],
-        [
-          "hole_clearance|199135400|124029400|eda6b9a3-73a9-4ffc-a983-f6114ba0d16a|99c39a49-3802-411f-b749-8193abcbaea4",
-          ""
         ]
       ],
       "meta": {
@@ -571,6 +539,38 @@
         "wire_width": 6
       },
       {
+        "diff_pair_gap": 0.1524,
+        "diff_pair_width": 0.2032,
+        "name": "2 red 100",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "diff_pair_gap": 0.5,
+        "diff_pair_width": 0.153,
+        "name": "2orange 100",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.153,
+        "name": "2orange 90",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.2,
+        "name": "2red 90",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
         "clearance": 0.165,
         "diff_pair_gap": 0.508,
         "diff_pair_width": 0.165,
@@ -578,7 +578,7 @@
         "microvia_drill": 0.1,
         "name": "inner diff 100R",
         "pcb_color": "rgb(255, 0, 215)",
-        "priority": 1,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.508,
         "via_diameter": 0.6,
@@ -592,7 +592,7 @@
         "microvia_drill": 0.1,
         "name": "inner diff 90",
         "pcb_color": "rgb(0, 255, 11)",
-        "priority": 0,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.259,
         "via_diameter": 0.6,
@@ -606,7 +606,7 @@
         "microvia_drill": 0.1,
         "name": "onboard 100R (calc: W=9mil S=7mil H=8.85mil Zd=99.998R)",
         "pcb_color": "rgb(14, 0, 255)",
-        "priority": 3,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.178,
         "via_diameter": 0.6,
@@ -620,7 +620,7 @@
         "microvia_drill": 0.1,
         "name": "onboard 90R (calc: W=11.1mil S=7mil H=8.85mil Zd=90,178R)",
         "pcb_color": "rgb(255, 0, 21)",
-        "priority": 2,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.178,
         "via_diameter": 0.6,
@@ -634,40 +634,44 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "inner diff 90",
+        "netclass": "2orange 90",
         "pattern": "/CM5_HighSpeed/USB3*"
       },
       {
-        "netclass": "inner diff 100R",
+        "netclass": "2 red 100",
         "pattern": "/CM5_HighSpeed/DPHY*"
       },
       {
-        "netclass": "onboard 100R (calc: W=9mil S=7mil H=8.85mil Zd=99.998R)",
+        "netclass": "2 red 100",
         "pattern": "/CM5_HighSpeed/HDMI*_D*"
       },
       {
-        "netclass": "onboard 100R (calc: W=9mil S=7mil H=8.85mil Zd=99.998R)",
+        "netclass": "2 red 100",
         "pattern": "/CM5_HighSpeed/HDMI*_CK*"
       },
       {
-        "netclass": "inner diff 100R",
+        "netclass": "2orange 100",
         "pattern": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/TRD*"
       },
       {
-        "netclass": "inner diff 90",
+        "netclass": "2orange 90",
         "pattern": "/CM5_HighSpeed/PCIE_*X_*"
       },
       {
-        "netclass": "inner diff 90",
+        "netclass": "2orange 90",
         "pattern": "/CM5_HighSpeed/PCIE_*CLK_*"
       },
       {
-        "netclass": "onboard 90R (calc: W=11.1mil S=7mil H=8.85mil Zd=90,178R)",
+        "netclass": "2orange 90",
         "pattern": "/USB2-HUB/*_*"
       },
       {
-        "netclass": "onboard 90R (calc: W=11.1mil S=7mil H=8.85mil Zd=90,178R)",
+        "netclass": "2orange 90",
         "pattern": "/CM5_HighSpeed/USB2_*"
+      },
+      {
+        "netclass": "2orange 90",
+        "pattern": "/esp_usb*"
       }
     ]
   },
@@ -676,10 +680,10 @@
       "gencad": "CM5IOUSB3.cad",
       "idf": "",
       "netlist": "CM5IO.net",
-      "plot": "./V2.5_GBR",
+      "plot": "./V2.6_GBR",
       "pos_files": "V0_GBR/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "high-speed.step",
       "svg": "SVG/",
       "vmrl": "",
       "vrml": ""
