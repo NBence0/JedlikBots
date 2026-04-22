@@ -26,7 +26,8 @@ public:
     void rotate_motor(bool direction, uint32_t speed, uint16_t axeleration = TMC_AMAX); // direction: true = forward, false = backward
     void rotate_steps(bool direction, uint32_t steps, uint32_t speed, uint16_t acceleration = TMC_AMAX, uint16_t deceleration = TMC_DMAX,  bool wait = true); // direction: true = forward, false = backward
     bool ismoving();
-    
+    uint16_t get_stall_result();
+    void set_stallguard(int8_t sensitivity); // -64 és 63 között (0 az alap, a negatív érzékenyebb)
 
     private:
     uint32_t _amax, _dmax, _current;

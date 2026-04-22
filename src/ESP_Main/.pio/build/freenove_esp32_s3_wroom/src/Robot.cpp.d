@@ -206,4 +206,9 @@
  lib/TMCStepper/src/source/TMC2208_bitfields.h \
  lib/TMCStepper/src/source/TMC2209_bitfields.h \
  lib/TMCStepper/src/source/TMC2660_bitfields.h include/BME280.h \
- lib/Adafruit\ BME280\ Library/Adafruit_BME280.h
+ lib/Adafruit\ BME280\ Library/Adafruit_BME280.h \
+ .pio/libdeps/freenove_esp32_s3_wroom/ESP32Servo/src/ESP32Servo.h \
+ .pio/libdeps/freenove_esp32_s3_wroom/ESP32Servo/src/ESP32PWM.h \
+ C:/Users/budab/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-ledc.h \
+ C:/Users/budab/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/driver/include/driver/mcpwm.h \
+ C:/Users/budab/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/hal/include/hal/mcpwm_types.h

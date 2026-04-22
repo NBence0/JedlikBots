@@ -72,6 +72,18 @@ void TMC5160::rotate_motor(bool direction, uint32_t speed, uint16_t axeleration)
 }
 
 
+uint16_t TMC5160::get_stall_result() {
+    return driver.sg_result(); 
+}
+
+void TMC5160::set_stallguard(int8_t sensitivity) {
+    driver.en_pwm_mode(0); 
+
+    driver.sgt(sensitivity);
+
+    driver.TCOOLTHRS(0xFFFFF); 
+}
+
 // még szar
 void TMC5160::rotate_steps(bool direction, uint32_t steps, uint32_t speed, uint16_t acceleration, uint16_t deceleration, bool wait) {
     driver.RAMPMODE(0);

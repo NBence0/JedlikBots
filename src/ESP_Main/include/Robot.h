@@ -17,6 +17,11 @@ public:
     Robot();
     void begin();
     void ForwawrdCmWithGyro(bool dir, int cm, float speed, float target_angle, int acceleration);
-
+    void InitServo(uint8_t servo_pin);
+    void MoveServo(uint8_t position, uint8_t delay);
+    void TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceleration);
+    void TurnWithOneWheel(bool use_left_wheel, bool forward, float target_angle, uint32_t max_speed, uint16_t acceleration);
+    void MoveUntilHit(bool dir, uint32_t speed, int8_t sensitivity);
+    void WaitUntilTouch(uint8_t touch_pin);
 private:
 };

@@ -126,10 +126,32 @@ EulerRotacio BNO085::getEulerAngle() {
     double siny_cosp = 2 * (w * z + x * y);
     double cosy_cosp = 1 - 2 * (y * y + z * z);
     angle.yaw = atan2(siny_cosp, cosy_cosp) * (180.0 / M_PI);
+    updateContinuousYaw(angle.yaw);
 
     return angle;
 }
 
-float BNO085::getYaw() { return getEulerAngle().yaw; }
+void BNO085::updateContinuousYaw(float currentRawYaw) {
+    float delta = currentRawYaw - _prevRawYaw;
+
+    if (delta > 180.0) {
+        delta -= 360.0;
+    } else if (delta < -180.0) {
+        delta += 360.0;
+    }
+
+    _accumulatedYaw += delta;
+    _prevRawYaw = currentRawYaw;
+}
+
+void BNO085::resetYaw() {
+    _yawOffset = _accumulatedYaw;
+}
+
+float BNO085::getYaw() { 
+    getEulerAngle();
+    return _accumulatedYaw - _yawOffset; 
+}
+
 float BNO085::getRoll() { return getEulerAngle().roll; }
 float BNO085::getPitch() { return getEulerAngle().pitch; }

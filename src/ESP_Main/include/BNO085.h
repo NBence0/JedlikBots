@@ -40,6 +40,9 @@ public:
     float getPitch();
     float getYaw();
 
+    void resetYaw();
+    float getContinuousYaw(); 
+
 private:
     Adafruit_BNO08x bno;
 
@@ -50,6 +53,10 @@ private:
     Vector3 _gyroData;
     Vector3 _gravityData;
     Vector3 _magData;
+    float _prevRawYaw = 0.0;
+    float _accumulatedYaw = 0.0;
+    float _yawOffset = 0.0;
+    void updateContinuousYaw(float currentRawYaw);
     
     bool _newDataAvailable;
 };

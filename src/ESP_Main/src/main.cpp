@@ -8,7 +8,13 @@ void setup() {
 }
 
 void loop() { 
-  robot.ForwawrdCmWithGyro(true, 100, 50000, 0.0, 1000);
+  
+  //robot.ForwawrdCmWithGyro(true, 100, 50000, 0.0, 1000);
+  //robot.TurnToAngle(90,1000, 200);
+  //robot._bno.resetYaw();
+  robot.ForwawrdCmWithGyro(false, 50, 50000, 0.0, 1000);
+  robot.WaitUntilTouch(13);
+  robot.MoveUntilHit(true, 50000, 10); // Kezdjünk egy enyhén pozitív SGT értékkel (pl. 5)
   //robot._L_Motor.rotate_motor(true,1000,1000);
   //robot._R_Motor.rotate_motor(true,1000,1000);
   delay(1000);

@@ -19,6 +19,12 @@ const int BNO_RST = 35;
 const uint8_t TMC_EN = 21;
 const uint8_t BME280_CS = 45;
 
+
+const uint8_t Servo1_pin = 20;
+
+
+
+
 // << ======= >>
 // Demultilexer pins
 const int DM_ICM_CS = 0; // ICM Gyro-Sensor
