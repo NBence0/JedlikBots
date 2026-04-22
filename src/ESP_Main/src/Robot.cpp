@@ -9,9 +9,9 @@
 Demux dm(DM_A0pin, DM_A1pin, DM_A2pin, DM_A3pin);
 
 Robot::Robot():
-    _L_Motor(21),
-    _R_Motor(48),
-    _bno(BNO_INT, 47, BNO_RST),
+    _L_Motor(8),
+    _R_Motor(9),
+    _bno(),
     _bme(BME280_CS)
 {
     
@@ -19,18 +19,21 @@ Robot::Robot():
 
 void Robot::begin() {
     SPI.begin(Sensor_SPI_SCL, Sensor_SPI_MISO, Sensor_SPI_MOSI);
-    pinMode(21, OUTPUT);
+    pinMode(8, OUTPUT);
+    pinMode(9, OUTPUT);
     pinMode(47, OUTPUT);
+    pinMode(21, OUTPUT);
     pinMode(48, OUTPUT);
-    _L_Motor.begin();
-    _R_Motor.begin();
+    Wire.begin(12,11);
+    _L_Motor.begin(21);
+    _R_Motor.begin(48);
     //driver.shaft(true); 
     dm.begin();
     Serial.begin(115200);
     
-    if (_bno.begin(&SPI)) {
+    if (_bno.begin()) {
     Serial.println("Sikeres szenzorinicializáció");
-    _bno.enableRotation();
+    _bno.enableSensors();
     } else {
     Serial.println("Sikertelen inicializáció");
     }

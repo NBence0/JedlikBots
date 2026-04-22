@@ -20,7 +20,7 @@ public:
             bool pwm_mode = TMC_EN_PWM_MODE,
             bool pwm_autoscale = TMC_PWM_AUTOSCALE);
     
-    bool begin();
+    bool begin(uint8_t);
     void disable_motor(uint8_t en_pin);
     void stop_motor(uint16_t deceleration = TMC_DMAX);
     void rotate_motor(bool direction, uint32_t speed, uint16_t axeleration = TMC_AMAX); // direction: true = forward, false = backward

@@ -9,7 +9,9 @@ void setup() {
 
 void loop() { 
   robot.ForwawrdCmWithGyro(true, 100, 50000, 0.0, 1000);
-  delay(2000);
+  //robot._L_Motor.rotate_motor(true,1000,1000);
+  //robot._R_Motor.rotate_motor(true,1000,1000);
+  delay(1000);
   //robot._L_Motor.rotate_motor(true, 30000);
   //robot._R_Motor.rotate_motor(false, 30000);
 

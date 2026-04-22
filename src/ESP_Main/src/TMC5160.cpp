@@ -26,9 +26,9 @@ TMC5160::TMC5160(uint8_t cs_pin,
     _pwm_autoscale = pwm_autoscale;
 }
 
-bool TMC5160::begin() {
-    pinMode(TMC_EN, OUTPUT);
-    digitalWrite(TMC_EN, HIGH);
+bool TMC5160::begin(uint8_t en_pin) {
+    pinMode(en_pin, OUTPUT);
+    digitalWrite(en_pin, HIGH);
     driver.begin();
     driver.toff(_toff);
     driver.blank_time(_blank_time);
@@ -42,7 +42,7 @@ bool TMC5160::begin() {
     driver.AMAX(_amax);
     driver.DMAX(_dmax);
     driver.VMAX(_vmax);
-    digitalWrite(TMC_EN, LOW);
+    digitalWrite(en_pin, LOW);
     return true;
 }
 
