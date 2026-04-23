@@ -25,10 +25,10 @@ TMC5160::TMC5160(uint8_t cs_pin,
     _pwm_mode = pwm_mode;
     _pwm_autoscale = pwm_autoscale;
 }
-
 bool TMC5160::begin(uint8_t en_pin) {
     pinMode(en_pin, OUTPUT);
-    digitalWrite(en_pin, HIGH);
+    digitalWrite(en_pin, HIGH); // Driver letiltása
+    
     driver.begin();
     driver.toff(_toff);
     driver.blank_time(_blank_time);
@@ -38,29 +38,30 @@ bool TMC5160::begin(uint8_t en_pin) {
     driver.en_pwm_mode(_pwm_mode);
     driver.pwm_autoscale(_pwm_autoscale);
 
-    driver.RAMPMODE(_rampmode);
+    driver.VMAX(0);      // Sebesség nulla
+    driver.VSTART(0);
+    driver.VSTOP(10);
+    driver.RAMPMODE(0);
+    driver.XTARGET(driver.XACTUAL()); // Az aktuális helyzet a cél, ne akarjon sehova menni
+
     driver.AMAX(_amax);
     driver.DMAX(_dmax);
-    driver.VMAX(_vmax);
-    digitalWrite(en_pin, LOW);
+    
+    digitalWrite(en_pin, LOW); // Driver engedélyezése
     return true;
 }
 
-void TMC5160::disable_motor(uint8_t en_pin) {
-    digitalWrite(en_pin, HIGH); // Disable motor driver
-}
-
-void TMC5160::stop_motor(uint16_t deceleration) {
+void TMC5160::stop_motor(uint16_t deceleration = 0) {
     if (deceleration == 0) {
         driver.VMAX(0);
-        driver.RAMPMODE(3);
+        driver.XTARGET(driver.XACTUAL()); 
+        driver.RAMPMODE(0); 
     } else {
         driver.DMAX(deceleration);
         driver.RAMPMODE(1);
         driver.VMAX(0);
     }
 }
-
 void TMC5160::rotate_motor(bool direction, uint32_t speed, uint16_t axeleration) {
     driver.AMAX(axeleration);
     if (direction) {

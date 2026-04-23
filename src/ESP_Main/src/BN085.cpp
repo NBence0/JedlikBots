@@ -36,7 +36,6 @@ void BNO085::update() {
     }
     int biztonsagi_limit = 20;
 
-    // Ha nincs INT pin, ez automatikusan lekérdezi I2C-n, hogy van-e új adat
     while (bno.getSensorEvent(&_sensorValue) && biztonsagi_limit > 0) {
     
         biztonsagi_limit--; 

@@ -48,21 +48,34 @@ void Robot::begin() {
 
 
 
-void Robot::ForwawrdCmWithGyro(bool dir, float cm, float speed, float target_angle, int acceleration) {
+void Robot::ForwawrdCmWithGyro(bool dir, float cm, float base_speed, float target_angle, int acceleration) {
     const float WHEEL_DIAMETER_CM = 6.04;
-    const float cm_in_steps = (200 * 256) / (WHEEL_DIAMETER_CM * 3.1415); 
-    int target_steps = cm_in_steps * cm;
+    const float cm_in_steps = (200.0 * 256.0) / (WHEEL_DIAMETER_CM * 3.1415); 
+    int32_t target_steps_diff = cm_in_steps * cm;
+
+    float KP = base_speed * 0.05; 
     
-    // Szabályzó érzékenysége
-    float KP = speed * 0.05; 
-    
-    long start_pos = _L_Motor.driver.XACTUAL();
-    bool reached = false;
-    
-    _L_Motor.rotate_motor(dir, speed, acceleration);
-    _R_Motor.rotate_motor(dir, speed, acceleration);
-    
-    while (!reached) {
+    int32_t start_pos_L = _L_Motor.driver.XACTUAL();
+    int32_t start_pos_R = _R_Motor.driver.XACTUAL();
+
+    int32_t target_pos_L = dir ? (start_pos_L + target_steps_diff) : (start_pos_L - target_steps_diff);
+    int32_t target_pos_R = dir ? (start_pos_R + target_steps_diff) : (start_pos_R - target_steps_diff);
+
+    _L_Motor.driver.RAMPMODE(0);
+    _R_Motor.driver.RAMPMODE(0);
+
+    _L_Motor.driver.AMAX(acceleration);
+    _L_Motor.driver.DMAX(acceleration); 
+    _R_Motor.driver.AMAX(acceleration);
+    _R_Motor.driver.DMAX(acceleration);
+
+    _L_Motor.driver.VMAX(base_speed);
+    _R_Motor.driver.VMAX(base_speed);
+
+    _L_Motor.driver.XTARGET(target_pos_L);
+    _R_Motor.driver.XTARGET(target_pos_R);
+
+    while (!_L_Motor.driver.position_reached() || !_R_Motor.driver.position_reached()) {
         _bno.update();
         float current_yaw = _bno.getYaw();
         float error = target_angle - current_yaw;
@@ -72,33 +85,27 @@ void Robot::ForwawrdCmWithGyro(bool dir, float cm, float speed, float target_ang
 
         float correction = error * KP;
         
-        int32_t speedL = speed;
-        int32_t speedR = speed;
+        int32_t speedL = base_speed;
+        int32_t speedR = base_speed;
 
         if (dir) {
-            // Előremenet korrekciója
             speedL += correction;
             speedR -= correction;
         } else {
-            // HÁTRAMENET KORREKCIÓJA INVERTÁLVA! Itt volt a hiba.
             speedL -= correction;
             speedR += correction;
         }
 
-        if (speedL < 0) speedL = 0;
-        if (speedR < 0) speedR = 0;
+        if (speedL < 1000) speedL = 1000;
+        if (speedR < 1000) speedR = 1000;
+        if (speedL > base_speed * 1.5) speedL = base_speed * 1.5;
+        if (speedR > base_speed * 1.5) speedR = base_speed * 1.5;
 
         _L_Motor.set_speed(speedL);
         _R_Motor.set_speed(speedR);
 
-        long current_dist = abs(_L_Motor.driver.XACTUAL() - start_pos);
-        if (current_dist >= abs(target_steps)) {
-            reached = true;
-        }
-        
-        delay(10); 
+        delay(5); 
     }
-    
     _L_Motor.stop_motor();
     _R_Motor.stop_motor();
 }
@@ -109,18 +116,13 @@ void Robot::TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceler
     float current_yaw = _bno.getYaw();
     float error = target_angle - current_yaw;
 
-    // Kiszámítjuk, hogy merre kell fordulni a legrövidebb úton
     while (error > 180.0) error -= 360.0;
     while (error < -180.0) error += 360.0;
 
-    // Ha véletlenül már pontosan a célon állunk, ne csináljon semmit
     if (abs(error) <= 0.5) return;
 
-    // Eltároljuk az eredeti irányt (pozitív vagy negatív irányba indulunk)
     bool turning_positive = (error > 0);
 
-    // 1. Elindítjuk a motorokat a megfelelő irányba
-    // ITT VOLT A HIBA! Felcseréltük a true/false értékeket, hogy egyezzen a gyro irányával!
     if (turning_positive) {
         _L_Motor.rotate_motor(true, max_speed, acceleration);
         _R_Motor.rotate_motor(false, max_speed, acceleration);
@@ -129,21 +131,17 @@ void Robot::TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceler
         _R_Motor.rotate_motor(true, max_speed, acceleration);
     }
 
-    // 2. Várakozás, amíg el nem érjük a szöget
     while (true) {
         _bno.update();
         current_yaw = _bno.getYaw();
         error = target_angle - current_yaw;
 
-        // Szög normalizálása
         while (error > 180.0) error -= 360.0;
         while (error < -180.0) error += 360.0;
 
         if (turning_positive) {
-            // Ha pozitív irányba fordulunk, és a hiba 0 vagy az alá csökken, megvagyunk.
             if (error <= 0.0) break;
         } else {
-            // Ha negatív irányba fordulunk, és a hiba 0 vagy a fölé nő, megvagyunk.
             if (error >= 0.0) break;
         }
 
@@ -153,11 +151,12 @@ void Robot::TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceler
     _L_Motor.stop_motor();
     _R_Motor.stop_motor();
 }
+
+
 void Robot::TurnWithOneWheel(bool use_left_wheel, bool forward, float target_angle, uint32_t max_speed, uint16_t acceleration) {
     bool reached = false;
     const float TOLERANCE = 0.5;
     
-    // Annak a keréknek, amit nem használunk, biztosan állnia kell
     if (use_left_wheel) {
         _R_Motor.stop_motor();
     } else {
@@ -170,7 +169,6 @@ void Robot::TurnWithOneWheel(bool use_left_wheel, bool forward, float target_ang
 
         float error = target_angle - current_yaw;
         
-        // Ez egy egyszerűsített ellenőrzés. Ha a tolerancia alá ér, kész.
         if (abs(error) <= TOLERANCE) {
             reached = true;
             break;
@@ -185,7 +183,6 @@ void Robot::TurnWithOneWheel(bool use_left_wheel, bool forward, float target_ang
         delay(10);
     }
 
-    // Leállítjuk a hajtott kereket is
     if (use_left_wheel) {
         _L_Motor.stop_motor();
     } else {
@@ -196,15 +193,12 @@ void Robot::TurnWithOneWheel(bool use_left_wheel, bool forward, float target_ang
 void Robot::MoveUntilHit(bool dir, uint32_t speed, int8_t sensitivity) {
     Serial.println("Indulas a falnak...");
     
-    // 1. StallGuard aktiválása (ezzel a motor picit hangosabbá válik, ez normális!)
     _L_Motor.set_stallguard(sensitivity);
     _R_Motor.set_stallguard(sensitivity);
 
-    // 2. Elindítjuk a motorokat
     _L_Motor.rotate_motor(dir, speed, 2000);
     _R_Motor.rotate_motor(dir, speed, 2000);
 
-    // VÁRUNK, amíg a motor teljesen felgyorsul. Amíg gyorsul, nem mérünk!
     delay(500); 
 
     bool hit = false;
@@ -214,16 +208,13 @@ void Robot::MoveUntilHit(bool dir, uint32_t speed, int8_t sensitivity) {
         uint16_t sgL = _L_Motor.get_stall_result();
         uint16_t sgR = _R_Motor.get_stall_result();
 
-        // Ideális esetben üresjáratban 200-800 közötti számokat kell látnod.
         Serial.printf("SG_L: %d, SG_R: %d\n", sgL, sgR);
 
-        // Ha a sebesség stabil, és az érték 0-ra esik, akkor falat értünk!
         if (sgL == 0 || sgR == 0) {
             Serial.println("UTKOZES DETEKTALVA! A robot megakadt.");
             hit = true;
         }
 
-        // Biztonsági timeout 15 másodperc
         if (millis() - start_time > 15000) {
             Serial.println("Timeout: Nem talaltam falat.");
             break;
