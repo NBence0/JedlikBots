@@ -84,12 +84,17 @@ void TMC5160::set_stallguard(int8_t sensitivity) {
     driver.TCOOLTHRS(0xFFFFF); 
 }
 
+
+void TMC5160::set_speed(uint32_t speed) {
+    driver.VMAX(speed); // Csak a sebességet írjuk, a RAMPMODE-ot békén hagyjuk!
+}
 // még szar
 void TMC5160::rotate_steps(bool direction, uint32_t steps, uint32_t speed, uint16_t acceleration, uint16_t deceleration, bool wait) {
     driver.RAMPMODE(0);
     driver.AMAX(acceleration);
     driver.DMAX(deceleration);
     driver.VMAX(speed);
+    
     
     driver.VSTART(0);
     driver.VSTOP(10); 

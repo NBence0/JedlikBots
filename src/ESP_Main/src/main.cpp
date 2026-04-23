@@ -4,20 +4,47 @@
 Robot robot;
 void setup() {
   robot.begin();
+  robot._L_Motor.stop_motor();
+  robot._R_Motor.stop_motor();
+  robot._bno.resetYaw();
   delay(100);
 }
 
 void loop() { 
-  
-  //robot.ForwawrdCmWithGyro(true, 100, 50000, 0.0, 1000);
-  //robot.TurnToAngle(90,1000, 200);
-  //robot._bno.resetYaw();
-  robot.ForwawrdCmWithGyro(false, 50, 50000, 0.0, 1000);
+  robot._bno.resetYaw();
   robot.WaitUntilTouch(13);
-  robot.MoveUntilHit(true, 50000, 10); // Kezdjünk egy enyhén pozitív SGT értékkel (pl. 5)
+  robot._bno.resetYaw();
+  robot.ForwawrdCmWithGyro(true, 61, 100000, 0.0, 2000);
+  robot.lecsuko.moveTo(50, 2);
+  robot.ForwawrdCmWithGyro(false, 26, 100000, 0.0, 2000);
+  robot.ForwawrdCmWithGyro(true, 1, 100000, 0.0, 2000);
+  robot.lecsuko.moveTo(160, 2);
+  robot.TurnToAngle(30, 50000, 1000);
+  robot.lecsuko.moveTo(50, 2);
+  robot.ForwawrdCmWithGyro(false, -30, 100000, 0.0, 2000);
+  robot.WaitUntilTouch(13);
+  robot.ForwawrdCmWithGyro(true, 100, 100000, 0.0, 2000);
+
+
+
+  
+  //robot.TurnToAngle(90, 50000, 1000);
+  //robot.TurnToAngle(-90, 50000, 1000);
+  //robot.ForwawrdCmWithGyro(false, 30, 100000, 0.0, 1000);
+  //robot.lecsuko.moveTo(120, 10);
+  // robot.WaitUntilTouch(13);
+  // robot.ForwawrdCmWithGyro(true, 50, 50000, 0.0, 1000);
+  // robot.WaitUntilTouch(13);
+  // robot.WaitUntilTouch(13);
+  // robot.ForwawrdCmWithGyro(true, 50, 50000, 90, 1000);
+  // robot.WaitUntilTouch(13);
+  // robot.TurnToAngle(0, 50000, 1000);
+  // robot.WaitUntilTouch(13);
+  // robot.ForwawrdCmWithGyro(false, 50, 50000, 0.0, 1000);
+  //robot.MoveUntilHit(true, 50000, 10);
   //robot._L_Motor.rotate_motor(true,1000,1000);
   //robot._R_Motor.rotate_motor(true,1000,1000);
-  delay(1000);
+  //delay(1000);
   //robot._L_Motor.rotate_motor(true, 30000);
   //robot._R_Motor.rotate_motor(false, 30000);
 

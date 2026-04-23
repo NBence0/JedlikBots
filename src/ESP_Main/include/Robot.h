@@ -6,7 +6,9 @@
 #include <hardware_pins.h>
 #include <TMC5160.h>
 #include <SPI.h>
+#include <ESP32Servo.h>
 #include <BME280.h>
+#include <Servo.h>
 
 class Robot {
 public:
@@ -14,9 +16,11 @@ public:
     TMC5160 _R_Motor;
     BNO085 _bno;
     BME280 _bme;
+    RobotServo lecsuko;
+        
     Robot();
     void begin();
-    void ForwawrdCmWithGyro(bool dir, int cm, float speed, float target_angle, int acceleration);
+    void ForwawrdCmWithGyro(bool dir, float cm, float speed, float target_angle, int acceleration);
     void InitServo(uint8_t servo_pin);
     void MoveServo(uint8_t position, uint8_t delay);
     void TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceleration);

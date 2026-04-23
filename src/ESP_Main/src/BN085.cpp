@@ -23,20 +23,8 @@ bool BNO085::begin() {
 void BNO085::enableSensors() { 
     long reportIntervalUs = 5000;
 
-    if (!bno.enableReport(SH2_ROTATION_VECTOR, reportIntervalUs)) {
+    if (!bno.enableReport(SH2_GAME_ROTATION_VECTOR, reportIntervalUs)) {
         Serial.println("Warning: Rotation vector enable failed");
-    }
-    if (!bno.enableReport(SH2_LINEAR_ACCELERATION, reportIntervalUs)) {
-        Serial.println("Warning: Linear Accel enable failed");
-    }
-    if (!bno.enableReport(SH2_GYROSCOPE_CALIBRATED, reportIntervalUs)) {
-        Serial.println("Warning: Gyro enable failed");
-    }
-    if (!bno.enableReport(SH2_GRAVITY, reportIntervalUs)) {
-        Serial.println("Warning: Gravity enable failed");
-    }
-    if (!bno.enableReport(SH2_MAGNETIC_FIELD_CALIBRATED, reportIntervalUs)) {
-        Serial.println("Warning: Magnetometer enable failed");
     }
 }
 
@@ -46,7 +34,7 @@ void BNO085::update() {
     if (bno.wasReset()) {
         enableSensors();
     }
-    int biztonsagi_limit = 3;
+    int biztonsagi_limit = 20;
 
     // Ha nincs INT pin, ez automatikusan lekérdezi I2C-n, hogy van-e új adat
     while (bno.getSensorEvent(&_sensorValue) && biztonsagi_limit > 0) {
@@ -54,7 +42,7 @@ void BNO085::update() {
         biztonsagi_limit--; 
 
         switch (_sensorValue.sensorId) {
-            case SH2_ROTATION_VECTOR:
+            case SH2_GAME_ROTATION_VECTOR:
                 _quatData.x = _sensorValue.un.rotationVector.i;
                 _quatData.y = _sensorValue.un.rotationVector.j;
                 _quatData.z = _sensorValue.un.rotationVector.k;

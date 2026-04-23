@@ -2,7 +2,7 @@
 #include <Arduino.h>
 
 // TMC5160 Config
-const uint16_t TMC_RMS_CURRENT = 400; // Higher = More torque, more heat. Lower = Cooler, less torque (risk of skipping steps).
+const uint16_t TMC_RMS_CURRENT = 800; // Higher = More torque, more heat. Lower = Cooler, less torque (risk of skipping steps).
 const uint8_t TMC_TOFF = 4; // Controls switching frequency. Adjust if motor makes high-pitched noise.
 const uint8_t TMC_BLANK_TIME = 24; // Comparator Blank Time in clock cycles (16, 24, 36, 54).
 const int TMC_MICROSTEP = 256; // Microstep resolution (1 to 256).

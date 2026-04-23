@@ -8,13 +8,13 @@
 #include <SPI.h>
 
 Demux dm(DM_A0pin, DM_A1pin, DM_A2pin, DM_A3pin);
-Servo myServo;
 
 Robot::Robot():
-    _L_Motor(8),
-    _R_Motor(9),
+    _L_Motor(9),
+    _R_Motor(8),
     _bno(),
-    _bme(BME280_CS)
+    _bme(BME280_CS),
+    lecsuko()
 {
     
 };
@@ -26,131 +26,133 @@ void Robot::begin() {
     pinMode(47, OUTPUT);
     pinMode(21, OUTPUT);
     pinMode(48, OUTPUT);
+    pinMode(10, OUTPUT);
     Wire.begin(12,11);
-    _L_Motor.begin(21);
-    _R_Motor.begin(48);
+    _L_Motor.begin(48);
+    _R_Motor.begin(21);
+    _L_Motor.stop_motor();
+    _R_Motor.stop_motor();
     //driver.shaft(true); 
     dm.begin();
     Serial.begin(115200);
     
     if (_bno.begin()) {
-    Serial.println("Sikeres szenzorinicializáció");
-    _bno.enableSensors();
+        Serial.println("Sikeres szenzorinicializáció");
+        _bno.enableSensors();
     } else {
-    Serial.println("Sikertelen inicializáció");
+        Serial.println("Sikertelen inicializáció");
     }
-}
-
-void InitServo(uint8_t s_pin) {
-    myServo.setPeriodHertz(50); 
-	myServo.attach(s_pin);
+    lecsuko.begin(10);
 }
 
 
-void MoveServo(uint8_t targetPosition, uint8_t delayTime) {
-    int currentPos = myServo.read(); 
-
-    if (currentPos < targetPosition) {
-        for (int pos = currentPos; pos <= targetPosition; pos += 1) {
-            myServo.write(pos);
-            delay(delayTime);
-        }
-    } 
-    else if (currentPos > targetPosition) {
-        for (int pos = currentPos; pos >= targetPosition; pos -= 1) {
-            myServo.write(pos);
-            delay(delayTime);
-        }
-    }
-}
 
 
-void Robot::ForwawrdCmWithGyro(bool dir, int cm, float speed, float target_angle, int acceleration) {
-    const int CORRECTION_VALUE = 500;
-    const float ERROR_VALUE = 0.5;
-    const float WHEEL_DIAMETER_CM = 6.5;
-    const int cm_in_steps = (200*TMC_MICROSTEP)/(WHEEL_DIAMETER_CM*3.1415);
+void Robot::ForwawrdCmWithGyro(bool dir, float cm, float speed, float target_angle, int acceleration) {
+    const float WHEEL_DIAMETER_CM = 6.04;
+    const float cm_in_steps = (200 * 256) / (WHEEL_DIAMETER_CM * 3.1415); 
     int target_steps = cm_in_steps * cm;
+    
+    // Szabályzó érzékenysége
+    float KP = speed * 0.05; 
+    
     long start_pos = _L_Motor.driver.XACTUAL();
     bool reached = false;
     
+    _L_Motor.rotate_motor(dir, speed, acceleration);
+    _R_Motor.rotate_motor(dir, speed, acceleration);
     
     while (!reached) {
-        float correction = 0;
         _bno.update();
         float current_yaw = _bno.getYaw();
-        Serial.println("Current Yaw: " + String(current_yaw));
-        float error = target_angle-current_yaw;
+        float error = target_angle - current_yaw;
 
-        if (abs(error)<= ERROR_VALUE) {
-        } else {
-                correction = error * CORRECTION_VALUE;
-            }
-        int32_t speedL, speedR;
+        while (error > 180.0) error -= 360.0;
+        while (error < -180.0) error += 360.0;
+
+        float correction = error * KP;
+        
+        int32_t speedL = speed;
+        int32_t speedR = speed;
 
         if (dir) {
-            speedL = speed + correction;
-            speedR = speed - correction;
+            // Előremenet korrekciója
+            speedL += correction;
+            speedR -= correction;
         } else {
-            speedL = speed - correction;
-            speedR = speed + correction;
+            // HÁTRAMENET KORREKCIÓJA INVERTÁLVA! Itt volt a hiba.
+            speedL -= correction;
+            speedR += correction;
         }
 
         if (speedL < 0) speedL = 0;
         if (speedR < 0) speedR = 0;
 
-        if (dir) {
-            _L_Motor.rotate_motor(true, speedL, acceleration);
-            _R_Motor.rotate_motor(true, speedR, acceleration);
-        } else {
-            _L_Motor.rotate_motor(false, speedL, acceleration);
-            _R_Motor.rotate_motor(false, speedR, acceleration);
-        }
+        _L_Motor.set_speed(speedL);
+        _R_Motor.set_speed(speedR);
+
         long current_dist = abs(_L_Motor.driver.XACTUAL() - start_pos);
         if (current_dist >= abs(target_steps)) {
             reached = true;
         }
-        delay(50);
+        
+        delay(10); 
     }
+    
     _L_Motor.stop_motor();
     _R_Motor.stop_motor();
 }
 
 
 void Robot::TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceleration) {
-    bool reached = false;
-    const float TOLERANCE = 0.5; // Fél fok pontosságnál már jónak veszi
-    const float KP = 2500.0; // P-szabályozó szorzója (finomhangolni kellhet a sebességedhez mérten!)
-    uint32_t min_speed = 10000; // Minimum sebesség, hogy ne akadjon meg a legvégén
+    _bno.update();
+    float current_yaw = _bno.getYaw();
+    float error = target_angle - current_yaw;
 
-    while (!reached) {
+    // Kiszámítjuk, hogy merre kell fordulni a legrövidebb úton
+    while (error > 180.0) error -= 360.0;
+    while (error < -180.0) error += 360.0;
+
+    // Ha véletlenül már pontosan a célon állunk, ne csináljon semmit
+    if (abs(error) <= 0.5) return;
+
+    // Eltároljuk az eredeti irányt (pozitív vagy negatív irányba indulunk)
+    bool turning_positive = (error > 0);
+
+    // 1. Elindítjuk a motorokat a megfelelő irányba
+    // ITT VOLT A HIBA! Felcseréltük a true/false értékeket, hogy egyezzen a gyro irányával!
+    if (turning_positive) {
+        _L_Motor.rotate_motor(true, max_speed, acceleration);
+        _R_Motor.rotate_motor(false, max_speed, acceleration);
+    } else {
+        _L_Motor.rotate_motor(false, max_speed, acceleration);
+        _R_Motor.rotate_motor(true, max_speed, acceleration);
+    }
+
+    // 2. Várakozás, amíg el nem érjük a szöget
+    while (true) {
         _bno.update();
-        float current_yaw = _bno.getYaw();
-        float error = target_angle - current_yaw;
+        current_yaw = _bno.getYaw();
+        error = target_angle - current_yaw;
 
-        if (abs(error) <= TOLERANCE) {
-            reached = true;
-            break;
-        }
-        uint32_t current_speed = abs(error) * KP;
-        if (current_speed > max_speed) current_speed = max_speed;
-        if (current_speed < min_speed) current_speed = min_speed;
+        // Szög normalizálása
+        while (error > 180.0) error -= 360.0;
+        while (error < -180.0) error += 360.0;
 
-        if (error > 0) { 
-            _L_Motor.rotate_motor(false, current_speed, acceleration);
-            _R_Motor.rotate_motor(true, current_speed, acceleration);
+        if (turning_positive) {
+            // Ha pozitív irányba fordulunk, és a hiba 0 vagy az alá csökken, megvagyunk.
+            if (error <= 0.0) break;
         } else {
-            _L_Motor.rotate_motor(true, current_speed, acceleration);
-            _R_Motor.rotate_motor(false, current_speed, acceleration);
+            // Ha negatív irányba fordulunk, és a hiba 0 vagy a fölé nő, megvagyunk.
+            if (error >= 0.0) break;
         }
-        
-        delay(10);
+
+        delay(10); // 10ms várakozás
     }
 
     _L_Motor.stop_motor();
     _R_Motor.stop_motor();
 }
-
 void Robot::TurnWithOneWheel(bool use_left_wheel, bool forward, float target_angle, uint32_t max_speed, uint16_t acceleration) {
     bool reached = false;
     const float TOLERANCE = 0.5;
@@ -242,10 +244,12 @@ void Robot::MoveUntilHit(bool dir, uint32_t speed, int8_t sensitivity) {
 
 void Robot::WaitUntilTouch(uint8_t touch_pin) {
     Serial.println("Varakozas erintesre...");
-    while (touchRead(touch_pin) < 50000) {
+    while (touchRead(touch_pin) < 30000) {
+        float current_yaw = _bno.getYaw();
+        Serial.println("Current Yaw: " + String(current_yaw));
+        //Serial.println(touchRead(touch_pin));
         delay(50);
     }
-    
     Serial.println("Erintes erzekelve! Indulas...");
     delay(500); 
 }
