@@ -59,4 +59,5 @@ private:
     void updateContinuousYaw(float currentRawYaw);
     
     bool _newDataAvailable;
+    bool _initialized;
 };

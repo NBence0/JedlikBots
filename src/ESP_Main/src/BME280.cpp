@@ -1,4 +1,3 @@
-#pragma once
 #include <BME280.h>
 
 BME280::BME280(uint8_t cs_pin) : bme(Adafruit_BME280(cs_pin)) {}

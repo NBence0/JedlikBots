@@ -37,10 +37,9 @@ void Robot::begin() {
     Serial.begin(115200);
     
     if (_bno.begin()) {
-        Serial.println("Sikeres szenzorinicializáció");
-        _bno.enableSensors();
+        Serial.println("Sikeres szenzorinicializacio");
     } else {
-        Serial.println("Sikertelen inicializáció");
+        Serial.println("Sikertelen inicializacio");
     }
     lecsuko.begin(10);
 }
@@ -48,109 +47,79 @@ void Robot::begin() {
 
 
 
-void Robot::ForwawrdCmWithGyro(bool dir, float cm, float base_speed, float target_angle, int acceleration) {
-    const float WHEEL_DIAMETER_CM = 6.04;
-    const float cm_in_steps = (200.0 * 256.0) / (WHEEL_DIAMETER_CM * 3.1415); 
-    int32_t target_steps_diff = cm_in_steps * cm;
+void Robot::ForwawrdCmWithGyro(bool dir, float cm, float speed, float target_angle, int acceleration) {
+    const float CORRECTION_VALUE  = 500.0;
+    const float ERROR_VALUE       = 0.5;
+    const float WHEEL_DIAMETER_CM = 6.5;
+    const long  cm_in_steps = (200L * TMC_MICROSTEP) / (WHEEL_DIAMETER_CM * 3.1415);
+    long target_steps = cm_in_steps * (long)abs(cm);
+    long start_pos    = _L_Motor.driver.XACTUAL();
 
-    float KP = base_speed * 0.05; 
-    
-    int32_t start_pos_L = _L_Motor.driver.XACTUAL();
-    int32_t start_pos_R = _R_Motor.driver.XACTUAL();
+    // Kompenzáció: a motor a stop_motor() hívása után még halad egy kicsit.
+    // Formula újrakalibrálva 100cm mérési adatok alapján:
+    //   100000 → 90.5cm, 200000 → 93cm, 300000 → 96.5cm
+    // (negatív esetén 0 = nincs kompenzáció)
+    long compensation = max(0L, (long)(speed * 0.6145f) - 81516L);
+    long stop_at      = (target_steps > compensation) ? (target_steps - compensation) : 0;
 
-    int32_t target_pos_L = dir ? (start_pos_L + target_steps_diff) : (start_pos_L - target_steps_diff);
-    int32_t target_pos_R = dir ? (start_pos_R + target_steps_diff) : (start_pos_R - target_steps_diff);
-
-    _L_Motor.driver.RAMPMODE(0);
-    _R_Motor.driver.RAMPMODE(0);
-
-    _L_Motor.driver.AMAX(acceleration);
-    _L_Motor.driver.DMAX(acceleration); 
-    _R_Motor.driver.AMAX(acceleration);
-    _R_Motor.driver.DMAX(acceleration);
-
-    _L_Motor.driver.VMAX(base_speed);
-    _R_Motor.driver.VMAX(base_speed);
-
-    _L_Motor.driver.XTARGET(target_pos_L);
-    _R_Motor.driver.XTARGET(target_pos_R);
-
-    while (!_L_Motor.driver.position_reached() || !_R_Motor.driver.position_reached()) {
+    while (abs(_L_Motor.driver.XACTUAL() - start_pos) < stop_at) {
         _bno.update();
-        float current_yaw = _bno.getYaw();
-        float error = target_angle - current_yaw;
-
-        while (error > 180.0) error -= 360.0;
+        float error = target_angle - _bno.getYaw();
+        while (error >  180.0) error -= 360.0;
         while (error < -180.0) error += 360.0;
+        float correction = (abs(error) > ERROR_VALUE) ? (error * CORRECTION_VALUE) : 0.0f;
 
-        float correction = error * KP;
-        
-        int32_t speedL = base_speed;
-        int32_t speedR = base_speed;
+        int32_t sL = (int32_t)(speed + (dir ?  correction : -correction));
+        int32_t sR = (int32_t)(speed + (dir ? -correction :  correction));
+        if (sL < 0) sL = 0;
+        if (sR < 0) sR = 0;
 
-        if (dir) {
-            speedL += correction;
-            speedR -= correction;
-        } else {
-            speedL -= correction;
-            speedR += correction;
-        }
-
-        if (speedL < 1000) speedL = 1000;
-        if (speedR < 1000) speedR = 1000;
-        if (speedL > base_speed * 1.5) speedL = base_speed * 1.5;
-        if (speedR > base_speed * 1.5) speedR = base_speed * 1.5;
-
-        _L_Motor.set_speed(speedL);
-        _R_Motor.set_speed(speedR);
-
-        delay(5); 
+        _L_Motor.rotate_motor(dir, (uint32_t)sL, acceleration);
+        _R_Motor.rotate_motor(dir, (uint32_t)sR, acceleration);
+        delay(5);
     }
+
     _L_Motor.stop_motor();
     _R_Motor.stop_motor();
 }
 
 
-void Robot::TurnToAngle(float target_angle, uint32_t max_speed, uint16_t acceleration) {
-    _bno.update();
-    float current_yaw = _bno.getYaw();
-    float error = target_angle - current_yaw;
 
-    while (error > 180.0) error -= 360.0;
-    while (error < -180.0) error += 360.0;
+void Robot::TurnDegrees(float degrees, uint32_t speed, int acceleration) {
+    if (abs(degrees) < 0.5) return; // semmi sem kell ha tul kicsi
 
-    if (abs(error) <= 0.5) return;
+    const float WHEEL_DIAMETER_CM = 6.5;
+    const float TRACK_WIDTH_CM    = 17.0; // kerékközépponttól kerékközéppontig
+    const long  cm_in_steps = (200L * TMC_MICROSTEP) / (WHEEL_DIAMETER_CM * 3.1415);
 
-    bool turning_positive = (error > 0);
+    // A forduláshoz szükséges ívhossz mindkét keréknek
+    float arc_cm    = (abs(degrees) / 360.0f) * 3.1415f * TRACK_WIDTH_CM;
+    long  turn_steps = (long)(arc_cm * cm_in_steps);
 
-    if (turning_positive) {
-        _L_Motor.rotate_motor(true, max_speed, acceleration);
-        _R_Motor.rotate_motor(false, max_speed, acceleration);
+    Serial.printf("TurnDegrees: %.1f fok, ívhossz=%.2fcm, lepesek=%ld\n",
+        degrees, arc_cm, turn_steps);
+
+    long start_pos = _L_Motor.driver.XACTUAL();
+
+    // Pozitív fok → balra fordul (bal hátra, jobb előre)
+    // Negatív fok → jobbra fordul (bal előre, jobb hátra)
+    bool positive = (degrees > 0);
+    if (positive) {
+        _L_Motor.rotate_motor(false, speed, acceleration);
+        _R_Motor.rotate_motor(true,  speed, acceleration);
     } else {
-        _L_Motor.rotate_motor(false, max_speed, acceleration);
-        _R_Motor.rotate_motor(true, max_speed, acceleration);
+        _L_Motor.rotate_motor(true,  speed, acceleration);
+        _R_Motor.rotate_motor(false, speed, acceleration);
     }
 
-    while (true) {
-        _bno.update();
-        current_yaw = _bno.getYaw();
-        error = target_angle - current_yaw;
-
-        while (error > 180.0) error -= 360.0;
-        while (error < -180.0) error += 360.0;
-
-        if (turning_positive) {
-            if (error <= 0.0) break;
-        } else {
-            if (error >= 0.0) break;
-        }
-
-        delay(10); // 10ms várakozás
+    while (abs(_L_Motor.driver.XACTUAL() - start_pos) < turn_steps) {
+        delay(2);
     }
 
     _L_Motor.stop_motor();
     _R_Motor.stop_motor();
 }
+
 
 
 void Robot::TurnWithOneWheel(bool use_left_wheel, bool forward, float target_angle, uint32_t max_speed, uint16_t acceleration) {
@@ -236,11 +205,11 @@ void Robot::MoveUntilHit(bool dir, uint32_t speed, int8_t sensitivity) {
 void Robot::WaitUntilTouch(uint8_t touch_pin) {
     Serial.println("Varakozas erintesre...");
     while (touchRead(touch_pin) < 30000) {
+        _bno.update(); // Fontos: frissitjuk a szenzort, hogy a yaw valtozzon!
         float current_yaw = _bno.getYaw();
         Serial.println("Current Yaw: " + String(current_yaw));
-        //Serial.println(touchRead(touch_pin));
         delay(50);
     }
     Serial.println("Erintes erzekelve! Indulas...");
-    delay(500); 
+    delay(500);
 }

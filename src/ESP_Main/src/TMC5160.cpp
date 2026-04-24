@@ -51,7 +51,7 @@ bool TMC5160::begin(uint8_t en_pin) {
     return true;
 }
 
-void TMC5160::stop_motor(uint16_t deceleration = 0) {
+void TMC5160::stop_motor(uint16_t deceleration) {
     if (deceleration == 0) {
         driver.VMAX(0);
         driver.XTARGET(driver.XACTUAL()); 

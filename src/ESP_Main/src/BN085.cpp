@@ -9,13 +9,15 @@ BNO085::BNO085() : bno(-1) {
     _magData = {0, 0, 0};
     _quatData = {0, 0, 0, 0};
     _newDataAvailable = false;
+    _initialized = false;
 }
 
 bool BNO085::begin() {
     // Csak I2C cím és a Wire busz
-    if (!bno.begin_I2C(0x4B, &Wire)) {
+    if (!bno.begin_I2C(0x4B, &Wire) && !bno.begin_I2C(0x4A, &Wire)) {
         return false;
     }
+    _initialized = true;
     enableSensors();
     return true;
 }
@@ -29,6 +31,8 @@ void BNO085::enableSensors() {
 }
 
 void BNO085::update() {
+    if (!_initialized) return;
+    
     unsigned long totalStart = micros();
 
     if (bno.wasReset()) {
